@@ -88,7 +88,7 @@ develocity {
 }
 
 
-rootProject.name = 'taotao-cloud-ddd'
+rootProject.name = 'taotao-cloud-member'
 
 dependencyResolutionManagement {
     //repositories {
@@ -106,14 +106,14 @@ dependencyResolutionManagement {
     }
 }
 
-include "taotao-cloud-ddd-api"
-include "taotao-cloud-ddd-application"
-include "taotao-cloud-ddd-assembly"
-include "taotao-cloud-ddd-common"
-include "taotao-cloud-ddd-domain"
-include "taotao-cloud-ddd-facade"
-include "taotao-cloud-ddd-infrastructure"
-include "taotao-cloud-ddd-integration"
+include "taotao-cloud-member-api"
+include "taotao-cloud-member-application"
+include "taotao-cloud-member-assembly"
+include "taotao-cloud-member-common"
+include "taotao-cloud-member-domain"
+include "taotao-cloud-member-facade"
+include "taotao-cloud-member-infrastructure"
+include "taotao-cloud-member-integration"
 
 
 gradle.settingsEvaluated {
