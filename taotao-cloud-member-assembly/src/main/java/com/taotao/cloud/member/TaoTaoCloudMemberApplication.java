@@ -67,7 +67,6 @@ import com.taotao.cloud.bootstrap.annotation.TaoTaoCloudApplication;
 public class TaoTaoCloudMemberApplication {
 
 	public static void main(String[] args) {
-		System.setProperty("arthas.outputPath", "${user.home}/logs/taotao-cloud-member/arthas-output");
 
 		new StartupSpringApplication(TaoTaoCloudMemberApplication.class)
 			.setTtcBanner()

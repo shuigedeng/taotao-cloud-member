@@ -194,7 +194,7 @@ arthas:
 
 dubbo:
   scan:
-    base-packages: com.taotao.boot.ddd.facade.dubbo
+    base-packages: com.taotao.cloud.member.facade.dubbo
   application:
     name: ${spring.application.name}     #当前应用名称
     compiler: javassist     #Java字节码编译器，用于动态类的生成，可选：jdk或javassist
@@ -1108,9 +1108,7 @@ spring:
     ansi:
       enabled: always # 自动检测是否支持 ANSI 输出，默认 detect
 
-art:
-  xss:
-    enable: false
+
 taotao:
   boot:
     dinger:
@@ -1256,7 +1254,7 @@ taotao:
               types: logger
       jpa:
         enabled: true
-        packages: com.taotao.boot.ddd.infrastructure.persistent.*.po
+        packages: com.taotao.cloud.member.infrastructure.persistent.*.po
         tenant:
           enabled: false
       shardingsphere:
@@ -1278,7 +1276,7 @@ taotao:
       group: ${spring.application.name}
       version: ${ttcVersion}
       title: 系统管理模块
-      packages-to-scan: com.taotao.boot.ddd.facade.controller.*
+      packages-to-scan: com.taotao.cloud.member.facade.controller.*
     metrics:
       enabled: true
       druid:
@@ -1367,7 +1365,7 @@ mybatis-plus-join:
   sub-table-logic: true
 
 mybatis-plus:
-  typeAliasesPackage: com.taotao.boot.ddd.infrastructure.persistent.*.po  #实体扫描 多个package用户逗号或者分号分割
+  typeAliasesPackage: com.taotao.cloud.member.infrastructure.persistent.*.po  #实体扫描 多个package用户逗号或者分号分割
   mapperLocations: classpath:mapper/*.xml # mapper xml 地址
   global-config:
     banner: true # 关闭mp3.0自带的banner
@@ -1502,7 +1500,7 @@ logging:
     web: TRACE
     root: INFO
     org.apache.zookeeper.ZooKeeper: info
-    com.taotao.boot.ddd.api.feign: debug
+    com.taotao.cloud.member.api.feign: debug
     net.ttddyy.dsproxy.listener: debug
     net.ttddyy.dsproxy.listener.logging.SLF4JQueryLoggingListener: debug
     org.springframework.core.log.LogAccessor: error
@@ -1540,9 +1538,6 @@ logging:
     #org.springframework.boot.autoconfigure: off
     #org.elasticsearch.client: debug
     org.zalando.logbook.Logbook: TRACE
-
-test:
-  baseUrl: https://www.baidu.com
 
 tlog:
   pattern: "$preApp:$preIp:$spanId:$traceId"

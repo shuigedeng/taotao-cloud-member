@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.ddd;
+package com.taotao.cloud.member;
 
 import com.taotao.boot.test.TtcBootTestBase;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public abstract class TaoTaoCloudDDDApplicationTestBase extends TtcBootTestBase {
+public abstract class TaoTaoCloudMemberApplicationTestBase extends TtcBootTestBase {
 
 	static {
 		System.setProperty("spring.banner.location", "ttc-banner.txt");
