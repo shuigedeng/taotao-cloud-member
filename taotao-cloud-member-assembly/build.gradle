@@ -38,6 +38,11 @@ dependencies {
 }
 
 
+mainClassName = "com.taotao.cloud.member.TaoTaoCloudMemberApplication"
+description = "member中心"
+archivesBaseName = 'taotao-cloud-member'
+
+
 def getProperty(String key, String defaultValue) {
     def keyValue = findProperty(key) ?: System.getenv(key)
     if (keyValue != null) {
