@@ -40,8 +40,8 @@ public class SpringTest extends TtcBootTestBase {
     @MockBean
     private DeptsService deptsService;
 
-    @SpyBean
-    private DictsService dictsService;
+    @MockitoSpyBean
+	private DictsService dictsService;
 
     @Test
     @DisplayName("SpyBean的正确打桩姿势")
