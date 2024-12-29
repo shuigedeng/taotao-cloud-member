@@ -14,8 +14,5 @@
  **/
 
 dependencies {
-    api project(":taotao-cloud-member-domain")
     api project(":taotao-cloud-member-infrastructure")
-    api project(":taotao-cloud-member-integration")
-    api project(":taotao-cloud-member-common")
 }
