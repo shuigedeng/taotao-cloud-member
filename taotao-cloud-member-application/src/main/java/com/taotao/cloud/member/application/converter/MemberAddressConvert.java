@@ -17,7 +17,7 @@
 package com.taotao.cloud.member.application.converter;
 
 import com.taotao.cloud.member.application.command.address.dto.clientobject.MemberAddressCO;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberAddressPO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberAddressPO;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;

@@ -34,7 +34,7 @@ import com.taotao.boot.common.utils.servlet.RequestUtils;
 import com.taotao.cloud.member.application.config.aop.point.PointLogPoint;
 import com.taotao.cloud.member.application.service.IMemberService;
 import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberMapper;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberPO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO;
 import com.taotao.cloud.stream.framework.rocketmq.RocketmqSendCallbackBuilder;
 import com.taotao.cloud.stream.framework.rocketmq.tags.MemberTagsEnum;
 import com.taotao.cloud.stream.properties.RocketmqCustomProperties;

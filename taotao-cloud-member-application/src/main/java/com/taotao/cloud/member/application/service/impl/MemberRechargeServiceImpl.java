@@ -24,7 +24,7 @@ import com.taotao.boot.common.exception.BusinessException;
 import com.taotao.boot.common.utils.common.IdGeneratorUtils;
 import com.taotao.cloud.member.application.service.IMemberRechargeService;
 import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberRechargeMapper;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberRechargePO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberRechargePO;
 import com.taotao.boot.security.spring.model.SecurityUser;
 import com.taotao.boot.security.spring.utils.SecurityUtils;
 import java.math.BigDecimal;

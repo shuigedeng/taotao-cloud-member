@@ -21,7 +21,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.model.PageQuery;
 import com.taotao.cloud.member.application.service.IMemberGradeService;
 import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberGradeMapper;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberGradePO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberGradePO;
 import org.springframework.stereotype.Service;
 
 /**

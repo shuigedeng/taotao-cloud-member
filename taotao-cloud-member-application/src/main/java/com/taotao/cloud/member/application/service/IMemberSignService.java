@@ -18,7 +18,7 @@ package com.taotao.cloud.member.application.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.taotao.cloud.member.application.command.member.dto.clientobject.MemberSignCO;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberSignPO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberSignPO;
 import java.util.List;
 
 /** 会员签到业务层 */

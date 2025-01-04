@@ -16,7 +16,7 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberNoticeLogPO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticeLogPO;
 import com.taotao.boot.webagg.mapper.BaseSuperMapper;
 
 /** 会员消息数据处理层 */

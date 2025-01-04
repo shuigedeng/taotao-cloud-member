@@ -25,7 +25,7 @@ import com.taotao.boot.common.utils.lang.StringUtils;
 import com.taotao.cloud.member.application.service.IMemberPointsHistoryService;
 import com.taotao.cloud.member.application.service.IMemberService;
 import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberPointsHistoryMapper;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberPointsHistoryPO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPointsHistoryPO;
 import com.taotao.boot.security.spring.utils.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

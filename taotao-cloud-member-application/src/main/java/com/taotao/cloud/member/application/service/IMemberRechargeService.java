@@ -18,7 +18,7 @@ package com.taotao.cloud.member.application.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberRechargePO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberRechargePO;
 import java.math.BigDecimal;
 
 /**

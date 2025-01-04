@@ -19,7 +19,7 @@ package com.taotao.cloud.member.infrastructure.persistent.repository.cls;
 import com.taotao.boot.webagg.repository.BaseClassSuperRepository;
 import jakarta.persistence.EntityManager;
 import org.springframework.stereotype.Repository;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberPO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO;
 
 
 @Repository

@@ -24,7 +24,7 @@ import com.taotao.cloud.member.application.service.IMemberService;
 import com.taotao.cloud.member.application.service.IMemberSignService;
 import com.taotao.cloud.member.common.enums.SettingCategoryEnum;
 import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberSignMapper;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberSignPO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberSignPO;
 import com.taotao.cloud.stream.framework.rocketmq.RocketmqSendCallbackBuilder;
 import com.taotao.cloud.stream.framework.rocketmq.tags.MemberTagsEnum;
 import com.taotao.cloud.stream.properties.RocketmqCustomProperties;

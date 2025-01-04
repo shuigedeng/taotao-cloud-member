@@ -19,7 +19,7 @@ package com.taotao.cloud.member.application.service;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.taotao.boot.common.model.PageQuery;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberAddressPO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberAddressPO;
 
 /**
  * 收货地址业务层

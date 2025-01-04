@@ -17,7 +17,7 @@
 package com.taotao.cloud.member.application.converter;
 
 import com.taotao.cloud.member.facade.model.vo.MemberGradeVO;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberGradePO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberGradePO;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;

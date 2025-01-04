@@ -19,7 +19,7 @@ package com.taotao.cloud.member.application.service;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.taotao.boot.common.model.PageQuery;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberGradePO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberGradePO;
 
 /** 会员等级业务层 */
 public interface IMemberGradeService extends IService<MemberGradePO> {

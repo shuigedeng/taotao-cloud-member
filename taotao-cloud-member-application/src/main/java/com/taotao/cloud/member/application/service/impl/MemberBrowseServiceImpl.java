@@ -22,7 +22,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.model.PageQuery;
 import com.taotao.cloud.member.application.service.IMemberBrowseService;
 import com.taotao.cloud.member.infrastructure.persistent.mapper.IFootprintMapper;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberBrowsePO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberBrowsePO;
 import com.taotao.boot.security.spring.utils.SecurityUtils;
 import java.time.LocalDateTime;
 import java.util.Collections;

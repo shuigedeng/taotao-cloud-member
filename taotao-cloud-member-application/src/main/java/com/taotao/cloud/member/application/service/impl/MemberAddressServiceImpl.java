@@ -24,7 +24,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.model.PageQuery;
 import com.taotao.cloud.member.application.service.IMemberAddressService;
 import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberAddressMapper;
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberAddressPO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberAddressPO;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -16,7 +16,7 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.taotao.cloud.member.infrastructure.persistent.po.MemberPointsHistoryPO;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPointsHistoryPO;
 import com.taotao.boot.webagg.mapper.BaseSuperMapper;
 import org.apache.ibatis.annotations.Select;
 
