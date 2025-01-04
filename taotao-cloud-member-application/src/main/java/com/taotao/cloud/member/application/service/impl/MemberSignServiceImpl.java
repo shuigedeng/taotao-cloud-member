@@ -20,10 +20,10 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.utils.bean.BeanUtils;
 import com.taotao.boot.common.utils.log.LogUtils;
-import com.taotao.cloud.member.application.service.IMemberService;
-import com.taotao.cloud.member.application.service.IMemberSignService;
+import com.taotao.cloud.member.application.service.MemberService;
+import com.taotao.cloud.member.application.service.MemberSignService;
 import com.taotao.cloud.member.common.enums.SettingCategoryEnum;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberSignMapper;
+import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberSignMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberSignPO;
 import com.taotao.cloud.stream.framework.rocketmq.RocketmqSendCallbackBuilder;
 import com.taotao.cloud.stream.framework.rocketmq.tags.MemberTagsEnum;
@@ -39,8 +39,8 @@ import org.springframework.stereotype.Service;
  * 会员签到业务层实现
  */
 @Service
-public class MemberSignServiceImpl extends ServiceImpl<IMemberSignMapper, MemberSignPO> implements
-	IMemberSignService {
+public class MemberSignServiceImpl extends ServiceImpl<MemberSignMapper, MemberSignPO> implements
+	MemberSignService {
 
 	/**
 	 * RocketMQ
@@ -61,7 +61,7 @@ public class MemberSignServiceImpl extends ServiceImpl<IMemberSignMapper, Member
 	 * 会员
 	 */
 	@Autowired
-	private IMemberService memberService;
+	private MemberService memberService;
 
 	@Override
 	public Boolean memberSign() {

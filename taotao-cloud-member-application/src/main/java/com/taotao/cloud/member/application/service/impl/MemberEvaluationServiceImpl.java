@@ -30,9 +30,9 @@ import com.taotao.boot.common.support.tuple.Tuple2;
 import com.taotao.boot.common.support.tuple.Tuple3;
 import com.taotao.boot.common.utils.lang.StringUtils;
 import com.taotao.boot.common.utils.log.LogUtils;
-import com.taotao.cloud.member.application.service.IMemberEvaluationService;
-import com.taotao.cloud.member.application.service.IMemberService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberEvaluationMapper;
+import com.taotao.cloud.member.application.service.MemberEvaluationService;
+import com.taotao.cloud.member.application.service.MemberService;
+import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberEvaluationMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberEvaluationPO;
 import com.taotao.cloud.stream.framework.rocketmq.RocketmqSendCallbackBuilder;
@@ -58,14 +58,14 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional(rollbackFor = Exception.class)
 public class MemberEvaluationServiceImpl extends
-	ServiceImpl<IMemberEvaluationMapper, MemberEvaluationPO>
-	implements IMemberEvaluationService {
+	ServiceImpl<MemberEvaluationMapper, MemberEvaluationPO>
+	implements MemberEvaluationService {
 
 	/**
 	 * 会员
 	 */
 	@Autowired
-	private IMemberService memberService;
+	private MemberService memberService;
 	/**
 	 * 订单
 	 */

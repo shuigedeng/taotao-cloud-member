@@ -20,10 +20,10 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.enums.ResultEnum;
 import com.taotao.boot.common.exception.BusinessException;
 import com.taotao.boot.common.utils.lang.StringUtils;
-import com.taotao.cloud.member.application.service.IMemberNoticeSenterService;
-import com.taotao.cloud.member.application.service.IMemberNoticeService;
-import com.taotao.cloud.member.application.service.IMemberService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberNoticeSenterMapper;
+import com.taotao.cloud.member.application.service.MemberNoticeSenterService;
+import com.taotao.cloud.member.application.service.MemberNoticeService;
+import com.taotao.cloud.member.application.service.MemberService;
+import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberNoticeSenterMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticePO;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticeSenterPO;
 import java.util.ArrayList;
@@ -39,19 +39,19 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
 public class MemberNoticeSenterServiceImpl extends
-	ServiceImpl<IMemberNoticeSenterMapper, MemberNoticeSenterPO>
-	implements IMemberNoticeSenterService {
+	ServiceImpl<MemberNoticeSenterMapper, MemberNoticeSenterPO>
+	implements MemberNoticeSenterService {
 
 	/**
 	 * 会员
 	 */
 	@Autowired
-	private IMemberService memberService;
+	private MemberService memberService;
 	/**
 	 * 会员站内信
 	 */
 	@Autowired
-	private IMemberNoticeService memberNoticeService;
+	private MemberNoticeService memberNoticeService;
 
 	@Override
 	public boolean customSave(MemberNoticeSenterPO memberNoticeSenterPO) {

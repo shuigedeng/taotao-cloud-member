@@ -17,8 +17,8 @@
 package com.taotao.cloud.member.application.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.taotao.cloud.member.application.service.IMemberNoticeService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberNoticeMapper;
+import com.taotao.cloud.member.application.service.MemberNoticeService;
+import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberNoticeMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticePO;
 import org.springframework.stereotype.Service;
 
@@ -28,5 +28,5 @@ import org.springframework.stereotype.Service;
  * @since 2020/11/17 3:44 下午
  */
 @Service
-public class MemberNoticeServiceImpl extends ServiceImpl<IMemberNoticeMapper, MemberNoticePO>
-        implements IMemberNoticeService {}
+public class MemberNoticeServiceImpl extends ServiceImpl<MemberNoticeMapper, MemberNoticePO>
+        implements MemberNoticeService {}

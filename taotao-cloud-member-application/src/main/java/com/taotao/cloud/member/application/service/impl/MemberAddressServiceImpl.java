@@ -22,8 +22,8 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.model.PageQuery;
-import com.taotao.cloud.member.application.service.IMemberAddressService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberAddressMapper;
+import com.taotao.cloud.member.application.service.MemberAddressService;
+import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberAddressMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberAddressPO;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Service;
@@ -37,8 +37,8 @@ import org.springframework.transaction.annotation.Transactional;
  * @since 2022-05-31 13:55:30
  */
 @Service
-public class MemberAddressServiceImpl extends ServiceImpl<IMemberAddressMapper, MemberAddressPO>
-	implements IMemberAddressService {
+public class MemberAddressServiceImpl extends ServiceImpl<MemberAddressMapper, MemberAddressPO>
+	implements MemberAddressService {
 
 	@DubboReference
 	private IDubboUserRpc userRpc;

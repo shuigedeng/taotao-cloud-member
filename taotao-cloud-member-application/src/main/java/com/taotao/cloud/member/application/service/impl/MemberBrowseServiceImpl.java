@@ -20,8 +20,8 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.model.PageQuery;
-import com.taotao.cloud.member.application.service.IMemberBrowseService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.IFootprintMapper;
+import com.taotao.cloud.member.application.service.MemberBrowseService;
+import com.taotao.cloud.member.infrastructure.persistent.mapper.FootprintMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberBrowsePO;
 import com.taotao.boot.security.spring.utils.SecurityUtils;
 import java.time.LocalDateTime;
@@ -39,8 +39,8 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @Transactional(rollbackFor = Exception.class)
-public class MemberBrowseServiceImpl extends ServiceImpl<IFootprintMapper, MemberBrowsePO>
-	implements IMemberBrowseService {
+public class MemberBrowseServiceImpl extends ServiceImpl<FootprintMapper, MemberBrowsePO>
+	implements MemberBrowseService {
 
 	/**
 	 * es商品业务层

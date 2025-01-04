@@ -22,9 +22,9 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.model.PageQuery;
 import com.taotao.boot.common.utils.lang.StringUtils;
-import com.taotao.cloud.member.application.service.IMemberPointsHistoryService;
-import com.taotao.cloud.member.application.service.IMemberService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberPointsHistoryMapper;
+import com.taotao.cloud.member.application.service.MemberPointsHistoryService;
+import com.taotao.cloud.member.application.service.MemberService;
+import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberPointsHistoryMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPointsHistoryPO;
 import com.taotao.boot.security.spring.utils.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,11 +39,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class MemberPointsHistoryServiceImpl extends
-	ServiceImpl<IMemberPointsHistoryMapper, MemberPointsHistoryPO>
-	implements IMemberPointsHistoryService {
+	ServiceImpl<MemberPointsHistoryMapper, MemberPointsHistoryPO>
+	implements MemberPointsHistoryService {
 
 	@Autowired
-	private IMemberService memberService;
+	private MemberService memberService;
 
 	@Override
 	public MemberPointsHistoryVO getMemberPointsHistoryVO(Long memberId) {

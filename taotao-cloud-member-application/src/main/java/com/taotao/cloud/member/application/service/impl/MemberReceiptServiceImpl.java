@@ -25,9 +25,9 @@ import com.taotao.boot.common.enums.ResultEnum;
 import com.taotao.boot.common.exception.BusinessException;
 import com.taotao.boot.common.utils.bean.BeanUtils;
 import com.taotao.boot.common.utils.lang.StringUtils;
-import com.taotao.cloud.member.application.service.IMemberReceiptService;
-import com.taotao.cloud.member.application.service.IMemberService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberReceiptMapper;
+import com.taotao.cloud.member.application.service.MemberReceiptService;
+import com.taotao.cloud.member.application.service.MemberService;
+import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberReceiptMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberReceiptPO;
 import java.util.List;
@@ -42,11 +42,11 @@ import org.springframework.stereotype.Service;
  * @since 2023-02-01 13:48:11
  */
 @Service
-public class MemberReceiptServiceImpl extends ServiceImpl<IMemberReceiptMapper, MemberReceiptPO>
-	implements IMemberReceiptService {
+public class MemberReceiptServiceImpl extends ServiceImpl<MemberReceiptMapper, MemberReceiptPO>
+	implements MemberReceiptService {
 
 	@Autowired
-	private IMemberService memberService;
+	private MemberService memberService;
 
 	@Override
 	public IPage<MemberReceiptPO> getPage(MemberReceiptPageQuery memberReceiptPageQuery) {

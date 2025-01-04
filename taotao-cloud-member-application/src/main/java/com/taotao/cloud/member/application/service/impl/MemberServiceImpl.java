@@ -32,8 +32,8 @@ import com.taotao.boot.common.utils.log.LogUtils;
 import com.taotao.boot.common.utils.servlet.CookieUtils;
 import com.taotao.boot.common.utils.servlet.RequestUtils;
 import com.taotao.cloud.member.application.config.aop.point.PointLogPoint;
-import com.taotao.cloud.member.application.service.IMemberService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberMapper;
+import com.taotao.cloud.member.application.service.MemberService;
+import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO;
 import com.taotao.cloud.stream.framework.rocketmq.RocketmqSendCallbackBuilder;
 import com.taotao.cloud.stream.framework.rocketmq.tags.MemberTagsEnum;
@@ -55,8 +55,8 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @Transactional(rollbackFor = Exception.class)
-public class MemberServiceImpl extends ServiceImpl<IMemberMapper, MemberPO> implements
-	IMemberService {
+public class MemberServiceImpl extends ServiceImpl<MemberMapper, MemberPO> implements
+        MemberService {
 
 	/**
 	 * 会员token

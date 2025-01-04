@@ -19,8 +19,8 @@ package com.taotao.cloud.member.application.service.impl;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.model.PageQuery;
-import com.taotao.cloud.member.application.service.IMemberGradeService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.IMemberGradeMapper;
+import com.taotao.cloud.member.application.service.MemberGradeService;
+import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberGradeMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberGradePO;
 import org.springframework.stereotype.Service;
 
@@ -30,8 +30,8 @@ import org.springframework.stereotype.Service;
  * @since 2021/5/14 5:58 下午
  */
 @Service
-public class MemberGradeServiceImpl extends ServiceImpl<IMemberGradeMapper, MemberGradePO>
-        implements IMemberGradeService {
+public class MemberGradeServiceImpl extends ServiceImpl<MemberGradeMapper, MemberGradePO>
+        implements MemberGradeService {
 
     @Override
     public IPage<MemberGradePO> queryPage(PageQuery pageQuery) {
