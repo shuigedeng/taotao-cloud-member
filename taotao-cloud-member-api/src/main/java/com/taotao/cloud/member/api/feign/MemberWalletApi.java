@@ -27,8 +27,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface MemberWalletApi {
 
     @GetMapping(value = "/member/feign/wallet/increase")
-    boolean increase(@RequestParam MemberWalletUpdateApiRequest memberWalletUpdateDTO);
+    boolean increase(@RequestParam(value = "memberWalletUpdateDTO") MemberWalletUpdateApiRequest memberWalletUpdateDTO);
 
     @GetMapping(value = "/member/feign/recharge/save")
-    boolean save(@RequestParam Long id, @RequestParam String username);
+    boolean save(@RequestParam(value = "id") Long id,
+				 @RequestParam(value = "username") String username);
 }

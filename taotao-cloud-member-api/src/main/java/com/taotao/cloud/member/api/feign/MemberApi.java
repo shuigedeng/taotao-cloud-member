@@ -46,7 +46,7 @@ public interface MemberApi {
      * @since 2020/4/29 17:48
      */
     @GetMapping(value = "/member/feign/info/security")
-	BaseSecurityUser getMemberSecurityUser(String nicknameOrUserNameOrPhoneOrEmail);
+	BaseSecurityUser getMemberSecurityUser(@RequestParam(value = "nicknameOrUserNameOrPhoneOrEmail")String nicknameOrUserNameOrPhoneOrEmail);
 
     /**
      * 根据id查询会员信息
@@ -70,27 +70,29 @@ public interface MemberApi {
      */
     @GetMapping(value = "/member/feign/updateMemberPoint")
     Boolean updateMemberPoint(
-            @RequestParam Long payPoint,
-            @RequestParam String name,
-            @RequestParam Long memberId,
-            @RequestParam String s);
+            @RequestParam(value = "payPoint")  Long payPoint,
+            @RequestParam(value = "name")  String name,
+            @RequestParam(value = "memberId")  Long memberId,
+            @RequestParam(value = "s")  String s);
 
     @GetMapping(value = "/member/feign/username")
-	MemberApiResponse findByUsername(@RequestParam String username);
+	MemberApiResponse findByUsername(@RequestParam(value = "username") String username);
 
     @GetMapping(value = "/member/feign/memberId")
-	MemberApiResponse getById(@RequestParam Long memberId);
+	MemberApiResponse getById(@RequestParam(value = "memberId")  Long memberId);
 
     /**
      * new LambdaUpdateWrapper<Member>() .eq(Member::getId, member.getId())
      * .set(Member::getHaveStore, true) .set(Member::getStoreId, store.getId())
      */
     @GetMapping(value = "/member/feign/memberId/storeId")
-    Boolean update(@RequestParam Long memberId, @RequestParam Long storeId);
+    Boolean update(@RequestParam(value = "memberId")  Long memberId,
+				   @RequestParam(value = "storeId")  Long storeId);
 
     @GetMapping(value = "/member/feign/updateById")
-    Boolean updateById(@RequestParam MemberApiResponse member);
+    Boolean updateById(@RequestParam(value = "member")  MemberApiResponse member);
 
     @GetMapping(value = "/member/feign/listFieldsByMemberIds")
-    List<Map<String, Object>> listFieldsByMemberIds(@RequestParam String s, @RequestParam List<String> ids);
+    List<Map<String, Object>> listFieldsByMemberIds(@RequestParam(value = "s")  String s,
+													@RequestParam(value = "ids")  List<String> ids);
 }

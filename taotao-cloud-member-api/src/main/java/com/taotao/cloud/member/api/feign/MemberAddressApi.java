@@ -27,5 +27,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface MemberAddressApi {
 
 	@GetMapping(value = "/member/feign/address/shippingAddressId")
-	MemberAddressApiResponse getById(@RequestParam String shippingAddressId);
+	MemberAddressApiResponse getById(@RequestParam(value = "shippingAddressId") String shippingAddressId);
 }

@@ -38,13 +38,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface MemberRechargeApi {
 
     @GetMapping(value = "/member/feign/recharge/paySuccess")
-    Boolean paySuccess(@RequestParam String sn, @RequestParam String receivableNo, @RequestParam String paymentMethod);
+    Boolean paySuccess(@RequestParam(value = "sn") String sn,
+					   @RequestParam(value = "receivableNo") String receivableNo,
+					   @RequestParam(value = "paymentMethod") String paymentMethod);
 
     @GetMapping(value = "/member/feign/recharge/getRecharge")
-	MemberRechargeApiResponse getRecharge(@RequestParam String sn);
+	MemberRechargeApiResponse getRecharge(@RequestParam(value = "sn") String sn);
 
     @GetMapping(value = "/member/feign/recharge/recharge")
-	MemberRechargeApiResponse recharge(@RequestParam BigDecimal price);
+	MemberRechargeApiResponse recharge(@RequestParam(value = "price") BigDecimal price);
 
     /**
      * LambdaQueryWrapper<Recharge> queryWrapper = new LambdaQueryWrapper<>();
@@ -54,8 +56,8 @@ public interface MemberRechargeApi {
      * @return
      */
     @GetMapping(value = "/member/feign/recharge/list")
-    List<MemberRechargeApiResponse> list(@RequestParam DateTime dateTime);
+    List<MemberRechargeApiResponse> list(@RequestParam(value = "dateTime") DateTime dateTime);
 
     @GetMapping(value = "/member/feign/recharge/rechargeOrderCancel")
-    Boolean rechargeOrderCancel(@RequestParam String sn);
+    Boolean rechargeOrderCancel(@RequestParam(value = "sn") String sn);
 }
