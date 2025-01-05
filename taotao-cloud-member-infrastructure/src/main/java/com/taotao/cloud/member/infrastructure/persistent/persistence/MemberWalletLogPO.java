@@ -18,6 +18,7 @@ package com.taotao.cloud.member.infrastructure.persistent.persistence;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.taotao.boot.webagg.entity.BaseSuperEntity;
+import com.taotao.cloud.member.api.enums.DepositServiceTypeEnum;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -43,7 +44,7 @@ import lombok.Setter;
 @Entity
 @Table(name = MemberWalletLogPO.TABLE_NAME)
 @TableName(MemberWalletLogPO.TABLE_NAME)
-@org.springframework.data.relational.core.mapping.Table(name = MemberWalletLog.TABLE_NAME, comment = "钱包变动日志表")
+@org.springframework.data.relational.core.mapping.Table(name = MemberWalletLogPO.TABLE_NAME)
 public class MemberWalletLogPO extends BaseSuperEntity<MemberWalletLogPO, Long> {
 
     public static final String TABLE_NAME = "tt_wallet_log";

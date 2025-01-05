@@ -44,7 +44,7 @@ import lombok.Setter;
 @Entity
 @Table(name = MemberPO.TABLE_NAME)
 @TableName(MemberPO.TABLE_NAME)
-@org.springframework.data.relational.core.mapping.Table(name = Member.TABLE_NAME, comment = "会员表")
+@org.springframework.data.relational.core.mapping.Table(name = MemberPO.TABLE_NAME)
 public class MemberPO extends BaseSuperEntity<MemberPO, Long> {
 
     public static final String TABLE_NAME = "tt_member";

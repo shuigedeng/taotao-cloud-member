@@ -22,7 +22,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.enums.ResultEnum;
 import com.taotao.boot.common.exception.BusinessException;
 import com.taotao.boot.common.utils.common.IdGeneratorUtils;
-import com.taotao.cloud.member.application.service.MemberRechargeService;
+import com.taotao.cloud.member.application.service.MemberRechargeCommandService;
 import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberRechargeMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberRechargePO;
 import com.taotao.boot.security.spring.model.SecurityUser;
@@ -42,7 +42,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class MemberRechargeServiceImpl extends ServiceImpl<MemberRechargeMapper, MemberRechargePO>
-	implements MemberRechargeService {
+	implements MemberRechargeCommandService {
 
 	/**
 	 * 会员预存款

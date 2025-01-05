@@ -43,7 +43,7 @@ import lombok.Setter;
 @Entity
 @Table(name = MemberWalletPO.TABLE_NAME)
 @TableName(MemberWalletPO.TABLE_NAME)
-@org.springframework.data.relational.core.mapping.Table(name = MemberWallet.TABLE_NAME, comment = "会员预存款表")
+@org.springframework.data.relational.core.mapping.Table(name = MemberWalletPO.TABLE_NAME)
 public class MemberWalletPO extends BaseSuperEntity<MemberWalletPO, Long> {
 
     public static final String TABLE_NAME = "tt_member_wallet";

@@ -18,27 +18,27 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class MemberAddCmdExe {
-
-	private final DeptDomainService deptDomainService;
-
-	private final DeptMapper deptMapper;
-
-	private final DeptConvert memberNoticeConvertor;
-
-	/**
-	 * 执行新增部门.
-	 * @param cmd 新增部门参数
-	 * @return 执行新增结果
-	 */
-//	@DS(TENANT)
-	public Boolean execute(DeptInsertCmd cmd) {
-//		DeptCO co = cmd.getDeptCO();
-//		long count = deptMapper.selectCount(Wrappers.lambdaQuery(DeptDO.class).eq(DeptDO::getName, co.getName()));
-//		if (count > 0) {
-//			throw new SystemException("部门已存在，请重新填写");
-//		}
-//		return deptGateway.insert(deptConvertor.toEntity(co));
-		return false;
-	}
+//
+//	private final DeptDomainService deptDomainService;
+//
+//	private final DeptMapper deptMapper;
+//
+//	private final DeptConvert memberNoticeConvertor;
+//
+//	/**
+//	 * 执行新增部门.
+//	 * @param cmd 新增部门参数
+//	 * @return 执行新增结果
+//	 */
+////	@DS(TENANT)
+//	public Boolean execute(DeptInsertCmd cmd) {
+////		DeptCO co = cmd.getDeptCO();
+////		long count = deptMapper.selectCount(Wrappers.lambdaQuery(DeptDO.class).eq(DeptDO::getName, co.getName()));
+////		if (count > 0) {
+////			throw new SystemException("部门已存在，请重新填写");
+////		}
+////		return deptGateway.insert(deptConvertor.toEntity(co));
+//		return false;
+//	}
 
 }

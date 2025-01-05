@@ -16,18 +16,18 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class MemberAddressAddCmdExe {
-
-	private final DeptDomainService deptDomainService;
-
-	/**
-	 * 执行删除部门.
-	 *
-	 * @param cmd 删除部门参数
-	 * @return 执行删除结果
-	 */
-//	@DS(TENANT)
-	public Boolean execute(DeptDeleteCmd cmd) {
-		return deptDomainService.deleteById(cmd.getId());
-	}
+//
+//	private final DeptDomainService deptDomainService;
+//
+//	/**
+//	 * 执行删除部门.
+//	 *
+//	 * @param cmd 删除部门参数
+//	 * @return 执行删除结果
+//	 */
+////	@DS(TENANT)
+//	public Boolean execute(DeptDeleteCmd cmd) {
+//		return deptDomainService.deleteById(cmd.getId());
+//	}
 
 }

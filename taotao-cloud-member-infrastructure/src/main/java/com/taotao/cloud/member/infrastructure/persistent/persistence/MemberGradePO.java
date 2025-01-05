@@ -42,7 +42,7 @@ import lombok.Setter;
 @Entity
 @Table(name = MemberGradePO.TABLE_NAME)
 @TableName(MemberGradePO.TABLE_NAME)
-@org.springframework.data.relational.core.mapping.Table(name = MemberGrade.TABLE_NAME, comment = "会员等级表")
+@org.springframework.data.relational.core.mapping.Table(name = MemberGradePO.TABLE_NAME)
 public class MemberGradePO extends BaseSuperEntity<MemberGradePO, Long> {
 
     public static final String TABLE_NAME = "tt_member_grade";

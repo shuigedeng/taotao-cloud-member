@@ -18,8 +18,6 @@ package com.taotao.cloud.member.application.task;
 
 import cn.hutool.core.convert.Convert;
 import com.taotao.boot.job.xxl.timetask.EveryDayExecute;
-import com.taotao.cloud.goods.application.service.business.IGoodsService;
-import com.taotao.cloud.member.api.feign.IFeignMemberEvaluationApi;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
