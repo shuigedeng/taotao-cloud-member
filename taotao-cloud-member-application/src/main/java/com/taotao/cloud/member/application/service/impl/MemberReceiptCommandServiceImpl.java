@@ -44,108 +44,108 @@ import org.springframework.stereotype.Service;
 @Service
 public class MemberReceiptCommandServiceImpl extends ServiceImpl<MemberReceiptMapper, MemberReceiptPO>
 	implements MemberReceiptCommandService {
-
-	@Autowired
-	private MemberCommandService memberCommandService;
-
-	@Override
-	public IPage<MemberReceiptPO> getPage(MemberReceiptPageQuery memberReceiptPageQuery) {
-		LambdaQueryWrapper<MemberReceiptPO> queryWrapper = new LambdaQueryWrapper<>();
-		// 会员名称查询
-		if (StringUtils.isNotEmpty(memberReceiptPageQuery.getMemberName())) {
-			queryWrapper.like(MemberReceiptPO::getMemberName, memberReceiptPageQuery.getMemberName());
-		}
-		// 会员id查询
-		if (StringUtils.isNotEmpty(memberReceiptPageQuery.getMemberId())) {
-			queryWrapper.eq(MemberReceiptPO::getMemberId, memberReceiptPageQuery.getMemberId());
-		}
-		// 会员id查询
-		if (StringUtils.isNotEmpty(memberReceiptPageQuery.getReceiptType())) {
-			queryWrapper.eq(MemberReceiptPO::getReceiptType, memberReceiptPageQuery.getReceiptType());
-		}
-		queryWrapper.eq(MemberReceiptPO::getDeleteFlag, true);
-		queryWrapper.orderByDesc(MemberReceiptPO::getCreateTime);
-		return this.page(memberReceiptPageQuery.buildMpPage(), queryWrapper);
-	}
-
-	@Override
-	public Boolean addMemberReceipt(MemberReceiptAddVO memberReceiptAddVO, Long memberId) {
-		// 校验发票抬头是否重复
-		List<MemberReceiptPO> receipts = this.baseMapper.selectList(new QueryWrapper<MemberReceiptPO>()
-			.eq("member_id", memberId)
-			.eq("receipt_title", memberReceiptAddVO.getReceiptTitle()));
-		if (receipts.size() > 0) {
-			throw new BusinessException(ResultEnum.USER_RECEIPT_REPEAT_ERROR);
-		}
-		// 参数封装
-		MemberReceiptPO memberReceiptPO = new MemberReceiptPO();
-		BeanUtils.copyProperties(memberReceiptAddVO, memberReceiptPO);
-		// 根据会员信息查询会员
-		MemberPO member = memberCommandService.getById(memberId);
-		if (member != null) {
-			memberReceiptPO.setMemberId(memberId);
-			memberReceiptPO.setMemberName(member.getUsername());
-			// 设置发票默认
-			List<MemberReceiptPO> list =
-				this.baseMapper.selectList(
-					new QueryWrapper<MemberReceiptPO>().eq("member_id", memberId));
-			// 如果当前会员只有一个发票则默认为默认发票，反之需要校验参数默认值，做一些处理
-			if (list.size() <= 0) {
-				memberReceiptPO.setDefaulted(1);
-			}
-			else {
-				if (memberReceiptAddVO.getIsDefault().equals(1)) {
-					// 如果参数传递新添加的发票信息为默认，则需要把其他发票置为非默认
-					this.update(new UpdateWrapper<MemberReceiptPO>().eq("member_id", memberId));
-					// 设置当前发票信息为默认
-					memberReceiptPO.setDefaulted(memberReceiptAddVO.getIsDefault());
-				}
-				else {
-					memberReceiptAddVO.setIsDefault(0);
-				}
-			}
-			return this.baseMapper.insert(memberReceiptPO) > 0;
-		}
-		throw new BusinessException(ResultEnum.USER_RECEIPT_NOT_EXIST);
-	}
-
-	@Override
-	public Boolean editMemberReceipt(MemberReceiptAddVO memberReceiptAddVO, Long memberId) {
-		// 根据会员id查询发票信息
-		MemberReceiptPO memberReceiptPODb = this.baseMapper.selectById(memberReceiptAddVO.getId());
-		if (memberReceiptPODb != null) {
-			// 检验是否有权限修改
-			if (!memberReceiptPODb.getMemberId().equals(memberId)) {
-				throw new BusinessException(ResultEnum.USER_AUTHORITY_ERROR);
-			}
-			// 校验发票抬头是否重复
-			List<MemberReceiptPO> receipts = this.baseMapper.selectList(
-				new QueryWrapper<MemberReceiptPO>()
-					.eq("member_id", memberId)
-					.eq("receipt_title", memberReceiptAddVO.getReceiptTitle())
-					.ne("id", memberReceiptAddVO.getId()));
-			if (receipts.size() > 0) {
-				throw new BusinessException(ResultEnum.USER_RECEIPT_REPEAT_ERROR);
-			}
-			BeanUtils.copyProperties(memberReceiptAddVO, memberReceiptPODb);
-			// 对发票默认进行处理  如果参数传递新添加的发票信息为默认，则需要把其他发票置为非默认
-			if (memberReceiptAddVO.getIsDefault().equals(1)) {
-				this.update(new UpdateWrapper<MemberReceiptPO>().eq("member_id", memberId));
-			}
-			return this.baseMapper.updateById(memberReceiptPODb) > 0;
-		}
-		throw new BusinessException(ResultEnum.USER_RECEIPT_NOT_EXIST);
-	}
-
-	@Override
-	public Boolean deleteMemberReceipt(Long id) {
-		// 根据会员id查询发票信息
-		MemberReceiptPO memberReceiptPODb = this.baseMapper.selectById(id);
-		if (memberReceiptPODb != null) {
-			// 如果会员发票信息不为空 则逻辑删除此发票信息
-			memberReceiptPODb.setDeleteFlag(false);
-			this.baseMapper.updateById(memberReceiptPODb);
-		}
-		return true;
-	}
+	//
+	//@Autowired
+	//private MemberCommandService memberCommandService;
+	//
+	//@Override
+	//public IPage<MemberReceiptPO> getPage(MemberReceiptPageQuery memberReceiptPageQuery) {
+	//	LambdaQueryWrapper<MemberReceiptPO> queryWrapper = new LambdaQueryWrapper<>();
+	//	// 会员名称查询
+	//	if (StringUtils.isNotEmpty(memberReceiptPageQuery.getMemberName())) {
+	//		queryWrapper.like(MemberReceiptPO::getMemberName, memberReceiptPageQuery.getMemberName());
+	//	}
+	//	// 会员id查询
+	//	if (StringUtils.isNotEmpty(memberReceiptPageQuery.getMemberId())) {
+	//		queryWrapper.eq(MemberReceiptPO::getMemberId, memberReceiptPageQuery.getMemberId());
+	//	}
+	//	// 会员id查询
+	//	if (StringUtils.isNotEmpty(memberReceiptPageQuery.getReceiptType())) {
+	//		queryWrapper.eq(MemberReceiptPO::getReceiptType, memberReceiptPageQuery.getReceiptType());
+	//	}
+	//	queryWrapper.eq(MemberReceiptPO::getDeleteFlag, true);
+	//	queryWrapper.orderByDesc(MemberReceiptPO::getCreateTime);
+	//	return this.page(memberReceiptPageQuery.buildMpPage(), queryWrapper);
+	//}
+	//
+	//@Override
+	//public Boolean addMemberReceipt(MemberReceiptAddVO memberReceiptAddVO, Long memberId) {
+	//	// 校验发票抬头是否重复
+	//	List<MemberReceiptPO> receipts = this.baseMapper.selectList(new QueryWrapper<MemberReceiptPO>()
+	//		.eq("member_id", memberId)
+	//		.eq("receipt_title", memberReceiptAddVO.getReceiptTitle()));
+	//	if (receipts.size() > 0) {
+	//		throw new BusinessException(ResultEnum.USER_RECEIPT_REPEAT_ERROR);
+	//	}
+	//	// 参数封装
+	//	MemberReceiptPO memberReceiptPO = new MemberReceiptPO();
+	//	BeanUtils.copyProperties(memberReceiptAddVO, memberReceiptPO);
+	//	// 根据会员信息查询会员
+	//	MemberPO member = memberCommandService.getById(memberId);
+	//	if (member != null) {
+	//		memberReceiptPO.setMemberId(memberId);
+	//		memberReceiptPO.setMemberName(member.getUsername());
+	//		// 设置发票默认
+	//		List<MemberReceiptPO> list =
+	//			this.baseMapper.selectList(
+	//				new QueryWrapper<MemberReceiptPO>().eq("member_id", memberId));
+	//		// 如果当前会员只有一个发票则默认为默认发票，反之需要校验参数默认值，做一些处理
+	//		if (list.size() <= 0) {
+	//			memberReceiptPO.setDefaulted(1);
+	//		}
+	//		else {
+	//			if (memberReceiptAddVO.getIsDefault().equals(1)) {
+	//				// 如果参数传递新添加的发票信息为默认，则需要把其他发票置为非默认
+	//				this.update(new UpdateWrapper<MemberReceiptPO>().eq("member_id", memberId));
+	//				// 设置当前发票信息为默认
+	//				memberReceiptPO.setDefaulted(memberReceiptAddVO.getIsDefault());
+	//			}
+	//			else {
+	//				memberReceiptAddVO.setIsDefault(0);
+	//			}
+	//		}
+	//		return this.baseMapper.insert(memberReceiptPO) > 0;
+	//	}
+	//	throw new BusinessException(ResultEnum.USER_RECEIPT_NOT_EXIST);
+	//}
+	//
+	//@Override
+	//public Boolean editMemberReceipt(MemberReceiptAddVO memberReceiptAddVO, Long memberId) {
+	//	// 根据会员id查询发票信息
+	//	MemberReceiptPO memberReceiptPODb = this.baseMapper.selectById(memberReceiptAddVO.getId());
+	//	if (memberReceiptPODb != null) {
+	//		// 检验是否有权限修改
+	//		if (!memberReceiptPODb.getMemberId().equals(memberId)) {
+	//			throw new BusinessException(ResultEnum.USER_AUTHORITY_ERROR);
+	//		}
+	//		// 校验发票抬头是否重复
+	//		List<MemberReceiptPO> receipts = this.baseMapper.selectList(
+	//			new QueryWrapper<MemberReceiptPO>()
+	//				.eq("member_id", memberId)
+	//				.eq("receipt_title", memberReceiptAddVO.getReceiptTitle())
+	//				.ne("id", memberReceiptAddVO.getId()));
+	//		if (receipts.size() > 0) {
+	//			throw new BusinessException(ResultEnum.USER_RECEIPT_REPEAT_ERROR);
+	//		}
+	//		BeanUtils.copyProperties(memberReceiptAddVO, memberReceiptPODb);
+	//		// 对发票默认进行处理  如果参数传递新添加的发票信息为默认，则需要把其他发票置为非默认
+	//		if (memberReceiptAddVO.getIsDefault().equals(1)) {
+	//			this.update(new UpdateWrapper<MemberReceiptPO>().eq("member_id", memberId));
+	//		}
+	//		return this.baseMapper.updateById(memberReceiptPODb) > 0;
+	//	}
+	//	throw new BusinessException(ResultEnum.USER_RECEIPT_NOT_EXIST);
+	//}
+	//
+	//@Override
+	//public Boolean deleteMemberReceipt(Long id) {
+	//	// 根据会员id查询发票信息
+	//	MemberReceiptPO memberReceiptPODb = this.baseMapper.selectById(id);
+	//	if (memberReceiptPODb != null) {
+	//		// 如果会员发票信息不为空 则逻辑删除此发票信息
+	//		memberReceiptPODb.setDeleteFlag(false);
+	//		this.baseMapper.updateById(memberReceiptPODb);
+	//	}
+	//	return true;
+	//}
 }

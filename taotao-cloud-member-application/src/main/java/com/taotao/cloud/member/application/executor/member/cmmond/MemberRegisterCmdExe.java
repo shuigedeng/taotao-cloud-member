@@ -2,18 +2,12 @@
 
 package com.taotao.cloud.member.application.executor.member.cmmond;
 
-import com.taotao.cloud.sys.application.command.dept.dto.DeptUpdateCmd;
-import com.taotao.cloud.sys.application.converter.DeptConvert;
-import com.taotao.cloud.sys.domain.dept.service.DeptDomainService;
-import com.taotao.cloud.sys.infrastructure.persistent.dept.mapper.DeptMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 
 /**
  * 修改部门执行器.
- *
- *
  */
 @Component
 @RequiredArgsConstructor

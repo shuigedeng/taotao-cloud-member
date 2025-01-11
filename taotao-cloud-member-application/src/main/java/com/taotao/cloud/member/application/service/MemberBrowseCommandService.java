@@ -18,6 +18,8 @@ package com.taotao.cloud.member.application.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.taotao.boot.common.model.PageQuery;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberBrowsePO;
+
 import java.util.List;
 
 /**
@@ -27,43 +29,43 @@ import java.util.List;
  * @version 2021.10
  * @since 2022-03-11 15:53:20
  */
-public interface MemberBrowseCommandService extends IService<MemberBrowse> {
+public interface MemberBrowseCommandService extends IService<MemberBrowsePO> {
 
-    /**
-     * 保存浏览历史
-     *
-     * @param footPrint 用户足迹
-     * @return 浏览历史
-     */
-    MemberBrowse saveFootprint(MemberBrowse footPrint);
-
-    /**
-     * 清空当前会员的足迹
-     *
-     * @return 处理结果
-     */
-    Boolean clean();
-
-    /**
-     * 根据ID进行清除会员的历史足迹
-     *
-     * @param ids 商品ID列表
-     * @return 处理结果
-     */
-    Boolean deleteByIds(List<Long> ids);
-
-    /**
-     * 获取会员浏览历史分页
-     *
-     * @param PageQuery 分页
-     * @return 会员浏览历史列表
-     */
-    List<EsGoodsIndexVO> footPrintPage(PageQuery PageQuery);
-
-    /**
-     * 获取当前会员的浏览记录数量
-     *
-     * @return 当前会员的浏览记录数量
-     */
-    Long getFootprintNum();
+    ///**
+    // * 保存浏览历史
+    // *
+    // * @param footPrint 用户足迹
+    // * @return 浏览历史
+    // */
+    //MemberBrowse saveFootprint(MemberBrowse footPrint);
+	//
+    ///**
+    // * 清空当前会员的足迹
+    // *
+    // * @return 处理结果
+    // */
+    //Boolean clean();
+	//
+    ///**
+    // * 根据ID进行清除会员的历史足迹
+    // *
+    // * @param ids 商品ID列表
+    // * @return 处理结果
+    // */
+    //Boolean deleteByIds(List<Long> ids);
+	//
+    ///**
+    // * 获取会员浏览历史分页
+    // *
+    // * @param PageQuery 分页
+    // * @return 会员浏览历史列表
+    // */
+    //List<EsGoodsIndexVO> footPrintPage(PageQuery PageQuery);
+	//
+    ///**
+    // * 获取当前会员的浏览记录数量
+    // *
+    // * @return 当前会员的浏览记录数量
+    // */
+    //Long getFootprintNum();
 }

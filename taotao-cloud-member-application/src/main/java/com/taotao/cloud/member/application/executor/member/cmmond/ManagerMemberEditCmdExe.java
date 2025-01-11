@@ -2,16 +2,12 @@
 
 package com.taotao.cloud.member.application.executor.member.cmmond;
 
-import com.taotao.cloud.sys.application.command.dept.dto.DeptDeleteCmd;
-import com.taotao.cloud.sys.domain.dept.service.DeptDomainService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 
 /**
  * 删除部门执行器.
- *
- *
  */
 @Component
 @RequiredArgsConstructor

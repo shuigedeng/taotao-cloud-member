@@ -1,6 +1,6 @@
 package com.taotao.cloud.member.domain.wallet.repository;
 
-import com.taotao.cloud.member.domain.wallet.entity.MemberWalletEntity;
+import com.taotao.cloud.member.domain.wallet.entity.MemberWallet;
 
 public interface MemberWalletDomainRepository {
 	/**
@@ -8,14 +8,14 @@ public interface MemberWalletDomainRepository {
 	 *
 	 * @param dept 部门对象
 	 */
-	void create(MemberWalletEntity dept);
+	void create(MemberWallet dept);
 
 	/**
 	 * 修改部门.
 	 *
 	 * @param dept 部门对象
 	 */
-	void modify(MemberWalletEntity dept);
+	void modify(MemberWallet dept);
 
 	/**
 	 * 根据ID删除部门.

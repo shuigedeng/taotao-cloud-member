@@ -140,30 +140,5 @@ public class MemberEvaluationPO extends BaseSuperEntity<MemberEvaluationPO, Long
     @Column(name = "description_score", columnDefinition = "int default 0 comment '描述评分'")
     private Integer descriptionScore;
 
-    public MemberEvaluationPO(
-            MemberEvaluationDTO memberEvaluationDTO, GoodsSkuSpecGalleryVO goodsSku, MemberPO member, OrderVO order) {
-        // 复制评价信息
-        BeanUtils.copyProperties(memberEvaluationDTO, this);
 
-        // 设置会员
-        this.memberId = member.getId();
-        // 会员名称
-        this.memberName = member.getNickname();
-        // 设置会员头像
-        this.memberProfile = member.getFace();
-        // 商品名称
-        this.goodsName = goodsSku.getGoodsName();
-        // 商品图片
-        this.goodsImage = goodsSku.getThumbnail();
-        // 设置店铺ID
-        this.storeId = order.orderBase().storeId();
-        // 设置店铺名称
-        this.storeName = order.orderBase().storeName();
-        // 设置订单编号
-        this.orderNo = order.orderBase().sn();
-        // 是否包含图片
-        this.haveImage = StringUtils.isNotEmpty(memberEvaluationDTO.getImages());
-        // 默认开启评价
-        this.status = SwitchEnum.OPEN.name();
-    }
 }

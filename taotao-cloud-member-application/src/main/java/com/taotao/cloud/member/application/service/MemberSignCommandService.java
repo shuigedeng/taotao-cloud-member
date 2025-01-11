@@ -17,7 +17,6 @@
 package com.taotao.cloud.member.application.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.taotao.cloud.member.application.command.member.dto.clientobject.MemberSignCO;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberSignPO;
 import java.util.List;
 
@@ -37,7 +36,7 @@ public interface MemberSignCommandService extends IService<MemberSignPO> {
      * @param time 时间 格式 YYYYmm
      * @return 会员签到列表
      */
-    List<MemberSignCO> getMonthSignDay(String time);
+    //List<MemberSignCO> getMonthSignDay(String time);
 
     /**
      * 会员签到赠送积分

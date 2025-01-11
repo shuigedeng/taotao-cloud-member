@@ -16,7 +16,7 @@
 
 package com.taotao.cloud.member.domain.notice.service;
 
-import com.taotao.cloud.member.domain.notice.entity.MemberNoticeEntity;
+import com.taotao.cloud.member.domain.notice.entity.MemberNotice;
 
 public interface MemberNoticeDomainService {
 
@@ -25,14 +25,14 @@ public interface MemberNoticeDomainService {
 	 *
 	 * @param dept 部门对象
 	 */
-	void create(MemberNoticeEntity dept);
+	void create(MemberNotice dept);
 
 	/**
 	 * 修改部门.
 	 *
 	 * @param dept 部门对象
 	 */
-	void modify(MemberNoticeEntity dept);
+	void modify(MemberNotice dept);
 
 	/**
 	 * 根据ID删除部门.

@@ -18,8 +18,6 @@ package com.taotao.cloud.member.facade.feign;
 
 import com.taotao.cloud.member.api.feign.MemberWalletApi;
 import com.taotao.cloud.member.api.feign.request.MemberWalletUpdateApiRequest;
-import com.taotao.cloud.member.application.service.MemberCommandService;
-import com.taotao.cloud.member.biz.service.business.IMemberService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
@@ -35,8 +33,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Tag(name = "内部调用端-会员钱包API", description = "内部调用端-会员钱包API")
 public class FeignMemberWalletController implements MemberWalletApi {
-
-	private final MemberCommandService memberCommandService;
 
 	@Override
 	public boolean increase(MemberWalletUpdateApiRequest memberWalletUpdateDTO) {

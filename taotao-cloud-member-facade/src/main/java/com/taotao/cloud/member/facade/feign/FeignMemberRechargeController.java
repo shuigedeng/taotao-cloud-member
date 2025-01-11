@@ -18,8 +18,6 @@ package com.taotao.cloud.member.facade.feign;
 
 import com.taotao.cloud.member.api.feign.MemberRechargeApi;
 import com.taotao.cloud.member.api.feign.response.MemberRechargeApiResponse;
-import com.taotao.cloud.member.sys.model.vo.MemberRechargeVO;
-import com.taotao.cloud.member.biz.service.business.IMemberService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import java.math.BigDecimal;
 import java.util.List;
@@ -39,7 +37,6 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "内部调用端-会员充值API", description = "内部调用端-会员充值API")
 public class FeignMemberRechargeController implements MemberRechargeApi {
 
-    private final IMemberService memberService;
 
     @Override
     public Boolean paySuccess(String sn, String receivableNo, String paymentMethod) {

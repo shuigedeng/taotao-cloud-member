@@ -46,39 +46,49 @@ public class MemberPointsHistoryCommandServiceImpl extends
 	private MemberCommandService memberCommandService;
 
 	@Override
-	public MemberPointsHistoryVO getMemberPointsHistoryVO(Long memberId) {
-		// 获取会员积分历史
-		Member member = memberCommandService.getById(memberId);
-
-		MemberPointsHistoryVO memberPointsHistoryVO = new MemberPointsHistoryVO();
-		if (member != null) {
-			memberPointsHistoryVO.setPoint(member.getPoint());
-			memberPointsHistoryVO.setTotalPoint(member.getTotalPoint());
-			return memberPointsHistoryVO;
-		}
-		return new MemberPointsHistoryVO();
-	}
-
-	@Override
 	public IPage<MemberPointsHistoryPO> pageQuery(PageQuery pageQuery) {
-		LambdaQueryWrapper<MemberPointsHistoryPO> queryWrapper = Wrappers.lambdaQuery();
-		queryWrapper.eq(MemberPointsHistoryPO::getMemberId, SecurityUtils.getUserId());
-		queryWrapper.orderByDesc(MemberPointsHistoryPO::getCreateTime);
-		return this.page(pageQuery.buildMpPage(), queryWrapper);
+		return null;
 	}
 
 	@Override
-	public IPage<MemberPointsHistoryPO> memberPointsHistoryPageQuery(
-		PageQuery pageQuery, Long memberId, String memberName) {
-		LambdaQueryWrapper<MemberPointsHistoryPO> lambdaQueryWrapper = new LambdaQueryWrapper<MemberPointsHistoryPO>()
-			.eq(memberId != null, MemberPointsHistoryPO::getMemberId, memberId)
-			.like(memberName != null, MemberPointsHistoryPO::getMemberName, memberName);
-
-		// 如果排序为空，则默认创建时间倒序
-		if (StringUtils.isNotBlank(pageQuery.getSort())) {
-			pageQuery.setSort("createTime");
-			pageQuery.setOrder("desc");
-		}
-		return this.page(pageQuery.buildMpPage(), lambdaQueryWrapper);
+	public IPage<MemberPointsHistoryPO> memberPointsHistoryPageQuery(PageQuery pageQuery, Long memberId, String memberName) {
+		return null;
 	}
+	//
+	//@Override
+	//public MemberPointsHistoryVO getMemberPointsHistoryVO(Long memberId) {
+	//	// 获取会员积分历史
+	//	Member member = memberCommandService.getById(memberId);
+	//
+	//	MemberPointsHistoryVO memberPointsHistoryVO = new MemberPointsHistoryVO();
+	//	if (member != null) {
+	//		memberPointsHistoryVO.setPoint(member.getPoint());
+	//		memberPointsHistoryVO.setTotalPoint(member.getTotalPoint());
+	//		return memberPointsHistoryVO;
+	//	}
+	//	return new MemberPointsHistoryVO();
+	//}
+	//
+	//@Override
+	//public IPage<MemberPointsHistoryPO> pageQuery(PageQuery pageQuery) {
+	//	LambdaQueryWrapper<MemberPointsHistoryPO> queryWrapper = Wrappers.lambdaQuery();
+	//	queryWrapper.eq(MemberPointsHistoryPO::getMemberId, SecurityUtils.getUserId());
+	//	queryWrapper.orderByDesc(MemberPointsHistoryPO::getCreateTime);
+	//	return this.page(pageQuery.buildMpPage(), queryWrapper);
+	//}
+	//
+	//@Override
+	//public IPage<MemberPointsHistoryPO> memberPointsHistoryPageQuery(
+	//	PageQuery pageQuery, Long memberId, String memberName) {
+	//	LambdaQueryWrapper<MemberPointsHistoryPO> lambdaQueryWrapper = new LambdaQueryWrapper<MemberPointsHistoryPO>()
+	//		.eq(memberId != null, MemberPointsHistoryPO::getMemberId, memberId)
+	//		.like(memberName != null, MemberPointsHistoryPO::getMemberName, memberName);
+	//
+	//	// 如果排序为空，则默认创建时间倒序
+	//	if (StringUtils.isNotBlank(pageQuery.getSort())) {
+	//		pageQuery.setSort("createTime");
+	//		pageQuery.setOrder("desc");
+	//	}
+	//	return this.page(pageQuery.buildMpPage(), lambdaQueryWrapper);
+	//}
 }

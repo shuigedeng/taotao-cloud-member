@@ -1,6 +1,6 @@
 package com.taotao.cloud.member.domain.notice.service.impl;
 
-import com.taotao.cloud.member.domain.notice.entity.MemberNoticeEntity;
+import com.taotao.cloud.member.domain.notice.entity.MemberNotice;
 import com.taotao.cloud.member.domain.notice.repository.MemberNoticeDomainRepository;
 import com.taotao.cloud.member.domain.notice.service.MemberNoticeDomainService;
 import lombok.AllArgsConstructor;
@@ -13,12 +13,12 @@ public class MemberNoticeDomainServiceImpl implements MemberNoticeDomainService 
 	private MemberNoticeDomainRepository memberNoticeDomainRepository;
 
 	@Override
-	public void create(MemberNoticeEntity dept) {
+	public void create(MemberNotice dept) {
 
 	}
 
 	@Override
-	public void modify(MemberNoticeEntity dept) {
+	public void modify(MemberNotice dept) {
 
 	}
 

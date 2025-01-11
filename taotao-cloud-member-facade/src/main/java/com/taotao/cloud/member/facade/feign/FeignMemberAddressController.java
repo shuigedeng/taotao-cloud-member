@@ -18,7 +18,6 @@ package com.taotao.cloud.member.facade.feign;
 
 import com.taotao.cloud.member.api.feign.MemberAddressApi;
 import com.taotao.cloud.member.api.feign.response.MemberAddressApiResponse;
-import com.taotao.cloud.member.biz.service.business.IMemberService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
@@ -35,7 +34,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "内部调用端-会员地址API", description = "内部调用端-会员地址API")
 public class FeignMemberAddressController implements MemberAddressApi {
 
-    private final IMemberService memberService;
+    //private final IMemberService memberService;
 
     @Override
     public MemberAddressApiResponse getById(String shippingAddressId) {

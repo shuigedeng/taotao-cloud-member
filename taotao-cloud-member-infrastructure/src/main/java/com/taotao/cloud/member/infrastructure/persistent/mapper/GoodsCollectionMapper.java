@@ -27,19 +27,19 @@ import org.apache.ibatis.annotations.Select;
 /** 会员收藏数据处理层 */
 public interface GoodsCollectionMapper extends BaseSuperMapper<MemberGoodsCollectionPO, Long> {
 
-    /**
-     * 商品收藏VO分页
-     *
-     * @param page 分页
-     * @param queryWrapper 查询条件
-     * @return 商品收藏VO分页
-     */
-    @Select(
-            """
-		select gc.id AS id,gs.id as sku_id,gs.goods_id as goods_id,gs.goods_name as goods_name,gs.thumbnail as image,gs.price,gs.market_enable AS market_enable
-		from tt_goods_collection gc INNER JOIN tt_goods_sku gs ON gc.sku_id=gs.id
-		${ew.customSqlSegment}
-		""")
-    IPage<GoodsCollectionVO> goodsCollectionVOList(
-            IPage<GoodsCollectionVO> page, @Param(Constants.WRAPPER) Wrapper<GoodsCollectionVO> queryWrapper);
+    ///**
+    // * 商品收藏VO分页
+    // *
+    // * @param page 分页
+    // * @param queryWrapper 查询条件
+    // * @return 商品收藏VO分页
+    // */
+    //@Select(
+    //        """
+	//	select gc.id AS id,gs.id as sku_id,gs.goods_id as goods_id,gs.goods_name as goods_name,gs.thumbnail as image,gs.price,gs.market_enable AS market_enable
+	//	from tt_goods_collection gc INNER JOIN tt_goods_sku gs ON gc.sku_id=gs.id
+	//	${ew.customSqlSegment}
+	//	""")
+    //IPage<GoodsCollectionVO> goodsCollectionVOList(
+    //        IPage<GoodsCollectionVO> page, @Param(Constants.WRAPPER) Wrapper<GoodsCollectionVO> queryWrapper);
 }

@@ -19,6 +19,8 @@ package com.taotao.cloud.member.application.service;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.taotao.boot.common.model.PageQuery;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberGoodsCollectionPO;
+
 import java.util.List;
 
 /**
@@ -26,7 +28,7 @@ import java.util.List;
  *
  * @since 2020/11/18 2:25 下午
  */
-public interface MemberGoodsCollectionCommandService extends IService<MemberGoodsCollection> {
+public interface MemberGoodsCollectionCommandService extends IService<MemberGoodsCollectionPO> {
 
     /**
      * 获取商品搜索分页
@@ -34,7 +36,7 @@ public interface MemberGoodsCollectionCommandService extends IService<MemberGood
      * @param PageQuery 查询参数
      * @return 商品搜索分页
      */
-    IPage<GoodsCollectionVO> goodsCollection(PageQuery pageQuery);
+    //IPage<GoodsCollectionVO> goodsCollection(PageQuery pageQuery);
 
     /**
      * 是否收藏商品

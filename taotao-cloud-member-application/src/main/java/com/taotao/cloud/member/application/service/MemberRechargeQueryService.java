@@ -47,7 +47,7 @@ public interface MemberRechargeQueryService extends IService<MemberRechargePO> {
 	 * @return {@link IPage }<{@link MemberRechargePO }>
 	 * @since 2022-05-31 13:21:47
 	 */
-	IPage<MemberRechargePO> rechargePage(RechargePageQuery rechargePageQuery);
+	//IPage<MemberRechargePO> rechargePage(RechargePageQuery rechargePageQuery);
 
 	/**
 	 * 支付成功

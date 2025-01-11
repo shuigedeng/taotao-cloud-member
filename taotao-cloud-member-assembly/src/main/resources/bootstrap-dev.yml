@@ -1,5 +1,5 @@
 server:
-  port: 33333
+  port: 33332
   http2:
     enabled: true
   undertow:
@@ -13,7 +13,7 @@ spring:
   pid:
     file: ${user.home}/logs/${spring.application.name}/${spring.application.name}.pid
   main:
-    allow-circular-references: true
+    allow-circular-references: false
     allow-bean-definition-overriding: true
     banner-mode: OFF
     register-shutdown-hook: true
@@ -84,7 +84,7 @@ spring:
       #        system:
       #          nacos:
       #            server-addr: 192.168.218.2:8848
-      #            dataId: ${spring.application.name}-membertem-rules.json
+      #            dataId: ${spring.application.name}-goodstem-rules.json
       #            namespace: 4c21599b-c836-4f1a-a72f-1260d5474f0f
       #            username: nacos
       #            password: nacos

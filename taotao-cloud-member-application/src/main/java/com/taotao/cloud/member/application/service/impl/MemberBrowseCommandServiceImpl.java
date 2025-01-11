@@ -41,74 +41,74 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional(rollbackFor = Exception.class)
 public class MemberBrowseCommandServiceImpl extends ServiceImpl<FootprintMapper, MemberBrowsePO>
 	implements MemberBrowseCommandService {
-
-	/**
-	 * es商品业务层
-	 */
-	@Autowired
-	private IFeignEsGoodsIndexApi esGoodsIndexApi;
-
-	@Override
-	public MemberBrowsePO saveFootprint(MemberBrowsePO memberBrowsePO) {
-		LambdaQueryWrapper<MemberBrowsePO> queryWrapper = Wrappers.lambdaQuery();
-		queryWrapper.eq(MemberBrowsePO::getMemberId, memberBrowsePO.getMemberId());
-		queryWrapper.eq(MemberBrowsePO::getGoodsId, memberBrowsePO.getGoodsId());
-		// 如果已存在某商品记录，则更新其修改时间
-		// 如果不存在则添加记录
-		List<MemberBrowsePO> oldPrints = list(queryWrapper);
-		if (oldPrints != null && !oldPrints.isEmpty()) {
-			MemberBrowsePO oldPrint = oldPrints.get(0);
-			oldPrint.setSkuId(memberBrowsePO.getSkuId());
-			this.updateById(oldPrint);
-			return oldPrint;
-		}
-		else {
-			memberBrowsePO.setCreateTime(LocalDateTime.now());
-			this.save(memberBrowsePO);
-			// 删除超过100条后的记录
-			this.baseMapper.deleteLastFootPrint(memberBrowsePO.getMemberId());
-			return memberBrowsePO;
-		}
-	}
-
-	@Override
-	public Boolean clean() {
-		LambdaQueryWrapper<MemberBrowsePO> lambdaQueryWrapper = Wrappers.lambdaQuery();
-		lambdaQueryWrapper.eq(MemberBrowsePO::getMemberId, SecurityUtils.getUserId());
-		return this.remove(lambdaQueryWrapper);
-	}
-
-	@Override
-	public Boolean deleteByIds(List<Long> ids) {
-		LambdaQueryWrapper<MemberBrowsePO> lambdaQueryWrapper = Wrappers.lambdaQuery();
-		lambdaQueryWrapper.eq(MemberBrowsePO::getMemberId, SecurityUtils.getUserId());
-		lambdaQueryWrapper.in(MemberBrowsePO::getGoodsId, ids);
-		this.remove(lambdaQueryWrapper);
-		return true;
-	}
-
-	@Override
-	public List<EsGoodsIndexVO> footPrintPage(PageQuery PageQuery) {
-		LambdaQueryWrapper<MemberBrowsePO> lambdaQueryWrapper = Wrappers.lambdaQuery();
-		lambdaQueryWrapper.eq(MemberBrowsePO::getMemberId, SecurityUtils.getUserId());
-		lambdaQueryWrapper.eq(MemberBrowsePO::getDelFlag, false);
-		lambdaQueryWrapper.orderByDesc(MemberBrowsePO::getUpdateTime);
-		List<String> skuIdList = this.baseMapper.footprintSkuIdList(PageQuery.buildMpPage(),
-			lambdaQueryWrapper);
-		if (!skuIdList.isEmpty()) {
-			List<EsGoodsIndexVO> list = esGoodsIndexApi.getEsGoodsBySkuIds(skuIdList);
-			// 去除为空的商品数据
-			list.removeIf(Objects::isNull);
-			return list;
-		}
-		return Collections.emptyList();
-	}
-
-	@Override
-	public Long getFootprintNum() {
-		LambdaQueryWrapper<MemberBrowsePO> lambdaQueryWrapper = Wrappers.lambdaQuery();
-		lambdaQueryWrapper.eq(MemberBrowsePO::getMemberId, SecurityUtils.getUserId());
-		lambdaQueryWrapper.eq(MemberBrowsePO::getDelFlag, false);
-		return this.count(lambdaQueryWrapper);
-	}
+	//
+	///**
+	// * es商品业务层
+	// */
+	//@Autowired
+	//private IFeignEsGoodsIndexApi esGoodsIndexApi;
+	//
+	//@Override
+	//public MemberBrowsePO saveFootprint(MemberBrowsePO memberBrowsePO) {
+	//	LambdaQueryWrapper<MemberBrowsePO> queryWrapper = Wrappers.lambdaQuery();
+	//	queryWrapper.eq(MemberBrowsePO::getMemberId, memberBrowsePO.getMemberId());
+	//	queryWrapper.eq(MemberBrowsePO::getGoodsId, memberBrowsePO.getGoodsId());
+	//	// 如果已存在某商品记录，则更新其修改时间
+	//	// 如果不存在则添加记录
+	//	List<MemberBrowsePO> oldPrints = list(queryWrapper);
+	//	if (oldPrints != null && !oldPrints.isEmpty()) {
+	//		MemberBrowsePO oldPrint = oldPrints.get(0);
+	//		oldPrint.setSkuId(memberBrowsePO.getSkuId());
+	//		this.updateById(oldPrint);
+	//		return oldPrint;
+	//	}
+	//	else {
+	//		memberBrowsePO.setCreateTime(LocalDateTime.now());
+	//		this.save(memberBrowsePO);
+	//		// 删除超过100条后的记录
+	//		this.baseMapper.deleteLastFootPrint(memberBrowsePO.getMemberId());
+	//		return memberBrowsePO;
+	//	}
+	//}
+	//
+	//@Override
+	//public Boolean clean() {
+	//	LambdaQueryWrapper<MemberBrowsePO> lambdaQueryWrapper = Wrappers.lambdaQuery();
+	//	lambdaQueryWrapper.eq(MemberBrowsePO::getMemberId, SecurityUtils.getUserId());
+	//	return this.remove(lambdaQueryWrapper);
+	//}
+	//
+	//@Override
+	//public Boolean deleteByIds(List<Long> ids) {
+	//	LambdaQueryWrapper<MemberBrowsePO> lambdaQueryWrapper = Wrappers.lambdaQuery();
+	//	lambdaQueryWrapper.eq(MemberBrowsePO::getMemberId, SecurityUtils.getUserId());
+	//	lambdaQueryWrapper.in(MemberBrowsePO::getGoodsId, ids);
+	//	this.remove(lambdaQueryWrapper);
+	//	return true;
+	//}
+	//
+	//@Override
+	//public List<EsGoodsIndexVO> footPrintPage(PageQuery PageQuery) {
+	//	LambdaQueryWrapper<MemberBrowsePO> lambdaQueryWrapper = Wrappers.lambdaQuery();
+	//	lambdaQueryWrapper.eq(MemberBrowsePO::getMemberId, SecurityUtils.getUserId());
+	//	lambdaQueryWrapper.eq(MemberBrowsePO::getDelFlag, false);
+	//	lambdaQueryWrapper.orderByDesc(MemberBrowsePO::getUpdateTime);
+	//	List<String> skuIdList = this.baseMapper.footprintSkuIdList(PageQuery.buildMpPage(),
+	//		lambdaQueryWrapper);
+	//	if (!skuIdList.isEmpty()) {
+	//		List<EsGoodsIndexVO> list = esGoodsIndexApi.getEsGoodsBySkuIds(skuIdList);
+	//		// 去除为空的商品数据
+	//		list.removeIf(Objects::isNull);
+	//		return list;
+	//	}
+	//	return Collections.emptyList();
+	//}
+	//
+	//@Override
+	//public Long getFootprintNum() {
+	//	LambdaQueryWrapper<MemberBrowsePO> lambdaQueryWrapper = Wrappers.lambdaQuery();
+	//	lambdaQueryWrapper.eq(MemberBrowsePO::getMemberId, SecurityUtils.getUserId());
+	//	lambdaQueryWrapper.eq(MemberBrowsePO::getDelFlag, false);
+	//	return this.count(lambdaQueryWrapper);
+	//}
 }

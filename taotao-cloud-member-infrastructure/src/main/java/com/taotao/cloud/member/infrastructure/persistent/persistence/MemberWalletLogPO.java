@@ -72,32 +72,5 @@ public class MemberWalletLogPO extends BaseSuperEntity<MemberWalletLogPO, Long> 
     @Column(name = "detail", columnDefinition = "varchar(32) not null comment '日志明细'")
     private String detail;
 
-    /**
-     * 构建新的预存款日志对象
-     *
-     * @param memberName 会员名称
-     * @param memberWalletUpdateDTO 变动模型
-     */
-    public MemberWalletLogPO(String memberName, MemberWalletUpdateDTO memberWalletUpdateDTO) {
-        this.setMemberId(memberWalletUpdateDTO.getMemberId());
-        this.setMemberName(memberName);
-        this.setMoney(memberWalletUpdateDTO.getMoney());
-        this.setDetail(memberWalletUpdateDTO.getDetail());
-        this.setServiceType(memberWalletUpdateDTO.getServiceType());
-    }
 
-    /**
-     * 构建新的预存款日志对象
-     *
-     * @param memberName 会员名称
-     * @param memberWalletUpdateDTO 变动模型
-     * @param isReduce 是否是消费
-     */
-    public MemberWalletLogPO(String memberName, MemberWalletUpdateDTO memberWalletUpdateDTO, boolean isReduce) {
-        this.setMemberId(memberWalletUpdateDTO.getMemberId());
-        this.setMemberName(memberName);
-        this.setMoney(isReduce ? memberWalletUpdateDTO.getMoney().negate() : memberWalletUpdateDTO.getMoney());
-        this.setDetail(memberWalletUpdateDTO.getDetail());
-        this.setServiceType(memberWalletUpdateDTO.getServiceType());
-    }
 }

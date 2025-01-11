@@ -23,7 +23,6 @@ import com.taotao.cloud.member.api.feign.request.MemberEvaluationApiRequest;
 import com.taotao.cloud.member.api.feign.response.MemberEvaluationListApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberEvaluationApiResponse;
 import com.taotao.cloud.member.api.feign.response.StoreRatingApiResponse;
-import com.taotao.cloud.member.biz.service.business.IMemberService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import java.util.List;
 import java.util.Map;
@@ -41,8 +40,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Tag(name = "内部调用端-管理员API", description = "内部调用端-管理员API")
 public class FeignMemberEvaluationController implements MemberEvaluationApi {
-
-    private final IMemberService memberService;
 
 	@Override
 	public Long count(Long goodsId, String name) {

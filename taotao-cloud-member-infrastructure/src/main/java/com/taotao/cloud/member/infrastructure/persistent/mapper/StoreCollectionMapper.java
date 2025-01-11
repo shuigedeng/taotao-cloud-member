@@ -29,20 +29,20 @@ import org.apache.ibatis.annotations.Select;
  */
 public interface StoreCollectionMapper extends BaseSuperMapper<MemberStoreCollectionPO, Long> {
 
-    /**
-     * 会员店铺收藏分页
-     *
-     * @param page         分页
-     * @param queryWrapper 查询条件
-     */
-    @Select("""
-            select s.id,
-            s.store_name,
-            s.store_logo,
-            s.self_operated
-            from tt_store s INNER JOIN tt_store_collection sc
-            ON s.id=sc.store_id ${ew.customSqlSegment}
-            """)
-    IPage<StoreCollectionVO> storeCollectionVOList(
-            IPage<StoreCollectionVO> page, @Param(Constants.WRAPPER) Wrapper<StoreCollectionVO> queryWrapper);
+    ///**
+    // * 会员店铺收藏分页
+    // *
+    // * @param page         分页
+    // * @param queryWrapper 查询条件
+    // */
+    //@Select("""
+    //        select s.id,
+    //        s.store_name,
+    //        s.store_logo,
+    //        s.self_operated
+    //        from tt_store s INNER JOIN tt_store_collection sc
+    //        ON s.id=sc.store_id ${ew.customSqlSegment}
+    //        """)
+    //IPage<StoreCollectionVO> storeCollectionVOList(
+    //        IPage<StoreCollectionVO> page, @Param(Constants.WRAPPER) Wrapper<StoreCollectionVO> queryWrapper);
 }

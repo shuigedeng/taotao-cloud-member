@@ -43,57 +43,81 @@ import org.springframework.transaction.annotation.Transactional;
 public class MemberGoodsCollectionCommandServiceImpl extends
 	ServiceImpl<GoodsCollectionMapper, MemberGoodsCollectionPO>
 	implements MemberGoodsCollectionCommandService {
-
-	@Override
-	public IPage<GoodsCollectionVO> goodsCollection(PageQuery pageQuery) {
-		QueryWrapper<GoodsCollectionVO> queryWrapper = Wrappers.query();
-		queryWrapper.eq("gc.member_id", SecurityUtils.getUserId());
-		queryWrapper.groupBy("gc.id");
-		queryWrapper.orderByDesc("gc.create_time");
-		return this.baseMapper.goodsCollectionVOList(pageQuery.buildMpPage(), queryWrapper);
-	}
-
 	@Override
 	public Boolean isCollection(Long skuId) {
-		LambdaQueryWrapper<MemberGoodsCollectionPO> queryWrapper = Wrappers.lambdaQuery();
-		queryWrapper.eq(MemberGoodsCollectionPO::getMemberId, SecurityUtils.getUserId());
-		queryWrapper.eq(skuId != null, MemberGoodsCollectionPO::getSkuId, skuId);
-		return Optional.ofNullable(this.getOne(queryWrapper)).isPresent();
+		return null;
 	}
 
 	@Override
 	public Boolean addGoodsCollection(Long skuId) {
-		MemberGoodsCollectionPO memberGoodsCollectionPO = this.getOne(
-			new LambdaUpdateWrapper<MemberGoodsCollectionPO>()
-				.eq(MemberGoodsCollectionPO::getMemberId, SecurityUtils.getUserId())
-				.eq(MemberGoodsCollectionPO::getSkuId, skuId));
-
-		if (memberGoodsCollectionPO == null) {
-			memberGoodsCollectionPO = new MemberGoodsCollectionPO(SecurityUtils.getUserId(), skuId);
-			return this.save(memberGoodsCollectionPO);
-		}
-		throw new BusinessException("用户不存在");
+		return null;
 	}
 
 	@Override
 	public Boolean deleteGoodsCollection(Long skuId) {
-		LambdaQueryWrapper<MemberGoodsCollectionPO> queryWrapper = Wrappers.lambdaQuery();
-		queryWrapper.eq(MemberGoodsCollectionPO::getMemberId, SecurityUtils.getUserId());
-		queryWrapper.eq(skuId != null, MemberGoodsCollectionPO::getSkuId, skuId);
-		return this.remove(queryWrapper);
+		return null;
 	}
 
 	@Override
 	public Boolean deleteGoodsCollection(List<Long> goodsIds) {
-		LambdaQueryWrapper<MemberGoodsCollectionPO> queryWrapper = Wrappers.lambdaQuery();
-		queryWrapper.in(MemberGoodsCollectionPO::getSkuId, goodsIds);
-		return this.remove(queryWrapper);
+		return null;
 	}
 
 	@Override
 	public Boolean deleteSkuCollection(List<Long> skuIds) {
-		LambdaQueryWrapper<MemberGoodsCollectionPO> queryWrapper = Wrappers.lambdaQuery();
-		queryWrapper.in(MemberGoodsCollectionPO::getSkuId, skuIds);
-		return this.remove(queryWrapper);
+		return null;
 	}
+	//
+	//@Override
+	//public IPage<GoodsCollectionVO> goodsCollection(PageQuery pageQuery) {
+	//	QueryWrapper<GoodsCollectionVO> queryWrapper = Wrappers.query();
+	//	queryWrapper.eq("gc.member_id", SecurityUtils.getUserId());
+	//	queryWrapper.groupBy("gc.id");
+	//	queryWrapper.orderByDesc("gc.create_time");
+	//	return this.baseMapper.goodsCollectionVOList(pageQuery.buildMpPage(), queryWrapper);
+	//}
+	//
+	//@Override
+	//public Boolean isCollection(Long skuId) {
+	//	LambdaQueryWrapper<MemberGoodsCollectionPO> queryWrapper = Wrappers.lambdaQuery();
+	//	queryWrapper.eq(MemberGoodsCollectionPO::getMemberId, SecurityUtils.getUserId());
+	//	queryWrapper.eq(skuId != null, MemberGoodsCollectionPO::getSkuId, skuId);
+	//	return Optional.ofNullable(this.getOne(queryWrapper)).isPresent();
+	//}
+	//
+	//@Override
+	//public Boolean addGoodsCollection(Long skuId) {
+	//	MemberGoodsCollectionPO memberGoodsCollectionPO = this.getOne(
+	//		new LambdaUpdateWrapper<MemberGoodsCollectionPO>()
+	//			.eq(MemberGoodsCollectionPO::getMemberId, SecurityUtils.getUserId())
+	//			.eq(MemberGoodsCollectionPO::getSkuId, skuId));
+	//
+	//	if (memberGoodsCollectionPO == null) {
+	//		memberGoodsCollectionPO = new MemberGoodsCollectionPO(SecurityUtils.getUserId(), skuId);
+	//		return this.save(memberGoodsCollectionPO);
+	//	}
+	//	throw new BusinessException("用户不存在");
+	//}
+	//
+	//@Override
+	//public Boolean deleteGoodsCollection(Long skuId) {
+	//	LambdaQueryWrapper<MemberGoodsCollectionPO> queryWrapper = Wrappers.lambdaQuery();
+	//	queryWrapper.eq(MemberGoodsCollectionPO::getMemberId, SecurityUtils.getUserId());
+	//	queryWrapper.eq(skuId != null, MemberGoodsCollectionPO::getSkuId, skuId);
+	//	return this.remove(queryWrapper);
+	//}
+	//
+	//@Override
+	//public Boolean deleteGoodsCollection(List<Long> goodsIds) {
+	//	LambdaQueryWrapper<MemberGoodsCollectionPO> queryWrapper = Wrappers.lambdaQuery();
+	//	queryWrapper.in(MemberGoodsCollectionPO::getSkuId, goodsIds);
+	//	return this.remove(queryWrapper);
+	//}
+	//
+	//@Override
+	//public Boolean deleteSkuCollection(List<Long> skuIds) {
+	//	LambdaQueryWrapper<MemberGoodsCollectionPO> queryWrapper = Wrappers.lambdaQuery();
+	//	queryWrapper.in(MemberGoodsCollectionPO::getSkuId, skuIds);
+	//	return this.remove(queryWrapper);
+	//}
 }

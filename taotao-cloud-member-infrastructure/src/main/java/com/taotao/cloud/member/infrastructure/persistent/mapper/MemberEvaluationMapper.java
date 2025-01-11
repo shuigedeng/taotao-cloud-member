@@ -59,21 +59,21 @@ public interface MemberEvaluationMapper extends BaseSuperMapper<MemberEvaluation
 		""")
     List<Map<String, Object>> getEvaluationNumber(Long goodsId);
 
-    /**
-     * 获取店铺评分
-     *
-     * @param queryWrapper 查询条件
-     * @return 店铺评分
-     */
-    @Select(
-            """
-		SELECT round( AVG( delivery_score ), 2 ) AS delivery_score
-				,round( AVG( description_score ), 2 ) AS description_score
-				,round( AVG( service_score ), 2 ) AS service_score
-		FROM tt_member_evaluation
-		${ew.customSqlSegment}
-		""")
-    StoreRatingVO getStoreRatingVO(@Param(Constants.WRAPPER) Wrapper<MemberEvaluationPO> queryWrapper);
+    ///**
+    // * 获取店铺评分
+    // *
+    // * @param queryWrapper 查询条件
+    // * @return 店铺评分
+    // */
+    //@Select(
+    //        """
+	//	SELECT round( AVG( delivery_score ), 2 ) AS delivery_score
+	//			,round( AVG( description_score ), 2 ) AS description_score
+	//			,round( AVG( service_score ), 2 ) AS service_score
+	//	FROM tt_member_evaluation
+	//	${ew.customSqlSegment}
+	//	""")
+    //StoreRatingVO getStoreRatingVO(@Param(Constants.WRAPPER) Wrapper<MemberEvaluationPO> queryWrapper);
 
     /**
      * 商品会员评价数量

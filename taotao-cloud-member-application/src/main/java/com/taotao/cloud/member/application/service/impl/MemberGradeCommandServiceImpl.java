@@ -32,9 +32,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class MemberGradeCommandServiceImpl extends ServiceImpl<MemberGradeMapper, MemberGradePO>
         implements MemberGradeCommandService {
-
-    @Override
-    public IPage<MemberGradePO> queryPage(PageQuery pageQuery) {
-        return this.page(pageQuery.buildMpPage());
-    }
+	@Override
+	public IPage<MemberGradePO> queryPage(PageQuery pageQuery) {
+		return null;
+	}
+	//
+    //@Override
+    //public IPage<MemberGradePO> queryPage(PageQuery pageQuery) {
+    //    return this.page(pageQuery.buildMpPage());
+    //}
 }

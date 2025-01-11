@@ -39,10 +39,10 @@ public interface MemberMapper extends BaseSuperMapper<MemberPO, Long> {
 		""")
     List<String> getAllMemberMobile();
 
-    @Select("""
-		select *
-		from tt_member
-		${ew.customSqlSegment}
-		""")
-    IPage<MemberVO> pageByMemberVO(IPage<MemberVO> page, @Param(Constants.WRAPPER) Wrapper<MemberPO> queryWrapper);
+    //@Select("""
+	//	select *
+	//	from tt_member
+	//	${ew.customSqlSegment}
+	//	""")
+    //IPage<MemberVO> pageByMemberVO(IPage<MemberVO> page, @Param(Constants.WRAPPER) Wrapper<MemberPO> queryWrapper);
 }

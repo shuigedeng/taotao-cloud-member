@@ -16,7 +16,7 @@
 
 package com.taotao.cloud.member.domain.member.service;
 
-import com.taotao.cloud.member.domain.member.entity.MemberEntity;
+import com.taotao.cloud.member.domain.member.entity.Member;
 
 public interface MemberDomainService {
 
@@ -25,14 +25,14 @@ public interface MemberDomainService {
 	 *
 	 * @param dept 部门对象
 	 */
-	void create(MemberEntity dept);
+	void create(Member dept);
 
 	/**
 	 * 修改部门.
 	 *
 	 * @param dept 部门对象
 	 */
-	void modify(MemberEntity dept);
+	void modify(Member dept);
 
 	/**
 	 * 根据ID删除部门.

@@ -30,14 +30,14 @@ import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPoint
  */
 public interface MemberPointsHistoryCommandService extends IService<MemberPointsHistoryPO> {
 
-    /**
-     * 获取会员积分VO
-     *
-     * @param memberId 会员ID
-     * @return {@link MemberPointsHistoryVO }
-     * @since 2022-05-31 14:16:21
-     */
-    MemberPointsHistoryVO getMemberPointsHistoryVO(Long memberId);
+    ///**
+    // * 获取会员积分VO
+    // *
+    // * @param memberId 会员ID
+    // * @return {@link MemberPointsHistoryVO }
+    // * @since 2022-05-31 14:16:21
+    // */
+    //MemberPointsHistoryVO getMemberPointsHistoryVO(Long memberId);
 
     /**
      * 通过页面
