@@ -52,7 +52,7 @@ public class MemberNoticePO extends BaseSuperEntity<MemberNoticePO, Long> {
     private Long memberId;
 
     /** 是否已读 */
-    @Column(name = "read", columnDefinition = "boolean not null default false comment '是否已读'")
+    @Column(name = "`read`", columnDefinition = "boolean not null default false comment '是否已读'")
     private Boolean read;
 
     /** 阅读时间 */
