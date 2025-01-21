@@ -28,7 +28,7 @@ import java.io.Serializable;
 
 /** 会员发票添加VO */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员发票")

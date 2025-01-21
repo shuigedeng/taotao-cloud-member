@@ -29,7 +29,7 @@ import java.io.Serializable;
 
 /** 会员评价DTO */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "租户id")

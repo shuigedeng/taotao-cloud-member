@@ -36,7 +36,7 @@ import java.io.Serial;
  */
 @Getter
 @Setter
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员发票查询DTO")

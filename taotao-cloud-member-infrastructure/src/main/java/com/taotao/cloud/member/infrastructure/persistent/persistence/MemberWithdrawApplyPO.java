@@ -38,7 +38,7 @@ import lombok.Setter;
  */
 @Setter
 @Getter
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity

@@ -31,7 +31,7 @@ import java.util.Date;
 
 /** 会员vo */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "MemberVO")

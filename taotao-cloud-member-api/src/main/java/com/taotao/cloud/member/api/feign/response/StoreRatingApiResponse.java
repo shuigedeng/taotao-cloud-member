@@ -23,10 +23,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /** 评分VO */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "评分VO")
@@ -43,4 +44,28 @@ public class StoreRatingApiResponse implements Serializable {
 
     @Schema(description = "描述评分")
     private String descriptionScore;
+
+	public String getDeliveryScore() {
+		return deliveryScore;
+	}
+
+	public void setDeliveryScore(String deliveryScore) {
+		this.deliveryScore = deliveryScore;
+	}
+
+	public String getServiceScore() {
+		return serviceScore;
+	}
+
+	public void setServiceScore(String serviceScore) {
+		this.serviceScore = serviceScore;
+	}
+
+	public String getDescriptionScore() {
+		return descriptionScore;
+	}
+
+	public void setDescriptionScore(String descriptionScore) {
+		this.descriptionScore = descriptionScore;
+	}
 }

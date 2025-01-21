@@ -25,11 +25,12 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
 /** 会员评价VO */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员评价VO")
@@ -72,4 +73,92 @@ public class MemberEvaluationListApiResponse implements Serializable {
 
     @Schema(description = "描述评分")
     private Integer descriptionScore;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getMemberName() {
+		return memberName;
+	}
+
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
+	}
+
+	public String getGoodsName() {
+		return goodsName;
+	}
+
+	public void setGoodsName(String goodsName) {
+		this.goodsName = goodsName;
+	}
+
+	public String getGrade() {
+		return grade;
+	}
+
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public Boolean getReplyStatus() {
+		return replyStatus;
+	}
+
+	public void setReplyStatus(Boolean replyStatus) {
+		this.replyStatus = replyStatus;
+	}
+
+	public LocalDateTime getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(LocalDateTime createTime) {
+		this.createTime = createTime;
+	}
+
+	public Integer getDeliveryScore() {
+		return deliveryScore;
+	}
+
+	public void setDeliveryScore(Integer deliveryScore) {
+		this.deliveryScore = deliveryScore;
+	}
+
+	public Integer getServiceScore() {
+		return serviceScore;
+	}
+
+	public void setServiceScore(Integer serviceScore) {
+		this.serviceScore = serviceScore;
+	}
+
+	public Integer getDescriptionScore() {
+		return descriptionScore;
+	}
+
+	public void setDescriptionScore(Integer descriptionScore) {
+		this.descriptionScore = descriptionScore;
+	}
 }

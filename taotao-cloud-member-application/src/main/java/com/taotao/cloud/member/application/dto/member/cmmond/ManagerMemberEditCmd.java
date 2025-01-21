@@ -40,7 +40,7 @@ import java.util.Date;
  * @since 2022-03-14 11:23:50
  */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员修改")

@@ -28,7 +28,7 @@ import java.math.BigDecimal;
 
 /** 会员商品收藏VO */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员商品收藏VO")

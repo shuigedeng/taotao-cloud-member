@@ -35,7 +35,7 @@ import java.io.Serializable;
  * @since 2020/9/30 08:49
  */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(name = "MemberQuery", description = "会员query")

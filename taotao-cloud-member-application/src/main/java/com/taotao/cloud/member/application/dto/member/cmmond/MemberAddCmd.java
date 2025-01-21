@@ -36,7 +36,7 @@ import java.io.Serializable;
  * @since 2022-03-14 11:24:21
  */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "添加会员DTO")

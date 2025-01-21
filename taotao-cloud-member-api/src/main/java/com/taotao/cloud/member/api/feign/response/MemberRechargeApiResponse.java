@@ -25,10 +25,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /** 会员搜索VO */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员搜索VO")
@@ -55,4 +56,76 @@ public class MemberRechargeApiResponse implements Serializable {
     private String receivableNo;
     /** 支付时间 */
     private LocalDateTime payTime;
+
+	public String getRechargeSn() {
+		return rechargeSn;
+	}
+
+	public void setRechargeSn(String rechargeSn) {
+		this.rechargeSn = rechargeSn;
+	}
+
+	public Long getMemberId() {
+		return memberId;
+	}
+
+	public void setMemberId(Long memberId) {
+		this.memberId = memberId;
+	}
+
+	public String getMemberName() {
+		return memberName;
+	}
+
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
+	}
+
+	public BigDecimal getRechargeMoney() {
+		return rechargeMoney;
+	}
+
+	public void setRechargeMoney(BigDecimal rechargeMoney) {
+		this.rechargeMoney = rechargeMoney;
+	}
+
+	public String getRechargeWay() {
+		return rechargeWay;
+	}
+
+	public void setRechargeWay(String rechargeWay) {
+		this.rechargeWay = rechargeWay;
+	}
+
+	public String getPayStatus() {
+		return payStatus;
+	}
+
+	public void setPayStatus(String payStatus) {
+		this.payStatus = payStatus;
+	}
+
+	public String getPaymentPluginId() {
+		return paymentPluginId;
+	}
+
+	public void setPaymentPluginId(String paymentPluginId) {
+		this.paymentPluginId = paymentPluginId;
+	}
+
+	public String getReceivableNo() {
+		return receivableNo;
+	}
+
+	public void setReceivableNo(String receivableNo) {
+		this.receivableNo = receivableNo;
+	}
+
+	public LocalDateTime getPayTime() {
+		return payTime;
+	}
+
+	public void setPayTime(LocalDateTime payTime) {
+		this.payTime = payTime;
+	}
 }

@@ -35,7 +35,7 @@ import java.io.Serializable;
  * @since 2022-03-14 11:26:08
  */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "租户id")

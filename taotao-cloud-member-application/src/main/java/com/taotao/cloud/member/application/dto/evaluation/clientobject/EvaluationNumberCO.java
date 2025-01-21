@@ -27,7 +27,7 @@ import java.io.Serializable;
 
 /** 评价数量VO */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "评价数量VO")

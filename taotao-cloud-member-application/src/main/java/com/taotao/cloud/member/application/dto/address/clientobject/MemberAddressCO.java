@@ -34,7 +34,7 @@ import java.time.LocalDateTime;
  * @since 2022-03-11 14:55:28
  */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员收货地址DTO")

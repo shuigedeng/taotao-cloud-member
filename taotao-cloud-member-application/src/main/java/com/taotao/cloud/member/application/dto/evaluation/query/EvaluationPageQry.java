@@ -35,7 +35,7 @@ import java.io.Serial;
  */
 @Setter
 @Getter
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "评价查询条件")

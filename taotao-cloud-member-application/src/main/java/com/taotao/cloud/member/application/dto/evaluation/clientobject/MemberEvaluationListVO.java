@@ -30,7 +30,7 @@ import java.time.LocalDateTime;
 
 /** 会员评价VO */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员评价VO")

@@ -22,11 +22,13 @@ import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /** 会员余额变动模型 */
 @Data
-@NoArgsConstructor
+@Accessors(fluent = true)
 @AllArgsConstructor
+@NoArgsConstructor
 public class MemberWalletUpdateApiRequest {
 
     @Schema(description = "变动金额")
@@ -43,4 +45,36 @@ public class MemberWalletUpdateApiRequest {
      */
     @Schema(description = "变动业务原因")
     private String serviceType;
+
+	public BigDecimal getMoney() {
+		return money;
+	}
+
+	public void setMoney(BigDecimal money) {
+		this.money = money;
+	}
+
+	public Long getMemberId() {
+		return memberId;
+	}
+
+	public void setMemberId(Long memberId) {
+		this.memberId = memberId;
+	}
+
+	public String getDetail() {
+		return detail;
+	}
+
+	public void setDetail(String detail) {
+		this.detail = detail;
+	}
+
+	public String getServiceType() {
+		return serviceType;
+	}
+
+	public void setServiceType(String serviceType) {
+		this.serviceType = serviceType;
+	}
 }

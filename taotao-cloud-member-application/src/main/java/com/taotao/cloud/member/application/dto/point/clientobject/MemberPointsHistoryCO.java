@@ -27,7 +27,7 @@ import java.io.Serializable;
 
 /** 会员积分VO */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员积分VO")

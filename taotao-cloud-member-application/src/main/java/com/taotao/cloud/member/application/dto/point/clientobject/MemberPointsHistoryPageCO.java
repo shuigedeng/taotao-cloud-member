@@ -34,7 +34,7 @@ import java.io.Serializable;
  * @since 2022-03-11 15:26:14
  */
 @Data
-@Builder
+@Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员积分历史VO")
