@@ -25,6 +25,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
+import lombok.experimental.Accessors;
 import org.hibernate.validator.constraints.Length;
 
 /** 会员评价DTO */
