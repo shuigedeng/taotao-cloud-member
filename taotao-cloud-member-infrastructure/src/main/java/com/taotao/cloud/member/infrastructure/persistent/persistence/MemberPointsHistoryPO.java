@@ -47,7 +47,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberPointsHistoryPO.TABLE_NAME)
 public class MemberPointsHistoryPO extends BaseSuperEntity<MemberPointsHistoryPO, Long> {
 
-    public static final String TABLE_NAME = "tt_member_points_history";
+    public static final String TABLE_NAME = "ttc_member_points_history";
 
     /** 会员id */
     @Column(name = "member_id", columnDefinition = "bigint not null comment '会员ID'")

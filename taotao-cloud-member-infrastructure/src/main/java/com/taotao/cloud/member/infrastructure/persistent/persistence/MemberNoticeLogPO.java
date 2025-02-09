@@ -47,7 +47,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberNoticeLogPO.TABLE_NAME)
 public class MemberNoticeLogPO extends BaseSuperEntity<MemberNoticeLogPO, Long> {
 
-    public static final String TABLE_NAME = "tt_member_notice_log";
+    public static final String TABLE_NAME = "ttc_member_notice_log";
 
     /** 标题 */
     @Column(name = "title", columnDefinition = "varchar(255) not null comment '标题'")

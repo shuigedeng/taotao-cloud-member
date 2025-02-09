@@ -48,7 +48,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberWalletLogPO.TABLE_NAME)
 public class MemberWalletLogPO extends BaseSuperEntity<MemberWalletLogPO, Long> {
 
-    public static final String TABLE_NAME = "tt_wallet_log";
+    public static final String TABLE_NAME = "ttc_wallet_log";
     /** 会员id */
     @Column(name = "member_id", columnDefinition = "bigint not null comment '会员id'")
     private Long memberId;

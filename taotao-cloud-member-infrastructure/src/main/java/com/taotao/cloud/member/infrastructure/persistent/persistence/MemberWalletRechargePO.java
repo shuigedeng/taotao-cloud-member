@@ -49,7 +49,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberWalletRechargePO.TABLE_NAME)
 public class MemberWalletRechargePO extends BaseSuperEntity<MemberWalletRechargePO, Long> {
 
-    public static final String TABLE_NAME = "tt_member_wallet_recharge";
+    public static final String TABLE_NAME = "ttc_member_wallet_recharge";
 
     /** 充值订单编号 */
     @Column(name = "recharge_sn", columnDefinition = "varchar(32) not null comment '充值订单编号'")

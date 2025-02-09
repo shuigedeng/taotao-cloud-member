@@ -49,7 +49,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberRechargePO.TABLE_NAME)
 public class MemberRechargePO extends BaseSuperEntity<MemberRechargePO, Long> {
 
-    public static final String TABLE_NAME = "tt_recharge";
+    public static final String TABLE_NAME = "ttc_recharge";
 
     @Serial
     private static final long serialVersionUID = -1529240544327161096L;

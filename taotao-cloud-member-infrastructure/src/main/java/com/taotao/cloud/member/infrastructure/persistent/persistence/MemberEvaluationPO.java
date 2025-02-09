@@ -49,7 +49,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberEvaluationPO.TABLE_NAME)
 public class MemberEvaluationPO extends BaseSuperEntity<MemberEvaluationPO, Long> {
 
-    public static final String TABLE_NAME = "tt_member_evaluation";
+    public static final String TABLE_NAME = "ttc_member_evaluation";
 
     /** 会员ID */
     @Column(name = "member_id", columnDefinition = "bigint not null comment '会员ID'")

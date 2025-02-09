@@ -47,7 +47,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberReceiptPO.TABLE_NAME)
 public class MemberReceiptPO extends BaseSuperEntity<MemberReceiptPO, Long> {
 
-    public static final String TABLE_NAME = "tt_member_receipt";
+    public static final String TABLE_NAME = "ttc_member_receipt";
 
     /** 发票抬头 */
     @Column(name = "receipt_title", columnDefinition = "varchar(32) not null comment '发票抬头'")

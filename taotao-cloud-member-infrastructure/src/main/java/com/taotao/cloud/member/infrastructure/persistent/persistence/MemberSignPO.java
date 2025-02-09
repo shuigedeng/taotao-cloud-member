@@ -46,7 +46,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberSignPO.TABLE_NAME)
 public class MemberSignPO extends BaseSuperEntity<MemberSignPO, Long> {
 
-    public static final String TABLE_NAME = "tt_member_sign";
+    public static final String TABLE_NAME = "ttc_member_sign";
 
     /** 会员用户名 */
     @Column(name = "member_ame", columnDefinition = "varchar(32) not null comment '会员用户名'")

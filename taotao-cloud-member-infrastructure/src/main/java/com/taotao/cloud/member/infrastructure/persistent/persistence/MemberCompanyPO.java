@@ -47,7 +47,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberCompanyPO.TABLE_NAME)
 public class MemberCompanyPO extends BaseSuperEntity<MemberCompanyPO, Long> {
 
-    public static final String TABLE_NAME = "tt_member_company";
+    public static final String TABLE_NAME = "ttc_member_company";
 
     /** 租户id */
     @Column(name = "tenant_id", unique = true, columnDefinition = "bigint NOT NULL COMMENT '租户id'")

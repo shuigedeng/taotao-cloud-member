@@ -45,7 +45,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberConnectPO.TABLE_NAME)
 public class MemberConnectPO extends BaseSuperEntity<MemberConnectPO, Long> {
 
-    public static final String TABLE_NAME = "tt_member_connect";
+    public static final String TABLE_NAME = "ttc_member_connect";
 
     @Column(name = "user_id", columnDefinition = "varchar(32) not null comment '用户id'")
     private Long userId;

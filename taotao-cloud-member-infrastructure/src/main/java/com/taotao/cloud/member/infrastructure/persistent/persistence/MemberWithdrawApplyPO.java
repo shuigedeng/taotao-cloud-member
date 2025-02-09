@@ -48,7 +48,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberWithdrawApplyPO.TABLE_NAME)
 public class MemberWithdrawApplyPO extends BaseSuperEntity<MemberWithdrawApplyPO, Long> {
 
-    public static final String TABLE_NAME = "tt_member_withdraw_apply";
+    public static final String TABLE_NAME = "ttc_member_withdraw_apply";
 
     /** 申请提现金额 */
     @Column(name = "apply_money", columnDefinition = "decimal(10,2) not null default 0 comment '申请提现金额'")

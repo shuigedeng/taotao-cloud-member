@@ -46,7 +46,7 @@ import lombok.experimental.Accessors;
 @org.springframework.data.relational.core.mapping.Table(name = MemberGradePO.TABLE_NAME)
 public class MemberGradePO extends BaseSuperEntity<MemberGradePO, Long> {
 
-    public static final String TABLE_NAME = "tt_member_grade";
+    public static final String TABLE_NAME = "ttc_member_grade";
 
     /** 等级名称 */
     @Column(name = "grade_name", columnDefinition = "varchar(255) not null comment '等级名称'")
