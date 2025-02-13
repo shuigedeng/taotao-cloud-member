@@ -21,6 +21,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 
 /**
  * 管理端,会员商品评价API
@@ -32,7 +33,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/member/manager/membe/evaluation")
 @Tag(name = "管理端-会员商品评价管理API", description = "管理端-会员商品评价管理API")
-public class ManagerMemberEvaluationController {
+public class ManagerMemberEvaluationController extends BusinessController {
 
     //private final IMemberEvaluationService memberEvaluationService;
 	//

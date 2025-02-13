@@ -34,6 +34,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 
 /**
  * 会员管理API
@@ -46,7 +47,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/member")
 @Tag(name = "会员管理API", description = "会员管理API")
-public class BuyerMemberController {
+public class BuyerMemberController extends BusinessController {
 
     //@Resource(name = "monitorThreadPoolExecutor")
     //private ThreadPoolExecutor asyncThreadPoolExecutor;

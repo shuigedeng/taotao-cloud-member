@@ -22,6 +22,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 
 /**
  * 店铺端,管理员API
@@ -32,7 +33,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @Tag(name = "内部调用端-会员地址API", description = "内部调用端-会员地址API")
-public class FeignMemberAddressController implements MemberAddressApi {
+public class FeignMemberAddressController extends FeignController implements MemberAddressApi {
 
     //private final IMemberService memberService;
 

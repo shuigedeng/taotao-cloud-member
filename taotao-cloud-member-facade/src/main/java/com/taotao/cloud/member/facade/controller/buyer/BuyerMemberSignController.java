@@ -21,6 +21,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 
 /**
  * 买家端-会员签到API
@@ -34,7 +35,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Tag(name = "买家端-会员签到API", description = "买家端-会员签到API")
 @RequestMapping("/member/buyer/member/sign")
-public class BuyerMemberSignController {
+public class BuyerMemberSignController extends BusinessController {
 
 	//private final IMemberSignService memberSignService;
 	//

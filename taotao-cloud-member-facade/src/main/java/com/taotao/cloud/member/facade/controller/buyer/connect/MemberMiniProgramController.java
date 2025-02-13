@@ -34,6 +34,7 @@ package com.taotao.cloud.member.facade.controller.buyer.connect; // package
 // import org.springframework.web.bind.annotation.RequestHeader;
 // import org.springframework.web.bind.annotation.RequestMapping;
 // import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 //
 // /**
 //  * 买家端,小程序登录API
@@ -43,7 +44,7 @@ package com.taotao.cloud.member.facade.controller.buyer.connect; // package
 // @RestController
 // @Tag(name = "买家端-会员小程序登录API", description = "买家端-会员小程序登录API")
 // @RequestMapping("/member/buyer/passport/connect/miniProgram")
-// public class MemberMiniProgramController {
+// public class MemberMiniProgramController extends BusinessController {
 //
 // 	public final ConnectService connectService;
 // 	public final WechatMpCodeUtil wechatMpCodeUtil;

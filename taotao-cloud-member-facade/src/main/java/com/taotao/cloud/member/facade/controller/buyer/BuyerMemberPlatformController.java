@@ -21,6 +21,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 
 /**
  * 第三方用户信息管理API
@@ -33,7 +34,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/member/platform")
 @Tag(name = "第三方用户信息管理API", description = "第三方用户信息管理API")
-public class BuyerMemberPlatformController {
+public class BuyerMemberPlatformController extends BusinessController {
 
 	//private final IMemberPlatformService memberPlatformService;
 }

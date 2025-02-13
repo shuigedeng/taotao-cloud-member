@@ -16,15 +16,17 @@
 
 package com.taotao.cloud.member.facade.feign;
 
+import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberRechargeApi;
 import com.taotao.cloud.member.api.feign.response.MemberRechargeApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import java.math.BigDecimal;
-import java.util.List;
 import lombok.AllArgsConstructor;
 import org.dromara.hutool.core.date.DateTime;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * 店铺端,管理员API
@@ -35,7 +37,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @Tag(name = "内部调用端-会员充值API", description = "内部调用端-会员充值API")
-public class FeignMemberRechargeController implements MemberRechargeApi {
+public class FeignMemberRechargeController extends FeignController implements MemberRechargeApi {
 
 
     @Override

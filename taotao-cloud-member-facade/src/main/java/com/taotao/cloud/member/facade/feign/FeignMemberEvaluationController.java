@@ -17,18 +17,20 @@
 package com.taotao.cloud.member.facade.feign;
 
 import com.taotao.boot.common.model.PageResult;
+import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberEvaluationApi;
 import com.taotao.cloud.member.api.feign.request.EvaluationPageQueryApiRequest;
 import com.taotao.cloud.member.api.feign.request.MemberEvaluationApiRequest;
-import com.taotao.cloud.member.api.feign.response.MemberEvaluationListApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberEvaluationApiResponse;
+import com.taotao.cloud.member.api.feign.response.MemberEvaluationListApiResponse;
 import com.taotao.cloud.member.api.feign.response.StoreRatingApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import java.util.List;
-import java.util.Map;
 import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * 店铺端,管理员API
@@ -39,7 +41,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @Tag(name = "内部调用端-管理员API", description = "内部调用端-管理员API")
-public class FeignMemberEvaluationController implements MemberEvaluationApi {
+public class FeignMemberEvaluationController extends FeignController implements MemberEvaluationApi {
 
 	@Override
 	public Long count(Long goodsId, String name) {

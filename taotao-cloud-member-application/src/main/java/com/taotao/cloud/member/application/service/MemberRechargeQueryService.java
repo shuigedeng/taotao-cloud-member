@@ -29,7 +29,7 @@ import java.math.BigDecimal;
  * @version 2022.06
  * @since 2022-05-31 13:21:47
  */
-public interface MemberRechargeQueryService extends IService<MemberRechargePO> {
+public interface MemberRechargeQueryService extends CommandService<MemberRechargePO> {
 
 	/**
 	 * 创建充值订单

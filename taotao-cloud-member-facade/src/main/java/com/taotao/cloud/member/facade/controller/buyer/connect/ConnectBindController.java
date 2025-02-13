@@ -21,6 +21,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 
 /** 买家端,app/小程序 联合登录 */
 @AllArgsConstructor
@@ -28,7 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Tag(name = "买家端-app/小程序联合登录API", description = "买家端-app/小程序联合登录API")
 @RequestMapping("/member/buyer/passport/connect/bind")
-public class ConnectBindController {
+public class ConnectBindController extends BusinessController {
 
     //private final ConnectService connectService;
 	//

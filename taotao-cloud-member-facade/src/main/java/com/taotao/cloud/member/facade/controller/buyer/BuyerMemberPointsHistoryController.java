@@ -21,6 +21,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 
 /**
  * 买家端,会员积分历史API
@@ -30,7 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Tag(name = "买家端-会员积分历史API", description = "买家端-会员积分历史API")
 @RequestMapping("/member/buyer/member/points/history")
-public class BuyerMemberPointsHistoryController {
+public class BuyerMemberPointsHistoryController extends BusinessController {
 
 	//private final IMemberPointsHistoryService memberPointsHistoryService;
 	//

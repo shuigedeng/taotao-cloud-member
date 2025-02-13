@@ -29,7 +29,7 @@ import java.util.Map;
  *
  * @since 2020-02-25 14:10:16
  */
-public interface MemberQueryService extends IService<MemberPO> {
+public interface MemberQueryService extends CommandService<MemberPO> {
 
 	///**
 	// * 获取当前登录的用户信息

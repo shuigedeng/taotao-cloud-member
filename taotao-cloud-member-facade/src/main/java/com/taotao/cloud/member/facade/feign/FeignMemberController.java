@@ -17,14 +17,16 @@
 package com.taotao.cloud.member.facade.feign;
 
 import com.taotao.boot.common.model.BaseSecurityUser;
+import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberApi;
 import com.taotao.cloud.member.api.feign.response.MemberApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import java.util.List;
-import java.util.Map;
 import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * 店铺端,管理员API
@@ -35,7 +37,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @Tag(name = "内部调用端-会员API", description = "内部调用端-会员API")
-public class FeignMemberController implements MemberApi {
+public class FeignMemberController extends FeignController implements MemberApi {
 
 	@Override
 	public BaseSecurityUser getMemberSecurityUser(String nicknameOrUserNameOrPhoneOrEmail) {

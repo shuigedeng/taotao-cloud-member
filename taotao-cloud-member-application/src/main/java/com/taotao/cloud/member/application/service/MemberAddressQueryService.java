@@ -24,7 +24,7 @@ import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberAddre
 /**
  * 收货地址业务层
  */
-public interface MemberAddressQueryService extends IService<MemberAddressPO> {
+public interface MemberAddressQueryService extends CommandService<MemberAddressPO> {
 
 	/**
 	 * 根据会员获取会员地址分页列表

@@ -21,6 +21,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 
 /**
  * 管理端,会员等级API
@@ -32,7 +33,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/member/manager/member/grade")
 @Tag(name = "管理端-会员等级管理API", description = "管理端-会员等级管理API")
-public class ManagerMemberGradeController {
+public class ManagerMemberGradeController extends BusinessController {
 	//
     //private final IMemberGradeService memberGradeService;
 	//

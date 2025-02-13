@@ -21,6 +21,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 
 /**
  * 管理端,会员地址API
@@ -32,7 +33,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/member/manager/member/address")
 @Tag(name = "管理端-会员地址管理API", description = "管理端-会员地址管理API")
-public class ManagerMemberAddressController {
+public class ManagerMemberAddressController extends BusinessController {
 	//
 	//private final IMemberAddressService memberAddressService;
 	//

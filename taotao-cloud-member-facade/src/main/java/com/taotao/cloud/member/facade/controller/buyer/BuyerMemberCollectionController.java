@@ -21,6 +21,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 
 /**
  * 买家端,会员收藏API
@@ -30,7 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Tag(name = "买家端-会员收藏API", description = "买家端-会员收藏API")
 @RequestMapping("/member/buyer/member/collection")
-public class BuyerMemberCollectionController {
+public class BuyerMemberCollectionController extends BusinessController {
 
 	///**
 	// * 会员商品收藏

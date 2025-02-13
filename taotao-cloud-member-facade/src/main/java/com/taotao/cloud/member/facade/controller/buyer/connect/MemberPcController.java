@@ -40,6 +40,7 @@ package com.taotao.cloud.member.facade.controller.buyer.connect; // package
 // import org.springframework.web.bind.annotation.RequestMapping;
 // import org.springframework.web.bind.annotation.RequestParam;
 // import org.springframework.web.bind.annotation.RestController;
+import com.taotao.boot.webagg.controller.BusinessController;
 //
 // /**
 //  * 买家端,会员API
@@ -49,7 +50,7 @@ package com.taotao.cloud.member.facade.controller.buyer.connect; // package
 // @RestController
 // @Tag(name = "买家端-会员登录API", description = "买家端-会员登录API")
 // @RequestMapping("/member/buyer/passport/connect/pc")
-// public class MemberPcController {
+// public class MemberPcController extends BusinessController {
 //
 // 	private final MemberService memberService;
 // 	private final SmsUtil smsUtil;
