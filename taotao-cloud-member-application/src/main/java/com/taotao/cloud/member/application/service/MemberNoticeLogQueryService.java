@@ -20,4 +20,4 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticeLogPO;
 
 /** 会员消息业务层 */
-public interface MemberNoticeLogQueryService extends CommandService<MemberNoticeLogPO> {}
+public interface MemberNoticeLogQueryService extends CommandService {}

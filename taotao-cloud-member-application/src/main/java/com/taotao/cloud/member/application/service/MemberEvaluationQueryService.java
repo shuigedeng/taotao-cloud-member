@@ -25,7 +25,7 @@ import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberEvalu
  *
  * @since 2020-02-25 14:10:16
  */
-public interface MemberEvaluationQueryService extends CommandService<MemberEvaluationPO> {
+public interface MemberEvaluationQueryService extends CommandService {
 	//
     ///**
     // * 查询会员的评价分页列表

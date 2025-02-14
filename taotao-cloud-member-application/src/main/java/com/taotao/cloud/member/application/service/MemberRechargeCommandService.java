@@ -28,7 +28,7 @@ import java.math.BigDecimal;
  * @version 2022.06
  * @since 2022-05-31 13:21:47
  */
-public interface MemberRechargeCommandService extends CommandService<MemberRechargePO> {
+public interface MemberRechargeCommandService extends CommandService {
 
 	/**
 	 * 创建充值订单

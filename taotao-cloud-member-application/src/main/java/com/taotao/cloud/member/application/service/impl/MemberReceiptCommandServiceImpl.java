@@ -42,7 +42,7 @@ import org.springframework.stereotype.Service;
  * @since 2023-02-01 13:48:11
  */
 @Service
-public class MemberReceiptCommandServiceImpl extends ServiceImpl<MemberReceiptMapper, MemberReceiptPO>
+public class MemberReceiptCommandServiceImpl
 	implements MemberReceiptCommandService {
 	//
 	//@Autowired

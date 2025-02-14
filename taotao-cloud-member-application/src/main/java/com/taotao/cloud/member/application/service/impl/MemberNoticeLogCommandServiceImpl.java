@@ -28,5 +28,5 @@ import org.springframework.stereotype.Service;
  * @since 2020/11/17 3:44 下午
  */
 @Service
-public class MemberNoticeLogCommandServiceImpl extends ServiceImpl<MemberNoticeLogMapper, MemberNoticeLogPO>
+public class MemberNoticeLogCommandServiceImpl
         implements MemberNoticeLogCommandService {}

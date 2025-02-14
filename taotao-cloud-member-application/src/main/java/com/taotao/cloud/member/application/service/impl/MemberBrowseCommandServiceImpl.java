@@ -39,7 +39,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @Transactional(rollbackFor = Exception.class)
-public class MemberBrowseCommandServiceImpl extends ServiceImpl<FootprintMapper, MemberBrowsePO>
+public class MemberBrowseCommandServiceImpl
 	implements MemberBrowseCommandService {
 	//
 	///**

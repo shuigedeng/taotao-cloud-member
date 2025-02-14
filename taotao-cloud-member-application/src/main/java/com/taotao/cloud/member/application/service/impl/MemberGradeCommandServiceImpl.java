@@ -30,7 +30,7 @@ import org.springframework.stereotype.Service;
  * @since 2021/5/14 5:58 下午
  */
 @Service
-public class MemberGradeCommandServiceImpl extends ServiceImpl<MemberGradeMapper, MemberGradePO>
+public class MemberGradeCommandServiceImpl
         implements MemberGradeCommandService {
 	@Override
 	public IPage<MemberGradePO> queryPage(PageQuery pageQuery) {

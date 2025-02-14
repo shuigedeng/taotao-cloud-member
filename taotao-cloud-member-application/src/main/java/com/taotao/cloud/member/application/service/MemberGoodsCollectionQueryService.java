@@ -16,10 +16,7 @@
 
 package com.taotao.cloud.member.application.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.taotao.boot.common.model.PageQuery;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberGoodsCollectionPO;
+import com.taotao.boot.ddd.model.application.service.CommandService;
 
 import java.util.List;
 
@@ -28,7 +25,7 @@ import java.util.List;
  *
  * @since 2020/11/18 2:25 下午
  */
-public interface MemberGoodsCollectionQueryService extends CommandService<MemberGoodsCollectionPO> {
+public interface MemberGoodsCollectionQueryService extends CommandService {
 
     /**
      * 获取商品搜索分页

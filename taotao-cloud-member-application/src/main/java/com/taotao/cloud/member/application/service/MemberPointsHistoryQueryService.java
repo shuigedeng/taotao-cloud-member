@@ -28,7 +28,7 @@ import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPoint
  * @version 2022.06
  * @since 2022-05-31 14:16:21
  */
-public interface MemberPointsHistoryQueryService extends CommandService<MemberPointsHistoryPO> {
+public interface MemberPointsHistoryQueryService extends CommandService {
 
     ///**
     // * 获取会员积分VO

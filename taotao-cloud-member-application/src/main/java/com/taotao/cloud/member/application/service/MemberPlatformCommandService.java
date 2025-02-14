@@ -16,10 +16,12 @@
 
 package com.taotao.cloud.member.application.service;
 
+import com.taotao.boot.ddd.model.application.service.CommandService;
+
 /**
  * 第三方登录信息服务接口
  *
  * @author shuigedeng
  * @since 2020-10-16 16:23:49
  */
-public interface MemberPlatformCommandService {}
+public interface MemberPlatformCommandService extends CommandService {}

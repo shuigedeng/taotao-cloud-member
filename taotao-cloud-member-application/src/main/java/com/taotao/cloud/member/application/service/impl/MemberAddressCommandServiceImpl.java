@@ -37,7 +37,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @since 2022-05-31 13:55:30
  */
 @Service
-public class MemberAddressCommandServiceImpl extends ServiceImpl<MemberAddressMapper, MemberAddressPO>
+public class MemberAddressCommandServiceImpl
 	implements MemberAddressCommandService {
 	@Override
 	public IPage<MemberAddressPO> queryPage(PageQuery page, Long memberId) {

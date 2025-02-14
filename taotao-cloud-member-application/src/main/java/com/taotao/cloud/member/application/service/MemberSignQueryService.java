@@ -22,7 +22,7 @@ import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberSignP
 import java.util.List;
 
 /** 会员签到业务层 */
-public interface MemberSignQueryService extends CommandService<MemberSignPO> {
+public interface MemberSignQueryService extends CommandService {
 
     /**
      * 会员签到

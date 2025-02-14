@@ -22,7 +22,7 @@ import com.taotao.boot.common.model.PageQuery;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberGradePO;
 
 /** 会员等级业务层 */
-public interface MemberGradeQueryService extends CommandService<MemberGradePO> {
+public interface MemberGradeQueryService extends CommandService {
 
     IPage<MemberGradePO> queryPage(PageQuery pageQuery);
 }

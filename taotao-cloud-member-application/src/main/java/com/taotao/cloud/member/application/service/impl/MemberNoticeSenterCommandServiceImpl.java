@@ -38,8 +38,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
-public class MemberNoticeSenterCommandServiceImpl extends
-	ServiceImpl<MemberNoticeSenterMapper, MemberNoticeSenterPO>
+public class MemberNoticeSenterCommandServiceImpl
 	implements MemberNoticeSenterCommandService {
 	@Override
 	public boolean customSave(MemberNoticeSenterPO memberNoticeSenterPO) {

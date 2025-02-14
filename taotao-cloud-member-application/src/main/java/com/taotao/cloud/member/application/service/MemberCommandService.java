@@ -28,7 +28,7 @@ import java.util.Map;
  *
  * @since 2020-02-25 14:10:16
  */
-public interface MemberCommandService extends CommandService<MemberPO> {
+public interface MemberCommandService extends CommandService{
 
 	///**
 	// * 获取当前登录的用户信息

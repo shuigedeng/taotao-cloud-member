@@ -16,30 +16,14 @@
 
 package com.taotao.cloud.member.application.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.taotao.boot.common.utils.bean.BeanUtils;
-import com.taotao.boot.common.utils.log.LogUtils;
-import com.taotao.cloud.member.application.service.MemberCommandService;
 import com.taotao.cloud.member.application.service.MemberSignCommandService;
-import com.taotao.cloud.member.common.enums.SettingCategoryEnum;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberSignMapper;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberSignPO;
-import com.taotao.cloud.stream.framework.rocketmq.RocketmqSendCallbackBuilder;
-import com.taotao.cloud.stream.framework.rocketmq.tags.MemberTagsEnum;
-import com.taotao.cloud.stream.properties.RocketmqCustomProperties;
-import com.taotao.boot.security.spring.utils.SecurityUtils;
-import java.util.List;
-import org.apache.rocketmq.spring.core.RocketMQTemplate;
-import org.hibernate.service.spi.ServiceException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
  * 会员签到业务层实现
  */
 @Service
-public class MemberSignCommandServiceImpl extends ServiceImpl<MemberSignMapper, MemberSignPO> implements
+public class MemberSignCommandServiceImpl implements
 		MemberSignCommandService {
 	@Override
 	public Boolean memberSign() {

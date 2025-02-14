@@ -20,7 +20,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticeSenterPO;
 
 /** 会员消息业务层 */
-public interface MemberNoticeSenterCommandService extends CommandService<MemberNoticeSenterPO> {
+public interface MemberNoticeSenterCommandService extends CommandService {
 
     /**
      * 自定义保存方法

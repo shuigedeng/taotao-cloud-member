@@ -38,8 +38,7 @@ import org.springframework.stereotype.Service;
  * @since 2023-02-01 13:48:04
  */
 @Service
-public class MemberPointsHistoryCommandServiceImpl extends
-	ServiceImpl<MemberPointsHistoryMapper, MemberPointsHistoryPO>
+public class MemberPointsHistoryCommandServiceImpl
 	implements MemberPointsHistoryCommandService {
 
 	@Autowired

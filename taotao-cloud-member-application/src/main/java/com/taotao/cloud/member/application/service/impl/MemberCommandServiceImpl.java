@@ -53,7 +53,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @Transactional(rollbackFor = Exception.class)
-public class MemberCommandServiceImpl extends ServiceImpl<MemberMapper, MemberPO> implements
+public class MemberCommandServiceImpl  implements
 	MemberCommandService {
 
 	///**

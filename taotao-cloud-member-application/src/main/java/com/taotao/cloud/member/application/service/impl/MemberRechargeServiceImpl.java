@@ -40,7 +40,7 @@ import org.springframework.stereotype.Service;
  * @since 2023-02-01 13:48:28
  */
 @Service
-public class MemberRechargeServiceImpl extends ServiceImpl<MemberRechargeMapper, MemberRechargePO>
+public class MemberRechargeServiceImpl
 	implements MemberRechargeCommandService {
 	@Override
 	public MemberRechargePO recharge(BigDecimal price) {

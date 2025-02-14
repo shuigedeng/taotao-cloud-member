@@ -20,4 +20,4 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticePO;
 
 /** 会员站内信业务层 */
-public interface MemberNoticeCommandService extends CommandService<MemberNoticePO> {}
+public interface MemberNoticeCommandService extends CommandService {}
