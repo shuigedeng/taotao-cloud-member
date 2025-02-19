@@ -16,9 +16,7 @@
 
 package com.taotao.cloud.member.application.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberEvaluationPO;
+import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /**
  * 会员商品评价业务层

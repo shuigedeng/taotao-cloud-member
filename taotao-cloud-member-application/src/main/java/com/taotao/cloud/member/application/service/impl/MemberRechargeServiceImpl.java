@@ -18,13 +18,12 @@ package com.taotao.cloud.member.application.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.taotao.boot.ddd.model.application.service.CommandService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.enums.ResultEnum;
 import com.taotao.boot.common.exception.BusinessException;
 import com.taotao.boot.common.utils.common.IdGeneratorUtils;
 import com.taotao.cloud.member.application.service.MemberRechargeCommandService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberRechargeMapper;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberRechargePO;
 import com.taotao.boot.security.spring.utils.SecurityUtils;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -42,20 +41,20 @@ import org.springframework.stereotype.Service;
 @Service
 public class MemberRechargeServiceImpl
 	implements MemberRechargeCommandService {
-	@Override
-	public MemberRechargePO recharge(BigDecimal price) {
-		return null;
-	}
+//	@Override
+//	public MemberRechargePO recharge(BigDecimal price) {
+//		return null;
+//	}
 
 	@Override
 	public void paySuccess(String sn, String receivableNo, String paymentMethod) {
 
 	}
 
-	@Override
-	public MemberRechargePO getRecharge(String sn) {
-		return null;
-	}
+//	@Override
+//	public MemberRechargePO getRecharge(String sn) {
+//		return null;
+//	}
 
 	@Override
 	public void rechargeOrderCancel(String sn) {

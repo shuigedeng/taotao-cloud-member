@@ -16,11 +16,7 @@
 
 package com.taotao.cloud.member.application.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.taotao.boot.common.model.PageQuery;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberBrowsePO;
-
-import java.util.List;
+import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /**
  * 会员浏览历史业务层

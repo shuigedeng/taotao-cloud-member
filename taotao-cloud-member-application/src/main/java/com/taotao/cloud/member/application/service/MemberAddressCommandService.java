@@ -17,14 +17,14 @@
 package com.taotao.cloud.member.application.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.service.IService;
+import com.taotao.boot.ddd.model.application.service.CommandService;
+import com.taotao.boot.ddd.model.application.service.CommandService;
 import com.taotao.boot.common.model.PageQuery;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberAddressPO;
 
 /**
  * 收货地址业务层
  */
-public interface MemberAddressCommandService extends CommandService{
+public interface MemberAddressCommandService extends CommandService {
 
 	/**
 	 * 根据会员获取会员地址分页列表
@@ -33,7 +33,7 @@ public interface MemberAddressCommandService extends CommandService{
 	 * @param memberId 会员ID
 	 * @return 会员地址分页列表
 	 */
-	IPage<MemberAddressPO> queryPage(PageQuery page, Long memberId);
+//	IPage<MemberAddressPO> queryPage(PageQuery page, Long memberId);
 
 	/**
 	 * 根据地址ID获取当前会员地址信息
@@ -41,14 +41,14 @@ public interface MemberAddressCommandService extends CommandService{
 	 * @param id 地址ID
 	 * @return 当前会员的地址信息
 	 */
-	MemberAddressPO getMemberAddress(Long id);
+//	MemberAddressPO getMemberAddress(Long id);
 
 	/**
 	 * 根据地址ID获取当前会员地址信息
 	 *
 	 * @return 当前会员的地址信息
 	 */
-	MemberAddressPO getDefaultMemberAddress();
+//	MemberAddressPO getDefaultMemberAddress();
 
 	/**
 	 * 添加会员收货地址
@@ -56,7 +56,7 @@ public interface MemberAddressCommandService extends CommandService{
 	 * @param memberAddressPO 收货地址
 	 * @return 操作状态
 	 */
-	Boolean saveMemberAddress(MemberAddressPO memberAddressPO);
+//	Boolean saveMemberAddress(MemberAddressPO memberAddressPO);
 
 	/**
 	 * 修改会员收货地址信息
@@ -64,7 +64,7 @@ public interface MemberAddressCommandService extends CommandService{
 	 * @param memberAddressPO 收货地址
 	 * @return 操作状态
 	 */
-	Boolean updateMemberAddress(MemberAddressPO memberAddressPO);
+//	Boolean updateMemberAddress(MemberAddressPO memberAddressPO);
 
 	/**
 	 * 删除会员收货地址信息

@@ -17,8 +17,8 @@
 package com.taotao.cloud.member.application.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.taotao.boot.ddd.model.application.service.CommandService;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberRechargePO;
 import java.math.BigDecimal;
 
 /**
@@ -37,7 +37,7 @@ public interface MemberRechargeCommandService extends CommandService {
 	 * @return {@link MemberRechargePO }
 	 * @since 2022-05-31 13:21:47
 	 */
-	MemberRechargePO recharge(BigDecimal price);
+//	MemberRechargePO recharge(BigDecimal price);
 
 	/**
 	 * 查询充值订单列表
@@ -65,7 +65,7 @@ public interface MemberRechargeCommandService extends CommandService {
 	 * @return {@link MemberRechargePO }
 	 * @since 2022-05-31 13:21:47
 	 */
-	MemberRechargePO getRecharge(String sn);
+//	MemberRechargePO getRecharge(String sn);
 
 	/**
 	 * 充值订单取消

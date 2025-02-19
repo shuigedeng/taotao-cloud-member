@@ -18,8 +18,6 @@ package com.taotao.cloud.member.application.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.cloud.member.application.service.MemberNoticeLogCommandService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberNoticeLogMapper;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticeLogPO;
 import org.springframework.stereotype.Service;
 
 /**

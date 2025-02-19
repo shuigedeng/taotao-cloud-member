@@ -16,9 +16,7 @@
 
 package com.taotao.cloud.member.application.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberSignPO;
-import java.util.List;
+import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /** 会员签到业务层 */
 public interface MemberSignCommandService extends CommandService {

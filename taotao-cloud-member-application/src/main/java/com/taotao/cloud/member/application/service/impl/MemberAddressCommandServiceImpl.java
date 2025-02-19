@@ -16,18 +16,8 @@
 
 package com.taotao.cloud.member.application.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.taotao.boot.common.model.PageQuery;
 import com.taotao.cloud.member.application.service.MemberAddressCommandService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberAddressMapper;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberAddressPO;
-import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 收货地址业务层实现
@@ -39,30 +29,30 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class MemberAddressCommandServiceImpl
 	implements MemberAddressCommandService {
-	@Override
-	public IPage<MemberAddressPO> queryPage(PageQuery page, Long memberId) {
-		return null;
-	}
-
-	@Override
-	public MemberAddressPO getMemberAddress(Long id) {
-		return null;
-	}
-
-	@Override
-	public MemberAddressPO getDefaultMemberAddress() {
-		return null;
-	}
-
-	@Override
-	public Boolean saveMemberAddress(MemberAddressPO memberAddressPO) {
-		return null;
-	}
-
-	@Override
-	public Boolean updateMemberAddress(MemberAddressPO memberAddressPO) {
-		return null;
-	}
+//	@Override
+//	public IPage<MemberAddressPO> queryPage(PageQuery page, Long memberId) {
+//		return null;
+//	}
+//
+//	@Override
+//	public MemberAddressPO getMemberAddress(Long id) {
+//		return null;
+//	}
+//
+//	@Override
+//	public MemberAddressPO getDefaultMemberAddress() {
+//		return null;
+//	}
+//
+//	@Override
+//	public Boolean saveMemberAddress(MemberAddressPO memberAddressPO) {
+//		return null;
+//	}
+//
+//	@Override
+//	public Boolean updateMemberAddress(MemberAddressPO memberAddressPO) {
+//		return null;
+//	}
 
 	@Override
 	public Boolean removeMemberAddress(Long id) {

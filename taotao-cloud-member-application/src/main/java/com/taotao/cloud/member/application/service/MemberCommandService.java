@@ -16,12 +16,7 @@
 
 package com.taotao.cloud.member.application.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.taotao.boot.common.enums.UserEnum;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO;
-import java.util.List;
-import java.util.Map;
+import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /**
  * 会员业务层

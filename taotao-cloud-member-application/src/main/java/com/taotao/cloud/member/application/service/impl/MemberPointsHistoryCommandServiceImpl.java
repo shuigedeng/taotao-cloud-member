@@ -18,14 +18,13 @@ package com.taotao.cloud.member.application.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.taotao.boot.ddd.model.application.service.CommandService;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.boot.common.model.PageQuery;
 import com.taotao.boot.common.utils.lang.StringUtils;
 import com.taotao.cloud.member.application.service.MemberPointsHistoryCommandService;
 import com.taotao.cloud.member.application.service.MemberCommandService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberPointsHistoryMapper;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPointsHistoryPO;
 import com.taotao.boot.security.spring.utils.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -44,15 +43,15 @@ public class MemberPointsHistoryCommandServiceImpl
 	@Autowired
 	private MemberCommandService memberCommandService;
 
-	@Override
-	public IPage<MemberPointsHistoryPO> pageQuery(PageQuery pageQuery) {
-		return null;
-	}
-
-	@Override
-	public IPage<MemberPointsHistoryPO> memberPointsHistoryPageQuery(PageQuery pageQuery, Long memberId, String memberName) {
-		return null;
-	}
+//	@Override
+//	public IPage<MemberPointsHistoryPO> pageQuery(PageQuery pageQuery) {
+//		return null;
+//	}
+//
+//	@Override
+//	public IPage<MemberPointsHistoryPO> memberPointsHistoryPageQuery(PageQuery pageQuery, Long memberId, String memberName) {
+//		return null;
+//	}
 	//
 	//@Override
 	//public MemberPointsHistoryVO getMemberPointsHistoryVO(Long memberId) {

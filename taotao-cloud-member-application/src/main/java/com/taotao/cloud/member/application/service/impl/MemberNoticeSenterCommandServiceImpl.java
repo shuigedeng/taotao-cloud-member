@@ -23,9 +23,6 @@ import com.taotao.boot.common.utils.lang.StringUtils;
 import com.taotao.cloud.member.application.service.MemberNoticeSenterCommandService;
 import com.taotao.cloud.member.application.service.MemberNoticeCommandService;
 import com.taotao.cloud.member.application.service.MemberCommandService;
-import com.taotao.cloud.member.infrastructure.persistent.mapper.MemberNoticeSenterMapper;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticePO;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticeSenterPO;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,10 +37,10 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
 public class MemberNoticeSenterCommandServiceImpl
 	implements MemberNoticeSenterCommandService {
-	@Override
-	public boolean customSave(MemberNoticeSenterPO memberNoticeSenterPO) {
-		return false;
-	}
+//	@Override
+//	public boolean customSave(MemberNoticeSenterPO memberNoticeSenterPO) {
+//		return false;
+//	}
 	//
 	///**
 	// * 会员

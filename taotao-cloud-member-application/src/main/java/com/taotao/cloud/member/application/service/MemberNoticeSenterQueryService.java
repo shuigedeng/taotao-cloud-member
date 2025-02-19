@@ -17,7 +17,6 @@
 package com.taotao.cloud.member.application.service;
 
 import com.taotao.boot.ddd.model.application.service.CommandService;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticeSenterPO;
 
 /** 会员消息业务层 */
 public interface MemberNoticeSenterQueryService extends CommandService {
@@ -28,5 +27,5 @@ public interface MemberNoticeSenterQueryService extends CommandService {
      * @param memberNoticeSenterPO 会员消息
      * @return 操作状态
      */
-    boolean customSave(MemberNoticeSenterPO memberNoticeSenterPO);
+//    boolean customSave(MemberNoticeSenterPO memberNoticeSenterPO);
 }

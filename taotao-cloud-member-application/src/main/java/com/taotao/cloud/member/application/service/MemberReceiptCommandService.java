@@ -16,9 +16,7 @@
 
 package com.taotao.cloud.member.application.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberReceiptPO;
+import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /** 会员发票业务层 */
 public interface MemberReceiptCommandService extends CommandService {

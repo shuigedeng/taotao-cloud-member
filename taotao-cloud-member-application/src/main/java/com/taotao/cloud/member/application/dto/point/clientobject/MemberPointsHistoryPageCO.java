@@ -19,7 +19,6 @@ package com.taotao.cloud.member.application.dto.point.clientobject;
 import com.taotao.cloud.member.api.enums.PointTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;

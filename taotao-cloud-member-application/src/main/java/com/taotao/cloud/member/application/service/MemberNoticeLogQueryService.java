@@ -16,8 +16,7 @@
 
 package com.taotao.cloud.member.application.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticeLogPO;
+import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /** 会员消息业务层 */
 public interface MemberNoticeLogQueryService extends CommandService {}
