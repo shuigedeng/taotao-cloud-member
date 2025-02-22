@@ -4,8 +4,7 @@
  * 本层调用外部服务，转换外部DTO成为本项目可以理解对象。
  */
 dependencies {
-
-    api project(":taotao-cloud-member-common")
+    api project(":taotao-cloud-member-application")
 
     api "io.github.shuigedeng:taotao-cloud-goods-api:2025.03"
     api "io.github.shuigedeng:taotao-cloud-order-api:2025.03"
