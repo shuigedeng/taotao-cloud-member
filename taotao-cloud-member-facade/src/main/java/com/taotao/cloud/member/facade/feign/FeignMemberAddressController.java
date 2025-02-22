@@ -16,6 +16,7 @@
 
 package com.taotao.cloud.member.facade.feign;
 
+import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberAddressApi;
 import com.taotao.cloud.member.api.feign.response.MemberAddressApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;

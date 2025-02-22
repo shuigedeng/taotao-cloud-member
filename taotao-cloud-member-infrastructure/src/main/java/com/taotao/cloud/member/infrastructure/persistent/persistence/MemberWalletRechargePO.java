@@ -18,7 +18,6 @@ package com.taotao.cloud.member.infrastructure.persistent.persistence;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.taotao.boot.webagg.entity.BaseSuperEntity;
-import com.taotao.cloud.order.api.enums.order.PayStatusEnum;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -100,6 +99,6 @@ public class MemberWalletRechargePO extends BaseSuperEntity<MemberWalletRecharge
         this.memberId = memberId;
         this.memberName = memberName;
         this.rechargeMoney = money;
-        this.payStatus = PayStatusEnum.UNPAID.name();
+        //this.payStatus = PayStatusEnum.UNPAID.name();
     }
 }
