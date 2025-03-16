@@ -34,8 +34,6 @@
 
 dependencies {
     api project(":taotao-cloud-member-application")
-    api project(":taotao-cloud-member-infrastructure")
-    api project(":taotao-cloud-member-facade")
 }
 
 
