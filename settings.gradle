@@ -113,7 +113,7 @@ include "taotao-cloud-member-common"
 include "taotao-cloud-member-domain"
 include "taotao-cloud-member-facade"
 include "taotao-cloud-member-infrastructure"
-include "taotao-cloud-member-integration"
+include "taotao-cloud-member-interfaces"
 
 
 gradle.settingsEvaluated {
