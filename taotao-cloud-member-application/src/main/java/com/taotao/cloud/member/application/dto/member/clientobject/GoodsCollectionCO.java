@@ -19,7 +19,7 @@ package com.taotao.cloud.member.application.dto.member.clientobject;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
@@ -28,7 +28,9 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 /** 会员商品收藏VO */
-@Data
+@Setter
+@Getter
+@ToString
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor

@@ -19,7 +19,7 @@ package com.taotao.cloud.member.application.dto.connnect.query;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
@@ -33,7 +33,9 @@ import java.io.Serializable;
  * @version 2022.03
  * @since 2022-03-14 11:21:35
  */
-@Data
+@Setter
+@Getter
+@ToString
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor

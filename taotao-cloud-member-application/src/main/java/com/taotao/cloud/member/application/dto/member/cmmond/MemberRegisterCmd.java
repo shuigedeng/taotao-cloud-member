@@ -21,7 +21,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.dromara.hutool.core.regex.RegexPool;
@@ -37,7 +37,9 @@ import java.io.Serializable;
  * @version 2022.03
  * @since 2022-03-14 11:25:41
  */
-@Data
+@Setter
+@Getter
+@ToString
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor

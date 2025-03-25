@@ -19,7 +19,7 @@ package com.taotao.cloud.member.application.dto.address.clientobject;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
@@ -34,7 +34,9 @@ import java.time.LocalDateTime;
  * @version 2021.10
  * @since 2022-03-11 14:55:28
  */
-@Data
+@Setter
+@Getter
+@ToString
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor

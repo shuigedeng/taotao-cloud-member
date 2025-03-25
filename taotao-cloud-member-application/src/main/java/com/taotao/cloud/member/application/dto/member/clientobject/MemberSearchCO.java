@@ -20,7 +20,7 @@ import com.taotao.boot.common.enums.SwitchEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
@@ -28,7 +28,9 @@ import java.io.Serial;
 import java.io.Serializable;
 
 /** 会员搜索VO */
-@Data
+@Setter
+@Getter
+@ToString
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor

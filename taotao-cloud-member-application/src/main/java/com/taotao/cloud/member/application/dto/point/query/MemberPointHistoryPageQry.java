@@ -20,7 +20,7 @@ import com.taotao.boot.common.model.PageQuery;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
@@ -35,7 +35,9 @@ import java.io.Serializable;
  * @version 2022.03
  * @since 2020/9/30 08:49
  */
-@Data
+@Setter
+@Getter
+@ToString
 @EqualsAndHashCode(callSuper = true)
 @Accessors(fluent = true)
 @AllArgsConstructor

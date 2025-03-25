@@ -22,14 +22,16 @@ import java.io.Serial;
 import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import lombok.experimental.Accessors;
 import org.hibernate.validator.constraints.Length;
 
 /** 会员评价DTO */
-@Data
+@Setter
+@Getter
+@ToString
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor

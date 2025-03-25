@@ -20,12 +20,14 @@ import com.taotao.cloud.member.api.enums.DepositServiceTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 /** 会员余额变动模型 */
-@Data
+@Setter
+@Getter
+@ToString
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor

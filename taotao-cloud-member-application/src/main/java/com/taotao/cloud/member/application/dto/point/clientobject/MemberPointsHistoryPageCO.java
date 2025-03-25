@@ -19,7 +19,7 @@ package com.taotao.cloud.member.application.dto.point.clientobject;
 import com.taotao.cloud.member.api.enums.PointTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
@@ -33,7 +33,9 @@ import java.io.Serializable;
  * @version 2021.10
  * @since 2022-03-11 15:26:14
  */
-@Data
+@Setter
+@Getter
+@ToString
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor

@@ -3,10 +3,12 @@
 package com.taotao.cloud.member.application.dto.wallet.clientobject;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Data;
+import lombok.*;
 
 import java.io.Serial;
-@Data
+@Setter
+@Getter
+@ToString
 @Schema(name = "DeptCO", description = "部门")
 //public class DeptCO extends TreeUtil.TreeNode<DeptCO> {
 public class MemberWalletCO {

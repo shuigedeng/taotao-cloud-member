@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -30,7 +30,9 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /** 会员评价VO */
-@Data
+@Setter
+@Getter
+@ToString
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor

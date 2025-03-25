@@ -17,10 +17,12 @@
 package com.taotao.cloud.member.application.dto.browse.cmmond;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 
-@Data
+@Setter
+@Getter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class MemberBrowseAddCmd {

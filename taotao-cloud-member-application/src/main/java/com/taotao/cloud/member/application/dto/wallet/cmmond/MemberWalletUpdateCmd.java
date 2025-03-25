@@ -19,13 +19,15 @@ package com.taotao.cloud.member.application.dto.wallet.cmmond;
 import com.taotao.cloud.member.api.enums.DepositServiceTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
 /** 会员余额变动模型 */
-@Data
+@Setter
+@Getter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class MemberWalletUpdateCmd {
