@@ -39,7 +39,9 @@ import java.util.Map;
  * @version 2022.04
  * @since 2022-04-25 16:37:49
  */
-@FeignClient(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER, fallbackFactory = MemberEvaluationApiFallback.class)
+@FeignClient(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER,
+	contextId = "MemberEvaluationApi",
+	fallbackFactory = MemberEvaluationApiFallback.class)
 public interface MemberEvaluationApi {
 
     /**

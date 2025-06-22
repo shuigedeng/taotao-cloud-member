@@ -35,7 +35,9 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @version 2022.04
  * @since 2022-04-25 16:37:54
  */
-@FeignClient(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER, fallbackFactory = MemberApiFallback.class)
+@FeignClient(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER,
+	contextId = "MemberApi",
+	fallbackFactory = MemberApiFallback.class)
 public interface MemberApi {
 
     /**

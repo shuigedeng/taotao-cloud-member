@@ -23,7 +23,9 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER, fallbackFactory = MemberWalletApiFallback.class)
+@FeignClient(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER,
+	contextId = "MemberWalletApi",
+	fallbackFactory = MemberWalletApiFallback.class)
 public interface MemberWalletApi {
 
     @GetMapping(value = "/member/feign/wallet/increase")
