@@ -16,11 +16,14 @@
 
 package com.taotao.cloud.member.interfaces.feign;
 
+import com.taotao.boot.common.model.FeignRequest;
+import com.taotao.boot.common.model.FeignResponse;
 import com.taotao.boot.common.model.PageResult;
 import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberEvaluationApi;
 import com.taotao.cloud.member.api.feign.request.EvaluationPageQueryApiRequest;
 import com.taotao.cloud.member.api.feign.request.MemberEvaluationApiRequest;
+import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberEvaluationApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberEvaluationListApiResponse;
 import com.taotao.cloud.member.api.feign.response.StoreRatingApiResponse;
@@ -44,44 +47,49 @@ import java.util.Map;
 public class FeignMemberEvaluationController extends FeignController implements MemberEvaluationApi {
 
 	@Override
-	public Long count(Long goodsId, String name) {
+	public FeignResponse<MemberEvaluationApiResponse> count(
+		FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
 		return null;
 	}
 
 	@Override
-	public Long getEvaluationCount(EvaluationPageQueryApiRequest queryParams) {
+	public FeignResponse<MemberEvaluationApiResponse> getEvaluationCount(
+		FeignRequest<EvaluationPageQueryApiRequest> memberEvaluationApiRequest) {
 		return null;
 	}
 
 	@Override
-	public List<Map<String, Object>> memberEvaluationNum() {
+	public FeignResponse<List<Map<String, Object>>> memberEvaluationNum() {
 		return null;
 	}
 
 	@Override
-	public Boolean addMemberEvaluation(MemberEvaluationApiRequest memberEvaluationDTO,
-		boolean b) {
+	public FeignResponse<BooleanApiResponse> addMemberEvaluation(
+		FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
 		return null;
 	}
 
 	@Override
-	public StoreRatingApiResponse getStoreRatingVO(Long id, String name) {
+	public FeignResponse<StoreRatingApiResponse> getStoreRatingVO(
+		FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
 		return null;
 	}
 
 	@Override
-	public MemberEvaluationApiResponse queryById(Long id) {
+	public FeignResponse<MemberEvaluationApiResponse> queryById(
+		FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
 		return null;
 	}
 
 	@Override
-	public boolean reply(Long id, String reply, String replyImage) {
-		return false;
+	public FeignResponse<BooleanApiResponse> reply(
+		FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
+		return null;
 	}
 
 	@Override
-	public PageResult<MemberEvaluationListApiResponse> queryPage(
-		EvaluationPageQueryApiRequest evaluationPageQuery) {
+	public FeignResponse<PageResult<MemberEvaluationListApiResponse>> queryPage(
+		FeignRequest<EvaluationPageQueryApiRequest> memberEvaluationApiRequest) {
 		return null;
 	}
 }

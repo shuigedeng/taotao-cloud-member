@@ -18,15 +18,19 @@ package com.taotao.cloud.member.api.feign;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
 import com.taotao.boot.common.model.BaseSecurityUser;
+import com.taotao.boot.common.model.FeignRequest;
+import com.taotao.boot.common.model.FeignResponse;
 import com.taotao.boot.common.model.Result;
 import com.taotao.cloud.member.api.feign.fallback.MemberApiFallback;
+import com.taotao.cloud.member.api.feign.request.MemberApiRequest;
+import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberApiResponse;
 import java.util.List;
 import java.util.Map;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * 远程调用会员用户模块
@@ -40,61 +44,61 @@ import org.springframework.web.bind.annotation.RequestParam;
 	fallbackFactory = MemberApiFallback.class)
 public interface MemberApi {
 
-    /**
-     * 通过用户名查询用户包括角色权限等
-     *
-     * @param nicknameOrUserNameOrPhoneOrEmail 用户名
-     * @return 用户信息
-     * @since 2020/4/29 17:48
-     */
-    @GetMapping(value = "/member/feign/info/security")
-	BaseSecurityUser getMemberSecurityUser(@RequestParam(value = "nicknameOrUserNameOrPhoneOrEmail")String nicknameOrUserNameOrPhoneOrEmail);
+	/**
+	 * 通过用户名查询用户包括角色权限等
+	 *
+	 * @param nicknameOrUserNameOrPhoneOrEmail 用户名
+	 * @return 用户信息
+	 * @since 2020/4/29 17:48
+	 */
+	@PostMapping(value = "/member/feign/info/security")
+	FeignResponse<BaseSecurityUser> getMemberSecurityUser(
+		@Validated @RequestBody FeignRequest<MemberApiRequest> memberApiRequest);
 
-    /**
-     * 根据id查询会员信息
-     *
-     * @param id id
-     * @return 会员信息
-     * @since 2020/11/20 下午4:10
-     */
-    @GetMapping("/member/feign/info/id/{id:[0-9]*}")
-	MemberApiResponse findMemberById(@PathVariable(value = "id") Long id);
+	/**
+	 * 根据id查询会员信息
+	 *
+	 * @param id id
+	 * @return 会员信息
+	 * @since 2020/11/20 下午4:10
+	 */
+	@PostMapping("/member/feign/info/id/{id:[0-9]*}")
+	FeignResponse<MemberApiResponse> findMemberById(
+		@Validated @RequestBody FeignRequest<MemberApiRequest> memberApiRequest);
 
-    /**
-     * 更新成员点
-     *
-     * @param payPoint 支付点
-     * @param name 名字
-     * @param memberId 成员身份
-     * @param s 年代
-     * @return {@link Result }<{@link Boolean }>
-     * @since 2022-04-25 16:41:42
-     */
-    @GetMapping(value = "/member/feign/updateMemberPoint")
-    Boolean updateMemberPoint(
-            @RequestParam(value = "payPoint")  Long payPoint,
-            @RequestParam(value = "name")  String name,
-            @RequestParam(value = "memberId")  Long memberId,
-            @RequestParam(value = "s")  String s);
+	/**
+	 * 更新成员点
+	 *
+	 * @param payPoint 支付点
+	 * @param name     名字
+	 * @param memberId 成员身份
+	 * @param s        年代
+	 * @return {@link Result }<{@link Boolean }>
+	 * @since 2022-04-25 16:41:42
+	 */
+	@PostMapping(value = "/member/feign/updateMemberPoint")
+	FeignResponse<BooleanApiResponse> updateMemberPoint(
+		@Validated @RequestBody FeignRequest<MemberApiRequest> memberApiRequest);
 
-    @GetMapping(value = "/member/feign/username")
-	MemberApiResponse findByUsername(@RequestParam(value = "username") String username);
+	@PostMapping(value = "/member/feign/username")
+	FeignResponse<MemberApiResponse> findByUsername(
+		@Validated @RequestBody FeignRequest<MemberApiRequest> memberApiRequest);
 
-    @GetMapping(value = "/member/feign/memberId")
-	MemberApiResponse getById(@RequestParam(value = "memberId")  Long memberId);
+	@PostMapping(value = "/member/feign/memberId")
+	FeignResponse<MemberApiResponse> getById(@Validated @RequestBody FeignRequest<MemberApiRequest> memberApiRequest);
 
-    /**
-     * new LambdaUpdateWrapper<Member>() .eq(Member::getId, member.getId())
-     * .set(Member::getHaveStore, true) .set(Member::getStoreId, store.getId())
-     */
-    @GetMapping(value = "/member/feign/memberId/storeId")
-    Boolean update(@RequestParam(value = "memberId")  Long memberId,
-				   @RequestParam(value = "storeId")  Long storeId);
+	/**
+	 * new LambdaUpdateWrapper<Member>() .eq(Member::getId, member.getId()) .set(Member::getHaveStore, true)
+	 * .set(Member::getStoreId, store.getId())
+	 */
+	@PostMapping(value = "/member/feign/memberId/storeId")
+	FeignResponse<BooleanApiResponse> update(@Validated @RequestBody FeignRequest<MemberApiRequest> memberApiRequest);
 
-    @GetMapping(value = "/member/feign/updateById")
-    Boolean updateById(@RequestParam(value = "member")  MemberApiResponse member);
+	@PostMapping(value = "/member/feign/updateById")
+	FeignResponse<BooleanApiResponse> updateById(
+		@Validated @RequestBody FeignRequest<MemberApiRequest> memberApiRequest);
 
-    @GetMapping(value = "/member/feign/listFieldsByMemberIds")
-    List<Map<String, Object>> listFieldsByMemberIds(@RequestParam(value = "s")  String s,
-													@RequestParam(value = "ids")  List<String> ids);
+	@PostMapping(value = "/member/feign/listFieldsByMemberIds")
+	FeignResponse<List<Map<String, Object>>> listFieldsByMemberIds(
+		@Validated @RequestBody FeignRequest<MemberApiRequest> memberApiRequest);
 }

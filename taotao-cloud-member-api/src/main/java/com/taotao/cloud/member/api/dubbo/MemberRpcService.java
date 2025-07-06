@@ -16,6 +16,8 @@
 
 package com.taotao.cloud.member.api.dubbo;
 
+import com.taotao.boot.common.model.RpcRequest;
+import com.taotao.boot.common.model.RpcResponse;
 import com.taotao.cloud.member.api.dubbo.request.MemberQueryRpcRequest;
 import com.taotao.cloud.member.api.dubbo.response.MemberQueryRpcResponse;
 
@@ -35,5 +37,5 @@ public interface MemberRpcService {
 	 * @return {@link MemberQueryRpcResponse }
 	 * @since 2022-06-29 21:45:44
 	 */
-	MemberQueryRpcResponse findMemberByRequest(MemberQueryRpcRequest memberQueryGrpcRequest);
+	RpcResponse<MemberQueryRpcResponse> findMemberByRequest(RpcRequest<MemberQueryRpcRequest> memberQueryGrpcRequest);
 }

@@ -17,15 +17,17 @@
 package com.taotao.cloud.member.api.feign;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
+import com.taotao.boot.common.model.FeignRequest;
+import com.taotao.boot.common.model.FeignResponse;
 import com.taotao.cloud.member.api.feign.fallback.MemberRechargeApiFallback;
+import com.taotao.cloud.member.api.feign.request.MemberRechargeQueryApiRequest;
+import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberRechargeApiResponse;
-import org.dromara.hutool.core.date.DateTime;
-import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import java.math.BigDecimal;
 import java.util.List;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * 远程调用会员用户模块
@@ -40,27 +42,23 @@ import java.util.List;
 	fallbackFactory = MemberRechargeApiFallback.class)
 public interface MemberRechargeApi {
 
-	@GetMapping(value = "/member/feign/recharge/paySuccess")
-	Boolean paySuccess(@RequestParam(value = "sn") String sn,
-					   @RequestParam(value = "receivableNo") String receivableNo,
-					   @RequestParam(value = "paymentMethod") String paymentMethod);
+	@PostMapping(value = "/member/feign/recharge/paySuccess")
+	FeignResponse<BooleanApiResponse> paySuccess(
+		@Validated @RequestBody FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
-	@GetMapping(value = "/member/feign/recharge/getRecharge")
-	MemberRechargeApiResponse getRecharge(@RequestParam(value = "sn") String sn);
+	@PostMapping(value = "/member/feign/recharge/getRecharge")
+	FeignResponse<MemberRechargeApiResponse> getRecharge(
+		@Validated @RequestBody FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
-	@GetMapping(value = "/member/feign/recharge/recharge")
-	MemberRechargeApiResponse recharge(@RequestParam(value = "price") BigDecimal price);
+	@PostMapping(value = "/member/feign/recharge/recharge")
+	FeignResponse<MemberRechargeApiResponse> recharge(
+		@Validated @RequestBody FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
-	/**
-	 * LambdaQueryWrapper<Recharge> queryWrapper = new LambdaQueryWrapper<>();
-	 * queryWrapper.eq(Recharge::getPayStatus, PayStatusEnum.UNPAID.name()); //充值订单创建时间 <= 订单自动取消时间
-	 * queryWrapper.le(Recharge::getCreateTime, cancelTime);
-	 *
-	 * @return
-	 */
-	@GetMapping(value = "/member/feign/recharge/list")
-	List<MemberRechargeApiResponse> list(@RequestParam(value = "dateTime") DateTime dateTime);
+	@PostMapping(value = "/member/feign/recharge/list")
+	FeignResponse<List<MemberRechargeApiResponse>> list(
+		@Validated @RequestBody FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
-	@GetMapping(value = "/member/feign/recharge/rechargeOrderCancel")
-	Boolean rechargeOrderCancel(@RequestParam(value = "sn") String sn);
+	@PostMapping(value = "/member/feign/recharge/rechargeOrderCancel")
+	FeignResponse<BooleanApiResponse> rechargeOrderCancel(
+		@Validated @RequestBody FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 }

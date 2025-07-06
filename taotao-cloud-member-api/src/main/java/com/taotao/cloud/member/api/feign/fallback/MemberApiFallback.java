@@ -17,7 +17,11 @@
 package com.taotao.cloud.member.api.feign.fallback;
 
 import com.taotao.boot.common.model.BaseSecurityUser;
+import com.taotao.boot.common.model.FeignRequest;
+import com.taotao.boot.common.model.FeignResponse;
 import com.taotao.cloud.member.api.feign.MemberApi;
+import com.taotao.cloud.member.api.feign.request.MemberApiRequest;
+import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberApiResponse;
 import java.util.List;
 import java.util.Map;
@@ -36,45 +40,48 @@ public class MemberApiFallback implements FallbackFactory<MemberApi> {
     public MemberApi create(Throwable throwable) {
         return new MemberApi() {
 
-            @Override
-            public BaseSecurityUser getMemberSecurityUser(String nicknameOrUserNameOrPhoneOrEmail) {
-                return null;
-            }
+			@Override
+			public FeignResponse<BaseSecurityUser> getMemberSecurityUser(
+				FeignRequest<MemberApiRequest> memberApiRequest) {
+				return null;
+			}
 
-            @Override
-            public MemberApiResponse findMemberById(Long id) {
-                return null;
-            }
+			@Override
+			public FeignResponse<MemberApiResponse> findMemberById(FeignRequest<MemberApiRequest> memberApiRequest) {
+				return null;
+			}
 
-            @Override
-            public Boolean updateMemberPoint(Long payPoint, String name, Long memberId, String s) {
-                return null;
-            }
+			@Override
+			public FeignResponse<BooleanApiResponse> updateMemberPoint(
+				FeignRequest<MemberApiRequest> memberApiRequest) {
+				return null;
+			}
 
-            @Override
-            public MemberApiResponse findByUsername(String username) {
-                return null;
-            }
+			@Override
+			public FeignResponse<MemberApiResponse> findByUsername(FeignRequest<MemberApiRequest> memberApiRequest) {
+				return null;
+			}
 
-            @Override
-            public MemberApiResponse getById(Long memberId) {
-                return null;
-            }
+			@Override
+			public FeignResponse<MemberApiResponse> getById(FeignRequest<MemberApiRequest> memberApiRequest) {
+				return null;
+			}
 
-            @Override
-            public Boolean update(Long memberId, Long sotreId) {
-                return false;
-            }
+			@Override
+			public FeignResponse<BooleanApiResponse> update(FeignRequest<MemberApiRequest> memberApiRequest) {
+				return null;
+			}
 
-            @Override
-            public Boolean updateById(MemberApiResponse member) {
-                return false;
-            }
+			@Override
+			public FeignResponse<BooleanApiResponse> updateById(FeignRequest<MemberApiRequest> memberApiRequest) {
+				return null;
+			}
 
-            @Override
-            public List<Map<String, Object>> listFieldsByMemberIds(String s, List<String> ids) {
-                return null;
-            }
-        };
+			@Override
+			public FeignResponse<List<Map<String, Object>>> listFieldsByMemberIds(
+				FeignRequest<MemberApiRequest> memberApiRequest) {
+				return null;
+			}
+		};
     }
 }

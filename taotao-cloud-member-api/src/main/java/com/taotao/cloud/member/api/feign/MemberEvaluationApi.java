@@ -17,20 +17,23 @@
 package com.taotao.cloud.member.api.feign;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
+import com.taotao.boot.common.model.FeignRequest;
+import com.taotao.boot.common.model.FeignResponse;
 import com.taotao.boot.common.model.PageResult;
 import com.taotao.boot.common.model.Result;
 import com.taotao.cloud.member.api.feign.fallback.MemberEvaluationApiFallback;
 import com.taotao.cloud.member.api.feign.request.EvaluationPageQueryApiRequest;
 import com.taotao.cloud.member.api.feign.request.MemberEvaluationApiRequest;
+import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberEvaluationApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberEvaluationListApiResponse;
 import com.taotao.cloud.member.api.feign.response.StoreRatingApiResponse;
-import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
 import java.util.List;
 import java.util.Map;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * 远程调用会员用户模块
@@ -44,66 +47,51 @@ import java.util.Map;
 	fallbackFactory = MemberEvaluationApiFallback.class)
 public interface MemberEvaluationApi {
 
-    /**
-     * LambdaQueryWrapper<MemberEvaluation> goodEvaluationQueryWrapper = new LambdaQueryWrapper<>();
-     * goodEvaluationQueryWrapper.eq(MemberEvaluation::getId, goodsId);
-     * goodEvaluationQueryWrapper.eq(MemberEvaluation::getGrade, EvaluationGradeEnum.GOOD.name());
-     *
-     * @param goodsId 商品id
-     * @param name    名字
-     * @return {@link Result }<{@link Long }>
-     * @since 2022-04-25 16:39:41
-     */
-    @GetMapping(value = "/member/feign/evaluation")
-    Long count(@RequestParam(value = "goodsId") Long goodsId,
-               @RequestParam(value = "name") String name);
+	/**
+	 * LambdaQueryWrapper<MemberEvaluation> goodEvaluationQueryWrapper = new LambdaQueryWrapper<>();
+	 * goodEvaluationQueryWrapper.eq(MemberEvaluation::getId, goodsId);
+	 * goodEvaluationQueryWrapper.eq(MemberEvaluation::getGrade, EvaluationGradeEnum.GOOD.name());
+	 *
+	 * @param goodsId 商品id
+	 * @param name    名字
+	 * @return {@link Result }<{@link Long }>
+	 * @since 2022-04-25 16:39:41
+	 */
+	@PostMapping(value = "/member/feign/evaluation")
+	FeignResponse<MemberEvaluationApiResponse> count(
+		@Validated @RequestBody FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    /**
-     * 得到评价数
-     *
-     * @param queryParams 查询参数
-     * @return {@link Result }<{@link Long }>
-     * @since 2022-04-25 16:39:46
-     */
-    @GetMapping(value = "/member/feign/evaluationPageQuery")
-    Long getEvaluationCount(@RequestParam(value = "queryParams") EvaluationPageQueryApiRequest queryParams);
+	/**
+	 * 得到评价数
+	 *
+	 * @param queryParams 查询参数
+	 * @return {@link Result }<{@link Long }>
+	 * @since 2022-04-25 16:39:46
+	 */
+	@PostMapping(value = "/member/feign/evaluationPageQuery")
+	FeignResponse<MemberEvaluationApiResponse> getEvaluationCount(
+		@Validated @RequestBody FeignRequest<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
 
-    /**
-     * new QueryWrapper<MemberEvaluation>() .between("create_time", DateUtil.yesterday(), new
-     * DateTime())
-     *
-     * @return {@link Result }<{@link List }<{@link Map }<{@link String }, {@link Object }>>>
-     * @since 2022-04-25 16:39:49
-     */
-    @GetMapping(value = "/member/feign/memberEvaluationNum")
-    List<Map<String, Object>> memberEvaluationNum();
+	@PostMapping(value = "/member/feign/memberEvaluationNum")
+	FeignResponse<List<Map<String, Object>>> memberEvaluationNum();
 
-    @GetMapping(value = "/member/feign/memberEvaluationDTO")
-    Boolean addMemberEvaluation(@RequestParam(value = "memberEvaluationDTO") MemberEvaluationApiRequest memberEvaluationDTO,
-                                @RequestParam(value = "b") boolean b);
+	@PostMapping(value = "/member/feign/memberEvaluationDTO")
+	FeignResponse<BooleanApiResponse> addMemberEvaluation(
+		@Validated @RequestBody FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    /**
-     * LambdaQueryWrapper<MemberEvaluation> lambdaQueryWrapper = Wrappers.lambdaQuery();
-     * lambdaQueryWrapper.eq(MemberEvaluation::getStoreId, store.getId());
-     * lambdaQueryWrapper.eq(MemberEvaluation::getStatus, SwitchEnum.OPEN.name());
-     *
-     * @param id
-     * @param name
-     * @return
-     */
-    @GetMapping(value = "/member/feign/evaluation/getStoreRatingVO")
-    StoreRatingApiResponse getStoreRatingVO(@RequestParam(value = "id") Long id,
-											@RequestParam(value = "name") String name);
+	@PostMapping(value = "/member/feign/evaluation/getStoreRatingVO")
+	FeignResponse<StoreRatingApiResponse> getStoreRatingVO(
+		@Validated @RequestBody FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @GetMapping(value = "/member/feign/evaluation/queryById")
-    MemberEvaluationApiResponse queryById(@RequestParam(value = "id") Long id);
+	@PostMapping(value = "/member/feign/evaluation/queryById")
+	FeignResponse<MemberEvaluationApiResponse> queryById(
+		@Validated @RequestBody FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @GetMapping(value = "/member/feign/evaluation/reply")
-    boolean reply(@RequestParam(value = "id") Long id,
-                  @RequestParam(value = "reply") String reply,
-                  @RequestParam(value = "replyImage") String replyImage);
+	@PostMapping(value = "/member/feign/evaluation/reply")
+	FeignResponse<BooleanApiResponse> reply(
+		@Validated @RequestBody FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @GetMapping(value = "/member/feign/evaluation/queryPage")
-    PageResult<MemberEvaluationListApiResponse> queryPage(
-            @RequestParam(value = "evaluationPageQuery") EvaluationPageQueryApiRequest evaluationPageQuery);
+	@PostMapping(value = "/member/feign/evaluation/queryPage")
+	FeignResponse<PageResult<MemberEvaluationListApiResponse>> queryPage(
+		@Validated @RequestBody FeignRequest<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
 }

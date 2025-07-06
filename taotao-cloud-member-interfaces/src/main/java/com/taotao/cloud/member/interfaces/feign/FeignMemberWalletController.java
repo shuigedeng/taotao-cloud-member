@@ -16,9 +16,13 @@
 
 package com.taotao.cloud.member.interfaces.feign;
 
+import com.taotao.boot.common.model.FeignRequest;
+import com.taotao.boot.common.model.FeignResponse;
 import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberWalletApi;
+import com.taotao.cloud.member.api.feign.request.MemberWalletQueryApiRequest;
 import com.taotao.cloud.member.api.feign.request.MemberWalletUpdateApiRequest;
+import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
@@ -36,12 +40,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class FeignMemberWalletController extends FeignController implements MemberWalletApi {
 
 	@Override
-	public boolean increase(MemberWalletUpdateApiRequest memberWalletUpdateDTO) {
-		return false;
+	public FeignResponse<BooleanApiResponse> increase(
+		FeignRequest<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest) {
+		return null;
 	}
 
 	@Override
-	public boolean save(Long id, String username) {
-		return false;
+	public FeignResponse<BooleanApiResponse> save(
+		FeignRequest<MemberWalletQueryApiRequest> memberWalletQueryApiRequest) {
+		return null;
 	}
 }

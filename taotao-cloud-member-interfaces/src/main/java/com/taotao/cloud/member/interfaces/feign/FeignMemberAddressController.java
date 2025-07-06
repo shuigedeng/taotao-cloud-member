@@ -16,6 +16,8 @@
 
 package com.taotao.cloud.member.interfaces.feign;
 
+import com.taotao.boot.common.model.FeignRequest;
+import com.taotao.boot.common.model.FeignResponse;
 import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberAddressApi;
 import com.taotao.cloud.member.api.feign.response.MemberAddressApiResponse;
@@ -37,8 +39,8 @@ public class FeignMemberAddressController extends FeignController implements Mem
 
     //private final IMemberService memberService;
 
-    @Override
-    public MemberAddressApiResponse getById(String shippingAddressId) {
-        return null;
-    }
+	@Override
+	public FeignResponse<MemberAddressApiResponse> getById(FeignRequest<String> shippingAddressId) {
+		return null;
+	}
 }
