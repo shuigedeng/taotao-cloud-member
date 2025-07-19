@@ -20,11 +20,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
 import java.io.Serial;
 import java.io.Serializable;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 import lombok.experimental.Accessors;
 import org.hibernate.validator.constraints.Length;
 
@@ -38,8 +36,7 @@ import org.hibernate.validator.constraints.Length;
 @Schema(description = "租户id")
 public class MemberEvaluationApiRequest implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "子订单编号")
     @NotEmpty(message = "订单异常")
@@ -74,75 +71,75 @@ public class MemberEvaluationApiRequest implements Serializable {
     @Schema(description = "描述评分")
     private Integer descriptionScore;
 
-	public String getOrderItemSn() {
-		return orderItemSn;
-	}
+    public String getOrderItemSn() {
+        return orderItemSn;
+    }
 
-	public void setOrderItemSn(String orderItemSn) {
-		this.orderItemSn = orderItemSn;
-	}
+    public void setOrderItemSn(String orderItemSn) {
+        this.orderItemSn = orderItemSn;
+    }
 
-	public Long getGoodsId() {
-		return goodsId;
-	}
+    public Long getGoodsId() {
+        return goodsId;
+    }
 
-	public void setGoodsId(Long goodsId) {
-		this.goodsId = goodsId;
-	}
+    public void setGoodsId(Long goodsId) {
+        this.goodsId = goodsId;
+    }
 
-	public Long getSkuId() {
-		return skuId;
-	}
+    public Long getSkuId() {
+        return skuId;
+    }
 
-	public void setSkuId(Long skuId) {
-		this.skuId = skuId;
-	}
+    public void setSkuId(Long skuId) {
+        this.skuId = skuId;
+    }
 
-	public String getGrade() {
-		return grade;
-	}
+    public String getGrade() {
+        return grade;
+    }
 
-	public void setGrade(String grade) {
-		this.grade = grade;
-	}
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
 
-	public String getContent() {
-		return content;
-	}
+    public String getContent() {
+        return content;
+    }
 
-	public void setContent(String content) {
-		this.content = content;
-	}
+    public void setContent(String content) {
+        this.content = content;
+    }
 
-	public String getImages() {
-		return images;
-	}
+    public String getImages() {
+        return images;
+    }
 
-	public void setImages(String images) {
-		this.images = images;
-	}
+    public void setImages(String images) {
+        this.images = images;
+    }
 
-	public Integer getDeliveryScore() {
-		return deliveryScore;
-	}
+    public Integer getDeliveryScore() {
+        return deliveryScore;
+    }
 
-	public void setDeliveryScore(Integer deliveryScore) {
-		this.deliveryScore = deliveryScore;
-	}
+    public void setDeliveryScore(Integer deliveryScore) {
+        this.deliveryScore = deliveryScore;
+    }
 
-	public Integer getServiceScore() {
-		return serviceScore;
-	}
+    public Integer getServiceScore() {
+        return serviceScore;
+    }
 
-	public void setServiceScore(Integer serviceScore) {
-		this.serviceScore = serviceScore;
-	}
+    public void setServiceScore(Integer serviceScore) {
+        this.serviceScore = serviceScore;
+    }
 
-	public Integer getDescriptionScore() {
-		return descriptionScore;
-	}
+    public Integer getDescriptionScore() {
+        return descriptionScore;
+    }
 
-	public void setDescriptionScore(Integer descriptionScore) {
-		this.descriptionScore = descriptionScore;
-	}
+    public void setDescriptionScore(Integer descriptionScore) {
+        this.descriptionScore = descriptionScore;
+    }
 }

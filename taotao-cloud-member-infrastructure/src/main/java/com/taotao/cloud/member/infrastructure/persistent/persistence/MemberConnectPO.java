@@ -22,7 +22,6 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -61,7 +60,9 @@ public class MemberConnectPO extends BaseSuperEntity<MemberConnectPO, Long> {
     private Long memberId;
 
     /** 平台id */
-    @Column(name = "platform_id", columnDefinition = "varchar(255) not null default '' comment '平台id'")
+    @Column(
+            name = "platform_id",
+            columnDefinition = "varchar(255) not null default '' comment '平台id'")
     private String platformId;
 
     /**
@@ -71,12 +72,16 @@ public class MemberConnectPO extends BaseSuperEntity<MemberConnectPO, Long> {
      */
     @Column(
             name = "type",
-            columnDefinition = "int NOT NULL DEFAULT 0 COMMENT '平台类型"
-                    + " 0:未知,1:facebook,2:google,3:wechat,4:qq,5:weibo,6:twitter'")
+            columnDefinition =
+                    "int NOT NULL DEFAULT 0 COMMENT '平台类型"
+                            + " 0:未知,1:facebook,2:google,3:wechat,4:qq,5:weibo,6:twitter'")
     private Integer type;
 
     /** 昵称 */
-    @Column(name = "nickname", unique = true, columnDefinition = "varchar(255) not null comment '昵称'")
+    @Column(
+            name = "nickname",
+            unique = true,
+            columnDefinition = "varchar(255) not null comment '昵称'")
     private String nickname;
 
     /** 头像 */

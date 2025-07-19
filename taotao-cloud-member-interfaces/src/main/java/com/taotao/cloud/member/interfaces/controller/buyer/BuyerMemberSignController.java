@@ -37,21 +37,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/member/buyer/member/sign")
 public class BuyerMemberSignController extends BusinessController {
 
-	//private final IMemberSignService memberSignService;
-	//
-	//@Operation(summary = "会员签到", description = "会员签到")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@PostMapping
-	//public Result<Boolean> memberSign() {
-	//    return Result.success(memberSignService.memberSign());
-	//}
-	//
-	//@Operation(summary = "根据时间查询会员签到表，类型是YYYYmm", description = "根据时间查询会员签到表，类型是YYYYmm")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping
-	//public Result<List<MemberSignVO>> memberSign(@RequestParam String time) {
-	//    return Result.success(memberSignService.getMonthSignDay(time));
-	//}
+    // private final IMemberSignService memberSignService;
+    //
+    // @Operation(summary = "会员签到", description = "会员签到")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PostMapping
+    // public Result<Boolean> memberSign() {
+    //    return Result.success(memberSignService.memberSign());
+    // }
+    //
+    // @Operation(summary = "根据时间查询会员签到表，类型是YYYYmm", description = "根据时间查询会员签到表，类型是YYYYmm")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping
+    // public Result<List<MemberSignVO>> memberSign(@RequestParam String time) {
+    //    return Result.success(memberSignService.getMonthSignDay(time));
+    // }
 }

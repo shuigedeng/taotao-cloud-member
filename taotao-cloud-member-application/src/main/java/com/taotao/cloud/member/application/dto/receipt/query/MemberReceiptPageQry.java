@@ -19,14 +19,12 @@ package com.taotao.cloud.member.application.dto.receipt.query;
 import com.taotao.boot.common.model.PageQuery;
 import com.taotao.cloud.member.api.enums.MemberReceiptEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serial;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
-
-import java.io.Serial;
 
 /**
  * 会员发票查询DTO
@@ -43,8 +41,7 @@ import java.io.Serial;
 @Schema(description = "会员发票查询DTO")
 public class MemberReceiptPageQry extends PageQuery {
 
-    @Serial
-    private static final long serialVersionUID = -8210927982915677995L;
+    @Serial private static final long serialVersionUID = -8210927982915677995L;
 
     @Schema(description = "会员ID")
     private String memberId;

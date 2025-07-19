@@ -26,6 +26,7 @@ public abstract class TaoTaoCloudMemberApplicationTestBase extends TtcBootTestBa
         System.setProperty("spring.banner.location", "ttc-banner.txt");
         System.setProperty("spring.profiles.active", "dev");
         System.setProperty("spring.output.ansi.enabled", "ALWAYS");
-        System.setProperty("arthas.outputPath", "${user.home}/logs/taotao-cloud-member/arthas-output");
+        System.setProperty(
+                "arthas.outputPath", "${user.home}/logs/taotao-cloud-member/arthas-output");
     }
 }

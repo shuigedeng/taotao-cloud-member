@@ -19,14 +19,12 @@ package com.taotao.cloud.member.application.dto.member.query;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.*;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-
 import java.io.Serial;
 import java.io.Serializable;
+import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /**
  * 会员query
@@ -44,8 +42,7 @@ import java.io.Serializable;
 @Schema(name = "MemberQuery", description = "会员query")
 public class MemberPageQry implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "用户昵称")
     private String nickname;

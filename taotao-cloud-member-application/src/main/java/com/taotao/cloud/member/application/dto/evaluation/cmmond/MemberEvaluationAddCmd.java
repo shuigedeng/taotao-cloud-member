@@ -18,15 +18,13 @@ package com.taotao.cloud.member.application.dto.evaluation.cmmond;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import java.io.Serial;
+import java.io.Serializable;
 import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.hibernate.validator.constraints.Length;
-
-import java.io.Serial;
-import java.io.Serializable;
 
 /** 会员评价DTO */
 @Setter
@@ -38,8 +36,7 @@ import java.io.Serializable;
 @Schema(description = "租户id")
 public class MemberEvaluationAddCmd implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "子订单编号")
     @NotEmpty(message = "订单异常")

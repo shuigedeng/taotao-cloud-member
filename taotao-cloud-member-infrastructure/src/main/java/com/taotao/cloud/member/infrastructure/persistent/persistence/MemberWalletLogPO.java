@@ -24,7 +24,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -49,6 +48,7 @@ import lombok.experimental.Accessors;
 public class MemberWalletLogPO extends BaseSuperEntity<MemberWalletLogPO, Long> {
 
     public static final String TABLE_NAME = "ttc_wallet_log";
+
     /** 会员id */
     @Column(name = "member_id", columnDefinition = "bigint not null comment '会员id'")
     private Long memberId;
@@ -72,6 +72,4 @@ public class MemberWalletLogPO extends BaseSuperEntity<MemberWalletLogPO, Long> 
     /** 日志明细 */
     @Column(name = "detail", columnDefinition = "varchar(32) not null comment '日志明细'")
     private String detail;
-
-
 }

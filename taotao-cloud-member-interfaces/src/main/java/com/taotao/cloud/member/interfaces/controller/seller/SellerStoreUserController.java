@@ -35,15 +35,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/member/seller/store/user")
 public class SellerStoreUserController extends BusinessController {
 
-    //private final IMemberService memberService;
-	//
-    //@Operation(summary = "获取当前登录用户API", description = "获取当前登录用户API")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@GetMapping(value = "/info")
-    //public Result<MemberVO> getUserInfo() {
+    // private final IMemberService memberService;
+    //
+    // @Operation(summary = "获取当前登录用户API", description = "获取当前登录用户API")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/info")
+    // public Result<MemberVO> getUserInfo() {
     //    Member member = memberService.findByUsername(SecurityUtils.getUsername());
     //    member.setPassword(null);
     //    return Result.success(MemberConvert.INSTANCE.convert(member));
-    //}
+    // }
 }

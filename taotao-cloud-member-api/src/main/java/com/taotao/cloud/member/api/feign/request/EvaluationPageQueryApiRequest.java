@@ -20,11 +20,9 @@ import com.taotao.boot.common.model.PageQuery;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.experimental.Accessors;
 import lombok.experimental.Accessors;
 
 /**
@@ -42,8 +40,7 @@ import lombok.experimental.Accessors;
 @Schema(description = "评价查询条件")
 public class EvaluationPageQueryApiRequest extends PageQuery {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "skuid")
     private Long skuId;
@@ -66,7 +63,9 @@ public class EvaluationPageQueryApiRequest extends PageQuery {
     @Schema(description = "商品ID")
     private Long goodsId;
 
-    @Schema(description = "好中差评 , GOOD：好评，MODERATE：中评，WORSE：差评", allowableValues = "GOOD,MODERATE,WORSE")
+    @Schema(
+            description = "好中差评 , GOOD：好评，MODERATE：中评，WORSE：差评",
+            allowableValues = "GOOD,MODERATE,WORSE")
     private String grade;
 
     @Schema(description = "是否有图")
@@ -81,99 +80,99 @@ public class EvaluationPageQueryApiRequest extends PageQuery {
     @Schema(description = "状态")
     private String status;
 
-	public Long getSkuId() {
-		return skuId;
-	}
+    public Long getSkuId() {
+        return skuId;
+    }
 
-	public void setSkuId(Long skuId) {
-		this.skuId = skuId;
-	}
+    public void setSkuId(Long skuId) {
+        this.skuId = skuId;
+    }
 
-	public Long getMemberId() {
-		return memberId;
-	}
+    public Long getMemberId() {
+        return memberId;
+    }
 
-	public void setMemberId(Long memberId) {
-		this.memberId = memberId;
-	}
+    public void setMemberId(Long memberId) {
+        this.memberId = memberId;
+    }
 
-	public String getMemberName() {
-		return memberName;
-	}
+    public String getMemberName() {
+        return memberName;
+    }
 
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
-	}
+    public void setMemberName(String memberName) {
+        this.memberName = memberName;
+    }
 
-	public String getStoreName() {
-		return storeName;
-	}
+    public String getStoreName() {
+        return storeName;
+    }
 
-	public void setStoreName(String storeName) {
-		this.storeName = storeName;
-	}
+    public void setStoreName(String storeName) {
+        this.storeName = storeName;
+    }
 
-	public Long getStoreId() {
-		return storeId;
-	}
+    public Long getStoreId() {
+        return storeId;
+    }
 
-	public void setStoreId(Long storeId) {
-		this.storeId = storeId;
-	}
+    public void setStoreId(Long storeId) {
+        this.storeId = storeId;
+    }
 
-	public String getGoodsName() {
-		return goodsName;
-	}
+    public String getGoodsName() {
+        return goodsName;
+    }
 
-	public void setGoodsName(String goodsName) {
-		this.goodsName = goodsName;
-	}
+    public void setGoodsName(String goodsName) {
+        this.goodsName = goodsName;
+    }
 
-	public Long getGoodsId() {
-		return goodsId;
-	}
+    public Long getGoodsId() {
+        return goodsId;
+    }
 
-	public void setGoodsId(Long goodsId) {
-		this.goodsId = goodsId;
-	}
+    public void setGoodsId(Long goodsId) {
+        this.goodsId = goodsId;
+    }
 
-	public String getGrade() {
-		return grade;
-	}
+    public String getGrade() {
+        return grade;
+    }
 
-	public void setGrade(String grade) {
-		this.grade = grade;
-	}
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
 
-	public String getHaveImage() {
-		return haveImage;
-	}
+    public String getHaveImage() {
+        return haveImage;
+    }
 
-	public void setHaveImage(String haveImage) {
-		this.haveImage = haveImage;
-	}
+    public void setHaveImage(String haveImage) {
+        this.haveImage = haveImage;
+    }
 
-	public String getStartTime() {
-		return startTime;
-	}
+    public String getStartTime() {
+        return startTime;
+    }
 
-	public void setStartTime(String startTime) {
-		this.startTime = startTime;
-	}
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
+    }
 
-	public String getEndTime() {
-		return endTime;
-	}
+    public String getEndTime() {
+        return endTime;
+    }
 
-	public void setEndTime(String endTime) {
-		this.endTime = endTime;
-	}
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
+    }
 
-	public String getStatus() {
-		return status;
-	}
+    public String getStatus() {
+        return status;
+    }
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }

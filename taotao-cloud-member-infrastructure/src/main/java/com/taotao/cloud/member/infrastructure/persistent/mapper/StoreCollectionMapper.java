@@ -16,26 +16,21 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.toolkit.Constants;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberStoreCollectionPO;
 import com.taotao.boot.webagg.mapper.BaseSuperMapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberStoreCollectionPO;
 
 /**
  * 会员收藏数据处理层
  */
 public interface StoreCollectionMapper extends BaseSuperMapper<MemberStoreCollectionPO, Long> {
 
-    ///**
+    /// **
     // * 会员店铺收藏分页
     // *
     // * @param page         分页
     // * @param queryWrapper 查询条件
     // */
-    //@Select("""
+    // @Select("""
     //        select s.id,
     //        s.store_name,
     //        s.store_logo,
@@ -43,6 +38,7 @@ public interface StoreCollectionMapper extends BaseSuperMapper<MemberStoreCollec
     //        from tt_store s INNER JOIN tt_store_collection sc
     //        ON s.id=sc.store_id ${ew.customSqlSegment}
     //        """)
-    //IPage<StoreCollectionVO> storeCollectionVOList(
-    //        IPage<StoreCollectionVO> page, @Param(Constants.WRAPPER) Wrapper<StoreCollectionVO> queryWrapper);
+    // IPage<StoreCollectionVO> storeCollectionVOList(
+    //        IPage<StoreCollectionVO> page, @Param(Constants.WRAPPER) Wrapper<StoreCollectionVO>
+    // queryWrapper);
 }

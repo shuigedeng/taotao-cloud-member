@@ -22,7 +22,6 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -61,6 +60,8 @@ public class MemberGradePO extends BaseSuperEntity<MemberGradePO, Long> {
     private Integer experienceValue;
 
     /** 是否为默认等级 */
-    @Column(name = "defaulted", columnDefinition = "boolean not null default false comment '是否为默认等级'")
+    @Column(
+            name = "defaulted",
+            columnDefinition = "boolean not null default false comment '是否为默认等级'")
     private Boolean defaulted;
 }

@@ -34,10 +34,11 @@ public class MemberAddressApiFallback implements FallbackFactory<MemberAddressAp
     @Override
     public MemberAddressApi create(Throwable throwable) {
         return new MemberAddressApi() {
-			@Override
-			public FeignResponse<MemberAddressApiResponse> getById(FeignRequest<String> shippingAddressId) {
-				return null;
-			}
-		};
+            @Override
+            public FeignResponse<MemberAddressApiResponse> getById(
+                    FeignRequest<String> shippingAddressId) {
+                return null;
+            }
+        };
     }
 }

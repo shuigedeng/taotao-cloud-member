@@ -37,62 +37,69 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/member/buyer/member/evaluation")
 public class BuyerMemberEvaluationController extends BusinessController {
 
-	///** 会员商品评价 */
-	//private final IMemberEvaluationService memberEvaluationService;
-	//
-	//@Operation(summary = "添加会员评价", description = "添加会员评价")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@PostMapping
-	//public Result<Boolean> save(@Valid @RequestBody MemberEvaluationDTO memberEvaluationDTO) {
-	//    return Result.success(memberEvaluationService.addMemberEvaluation(memberEvaluationDTO));
-	//}
-	//
-	//@Operation(summary = "查看会员评价详情", description = "查看会员评价详情")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping(value = "/{id}")
-	//public Result<MemberEvaluationVO> queryById(
-	//        @Parameter(description = "评价ID", required = true) @NotBlank(message = "评价ID不能为空") @PathVariable("id")
-	//                Long id) {
-	//    MemberEvaluation memberEvaluation = memberEvaluationService.queryById(id);
-	//    return Result.success(MemberEvaluationConvert.INSTANCE.convert(memberEvaluation));
-	//}
-	//
-	//@Operation(summary = "查看当前会员评价列表", description = "查看当前会员评价列表")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping
-	//public Result<PageResult<MemberEvaluationVO>> queryMineEvaluation(
-	//        @Validated EvaluationPageQuery evaluationPageQuery) {
-	//    // 设置当前登录会员
-	//    evaluationPageQuery.setMemberId(SecurityUtils.getUserId());
-	//    IPage<MemberEvaluation> memberEvaluationPage = memberEvaluationService.managerQuery(evaluationPageQuery);
-	//    return Result.success(MpUtils.convertMybatisPage(memberEvaluationPage, MemberEvaluationVO.class));
-	//}
-	//
-	//@Operation(summary = "查看某一个商品的评价列表", description = "查看某一个商品的评价列表")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping(value = "/goods-evaluation/{goodsId}")
-	//public Result<PageResult<MemberEvaluationVO>> queryGoodsEvaluation(
-	//        EvaluationPageQuery evaluationPageQuery,
-	//        @Parameter(description = "商品ID", required = true) @NotBlank(message = "商品ID不能为空") @PathVariable("goodsId")
-	//                Long goodsId) {
-	//    // 设置查询查询商品
-	//    evaluationPageQuery.setGoodsId(goodsId);
-	//    evaluationPageQuery.setStatus(SwitchEnum.OPEN.name());
-	//    IPage<MemberEvaluation> memberEvaluationPage = memberEvaluationService.managerQuery(evaluationPageQuery);
-	//    return Result.success(MpUtils.convertMybatisPage(memberEvaluationPage, MemberEvaluationVO.class));
-	//}
-	//
-	//@Operation(summary = "查看某一个商品的评价数量", description = "查看某一个商品的评价数量")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping(value = "/goods-evaluation/number/{goodsId}")
-	//public Result<EvaluationNumberVO> queryEvaluationNumber(
-	//        @Parameter(description = "商品ID", required = true) @NotBlank(message = "商品ID不能为空") @PathVariable("goodsId")
-	//                Long goodsId) {
-	//    return Result.success(memberEvaluationService.getEvaluationNumber(goodsId));
-	//}
+    /// ** 会员商品评价 */
+    // private final IMemberEvaluationService memberEvaluationService;
+    //
+    // @Operation(summary = "添加会员评价", description = "添加会员评价")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PostMapping
+    // public Result<Boolean> save(@Valid @RequestBody MemberEvaluationDTO memberEvaluationDTO) {
+    //    return Result.success(memberEvaluationService.addMemberEvaluation(memberEvaluationDTO));
+    // }
+    //
+    // @Operation(summary = "查看会员评价详情", description = "查看会员评价详情")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/{id}")
+    // public Result<MemberEvaluationVO> queryById(
+    //        @Parameter(description = "评价ID", required = true) @NotBlank(message = "评价ID不能为空")
+    // @PathVariable("id")
+    //                Long id) {
+    //    MemberEvaluation memberEvaluation = memberEvaluationService.queryById(id);
+    //    return Result.success(MemberEvaluationConvert.INSTANCE.convert(memberEvaluation));
+    // }
+    //
+    // @Operation(summary = "查看当前会员评价列表", description = "查看当前会员评价列表")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping
+    // public Result<PageResult<MemberEvaluationVO>> queryMineEvaluation(
+    //        @Validated EvaluationPageQuery evaluationPageQuery) {
+    //    // 设置当前登录会员
+    //    evaluationPageQuery.setMemberId(SecurityUtils.getUserId());
+    //    IPage<MemberEvaluation> memberEvaluationPage =
+    // memberEvaluationService.managerQuery(evaluationPageQuery);
+    //    return Result.success(MpUtils.convertMybatisPage(memberEvaluationPage,
+    // MemberEvaluationVO.class));
+    // }
+    //
+    // @Operation(summary = "查看某一个商品的评价列表", description = "查看某一个商品的评价列表")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/goods-evaluation/{goodsId}")
+    // public Result<PageResult<MemberEvaluationVO>> queryGoodsEvaluation(
+    //        EvaluationPageQuery evaluationPageQuery,
+    //        @Parameter(description = "商品ID", required = true) @NotBlank(message = "商品ID不能为空")
+    // @PathVariable("goodsId")
+    //                Long goodsId) {
+    //    // 设置查询查询商品
+    //    evaluationPageQuery.setGoodsId(goodsId);
+    //    evaluationPageQuery.setStatus(SwitchEnum.OPEN.name());
+    //    IPage<MemberEvaluation> memberEvaluationPage =
+    // memberEvaluationService.managerQuery(evaluationPageQuery);
+    //    return Result.success(MpUtils.convertMybatisPage(memberEvaluationPage,
+    // MemberEvaluationVO.class));
+    // }
+    //
+    // @Operation(summary = "查看某一个商品的评价数量", description = "查看某一个商品的评价数量")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/goods-evaluation/number/{goodsId}")
+    // public Result<EvaluationNumberVO> queryEvaluationNumber(
+    //        @Parameter(description = "商品ID", required = true) @NotBlank(message = "商品ID不能为空")
+    // @PathVariable("goodsId")
+    //                Long goodsId) {
+    //    return Result.success(memberEvaluationService.getEvaluationNumber(goodsId));
+    // }
 }

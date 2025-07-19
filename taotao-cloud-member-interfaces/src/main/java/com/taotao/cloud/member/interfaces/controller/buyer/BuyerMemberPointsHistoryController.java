@@ -33,22 +33,25 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/member/buyer/member/points/history")
 public class BuyerMemberPointsHistoryController extends BusinessController {
 
-	//private final IMemberPointsHistoryService memberPointsHistoryService;
-	//
-	//@Operation(summary = "分页获取当前会员积分历史", description = "分页获取当前会员积分历史")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping(value = "/page")
-	//public Result<PageResult<MemberPointsHistoryPageVO>> getByPage(PageQuery page) {
-	//    IPage<MemberPointsHistory> memberPointsHistoryPage = memberPointsHistoryService.pageQuery(page);
-	//    return Result.success(MpUtils.convertMybatisPage(memberPointsHistoryPage, MemberPointsHistoryPageVO.class));
-	//}
-	//
-	//@Operation(summary = "获取当前会员积分", description = "获取当前会员积分")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping(value = "/current/points")
-	//public Result<MemberPointsHistoryVO> getMemberPointsHistoryVO() {
-	//    return Result.success(memberPointsHistoryService.getMemberPointsHistoryVO(SecurityUtils.getUserId()));
-	//}
+    // private final IMemberPointsHistoryService memberPointsHistoryService;
+    //
+    // @Operation(summary = "分页获取当前会员积分历史", description = "分页获取当前会员积分历史")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/page")
+    // public Result<PageResult<MemberPointsHistoryPageVO>> getByPage(PageQuery page) {
+    //    IPage<MemberPointsHistory> memberPointsHistoryPage =
+    // memberPointsHistoryService.pageQuery(page);
+    //    return Result.success(MpUtils.convertMybatisPage(memberPointsHistoryPage,
+    // MemberPointsHistoryPageVO.class));
+    // }
+    //
+    // @Operation(summary = "获取当前会员积分", description = "获取当前会员积分")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/current/points")
+    // public Result<MemberPointsHistoryVO> getMemberPointsHistoryVO() {
+    //    return
+    // Result.success(memberPointsHistoryService.getMemberPointsHistoryVO(SecurityUtils.getUserId()));
+    // }
 }

@@ -39,15 +39,15 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "内部调用端-会员钱包API", description = "内部调用端-会员钱包API")
 public class FeignMemberWalletController extends FeignController implements MemberWalletApi {
 
-	@Override
-	public FeignResponse<BooleanApiResponse> increase(
-		FeignRequest<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest) {
-		return null;
-	}
+    @Override
+    public FeignResponse<BooleanApiResponse> increase(
+            FeignRequest<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest) {
+        return null;
+    }
 
-	@Override
-	public FeignResponse<BooleanApiResponse> save(
-		FeignRequest<MemberWalletQueryApiRequest> memberWalletQueryApiRequest) {
-		return null;
-	}
+    @Override
+    public FeignResponse<BooleanApiResponse> save(
+            FeignRequest<MemberWalletQueryApiRequest> memberWalletQueryApiRequest) {
+        return null;
+    }
 }

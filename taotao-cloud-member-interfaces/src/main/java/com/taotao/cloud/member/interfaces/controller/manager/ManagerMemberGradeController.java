@@ -34,52 +34,52 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/member/manager/member/grade")
 @Tag(name = "管理端-会员等级管理API", description = "管理端-会员等级管理API")
 public class ManagerMemberGradeController extends BusinessController {
-	//
-    //private final IMemberGradeService memberGradeService;
-	//
-    //@Operation(summary = "通过id获取会员等级", description = "通过id获取会员等级")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@GetMapping(value = "/{id}")
-    //public Result<MemberGradeVO> getById(@PathVariable Long id) {
+    //
+    // private final IMemberGradeService memberGradeService;
+    //
+    // @Operation(summary = "通过id获取会员等级", description = "通过id获取会员等级")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/{id}")
+    // public Result<MemberGradeVO> getById(@PathVariable Long id) {
     //    MemberGrade memberGrade = memberGradeService.getById(id);
     //    return Result.success(MemberGradeConvert.INSTANCE.convert(memberGrade));
-    //}
-	//
-    //@Operation(summary = "获取会员等级分页", description = "获取会员等级分页")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@GetMapping(value = "/page")
-    //public Result<PageResult<MemberGradeVO>> queryPage(PageQuery pageQuery) {
+    // }
+    //
+    // @Operation(summary = "获取会员等级分页", description = "获取会员等级分页")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/page")
+    // public Result<PageResult<MemberGradeVO>> queryPage(PageQuery pageQuery) {
     //    IPage<MemberGrade> memberGradePage = memberGradeService.queryPage(pageQuery);
     //    return Result.success(MpUtils.convertMybatisPage(memberGradePage, MemberGradeVO.class));
-    //}
-	//
-    //@Operation(summary = "添加会员等级", description = "添加会员等级")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@PostMapping
-    //public Result<Boolean> save(@Validated MemberGrade memberGrade) {
+    // }
+    //
+    // @Operation(summary = "添加会员等级", description = "添加会员等级")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PostMapping
+    // public Result<Boolean> save(@Validated MemberGrade memberGrade) {
     //    return Result.success(memberGradeService.save(memberGrade));
-    //}
-	//
-    //@Operation(summary = "修改会员等级", description = "修改会员等级")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@GetMapping
-    //@PutMapping(value = "/{id}")
-    //public Result<Boolean> updateById(@PathVariable Long id, MemberGrade memberGrade) {
+    // }
+    //
+    // @Operation(summary = "修改会员等级", description = "修改会员等级")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping
+    // @PutMapping(value = "/{id}")
+    // public Result<Boolean> updateById(@PathVariable Long id, MemberGrade memberGrade) {
     //    return Result.success(memberGradeService.updateById(memberGrade));
-    //}
-	//
-    //@Operation(summary = "删除会员等级", description = "删除会员等级")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@DeleteMapping(value = "/{id}")
-    //public Result<Boolean> removeById(@PathVariable Long id) {
+    // }
+    //
+    // @Operation(summary = "删除会员等级", description = "删除会员等级")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @DeleteMapping(value = "/{id}")
+    // public Result<Boolean> removeById(@PathVariable Long id) {
     //    if (memberGradeService.getById(id).getDefaulted()) {
     //        throw new BusinessException(ResultEnum.USER_GRADE_IS_DEFAULT);
     //    }
     //    return Result.success(memberGradeService.removeById(id));
-    //}
+    // }
 }

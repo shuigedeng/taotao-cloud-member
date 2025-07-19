@@ -18,14 +18,12 @@ package com.taotao.cloud.member.application.dto.evaluation.query;
 
 import com.taotao.boot.common.model.PageQuery;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serial;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
-
-import java.io.Serial;
 
 /**
  * 评价查询条件
@@ -42,8 +40,7 @@ import java.io.Serial;
 @Schema(description = "评价查询条件")
 public class EvaluationPageQry extends PageQuery {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "skuid")
     private Long skuId;
@@ -66,7 +63,9 @@ public class EvaluationPageQry extends PageQuery {
     @Schema(description = "商品ID")
     private Long goodsId;
 
-    @Schema(description = "好中差评 , GOOD：好评，MODERATE：中评，WORSE：差评", allowableValues = "GOOD,MODERATE,WORSE")
+    @Schema(
+            description = "好中差评 , GOOD：好评，MODERATE：中评，WORSE：差评",
+            allowableValues = "GOOD,MODERATE,WORSE")
     private String grade;
 
     @Schema(description = "是否有图")

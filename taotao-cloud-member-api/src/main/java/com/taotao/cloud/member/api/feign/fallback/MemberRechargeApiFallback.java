@@ -22,10 +22,7 @@ import com.taotao.cloud.member.api.feign.MemberRechargeApi;
 import com.taotao.cloud.member.api.feign.request.MemberRechargeQueryApiRequest;
 import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberRechargeApiResponse;
-import java.math.BigDecimal;
 import java.util.List;
-
-import org.dromara.hutool.core.date.DateTime;
 import org.springframework.cloud.openfeign.FallbackFactory;
 
 /**
@@ -40,35 +37,35 @@ public class MemberRechargeApiFallback implements FallbackFactory<MemberRecharge
     @Override
     public MemberRechargeApi create(Throwable throwable) {
         return new MemberRechargeApi() {
-			@Override
-			public FeignResponse<BooleanApiResponse> paySuccess(
-				FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<BooleanApiResponse> paySuccess(
+                    FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<MemberRechargeApiResponse> getRecharge(
-				FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<MemberRechargeApiResponse> getRecharge(
+                    FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<MemberRechargeApiResponse> recharge(
-				FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<MemberRechargeApiResponse> recharge(
+                    FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<List<MemberRechargeApiResponse>> list(
-				FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<List<MemberRechargeApiResponse>> list(
+                    FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<BooleanApiResponse> rechargeOrderCancel(
-				FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
-				return null;
-			}
-		};
+            @Override
+            public FeignResponse<BooleanApiResponse> rechargeOrderCancel(
+                    FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
+                return null;
+            }
+        };
     }
 }

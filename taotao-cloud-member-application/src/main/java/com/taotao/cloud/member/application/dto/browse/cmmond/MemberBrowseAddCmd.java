@@ -16,8 +16,8 @@
 
 package com.taotao.cloud.member.application.dto.browse.cmmond;
 
-import lombok.AllArgsConstructor;
 import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @Setter

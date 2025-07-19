@@ -18,8 +18,8 @@ package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.toolkit.Constants;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberSignPO;
 import com.taotao.boot.webagg.mapper.BaseSuperMapper;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberSignPO;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -33,11 +33,12 @@ public interface MemberSignMapper extends BaseSuperMapper<MemberSignPO, Long> {
      * @param memberId 会员ID
      * @return 会员签到列表
      */
-    @Select("""
-		SELECT *
-		FROM tt_member_sign
-		WHERE TO_DAYS( NOW( ) ) - TO_DAYS( create_time) = 1 and member_id = #{memberId}
-		""")
+    @Select(
+            """
+        SELECT *
+        FROM tt_member_sign
+        WHERE TO_DAYS( NOW( ) ) - TO_DAYS( create_time) = 1 and member_id = #{memberId}
+        """)
     List<MemberSignPO> getBeforeMemberSign(Long memberId);
 
     /**
@@ -46,12 +47,14 @@ public interface MemberSignMapper extends BaseSuperMapper<MemberSignPO, Long> {
      * @param queryWrapper 查询条件
      * @return 会员签到列表
      */
-    @Select("""
-		select *
-		from tt_member_sign
-		${ew.customSqlSegment}
-		""")
-    List<MemberSignPO> getTodayMemberSign(@Param(Constants.WRAPPER) Wrapper<MemberSignPO> queryWrapper);
+    @Select(
+            """
+        select *
+        from tt_member_sign
+        ${ew.customSqlSegment}
+        """)
+    List<MemberSignPO> getTodayMemberSign(
+            @Param(Constants.WRAPPER) Wrapper<MemberSignPO> queryWrapper);
 
     /**
      * 获取当月的会员签到记录
@@ -60,10 +63,11 @@ public interface MemberSignMapper extends BaseSuperMapper<MemberSignPO, Long> {
      * @param time 时间
      * @return 会员签到列表
      */
-    @Select("""
-		SELECT *
-		FROM tt_member_sign
-		WHERE DATE_FORMAT(create_time,'%Y%m') = #{time} and member_id = #{memberId}
-		""")
+    @Select(
+            """
+        SELECT *
+        FROM tt_member_sign
+        WHERE DATE_FORMAT(create_time,'%Y%m') = #{time} and member_id = #{memberId}
+        """)
     List<MemberSignPO> getMonthMemberSign(Long memberId, String time);
 }

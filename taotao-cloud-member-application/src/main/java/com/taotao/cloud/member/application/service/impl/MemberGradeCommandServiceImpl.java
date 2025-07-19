@@ -16,10 +16,6 @@
 
 package com.taotao.cloud.member.application.service.impl;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.taotao.boot.ddd.model.application.service.CommandService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.taotao.boot.common.model.PageQuery;
 import com.taotao.cloud.member.application.service.MemberGradeCommandService;
 import org.springframework.stereotype.Service;
 
@@ -29,15 +25,14 @@ import org.springframework.stereotype.Service;
  * @since 2021/5/14 5:58 下午
  */
 @Service
-public class MemberGradeCommandServiceImpl
-        implements MemberGradeCommandService {
-//	@Override
-//	public IPage<MemberGradePO> queryPage(PageQuery pageQuery) {
-//		return null;
-//	}
-	//
-    //@Override
-    //public IPage<MemberGradePO> queryPage(PageQuery pageQuery) {
+public class MemberGradeCommandServiceImpl implements MemberGradeCommandService {
+    //	@Override
+    //	public IPage<MemberGradePO> queryPage(PageQuery pageQuery) {
+    //		return null;
+    //	}
+    //
+    // @Override
+    // public IPage<MemberGradePO> queryPage(PageQuery pageQuery) {
     //    return this.page(pageQuery.buildMpPage());
-    //}
+    // }
 }

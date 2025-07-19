@@ -25,19 +25,12 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class MemberDomainRepositoryImpl implements MemberDomainRepository {
 
+    @Override
+    public void create(Member dept) {}
 
-	@Override
-	public void create(Member dept) {
+    @Override
+    public void modify(Member dept) {}
 
-	}
-
-	@Override
-	public void modify(Member dept) {
-
-	}
-
-	@Override
-	public void remove(Long[] ids) {
-
-	}
+    @Override
+    public void remove(Long[] ids) {}
 }

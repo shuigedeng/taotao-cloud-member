@@ -18,15 +18,13 @@ package com.taotao.cloud.member.application.dto.point.query;
 
 import com.taotao.boot.common.model.PageQuery;
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import java.io.Serial;
+import java.io.Serializable;
 import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
-
-import java.io.Serial;
-import java.io.Serializable;
 
 /**
  * 会员query
@@ -45,8 +43,7 @@ import java.io.Serializable;
 @Schema(name = "MemberPointHistoryPageQuery", description = "会员query")
 public class MemberPointHistoryPageQry extends PageQuery implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     private Long memberId;
 

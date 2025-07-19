@@ -35,55 +35,56 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "管理端-会员管理API", description = "管理端-会员管理API")
 public class ManagerMemberController extends BusinessController {
 
-    //private final IMemberService memberService;
-	//
-    //@Operation(summary = "会员分页列表", description = "会员分页列表")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@GetMapping
-    //public Result<PageResult<MemberVO>> pageQuery(MemberSearchPageQuery memberSearchPageQuery) {
+    // private final IMemberService memberService;
+    //
+    // @Operation(summary = "会员分页列表", description = "会员分页列表")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping
+    // public Result<PageResult<MemberVO>> pageQuery(MemberSearchPageQuery memberSearchPageQuery) {
     //    IPage<Member> memberPage = memberService.pageQuery(memberSearchPageQuery);
     //    return Result.success(MpUtils.convertMybatisPage(memberPage, MemberVO.class));
-    //}
-	//
-    //@Operation(summary = "通过ID获取会员信息", description = "通过ID获取会员信息")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@GetMapping(value = "/{id}")
-    //public Result<MemberVO> getById(@PathVariable Long id) {
+    // }
+    //
+    // @Operation(summary = "通过ID获取会员信息", description = "通过ID获取会员信息")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/{id}")
+    // public Result<MemberVO> getById(@PathVariable Long id) {
     //    Member member = memberService.getById(id);
     //    return Result.success(MemberConvert.INSTANCE.convert(member));
-    //}
-	//
-    //@Operation(summary = "添加会员", description = "添加会员")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@PostMapping
-    //public Result<Boolean> addMember(@Valid MemberAddDTO member) {
+    // }
+    //
+    // @Operation(summary = "添加会员", description = "添加会员")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PostMapping
+    // public Result<Boolean> addMember(@Valid MemberAddDTO member) {
     //    return Result.success(memberService.addMember(member));
-    //}
-	//
-    //@Operation(summary = "修改会员基本信息", description = "修改会员基本信息")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@PutMapping
-    //public Result<Boolean> updateMember(@Valid ManagerMemberEditDTO managerMemberEditDTO) {
+    // }
+    //
+    // @Operation(summary = "修改会员基本信息", description = "修改会员基本信息")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PutMapping
+    // public Result<Boolean> updateMember(@Valid ManagerMemberEditDTO managerMemberEditDTO) {
     //    return Result.success(memberService.updateMember(managerMemberEditDTO));
-    //}
-	//
-    //@Operation(summary = "修改会员状态,开启关闭会员", description = "修改会员状态,开启关闭会员")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@PutMapping("/status")
-    //public Result<Boolean> updateMemberStatus(@RequestParam List<Long> memberIds, @RequestParam Boolean disabled) {
+    // }
+    //
+    // @Operation(summary = "修改会员状态,开启关闭会员", description = "修改会员状态,开启关闭会员")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PutMapping("/status")
+    // public Result<Boolean> updateMemberStatus(@RequestParam List<Long> memberIds, @RequestParam
+    // Boolean disabled) {
     //    return Result.success(memberService.updateMemberStatus(memberIds, disabled));
-    //}
-	//
-    //@Operation(summary = "根据条件查询会员总数", description = "根据条件查询会员总数")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@GetMapping("/num")
-    //public Result<Long> getMemberNum(MemberSearchVO memberSearchVO) {
+    // }
+    //
+    // @Operation(summary = "根据条件查询会员总数", description = "根据条件查询会员总数")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping("/num")
+    // public Result<Long> getMemberNum(MemberSearchVO memberSearchVO) {
     //    return Result.success(memberService.getMemberNum(memberSearchVO));
-    //}
+    // }
 }

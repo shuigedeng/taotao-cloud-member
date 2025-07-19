@@ -19,16 +19,14 @@ package com.taotao.cloud.member.application.dto.member.cmmond;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import java.io.Serial;
+import java.io.Serializable;
 import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.dromara.hutool.core.regex.RegexPool;
 import org.hibernate.validator.constraints.Length;
-
-import java.io.Serial;
-import java.io.Serializable;
 
 /**
  * 会员注册DTO
@@ -46,8 +44,7 @@ import java.io.Serializable;
 @Schema(name = "MemberDTO", description = "会员注册DTO")
 public class MemberRegisterCmd implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -1972549738577159538L;
+    @Serial private static final long serialVersionUID = -1972549738577159538L;
 
     @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED)
     @NotBlank(message = "用户昵称不能超过为空")
@@ -59,7 +56,9 @@ public class MemberRegisterCmd implements Serializable {
     @NotBlank(message = "用户密码不能超过为空")
     @Length(max = 18, message = "密码不能超过20个字符")
     @Length(min = 6, message = "密码不能小于6个字符")
-    @Pattern(regexp = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$", message = "密码格式错误：密码至少包含 数字和英文，长度6-20个字符")
+    @Pattern(
+            regexp = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$",
+            message = "密码格式错误：密码至少包含 数字和英文，长度6-20个字符")
     private String password;
 
     @Schema(description = "手机号", requiredMode = Schema.RequiredMode.REQUIRED)

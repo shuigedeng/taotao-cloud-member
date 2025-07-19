@@ -16,16 +16,8 @@
 
 package com.taotao.cloud.member.application.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.taotao.boot.ddd.model.application.service.CommandService;
-import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.taotao.boot.common.model.PageQuery;
-import com.taotao.boot.common.utils.lang.StringUtils;
-import com.taotao.cloud.member.application.service.MemberPointsHistoryCommandService;
 import com.taotao.cloud.member.application.service.MemberCommandService;
-import com.taotao.boot.security.spring.utils.SecurityUtils;
+import com.taotao.cloud.member.application.service.MemberPointsHistoryCommandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -37,56 +29,56 @@ import org.springframework.stereotype.Service;
  * @since 2023-02-01 13:48:04
  */
 @Service
-public class MemberPointsHistoryCommandServiceImpl
-	implements MemberPointsHistoryCommandService {
+public class MemberPointsHistoryCommandServiceImpl implements MemberPointsHistoryCommandService {
 
-	@Autowired
-	private MemberCommandService memberCommandService;
+    @Autowired private MemberCommandService memberCommandService;
 
-//	@Override
-//	public IPage<MemberPointsHistoryPO> pageQuery(PageQuery pageQuery) {
-//		return null;
-//	}
-//
-//	@Override
-//	public IPage<MemberPointsHistoryPO> memberPointsHistoryPageQuery(PageQuery pageQuery, Long memberId, String memberName) {
-//		return null;
-//	}
-	//
-	//@Override
-	//public MemberPointsHistoryVO getMemberPointsHistoryVO(Long memberId) {
-	//	// 获取会员积分历史
-	//	Member member = memberCommandService.getById(memberId);
-	//
-	//	MemberPointsHistoryVO memberPointsHistoryVO = new MemberPointsHistoryVO();
-	//	if (member != null) {
-	//		memberPointsHistoryVO.setPoint(member.getPoint());
-	//		memberPointsHistoryVO.setTotalPoint(member.getTotalPoint());
-	//		return memberPointsHistoryVO;
-	//	}
-	//	return new MemberPointsHistoryVO();
-	//}
-	//
-	//@Override
-	//public IPage<MemberPointsHistoryPO> pageQuery(PageQuery pageQuery) {
-	//	LambdaQueryWrapper<MemberPointsHistoryPO> queryWrapper = Wrappers.lambdaQuery();
-	//	queryWrapper.eq(MemberPointsHistoryPO::getMemberId, SecurityUtils.getUserId());
-	//	queryWrapper.orderByDesc(MemberPointsHistoryPO::getCreateTime);
-	//	return this.page(pageQuery.buildMpPage(), queryWrapper);
-	//}
-	//
-	//@Override
-	//public IPage<MemberPointsHistoryPO> memberPointsHistoryPageQuery(
-	//	PageQuery pageQuery, Long memberId, String memberName) {
-	//	LambdaQueryWrapper<MemberPointsHistoryPO> lambdaQueryWrapper = new LambdaQueryWrapper<MemberPointsHistoryPO>()
-	//		.eq(memberId != null, MemberPointsHistoryPO::getMemberId, memberId)
-	//		.like(memberName != null, MemberPointsHistoryPO::getMemberName, memberName);
-	//
-	//	// 如果排序为空，则默认创建时间倒序
-	//	if (StringUtils.isNotBlank(pageQuery.getSort())) {
-	//		pageQuery.setSort("createTime");
-	//		pageQuery.setOrder("desc");
-	//	}
-	//	return this.page(pageQuery.buildMpPage(), lambdaQueryWrapper);
-	//}
+    //	@Override
+    //	public IPage<MemberPointsHistoryPO> pageQuery(PageQuery pageQuery) {
+    //		return null;
+    //	}
+    //
+    //	@Override
+    //	public IPage<MemberPointsHistoryPO> memberPointsHistoryPageQuery(PageQuery pageQuery, Long
+    // memberId, String memberName) {
+    //		return null;
+    //	}
+    //
+    // @Override
+    // public MemberPointsHistoryVO getMemberPointsHistoryVO(Long memberId) {
+    //	// 获取会员积分历史
+    //	Member member = memberCommandService.getById(memberId);
+    //
+    //	MemberPointsHistoryVO memberPointsHistoryVO = new MemberPointsHistoryVO();
+    //	if (member != null) {
+    //		memberPointsHistoryVO.setPoint(member.getPoint());
+    //		memberPointsHistoryVO.setTotalPoint(member.getTotalPoint());
+    //		return memberPointsHistoryVO;
+    //	}
+    //	return new MemberPointsHistoryVO();
+    // }
+    //
+    // @Override
+    // public IPage<MemberPointsHistoryPO> pageQuery(PageQuery pageQuery) {
+    //	LambdaQueryWrapper<MemberPointsHistoryPO> queryWrapper = Wrappers.lambdaQuery();
+    //	queryWrapper.eq(MemberPointsHistoryPO::getMemberId, SecurityUtils.getUserId());
+    //	queryWrapper.orderByDesc(MemberPointsHistoryPO::getCreateTime);
+    //	return this.page(pageQuery.buildMpPage(), queryWrapper);
+    // }
+    //
+    // @Override
+    // public IPage<MemberPointsHistoryPO> memberPointsHistoryPageQuery(
+    //	PageQuery pageQuery, Long memberId, String memberName) {
+    //	LambdaQueryWrapper<MemberPointsHistoryPO> lambdaQueryWrapper = new
+    // LambdaQueryWrapper<MemberPointsHistoryPO>()
+    //		.eq(memberId != null, MemberPointsHistoryPO::getMemberId, memberId)
+    //		.like(memberName != null, MemberPointsHistoryPO::getMemberName, memberName);
+    //
+    //	// 如果排序为空，则默认创建时间倒序
+    //	if (StringUtils.isNotBlank(pageQuery.getSort())) {
+    //		pageQuery.setSort("createTime");
+    //		pageQuery.setOrder("desc");
+    //	}
+    //	return this.page(pageQuery.buildMpPage(), lambdaQueryWrapper);
+    // }
 }

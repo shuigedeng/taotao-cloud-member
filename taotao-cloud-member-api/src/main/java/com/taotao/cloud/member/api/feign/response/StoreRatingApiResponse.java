@@ -19,11 +19,9 @@ package com.taotao.cloud.member.api.feign.response;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import java.io.Serializable;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 import lombok.experimental.Accessors;
 
 /** 评分VO */
@@ -36,8 +34,7 @@ import lombok.experimental.Accessors;
 @Schema(description = "评分VO")
 public class StoreRatingApiResponse implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "物流评分")
     private String deliveryScore;
@@ -48,27 +45,27 @@ public class StoreRatingApiResponse implements Serializable {
     @Schema(description = "描述评分")
     private String descriptionScore;
 
-	public String getDeliveryScore() {
-		return deliveryScore;
-	}
+    public String getDeliveryScore() {
+        return deliveryScore;
+    }
 
-	public void setDeliveryScore(String deliveryScore) {
-		this.deliveryScore = deliveryScore;
-	}
+    public void setDeliveryScore(String deliveryScore) {
+        this.deliveryScore = deliveryScore;
+    }
 
-	public String getServiceScore() {
-		return serviceScore;
-	}
+    public String getServiceScore() {
+        return serviceScore;
+    }
 
-	public void setServiceScore(String serviceScore) {
-		this.serviceScore = serviceScore;
-	}
+    public void setServiceScore(String serviceScore) {
+        this.serviceScore = serviceScore;
+    }
 
-	public String getDescriptionScore() {
-		return descriptionScore;
-	}
+    public String getDescriptionScore() {
+        return descriptionScore;
+    }
 
-	public void setDescriptionScore(String descriptionScore) {
-		this.descriptionScore = descriptionScore;
-	}
+    public void setDescriptionScore(String descriptionScore) {
+        this.descriptionScore = descriptionScore;
+    }
 }

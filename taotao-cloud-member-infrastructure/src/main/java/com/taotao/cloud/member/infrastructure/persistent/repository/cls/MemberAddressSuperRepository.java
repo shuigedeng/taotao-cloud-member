@@ -16,16 +16,15 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.repository.cls;
 
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberAddressPO;
 import com.taotao.boot.webagg.repository.BaseClassSuperRepository;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberAddressPO;
 import jakarta.persistence.EntityManager;
 import org.springframework.stereotype.Repository;
-
 
 @Repository
 public class MemberAddressSuperRepository extends BaseClassSuperRepository<MemberAddressPO, Long> {
 
-	public MemberAddressSuperRepository(EntityManager em) {
-		super(MemberAddressPO.class, em);
-	}
+    public MemberAddressSuperRepository(EntityManager em) {
+        super(MemberAddressPO.class, em);
+    }
 }

@@ -22,7 +22,6 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -61,6 +60,8 @@ public class MemberNoticeSenterPO extends BaseSuperEntity<MemberNoticeSenterPO, 
     private String memberIds;
 
     /** 发送类型,ALL 全站，SELECT 指定会员 */
-    @Column(name = "send_type", columnDefinition = "varchar(32) not null comment '发送类型,ALL 全站，SELECT 指定会员'")
+    @Column(
+            name = "send_type",
+            columnDefinition = "varchar(32) not null comment '发送类型,ALL 全站，SELECT 指定会员'")
     private String sendType;
 }

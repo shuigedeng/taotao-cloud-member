@@ -19,14 +19,12 @@ package com.taotao.cloud.member.application.dto.address.cmmond;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.*;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-
 import java.io.Serial;
 import java.io.Serializable;
+import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /**
  * 会员地址DTO
@@ -44,8 +42,7 @@ import java.io.Serializable;
 @Schema(description = "租户id")
 public class MemberAddressAddCmd implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @NotEmpty(message = "收货人姓名不能为空")
     @Schema(description = "收货人姓名")

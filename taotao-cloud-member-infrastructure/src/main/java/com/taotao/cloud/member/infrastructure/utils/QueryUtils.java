@@ -23,7 +23,4 @@ package com.taotao.cloud.member.infrastructure.utils;
  * @version 2023.01
  * @since 2023-02-01 14:05:22
  */
-public class QueryUtils {
-
-
-}
+public class QueryUtils {}

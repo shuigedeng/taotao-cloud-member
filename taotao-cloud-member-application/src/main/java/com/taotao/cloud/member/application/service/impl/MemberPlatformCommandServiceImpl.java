@@ -27,9 +27,9 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class MemberPlatformCommandServiceImpl implements MemberPlatformCommandService {
-	// private final MemberPlatformSuperRepository memberPlatformRepository;
-	//
-	// public MemberPlatformServiceImpl(MemberPlatformSuperRepository memberPlatformRepository) {
-	// 	this.memberPlatformRepository = memberPlatformRepository;
-	// }
+    // private final MemberPlatformSuperRepository memberPlatformRepository;
+    //
+    // public MemberPlatformServiceImpl(MemberPlatformSuperRepository memberPlatformRepository) {
+    // 	this.memberPlatformRepository = memberPlatformRepository;
+    // }
 }

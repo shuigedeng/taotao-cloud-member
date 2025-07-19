@@ -19,16 +19,14 @@ package com.taotao.cloud.member.application.dto.member.clientobject;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.taotao.boot.common.enums.ClientTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.*;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-import org.springframework.format.annotation.DateTimeFormat;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Date;
+import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /** 会员vo */
 @Setter
@@ -40,8 +38,7 @@ import java.util.Date;
 @Schema(description = "MemberVO")
 public class MemberCO implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = 1810890757303309436L;
+    @Serial private static final long serialVersionUID = 1810890757303309436L;
 
     @Schema(description = "唯一标识", hidden = true)
     private Long id;

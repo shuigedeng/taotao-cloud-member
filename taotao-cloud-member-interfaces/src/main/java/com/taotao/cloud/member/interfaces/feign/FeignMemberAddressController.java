@@ -37,10 +37,10 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "内部调用端-会员地址API", description = "内部调用端-会员地址API")
 public class FeignMemberAddressController extends FeignController implements MemberAddressApi {
 
-    //private final IMemberService memberService;
+    // private final IMemberService memberService;
 
-	@Override
-	public FeignResponse<MemberAddressApiResponse> getById(FeignRequest<String> shippingAddressId) {
-		return null;
-	}
+    @Override
+    public FeignResponse<MemberAddressApiResponse> getById(FeignRequest<String> shippingAddressId) {
+        return null;
+    }
 }

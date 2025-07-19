@@ -24,7 +24,6 @@ import jakarta.persistence.Table;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -51,7 +50,9 @@ public class MemberWithdrawApplyPO extends BaseSuperEntity<MemberWithdrawApplyPO
     public static final String TABLE_NAME = "ttc_member_withdraw_apply";
 
     /** 申请提现金额 */
-    @Column(name = "apply_money", columnDefinition = "decimal(10,2) not null default 0 comment '申请提现金额'")
+    @Column(
+            name = "apply_money",
+            columnDefinition = "decimal(10,2) not null default 0 comment '申请提现金额'")
     private BigDecimal applyMoney;
 
     /** 提现状态 */

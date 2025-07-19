@@ -36,5 +36,5 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "第三方用户信息管理API", description = "第三方用户信息管理API")
 public class BuyerMemberPlatformController extends BusinessController {
 
-	//private final IMemberPlatformService memberPlatformService;
+    // private final IMemberPlatformService memberPlatformService;
 }

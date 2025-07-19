@@ -24,7 +24,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -107,15 +106,21 @@ public class MemberPO extends BaseSuperEntity<MemberPO, Long> {
     private String face;
 
     /** 会员状态 false正常 true禁用 */
-    @Column(name = "disabled", columnDefinition = "boolean default false comment '会员状态 false正常 true禁用'")
+    @Column(
+            name = "disabled",
+            columnDefinition = "boolean default false comment '会员状态 false正常 true禁用'")
     private Boolean disabled;
 
     /** 是否锁定 false正常 true禁用 */
-    @Column(name = "locked", columnDefinition = "boolean default false comment '是否锁定 false正常 true禁用'")
+    @Column(
+            name = "locked",
+            columnDefinition = "boolean default false comment '是否锁定 false正常 true禁用'")
     private Boolean locked;
 
     /** 是否开通店铺 false未开通 true开通 */
-    @Column(name = "have_store", columnDefinition = "boolean default false comment '是否开通店铺 false未开通 true开通'")
+    @Column(
+            name = "have_store",
+            columnDefinition = "boolean default false comment '是否开通店铺 false未开通 true开通'")
     private Boolean haveStore;
 
     /** 店铺ID */

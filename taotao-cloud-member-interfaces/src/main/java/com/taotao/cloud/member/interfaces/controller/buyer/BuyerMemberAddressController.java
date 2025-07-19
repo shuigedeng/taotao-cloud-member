@@ -36,67 +36,72 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "买家端-会员地址API", description = "买家端-会员地址API")
 @RequestMapping("/member/buyer/member/address")
 public class BuyerMemberAddressController extends BusinessController {
-	//
-	//private final IMemberAddressService memberAddressService;
-	//
-	//@Operation(summary = "分页获取当前会员收件地址列表", description = "分页获取当前会员收件地址列表")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping
-	//public Result<PageResult<MemberAddressVO>> page(@Validated PageQuery page) {
-	//    IPage<MemberAddress> memberAddressPage = memberAddressService.queryPage(page, SecurityUtils.getUserId());
-	//    return Result.success(MpUtils.convertMybatisPage(memberAddressPage, MemberAddressConvert.INSTANCE::convert));
-	//}
-	//
-	//@Operation(summary = "根据ID获取会员收件地址", description = "根据ID获取会员收件地址")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping(value = "/{id}")
-	//public Result<MemberAddressVO> getShippingAddress(@Parameter(description = "会员地址ID", required = true)
-	//                                                  @NotNull(message = "id不能为空")
-	//                                                  @PathVariable(value = "id") Long id) {
-	//    MemberAddress memberAddress = memberAddressService.getMemberAddress(id);
-	//    return Result.success(MemberAddressConvert.INSTANCE.convert(memberAddress));
-	//}
-	//
-	//@Operation(summary = "获取当前会员默认收件地址", description = "获取当前会员默认收件地址")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping(value = "/current/default")
-	//public Result<MemberAddressVO> getDefaultShippingAddress() {
-	//    MemberAddress memberAddress = memberAddressService.getDefaultMemberAddress();
-	//    return Result.success(MemberAddressConvert.INSTANCE.convert(memberAddress));
-	//}
-	//
-	//@Operation(summary = "新增会员收件地址", description = "新增会员收件地址")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@PostMapping
-	//public Result<Boolean> addShippingAddress(@Valid MemberAddress shippingAddress) {
-	//    // 添加会员地址
-	//    shippingAddress.setMemberId(SecurityUtils.getUserId());
-	//    if (shippingAddress.getDefaulted() == null) {
-	//        shippingAddress.setDefaulted(false);
-	//    }
-	//    return Result.success(memberAddressService.saveMemberAddress(shippingAddress));
-	//}
-	//
-	//@Operation(summary = "修改会员收件地址", description = "修改会员收件地址")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@PutMapping
-	//public Result<Boolean> editShippingAddress(@Valid @RequestBody MemberAddress shippingAddress) {
-	//    return Result.success(memberAddressService.updateMemberAddress(shippingAddress));
-	//}
-	//
-	//@Operation(summary = "删除会员收件地址", description = "删除会员收件地址")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@DeleteMapping(value = "/{id}")
-	//public Result<Boolean> delShippingAddressById(@Parameter(description = "会员地址ID", required = true)
-	//                                              @NotNull(message = "id不能为空")
-	//                                              @PathVariable(value = "id")
-	//                                              Long id) {
-	//    return Result.success(memberAddressService.removeMemberAddress(id));
-	//}
+    //
+    // private final IMemberAddressService memberAddressService;
+    //
+    // @Operation(summary = "分页获取当前会员收件地址列表", description = "分页获取当前会员收件地址列表")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping
+    // public Result<PageResult<MemberAddressVO>> page(@Validated PageQuery page) {
+    //    IPage<MemberAddress> memberAddressPage = memberAddressService.queryPage(page,
+    // SecurityUtils.getUserId());
+    //    return Result.success(MpUtils.convertMybatisPage(memberAddressPage,
+    // MemberAddressConvert.INSTANCE::convert));
+    // }
+    //
+    // @Operation(summary = "根据ID获取会员收件地址", description = "根据ID获取会员收件地址")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/{id}")
+    // public Result<MemberAddressVO> getShippingAddress(@Parameter(description = "会员地址ID", required
+    // = true)
+    //                                                  @NotNull(message = "id不能为空")
+    //                                                  @PathVariable(value = "id") Long id) {
+    //    MemberAddress memberAddress = memberAddressService.getMemberAddress(id);
+    //    return Result.success(MemberAddressConvert.INSTANCE.convert(memberAddress));
+    // }
+    //
+    // @Operation(summary = "获取当前会员默认收件地址", description = "获取当前会员默认收件地址")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/current/default")
+    // public Result<MemberAddressVO> getDefaultShippingAddress() {
+    //    MemberAddress memberAddress = memberAddressService.getDefaultMemberAddress();
+    //    return Result.success(MemberAddressConvert.INSTANCE.convert(memberAddress));
+    // }
+    //
+    // @Operation(summary = "新增会员收件地址", description = "新增会员收件地址")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PostMapping
+    // public Result<Boolean> addShippingAddress(@Valid MemberAddress shippingAddress) {
+    //    // 添加会员地址
+    //    shippingAddress.setMemberId(SecurityUtils.getUserId());
+    //    if (shippingAddress.getDefaulted() == null) {
+    //        shippingAddress.setDefaulted(false);
+    //    }
+    //    return Result.success(memberAddressService.saveMemberAddress(shippingAddress));
+    // }
+    //
+    // @Operation(summary = "修改会员收件地址", description = "修改会员收件地址")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PutMapping
+    // public Result<Boolean> editShippingAddress(@Valid @RequestBody MemberAddress shippingAddress)
+    // {
+    //    return Result.success(memberAddressService.updateMemberAddress(shippingAddress));
+    // }
+    //
+    // @Operation(summary = "删除会员收件地址", description = "删除会员收件地址")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @DeleteMapping(value = "/{id}")
+    // public Result<Boolean> delShippingAddressById(@Parameter(description = "会员地址ID", required =
+    // true)
+    //                                              @NotNull(message = "id不能为空")
+    //                                              @PathVariable(value = "id")
+    //                                              Long id) {
+    //    return Result.success(memberAddressService.removeMemberAddress(id));
+    // }
 }

@@ -23,15 +23,16 @@ import com.taotao.cloud.member.api.feign.fallback.MemberAddressApiFallback;
 import com.taotao.cloud.member.api.feign.response.MemberAddressApiResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER,
-	contextId = "MemberAddressApi",
-	fallbackFactory = MemberAddressApiFallback.class)
+@FeignClient(
+        value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER,
+        contextId = "MemberAddressApi",
+        fallbackFactory = MemberAddressApiFallback.class)
 public interface MemberAddressApi {
 
-	@PostMapping(value = "/member/feign/address/shippingAddressId")
-	FeignResponse<MemberAddressApiResponse> getById(@Validated @RequestBody FeignRequest<String> shippingAddressId);
+    @PostMapping(value = "/member/feign/address/shippingAddressId")
+    FeignResponse<MemberAddressApiResponse> getById(
+            @Validated @RequestBody FeignRequest<String> shippingAddressId);
 }

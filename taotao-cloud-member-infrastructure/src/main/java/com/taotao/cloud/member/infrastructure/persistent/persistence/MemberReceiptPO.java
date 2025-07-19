@@ -17,13 +17,12 @@
 package com.taotao.cloud.member.infrastructure.persistent.persistence;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.taotao.cloud.member.api.enums.MemberReceiptEnum;
 import com.taotao.boot.webagg.entity.BaseSuperEntity;
+import com.taotao.cloud.member.api.enums.MemberReceiptEnum;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -78,10 +77,14 @@ public class MemberReceiptPO extends BaseSuperEntity<MemberReceiptPO, Long> {
     private String receiptType;
 
     /** 是否为默认选项 0：否，1：是 */
-    @Column(name = "defaulted", columnDefinition = "int not null default 0 comment '是否为默认选项 0：否，1：是'")
+    @Column(
+            name = "defaulted",
+            columnDefinition = "int not null default 0 comment '是否为默认选项 0：否，1：是'")
     private Integer defaulted;
 
     /** 删除标志 true/false 删除/未删除 */
-    @Column(name = "delete_flag", columnDefinition = "boolean not null default false comment '删除标志 true/false 删除/未删除'")
+    @Column(
+            name = "delete_flag",
+            columnDefinition = "boolean not null default false comment '删除标志 true/false 删除/未删除'")
     private Boolean deleteFlag;
 }

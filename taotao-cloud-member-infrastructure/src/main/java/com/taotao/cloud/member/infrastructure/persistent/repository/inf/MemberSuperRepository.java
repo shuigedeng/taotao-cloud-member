@@ -13,11 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package com.taotao.cloud.member.infrastructure.persistent.repository.inf;
 
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO;
 import com.taotao.boot.webagg.repository.BaseInterfaceSuperRepository;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO;
 
-public interface MemberSuperRepository extends BaseInterfaceSuperRepository<MemberPO, Long> {
-
-}
+public interface MemberSuperRepository extends BaseInterfaceSuperRepository<MemberPO, Long> {}

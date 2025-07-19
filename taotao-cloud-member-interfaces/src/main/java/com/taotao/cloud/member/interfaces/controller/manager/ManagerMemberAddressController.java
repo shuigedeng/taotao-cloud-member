@@ -34,42 +34,43 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/member/manager/member/address")
 @Tag(name = "管理端-会员地址管理API", description = "管理端-会员地址管理API")
 public class ManagerMemberAddressController extends BusinessController {
-	//
-	//private final IMemberAddressService memberAddressService;
-	//
-	//@Operation(summary = "会员地址分页列表", description = "会员地址分页列表")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping("/{memberId}")
-	//public Result<PageResult<MemberAddressVO>> queryPage(
-	//        @Validated PageQuery page,
-	//        @Parameter(description = "会员地址ID", required = true) @PathVariable("memberId") Long memberId) {
-	//    IPage<MemberAddress> addressByMember = memberAddressService.queryPage(page, memberId);
-	//    return Result.success(MpUtils.convertMybatisPage(addressByMember, MemberAddressVO.class));
-	//}
-	//
-	//@Operation(summary = "删除会员收件地址", description = "删除会员收件地址")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@DeleteMapping(value = "/{id}")
-	//public Result<Boolean> delShippingAddressById(
-	//        @Parameter(description = "会员地址ID", required = true) @PathVariable Long id) {
-	//    return Result.success(memberAddressService.removeMemberAddress(id));
-	//}
-	//
-	//@Operation(summary = "修改会员收件地址", description = "修改会员收件地址")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@PutMapping
-	//public Result<Boolean> updateMemberAddress(@Valid MemberAddress shippingAddress) {
-	//    return Result.success(memberAddressService.updateMemberAddress(shippingAddress));
-	//}
-	//
-	//@Operation(summary = "新增会员收件地址", description = "新增会员收件地址")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@PostMapping
-	//public Result<Boolean> saveMemberAddress(@Valid MemberAddress shippingAddress) {
-	//    return Result.success(memberAddressService.saveMemberAddress(shippingAddress));
-	//}
+    //
+    // private final IMemberAddressService memberAddressService;
+    //
+    // @Operation(summary = "会员地址分页列表", description = "会员地址分页列表")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping("/{memberId}")
+    // public Result<PageResult<MemberAddressVO>> queryPage(
+    //        @Validated PageQuery page,
+    //        @Parameter(description = "会员地址ID", required = true) @PathVariable("memberId") Long
+    // memberId) {
+    //    IPage<MemberAddress> addressByMember = memberAddressService.queryPage(page, memberId);
+    //    return Result.success(MpUtils.convertMybatisPage(addressByMember, MemberAddressVO.class));
+    // }
+    //
+    // @Operation(summary = "删除会员收件地址", description = "删除会员收件地址")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @DeleteMapping(value = "/{id}")
+    // public Result<Boolean> delShippingAddressById(
+    //        @Parameter(description = "会员地址ID", required = true) @PathVariable Long id) {
+    //    return Result.success(memberAddressService.removeMemberAddress(id));
+    // }
+    //
+    // @Operation(summary = "修改会员收件地址", description = "修改会员收件地址")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PutMapping
+    // public Result<Boolean> updateMemberAddress(@Valid MemberAddress shippingAddress) {
+    //    return Result.success(memberAddressService.updateMemberAddress(shippingAddress));
+    // }
+    //
+    // @Operation(summary = "新增会员收件地址", description = "新增会员收件地址")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PostMapping
+    // public Result<Boolean> saveMemberAddress(@Valid MemberAddress shippingAddress) {
+    //    return Result.success(memberAddressService.saveMemberAddress(shippingAddress));
+    // }
 }

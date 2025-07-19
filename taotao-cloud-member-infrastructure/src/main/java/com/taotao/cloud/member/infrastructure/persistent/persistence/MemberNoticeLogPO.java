@@ -23,7 +23,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -74,6 +73,8 @@ public class MemberNoticeLogPO extends BaseSuperEntity<MemberNoticeLogPO, Long> 
     private LocalDateTime sendTime;
 
     /** 发送类型,0全站，1指定会员 */
-    @Column(name = "send_type", columnDefinition = "int not null default 0 comment '发送类型,0全站，1指定会员'")
+    @Column(
+            name = "send_type",
+            columnDefinition = "int not null default 0 comment '发送类型,0全站，1指定会员'")
     private Integer sendType;
 }

@@ -20,11 +20,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 import lombok.experimental.Accessors;
 
 /** 会员评价VO */
@@ -37,8 +35,7 @@ import lombok.experimental.Accessors;
 @Schema(description = "会员评价VO")
 public class MemberEvaluationApiResponse implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = 6696978796248845481L;
+    @Serial private static final long serialVersionUID = 6696978796248845481L;
 
     @Schema(description = "会员ID")
     private String memberId;
@@ -112,195 +109,195 @@ public class MemberEvaluationApiResponse implements Serializable {
     @Schema(description = "回复评论图片")
     private List<String> replyEvaluationImages;
 
-	public String getMemberId() {
-		return memberId;
-	}
+    public String getMemberId() {
+        return memberId;
+    }
 
-	public void setMemberId(String memberId) {
-		this.memberId = memberId;
-	}
+    public void setMemberId(String memberId) {
+        this.memberId = memberId;
+    }
 
-	public String getMemberName() {
-		return memberName;
-	}
+    public String getMemberName() {
+        return memberName;
+    }
 
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
-	}
+    public void setMemberName(String memberName) {
+        this.memberName = memberName;
+    }
 
-	public String getMemberProfile() {
-		return memberProfile;
-	}
+    public String getMemberProfile() {
+        return memberProfile;
+    }
 
-	public void setMemberProfile(String memberProfile) {
-		this.memberProfile = memberProfile;
-	}
+    public void setMemberProfile(String memberProfile) {
+        this.memberProfile = memberProfile;
+    }
 
-	public String getStoreId() {
-		return storeId;
-	}
+    public String getStoreId() {
+        return storeId;
+    }
 
-	public void setStoreId(String storeId) {
-		this.storeId = storeId;
-	}
+    public void setStoreId(String storeId) {
+        this.storeId = storeId;
+    }
 
-	public String getStoreName() {
-		return storeName;
-	}
+    public String getStoreName() {
+        return storeName;
+    }
 
-	public void setStoreName(String storeName) {
-		this.storeName = storeName;
-	}
+    public void setStoreName(String storeName) {
+        this.storeName = storeName;
+    }
 
-	public String getGoodsId() {
-		return goodsId;
-	}
+    public String getGoodsId() {
+        return goodsId;
+    }
 
-	public void setGoodsId(String goodsId) {
-		this.goodsId = goodsId;
-	}
+    public void setGoodsId(String goodsId) {
+        this.goodsId = goodsId;
+    }
 
-	public String getSkuId() {
-		return skuId;
-	}
+    public String getSkuId() {
+        return skuId;
+    }
 
-	public void setSkuId(String skuId) {
-		this.skuId = skuId;
-	}
+    public void setSkuId(String skuId) {
+        this.skuId = skuId;
+    }
 
-	public String getGoodsName() {
-		return goodsName;
-	}
+    public String getGoodsName() {
+        return goodsName;
+    }
 
-	public void setGoodsName(String goodsName) {
-		this.goodsName = goodsName;
-	}
+    public void setGoodsName(String goodsName) {
+        this.goodsName = goodsName;
+    }
 
-	public String getGoodsImage() {
-		return goodsImage;
-	}
+    public String getGoodsImage() {
+        return goodsImage;
+    }
 
-	public void setGoodsImage(String goodsImage) {
-		this.goodsImage = goodsImage;
-	}
+    public void setGoodsImage(String goodsImage) {
+        this.goodsImage = goodsImage;
+    }
 
-	public String getOrderNo() {
-		return orderNo;
-	}
+    public String getOrderNo() {
+        return orderNo;
+    }
 
-	public void setOrderNo(String orderNo) {
-		this.orderNo = orderNo;
-	}
+    public void setOrderNo(String orderNo) {
+        this.orderNo = orderNo;
+    }
 
-	public String getGrade() {
-		return grade;
-	}
+    public String getGrade() {
+        return grade;
+    }
 
-	public void setGrade(String grade) {
-		this.grade = grade;
-	}
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
 
-	public String getContent() {
-		return content;
-	}
+    public String getContent() {
+        return content;
+    }
 
-	public void setContent(String content) {
-		this.content = content;
-	}
+    public void setContent(String content) {
+        this.content = content;
+    }
 
-	public String getImages() {
-		return images;
-	}
+    public String getImages() {
+        return images;
+    }
 
-	public void setImages(String images) {
-		this.images = images;
-	}
+    public void setImages(String images) {
+        this.images = images;
+    }
 
-	public String getStatus() {
-		return status;
-	}
+    public String getStatus() {
+        return status;
+    }
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
-	public String getReply() {
-		return reply;
-	}
+    public String getReply() {
+        return reply;
+    }
 
-	public void setReply(String reply) {
-		this.reply = reply;
-	}
+    public void setReply(String reply) {
+        this.reply = reply;
+    }
 
-	public String getReplyImage() {
-		return replyImage;
-	}
+    public String getReplyImage() {
+        return replyImage;
+    }
 
-	public void setReplyImage(String replyImage) {
-		this.replyImage = replyImage;
-	}
+    public void setReplyImage(String replyImage) {
+        this.replyImage = replyImage;
+    }
 
-	public Boolean getHaveImage() {
-		return haveImage;
-	}
+    public Boolean getHaveImage() {
+        return haveImage;
+    }
 
-	public void setHaveImage(Boolean haveImage) {
-		this.haveImage = haveImage;
-	}
+    public void setHaveImage(Boolean haveImage) {
+        this.haveImage = haveImage;
+    }
 
-	public Boolean getHaveReplyImage() {
-		return haveReplyImage;
-	}
+    public Boolean getHaveReplyImage() {
+        return haveReplyImage;
+    }
 
-	public void setHaveReplyImage(Boolean haveReplyImage) {
-		this.haveReplyImage = haveReplyImage;
-	}
+    public void setHaveReplyImage(Boolean haveReplyImage) {
+        this.haveReplyImage = haveReplyImage;
+    }
 
-	public Boolean getReplyStatus() {
-		return replyStatus;
-	}
+    public Boolean getReplyStatus() {
+        return replyStatus;
+    }
 
-	public void setReplyStatus(Boolean replyStatus) {
-		this.replyStatus = replyStatus;
-	}
+    public void setReplyStatus(Boolean replyStatus) {
+        this.replyStatus = replyStatus;
+    }
 
-	public Integer getDeliveryScore() {
-		return deliveryScore;
-	}
+    public Integer getDeliveryScore() {
+        return deliveryScore;
+    }
 
-	public void setDeliveryScore(Integer deliveryScore) {
-		this.deliveryScore = deliveryScore;
-	}
+    public void setDeliveryScore(Integer deliveryScore) {
+        this.deliveryScore = deliveryScore;
+    }
 
-	public Integer getServiceScore() {
-		return serviceScore;
-	}
+    public Integer getServiceScore() {
+        return serviceScore;
+    }
 
-	public void setServiceScore(Integer serviceScore) {
-		this.serviceScore = serviceScore;
-	}
+    public void setServiceScore(Integer serviceScore) {
+        this.serviceScore = serviceScore;
+    }
 
-	public Integer getDescriptionScore() {
-		return descriptionScore;
-	}
+    public Integer getDescriptionScore() {
+        return descriptionScore;
+    }
 
-	public void setDescriptionScore(Integer descriptionScore) {
-		this.descriptionScore = descriptionScore;
-	}
+    public void setDescriptionScore(Integer descriptionScore) {
+        this.descriptionScore = descriptionScore;
+    }
 
-	public List<String> getEvaluationImages() {
-		return evaluationImages;
-	}
+    public List<String> getEvaluationImages() {
+        return evaluationImages;
+    }
 
-	public void setEvaluationImages(List<String> evaluationImages) {
-		this.evaluationImages = evaluationImages;
-	}
+    public void setEvaluationImages(List<String> evaluationImages) {
+        this.evaluationImages = evaluationImages;
+    }
 
-	public List<String> getReplyEvaluationImages() {
-		return replyEvaluationImages;
-	}
+    public List<String> getReplyEvaluationImages() {
+        return replyEvaluationImages;
+    }
 
-	public void setReplyEvaluationImages(List<String> replyEvaluationImages) {
-		this.replyEvaluationImages = replyEvaluationImages;
-	}
+    public void setReplyEvaluationImages(List<String> replyEvaluationImages) {
+        this.replyEvaluationImages = replyEvaluationImages;
+    }
 }

@@ -20,11 +20,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 import lombok.experimental.Accessors;
 
 /**
@@ -43,8 +41,7 @@ import lombok.experimental.Accessors;
 @Schema(description = "会员收货地址DTO")
 public class MemberAddressApiResponse implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "会员ID")
     private String memberId;
@@ -106,163 +103,163 @@ public class MemberAddressApiResponse implements Serializable {
     @Schema(description = "最后修改时间")
     private LocalDateTime lastModifiedTime;
 
-	public String getMemberId() {
-		return memberId;
-	}
+    public String getMemberId() {
+        return memberId;
+    }
 
-	public void setMemberId(String memberId) {
-		this.memberId = memberId;
-	}
+    public void setMemberId(String memberId) {
+        this.memberId = memberId;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getMobile() {
-		return mobile;
-	}
+    public String getMobile() {
+        return mobile;
+    }
 
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
-	}
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
 
-	public String getConsigneeAddressPath() {
-		return consigneeAddressPath;
-	}
+    public String getConsigneeAddressPath() {
+        return consigneeAddressPath;
+    }
 
-	public void setConsigneeAddressPath(String consigneeAddressPath) {
-		this.consigneeAddressPath = consigneeAddressPath;
-	}
+    public void setConsigneeAddressPath(String consigneeAddressPath) {
+        this.consigneeAddressPath = consigneeAddressPath;
+    }
 
-	public String getConsigneeAddressIdPath() {
-		return consigneeAddressIdPath;
-	}
+    public String getConsigneeAddressIdPath() {
+        return consigneeAddressIdPath;
+    }
 
-	public void setConsigneeAddressIdPath(String consigneeAddressIdPath) {
-		this.consigneeAddressIdPath = consigneeAddressIdPath;
-	}
+    public void setConsigneeAddressIdPath(String consigneeAddressIdPath) {
+        this.consigneeAddressIdPath = consigneeAddressIdPath;
+    }
 
-	public String getProvince() {
-		return province;
-	}
+    public String getProvince() {
+        return province;
+    }
 
-	public void setProvince(String province) {
-		this.province = province;
-	}
+    public void setProvince(String province) {
+        this.province = province;
+    }
 
-	public String getCity() {
-		return city;
-	}
+    public String getCity() {
+        return city;
+    }
 
-	public void setCity(String city) {
-		this.city = city;
-	}
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-	public String getArea() {
-		return area;
-	}
+    public String getArea() {
+        return area;
+    }
 
-	public void setArea(String area) {
-		this.area = area;
-	}
+    public void setArea(String area) {
+        this.area = area;
+    }
 
-	public String getProvinceCode() {
-		return provinceCode;
-	}
+    public String getProvinceCode() {
+        return provinceCode;
+    }
 
-	public void setProvinceCode(String provinceCode) {
-		this.provinceCode = provinceCode;
-	}
+    public void setProvinceCode(String provinceCode) {
+        this.provinceCode = provinceCode;
+    }
 
-	public String getCityCode() {
-		return cityCode;
-	}
+    public String getCityCode() {
+        return cityCode;
+    }
 
-	public void setCityCode(String cityCode) {
-		this.cityCode = cityCode;
-	}
+    public void setCityCode(String cityCode) {
+        this.cityCode = cityCode;
+    }
 
-	public String getAreaCode() {
-		return areaCode;
-	}
+    public String getAreaCode() {
+        return areaCode;
+    }
 
-	public void setAreaCode(String areaCode) {
-		this.areaCode = areaCode;
-	}
+    public void setAreaCode(String areaCode) {
+        this.areaCode = areaCode;
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public String getAddress() {
+        return address;
+    }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
-	public String getDetail() {
-		return detail;
-	}
+    public String getDetail() {
+        return detail;
+    }
 
-	public void setDetail(String detail) {
-		this.detail = detail;
-	}
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
 
-	public Boolean getDefaulted() {
-		return defaulted;
-	}
+    public Boolean getDefaulted() {
+        return defaulted;
+    }
 
-	public void setDefaulted(Boolean defaulted) {
-		this.defaulted = defaulted;
-	}
+    public void setDefaulted(Boolean defaulted) {
+        this.defaulted = defaulted;
+    }
 
-	public String getAlias() {
-		return alias;
-	}
+    public String getAlias() {
+        return alias;
+    }
 
-	public void setAlias(String alias) {
-		this.alias = alias;
-	}
+    public void setAlias(String alias) {
+        this.alias = alias;
+    }
 
-	public String getLon() {
-		return lon;
-	}
+    public String getLon() {
+        return lon;
+    }
 
-	public void setLon(String lon) {
-		this.lon = lon;
-	}
+    public void setLon(String lon) {
+        this.lon = lon;
+    }
 
-	public String getLat() {
-		return lat;
-	}
+    public String getLat() {
+        return lat;
+    }
 
-	public void setLat(String lat) {
-		this.lat = lat;
-	}
+    public void setLat(String lat) {
+        this.lat = lat;
+    }
 
-	public String getPostalCode() {
-		return postalCode;
-	}
+    public String getPostalCode() {
+        return postalCode;
+    }
 
-	public void setPostalCode(String postalCode) {
-		this.postalCode = postalCode;
-	}
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
 
-	public LocalDateTime getCreateTime() {
-		return createTime;
-	}
+    public LocalDateTime getCreateTime() {
+        return createTime;
+    }
 
-	public void setCreateTime(LocalDateTime createTime) {
-		this.createTime = createTime;
-	}
+    public void setCreateTime(LocalDateTime createTime) {
+        this.createTime = createTime;
+    }
 
-	public LocalDateTime getLastModifiedTime() {
-		return lastModifiedTime;
-	}
+    public LocalDateTime getLastModifiedTime() {
+        return lastModifiedTime;
+    }
 
-	public void setLastModifiedTime(LocalDateTime lastModifiedTime) {
-		this.lastModifiedTime = lastModifiedTime;
-	}
+    public void setLastModifiedTime(LocalDateTime lastModifiedTime) {
+        this.lastModifiedTime = lastModifiedTime;
+    }
 }

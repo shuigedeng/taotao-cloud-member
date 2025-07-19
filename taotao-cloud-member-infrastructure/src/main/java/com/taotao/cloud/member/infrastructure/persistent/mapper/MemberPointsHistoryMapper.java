@@ -16,8 +16,8 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPointsHistoryPO;
 import com.taotao.boot.webagg.mapper.BaseSuperMapper;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPointsHistoryPO;
 import org.apache.ibatis.annotations.Select;
 
 /** 会员积分历史数据处理层 */
@@ -29,11 +29,12 @@ public interface MemberPointsHistoryMapper extends BaseSuperMapper<MemberPointsH
      * @param pointType 积分类型
      * @return 积分
      */
-    @Select("""
-		SELECT SUM( variable_point )
-		FROM tt_member_points_history
-		WHERE point_type = #{pointType}
-		""")
+    @Select(
+            """
+        SELECT SUM( variable_point )
+        FROM tt_member_points_history
+        WHERE point_type = #{pointType}
+        """)
     Long getALLMemberPointsHistoryVO(String pointType);
 
     /**
@@ -45,9 +46,9 @@ public interface MemberPointsHistoryMapper extends BaseSuperMapper<MemberPointsH
      */
     @Select(
             """
-		SELECT SUM( variable_point )
-		FROM tt_member_points_history
-		WHERE point_type = #{pointType} AND member_id=#{memberId}
-		""")
+        SELECT SUM( variable_point )
+        FROM tt_member_points_history
+        WHERE point_type = #{pointType} AND member_id=#{memberId}
+        """)
     Long getMemberPointsHistoryVO(String pointType, String memberId);
 }

@@ -27,41 +27,41 @@ import com.taotao.boot.ddd.model.application.service.CommandService;
  */
 public interface MemberBrowseCommandService extends CommandService {
 
-    ///**
+    /// **
     // * 保存浏览历史
     // *
     // * @param footPrint 用户足迹
     // * @return 浏览历史
     // */
-    //MemberBrowse saveFootprint(MemberBrowse footPrint);
-	//
-    ///**
+    // MemberBrowse saveFootprint(MemberBrowse footPrint);
+    //
+    /// **
     // * 清空当前会员的足迹
     // *
     // * @return 处理结果
     // */
-    //Boolean clean();
-	//
-    ///**
+    // Boolean clean();
+    //
+    /// **
     // * 根据ID进行清除会员的历史足迹
     // *
     // * @param ids 商品ID列表
     // * @return 处理结果
     // */
-    //Boolean deleteByIds(List<Long> ids);
-	//
-    ///**
+    // Boolean deleteByIds(List<Long> ids);
+    //
+    /// **
     // * 获取会员浏览历史分页
     // *
     // * @param PageQuery 分页
     // * @return 会员浏览历史列表
     // */
-    //List<EsGoodsIndexVO> footPrintPage(PageQuery PageQuery);
-	//
-    ///**
+    // List<EsGoodsIndexVO> footPrintPage(PageQuery PageQuery);
+    //
+    /// **
     // * 获取当前会员的浏览记录数量
     // *
     // * @return 当前会员的浏览记录数量
     // */
-    //Long getFootprintNum();
+    // Long getFootprintNum();
 }

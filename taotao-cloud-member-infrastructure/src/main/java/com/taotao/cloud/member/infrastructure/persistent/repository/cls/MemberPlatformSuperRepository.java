@@ -15,15 +15,15 @@
  */
 
 package com.taotao.cloud.member.infrastructure.persistent.repository.cls;
- import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberConnectPO;
- import com.taotao.boot.webagg.repository.BaseClassSuperRepository;
- import org.springframework.stereotype.Repository;
 
- import jakarta.persistence.EntityManager;
+import com.taotao.boot.webagg.repository.BaseClassSuperRepository;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberConnectPO;
+import jakarta.persistence.EntityManager;
+import org.springframework.stereotype.Repository;
 
- @Repository
- public class MemberPlatformSuperRepository extends BaseClassSuperRepository<MemberConnectPO, Long> {
-	public MemberPlatformSuperRepository(EntityManager em) {
-		super(MemberConnectPO.class, em);
-	}
- }
+@Repository
+public class MemberPlatformSuperRepository extends BaseClassSuperRepository<MemberConnectPO, Long> {
+    public MemberPlatformSuperRepository(EntityManager em) {
+        super(MemberConnectPO.class, em);
+    }
+}

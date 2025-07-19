@@ -31,29 +31,29 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/member/buyer/passport/connect/bind")
 public class ConnectBindController extends BusinessController {
 
-    //private final ConnectService connectService;
-	//
-    //@Operation(summary = "unionId绑定", description = "unionId绑定")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@PostMapping
-    //public void unionIdBind(@RequestParam String unionId, @RequestParam String type) {
+    // private final ConnectService connectService;
+    //
+    // @Operation(summary = "unionId绑定", description = "unionId绑定")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PostMapping
+    // public void unionIdBind(@RequestParam String unionId, @RequestParam String type) {
     //    connectService.bind(unionId, type);
-    //}
-	//
-    //@Operation(summary = "unionID解绑", description = "unionID解绑")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@PostMapping("/unbind")
-    //public void unionIdunBind(@RequestParam String type) {
+    // }
+    //
+    // @Operation(summary = "unionID解绑", description = "unionID解绑")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PostMapping("/unbind")
+    // public void unionIdunBind(@RequestParam String type) {
     //    connectService.unbind(type);
-    //}
-	//
-    //@Operation(summary = "绑定列表", description = "绑定列表")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@GetMapping("/list")
-    //public Result<List<String>> bindList() {
+    // }
+    //
+    // @Operation(summary = "绑定列表", description = "绑定列表")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping("/list")
+    // public Result<List<String>> bindList() {
     //    return Result.success(connectService.bindList());
-    //}
+    // }
 }

@@ -18,11 +18,10 @@ package com.taotao.cloud.member.application.dto.wallet.cmmond;
 
 import com.taotao.cloud.member.api.enums.DepositServiceTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.AllArgsConstructor;
-import lombok.*;
-import lombok.NoArgsConstructor;
-
 import java.math.BigDecimal;
+import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 /** 会员余额变动模型 */
 @Setter

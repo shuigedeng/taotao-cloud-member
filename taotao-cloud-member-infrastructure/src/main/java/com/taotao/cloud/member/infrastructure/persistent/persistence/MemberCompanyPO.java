@@ -23,7 +23,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -75,11 +74,17 @@ public class MemberCompanyPO extends BaseSuperEntity<MemberCompanyPO, Long> {
     private String email;
 
     /** 联系人 */
-    @Column(name = "username", unique = true, columnDefinition = "varchar(255) not null comment '联系人'")
+    @Column(
+            name = "username",
+            unique = true,
+            columnDefinition = "varchar(255) not null comment '联系人'")
     private String username;
 
     /** 联系人手机号 */
-    @Column(name = "phone", unique = true, columnDefinition = "varchar(255) not null comment '联系人手机号'")
+    @Column(
+            name = "phone",
+            unique = true,
+            columnDefinition = "varchar(255) not null comment '联系人手机号'")
     private String phone;
 
     /** 联系人地址 */

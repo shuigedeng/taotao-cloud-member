@@ -17,14 +17,12 @@
 package com.taotao.cloud.member.application.dto.point.cmmond;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.*;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-
 import java.io.Serial;
 import java.io.Serializable;
+import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /**
  * 会员积分
@@ -42,8 +40,7 @@ import java.io.Serializable;
 @Schema(description = "租户id")
 public class MemberPointMessageAddCmd implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "积分")
     private Long point;

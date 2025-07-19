@@ -40,48 +40,53 @@ public class MemberApiFallback implements FallbackFactory<MemberApi> {
     public MemberApi create(Throwable throwable) {
         return new MemberApi() {
 
-			@Override
-			public FeignResponse<BaseSecurityUser> getMemberSecurityUser(
-				FeignRequest<MemberApiRequest> memberApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<BaseSecurityUser> getMemberSecurityUser(
+                    FeignRequest<MemberApiRequest> memberApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<MemberApiResponse> findMemberById(FeignRequest<MemberApiRequest> memberApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<MemberApiResponse> findMemberById(
+                    FeignRequest<MemberApiRequest> memberApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<BooleanApiResponse> updateMemberPoint(
-				FeignRequest<MemberApiRequest> memberApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<BooleanApiResponse> updateMemberPoint(
+                    FeignRequest<MemberApiRequest> memberApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<MemberApiResponse> findByUsername(FeignRequest<MemberApiRequest> memberApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<MemberApiResponse> findByUsername(
+                    FeignRequest<MemberApiRequest> memberApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<MemberApiResponse> getById(FeignRequest<MemberApiRequest> memberApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<MemberApiResponse> getById(
+                    FeignRequest<MemberApiRequest> memberApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<BooleanApiResponse> update(FeignRequest<MemberApiRequest> memberApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<BooleanApiResponse> update(
+                    FeignRequest<MemberApiRequest> memberApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<BooleanApiResponse> updateById(FeignRequest<MemberApiRequest> memberApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<BooleanApiResponse> updateById(
+                    FeignRequest<MemberApiRequest> memberApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<List<Map<String, Object>>> listFieldsByMemberIds(
-				FeignRequest<MemberApiRequest> memberApiRequest) {
-				return null;
-			}
-		};
+            @Override
+            public FeignResponse<List<Map<String, Object>>> listFieldsByMemberIds(
+                    FeignRequest<MemberApiRequest> memberApiRequest) {
+                return null;
+            }
+        };
     }
 }

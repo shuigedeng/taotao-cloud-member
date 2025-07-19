@@ -16,7 +16,6 @@
 
 package com.taotao.cloud.member.application.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /**
@@ -28,14 +27,14 @@ import com.taotao.boot.ddd.model.application.service.CommandService;
  */
 public interface MemberPointsHistoryCommandService extends CommandService {
 
-    ///**
+    /// **
     // * 获取会员积分VO
     // *
     // * @param memberId 会员ID
     // * @return {@link MemberPointsHistoryVO }
     // * @since 2022-05-31 14:16:21
     // */
-    //MemberPointsHistoryVO getMemberPointsHistoryVO(Long memberId);
+    // MemberPointsHistoryVO getMemberPointsHistoryVO(Long memberId);
 
     /**
      * 通过页面
@@ -44,7 +43,7 @@ public interface MemberPointsHistoryCommandService extends CommandService {
      * @return {@link IPage }<{@link MemberPointsHistoryPO }>
      * @since 2022-05-31 14:16:22
      */
-//    IPage<MemberPointsHistoryPO> pageQuery(PageQuery pageQuery);
+    //    IPage<MemberPointsHistoryPO> pageQuery(PageQuery pageQuery);
 
     /**
      * 会员积分历史
@@ -55,5 +54,6 @@ public interface MemberPointsHistoryCommandService extends CommandService {
      * @return {@link IPage }<{@link MemberPointsHistoryPO }>
      * @since 2022-05-31 14:16:22
      */
-//    IPage<MemberPointsHistoryPO> memberPointsHistoryPageQuery(PageQuery pageQuery, Long memberId, String memberName);
+    //    IPage<MemberPointsHistoryPO> memberPointsHistoryPageQuery(PageQuery pageQuery, Long
+    // memberId, String memberName);
 }

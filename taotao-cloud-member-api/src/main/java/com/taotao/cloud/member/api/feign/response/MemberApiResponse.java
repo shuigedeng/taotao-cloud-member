@@ -22,11 +22,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Date;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -40,8 +38,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Schema(description = "MemberVO")
 public class MemberApiResponse implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = 1810890757303309436L;
+    @Serial private static final long serialVersionUID = 1810890757303309436L;
 
     @Schema(description = "唯一标识", hidden = true)
     private Long id;
@@ -107,155 +104,155 @@ public class MemberApiResponse implements Serializable {
     @Schema(description = "经验值数量")
     private Long experience;
 
-	public Long getId() {
-		return id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public String getUsername() {
-		return username;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-	public String getNickName() {
-		return nickName;
-	}
+    public String getNickName() {
+        return nickName;
+    }
 
-	public void setNickName(String nickName) {
-		this.nickName = nickName;
-	}
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
 
-	public Integer getSex() {
-		return sex;
-	}
+    public Integer getSex() {
+        return sex;
+    }
 
-	public void setSex(Integer sex) {
-		this.sex = sex;
-	}
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
 
-	public Date getBirthday() {
-		return birthday;
-	}
+    public Date getBirthday() {
+        return birthday;
+    }
 
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
-	}
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
 
-	public String getRegionId() {
-		return regionId;
-	}
+    public String getRegionId() {
+        return regionId;
+    }
 
-	public void setRegionId(String regionId) {
-		this.regionId = regionId;
-	}
+    public void setRegionId(String regionId) {
+        this.regionId = regionId;
+    }
 
-	public String getRegion() {
-		return region;
-	}
+    public String getRegion() {
+        return region;
+    }
 
-	public void setRegion(String region) {
-		this.region = region;
-	}
+    public void setRegion(String region) {
+        this.region = region;
+    }
 
-	public String getMobile() {
-		return mobile;
-	}
+    public String getMobile() {
+        return mobile;
+    }
 
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
-	}
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
 
-	public Long getPoint() {
-		return point;
-	}
+    public Long getPoint() {
+        return point;
+    }
 
-	public void setPoint(Long point) {
-		this.point = point;
-	}
+    public void setPoint(Long point) {
+        this.point = point;
+    }
 
-	public Long getTotalPoint() {
-		return totalPoint;
-	}
+    public Long getTotalPoint() {
+        return totalPoint;
+    }
 
-	public void setTotalPoint(Long totalPoint) {
-		this.totalPoint = totalPoint;
-	}
+    public void setTotalPoint(Long totalPoint) {
+        this.totalPoint = totalPoint;
+    }
 
-	public String getFace() {
-		return face;
-	}
+    public String getFace() {
+        return face;
+    }
 
-	public void setFace(String face) {
-		this.face = face;
-	}
+    public void setFace(String face) {
+        this.face = face;
+    }
 
-	public Boolean getDisabled() {
-		return disabled;
-	}
+    public Boolean getDisabled() {
+        return disabled;
+    }
 
-	public void setDisabled(Boolean disabled) {
-		this.disabled = disabled;
-	}
+    public void setDisabled(Boolean disabled) {
+        this.disabled = disabled;
+    }
 
-	public Boolean getHaveStore() {
-		return haveStore;
-	}
+    public Boolean getHaveStore() {
+        return haveStore;
+    }
 
-	public void setHaveStore(Boolean haveStore) {
-		this.haveStore = haveStore;
-	}
+    public void setHaveStore(Boolean haveStore) {
+        this.haveStore = haveStore;
+    }
 
-	public String getStoreId() {
-		return storeId;
-	}
+    public String getStoreId() {
+        return storeId;
+    }
 
-	public void setStoreId(String storeId) {
-		this.storeId = storeId;
-	}
+    public void setStoreId(String storeId) {
+        this.storeId = storeId;
+    }
 
-	public String getOpenId() {
-		return openId;
-	}
+    public String getOpenId() {
+        return openId;
+    }
 
-	public void setOpenId(String openId) {
-		this.openId = openId;
-	}
+    public void setOpenId(String openId) {
+        this.openId = openId;
+    }
 
-	public String getClientEnum() {
-		return clientEnum;
-	}
+    public String getClientEnum() {
+        return clientEnum;
+    }
 
-	public void setClientEnum(String clientEnum) {
-		this.clientEnum = clientEnum;
-	}
+    public void setClientEnum(String clientEnum) {
+        this.clientEnum = clientEnum;
+    }
 
-	public Date getLastLoginDate() {
-		return lastLoginDate;
-	}
+    public Date getLastLoginDate() {
+        return lastLoginDate;
+    }
 
-	public void setLastLoginDate(Date lastLoginDate) {
-		this.lastLoginDate = lastLoginDate;
-	}
+    public void setLastLoginDate(Date lastLoginDate) {
+        this.lastLoginDate = lastLoginDate;
+    }
 
-	public String getGradeId() {
-		return gradeId;
-	}
+    public String getGradeId() {
+        return gradeId;
+    }
 
-	public void setGradeId(String gradeId) {
-		this.gradeId = gradeId;
-	}
+    public void setGradeId(String gradeId) {
+        this.gradeId = gradeId;
+    }
 
-	public Long getExperience() {
-		return experience;
-	}
+    public Long getExperience() {
+        return experience;
+    }
 
-	public void setExperience(Long experience) {
-		this.experience = experience;
-	}
+    public void setExperience(Long experience) {
+        this.experience = experience;
+    }
 }

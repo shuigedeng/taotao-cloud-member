@@ -16,8 +16,8 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberReceiptPO;
 import com.taotao.boot.webagg.mapper.BaseSuperMapper;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberReceiptPO;
 
 /** 会员发票数据层 */
 public interface MemberReceiptMapper extends BaseSuperMapper<MemberReceiptPO, Long> {}

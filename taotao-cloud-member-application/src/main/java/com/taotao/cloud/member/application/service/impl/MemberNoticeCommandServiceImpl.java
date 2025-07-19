@@ -16,7 +16,6 @@
 
 package com.taotao.cloud.member.application.service.impl;
 
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.taotao.cloud.member.application.service.MemberNoticeCommandService;
 import org.springframework.stereotype.Service;
 
@@ -26,5 +25,4 @@ import org.springframework.stereotype.Service;
  * @since 2020/11/17 3:44 下午
  */
 @Service
-public class MemberNoticeCommandServiceImpl
-        implements MemberNoticeCommandService {}
+public class MemberNoticeCommandServiceImpl implements MemberNoticeCommandService {}

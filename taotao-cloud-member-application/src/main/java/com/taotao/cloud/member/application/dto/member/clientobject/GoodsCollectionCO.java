@@ -17,15 +17,13 @@
 package com.taotao.cloud.member.application.dto.member.clientobject;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.*;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /** 会员商品收藏VO */
 @Setter
@@ -37,8 +35,7 @@ import java.math.BigDecimal;
 @Schema(description = "会员商品收藏VO")
 public class GoodsCollectionCO implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "id")
     private String id;

@@ -17,7 +17,6 @@
 package com.taotao.cloud.member.infrastructure.converter;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;
 
 /**
@@ -32,5 +31,4 @@ public interface MemberConverter {
 
     /** 实例 */
     MemberConverter INSTANCE = Mappers.getMapper(MemberConverter.class);
-
 }

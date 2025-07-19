@@ -16,13 +16,9 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.toolkit.Constants;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO;
 import com.taotao.boot.webagg.mapper.BaseSuperMapper;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 /** 会员数据处理层 */
@@ -33,16 +29,18 @@ public interface MemberMapper extends BaseSuperMapper<MemberPO, Long> {
      *
      * @return 会员手机号
      */
-    @Select("""
-		select m.mobile
-		from tt_member m
-		""")
+    @Select(
+            """
+        select m.mobile
+        from tt_member m
+        """)
     List<String> getAllMemberMobile();
 
-    //@Select("""
-	//	select *
-	//	from tt_member
-	//	${ew.customSqlSegment}
-	//	""")
-    //IPage<MemberVO> pageByMemberVO(IPage<MemberVO> page, @Param(Constants.WRAPPER) Wrapper<MemberPO> queryWrapper);
+    // @Select("""
+    //	select *
+    //	from tt_member
+    //	${ew.customSqlSegment}
+    //	""")
+    // IPage<MemberVO> pageByMemberVO(IPage<MemberVO> page, @Param(Constants.WRAPPER)
+    // Wrapper<MemberPO> queryWrapper);
 }

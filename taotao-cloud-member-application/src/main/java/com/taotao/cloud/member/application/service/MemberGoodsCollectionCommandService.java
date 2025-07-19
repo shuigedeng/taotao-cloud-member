@@ -16,11 +16,7 @@
 
 package com.taotao.cloud.member.application.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.taotao.boot.ddd.model.application.service.CommandService;
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.taotao.boot.common.model.PageQuery;
-
 import java.util.List;
 
 /**
@@ -36,7 +32,7 @@ public interface MemberGoodsCollectionCommandService extends CommandService {
      * @param PageQuery 查询参数
      * @return 商品搜索分页
      */
-    //IPage<GoodsCollectionVO> goodsCollection(PageQuery pageQuery);
+    // IPage<GoodsCollectionVO> goodsCollection(PageQuery pageQuery);
 
     /**
      * 是否收藏商品

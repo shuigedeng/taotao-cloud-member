@@ -16,44 +16,42 @@
 
 package com.taotao.cloud.member.application.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.taotao.boot.ddd.model.application.service.CommandService;
-import com.baomidou.mybatisplus.extension.service.IService;
 
 /** 会员发票业务层 */
 public interface MemberReceiptQueryService extends CommandService {
-	//
-    ///**
+    //
+    /// **
     // * 查询会员发票列表
     // *
     // * @param memberReceiptPageQuery 会员发票信息
     // * @return 会员发票分页
     // */
-    //IPage<MemberReceiptPO> getPage(MemberReceiptPageQuery memberReceiptPageQuery);
-	//
-    ///**
+    // IPage<MemberReceiptPO> getPage(MemberReceiptPageQuery memberReceiptPageQuery);
+    //
+    /// **
     // * 添加会员发票信息
     // *
     // * @param memberReceiptAddVO 会员发票信息
     // * @param memberId 会员ID
     // * @return 操作状态
     // */
-    //Boolean addMemberReceipt(MemberReceiptAddVO memberReceiptAddVO, Long memberId);
-	//
-    ///**
+    // Boolean addMemberReceipt(MemberReceiptAddVO memberReceiptAddVO, Long memberId);
+    //
+    /// **
     // * 修改会员发票信息
     // *
     // * @param memberReceiptAddVO 会员发票信息
     // * @param memberId 会员ID
     // * @return 操作状态
     // */
-    //Boolean editMemberReceipt(MemberReceiptAddVO memberReceiptAddVO, Long memberId);
-	//
-    ///**
+    // Boolean editMemberReceipt(MemberReceiptAddVO memberReceiptAddVO, Long memberId);
+    //
+    /// **
     // * 删除会员发票信息
     // *
     // * @param id 发票ID
     // * @return 操作状态
     // */
-    //Boolean deleteMemberReceipt(Long id);
+    // Boolean deleteMemberReceipt(Long id);
 }

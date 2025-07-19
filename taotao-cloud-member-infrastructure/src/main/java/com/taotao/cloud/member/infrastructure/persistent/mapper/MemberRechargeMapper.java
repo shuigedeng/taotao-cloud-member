@@ -16,8 +16,8 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberRechargePO;
 import com.taotao.boot.webagg.mapper.BaseSuperMapper;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberRechargePO;
 
 /** 会员签到数据处理层 */
 public interface MemberRechargeMapper extends BaseSuperMapper<MemberRechargePO, Long> {}

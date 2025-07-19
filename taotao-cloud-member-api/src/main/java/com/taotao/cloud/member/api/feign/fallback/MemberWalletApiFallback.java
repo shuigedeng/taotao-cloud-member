@@ -36,17 +36,17 @@ public class MemberWalletApiFallback implements FallbackFactory<MemberWalletApi>
     @Override
     public MemberWalletApi create(Throwable throwable) {
         return new MemberWalletApi() {
-			@Override
-			public FeignResponse<BooleanApiResponse> increase(
-				FeignRequest<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest) {
-				return null;
-			}
+            @Override
+            public FeignResponse<BooleanApiResponse> increase(
+                    FeignRequest<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest) {
+                return null;
+            }
 
-			@Override
-			public FeignResponse<BooleanApiResponse> save(
-				FeignRequest<MemberWalletQueryApiRequest> memberWalletQueryApiRequest) {
-				return null;
-			}
-		};
+            @Override
+            public FeignResponse<BooleanApiResponse> save(
+                    FeignRequest<MemberWalletQueryApiRequest> memberWalletQueryApiRequest) {
+                return null;
+            }
+        };
     }
 }

@@ -25,12 +25,11 @@ import com.taotao.cloud.member.api.feign.request.MemberApiRequest;
 import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import java.util.List;
+import java.util.Map;
 import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
-import java.util.Map;
 
 /**
  * 店铺端,管理员API
@@ -43,44 +42,51 @@ import java.util.Map;
 @Tag(name = "内部调用端-会员API", description = "内部调用端-会员API")
 public class FeignMemberController extends FeignController implements MemberApi {
 
-	@Override
-	public FeignResponse<BaseSecurityUser> getMemberSecurityUser(FeignRequest<MemberApiRequest> memberApiRequest) {
-		return null;
-	}
+    @Override
+    public FeignResponse<BaseSecurityUser> getMemberSecurityUser(
+            FeignRequest<MemberApiRequest> memberApiRequest) {
+        return null;
+    }
 
-	@Override
-	public FeignResponse<MemberApiResponse> findMemberById(FeignRequest<MemberApiRequest> memberApiRequest) {
-		return null;
-	}
+    @Override
+    public FeignResponse<MemberApiResponse> findMemberById(
+            FeignRequest<MemberApiRequest> memberApiRequest) {
+        return null;
+    }
 
-	@Override
-	public FeignResponse<BooleanApiResponse> updateMemberPoint(FeignRequest<MemberApiRequest> memberApiRequest) {
-		return null;
-	}
+    @Override
+    public FeignResponse<BooleanApiResponse> updateMemberPoint(
+            FeignRequest<MemberApiRequest> memberApiRequest) {
+        return null;
+    }
 
-	@Override
-	public FeignResponse<MemberApiResponse> findByUsername(FeignRequest<MemberApiRequest> memberApiRequest) {
-		return null;
-	}
+    @Override
+    public FeignResponse<MemberApiResponse> findByUsername(
+            FeignRequest<MemberApiRequest> memberApiRequest) {
+        return null;
+    }
 
-	@Override
-	public FeignResponse<MemberApiResponse> getById(FeignRequest<MemberApiRequest> memberApiRequest) {
-		return null;
-	}
+    @Override
+    public FeignResponse<MemberApiResponse> getById(
+            FeignRequest<MemberApiRequest> memberApiRequest) {
+        return null;
+    }
 
-	@Override
-	public FeignResponse<BooleanApiResponse> update(FeignRequest<MemberApiRequest> memberApiRequest) {
-		return null;
-	}
+    @Override
+    public FeignResponse<BooleanApiResponse> update(
+            FeignRequest<MemberApiRequest> memberApiRequest) {
+        return null;
+    }
 
-	@Override
-	public FeignResponse<BooleanApiResponse> updateById(FeignRequest<MemberApiRequest> memberApiRequest) {
-		return null;
-	}
+    @Override
+    public FeignResponse<BooleanApiResponse> updateById(
+            FeignRequest<MemberApiRequest> memberApiRequest) {
+        return null;
+    }
 
-	@Override
-	public FeignResponse<List<Map<String, Object>>> listFieldsByMemberIds(
-		FeignRequest<MemberApiRequest> memberApiRequest) {
-		return null;
-	}
+    @Override
+    public FeignResponse<List<Map<String, Object>>> listFieldsByMemberIds(
+            FeignRequest<MemberApiRequest> memberApiRequest) {
+        return null;
+    }
 }

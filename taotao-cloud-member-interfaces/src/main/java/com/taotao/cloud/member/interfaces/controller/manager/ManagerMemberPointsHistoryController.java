@@ -35,23 +35,24 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "管理端-会员积分历史管理API", description = "管理端-会员积分历史管理API")
 public class ManagerMemberPointsHistoryController extends BusinessController {
 
-    //private final IMemberPointsHistoryService memberPointsHistoryService;
-	//
-    //@Operation(summary = "分页获取", description = "分页获取")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@GetMapping(value = "/page")
-    //public Result<PageResult<MemberPointsHistoryPageVO>> getByPage(MemberPointHistoryPageQuery pageQuery) {
+    // private final IMemberPointsHistoryService memberPointsHistoryService;
+    //
+    // @Operation(summary = "分页获取", description = "分页获取")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/page")
+    // public Result<PageResult<MemberPointsHistoryPageVO>> getByPage(MemberPointHistoryPageQuery
+    // pageQuery) {
     //    IPage<MemberPointsHistory> page = memberPointsHistoryService.memberPointsHistoryPageQuery(
     //            pageQuery.getPageParm(), pageQuery.getMemberId(), pageQuery.getMemberName());
     //    return Result.success(MpUtils.convertMybatisPage(page, MemberPointsHistoryPageVO.class));
-    //}
-	//
-    //@Operation(summary = "获取会员积分", description = "获取会员积分")
-    //@RequestLogger
-    //@PreAuthorize("@el.check('admin','timing:list')")
-    //@GetMapping(value = "")
-    //public Result<MemberPointsHistoryVO> getMemberPointsHistoryVO(Long memberId) {
+    // }
+    //
+    // @Operation(summary = "获取会员积分", description = "获取会员积分")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "")
+    // public Result<MemberPointsHistoryVO> getMemberPointsHistoryVO(Long memberId) {
     //    return Result.success(memberPointsHistoryService.getMemberPointsHistoryVO(memberId));
-    //}
+    // }
 }

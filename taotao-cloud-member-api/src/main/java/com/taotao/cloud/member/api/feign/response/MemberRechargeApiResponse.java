@@ -21,11 +21,9 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 import lombok.experimental.Accessors;
 
 /** 会员搜索VO */
@@ -38,97 +36,104 @@ import lombok.experimental.Accessors;
 @Schema(description = "会员搜索VO")
 public class MemberRechargeApiResponse implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     /** 充值订单编号 */
     private String rechargeSn;
+
     /** 会员id */
     private Long memberId;
+
     /** 会员名称 */
     private String memberName;
+
     /** 充值金额 */
     private BigDecimal rechargeMoney;
+
     /** 充值方式，如：支付宝，微信不能为空 */
     private String rechargeWay;
+
     /** 支付状态 */
     private String payStatus;
+
     /** 支付插件id */
     private String paymentPluginId;
+
     /** 第三方流水 */
     private String receivableNo;
+
     /** 支付时间 */
     private LocalDateTime payTime;
 
-	public String getRechargeSn() {
-		return rechargeSn;
-	}
+    public String getRechargeSn() {
+        return rechargeSn;
+    }
 
-	public void setRechargeSn(String rechargeSn) {
-		this.rechargeSn = rechargeSn;
-	}
+    public void setRechargeSn(String rechargeSn) {
+        this.rechargeSn = rechargeSn;
+    }
 
-	public Long getMemberId() {
-		return memberId;
-	}
+    public Long getMemberId() {
+        return memberId;
+    }
 
-	public void setMemberId(Long memberId) {
-		this.memberId = memberId;
-	}
+    public void setMemberId(Long memberId) {
+        this.memberId = memberId;
+    }
 
-	public String getMemberName() {
-		return memberName;
-	}
+    public String getMemberName() {
+        return memberName;
+    }
 
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
-	}
+    public void setMemberName(String memberName) {
+        this.memberName = memberName;
+    }
 
-	public BigDecimal getRechargeMoney() {
-		return rechargeMoney;
-	}
+    public BigDecimal getRechargeMoney() {
+        return rechargeMoney;
+    }
 
-	public void setRechargeMoney(BigDecimal rechargeMoney) {
-		this.rechargeMoney = rechargeMoney;
-	}
+    public void setRechargeMoney(BigDecimal rechargeMoney) {
+        this.rechargeMoney = rechargeMoney;
+    }
 
-	public String getRechargeWay() {
-		return rechargeWay;
-	}
+    public String getRechargeWay() {
+        return rechargeWay;
+    }
 
-	public void setRechargeWay(String rechargeWay) {
-		this.rechargeWay = rechargeWay;
-	}
+    public void setRechargeWay(String rechargeWay) {
+        this.rechargeWay = rechargeWay;
+    }
 
-	public String getPayStatus() {
-		return payStatus;
-	}
+    public String getPayStatus() {
+        return payStatus;
+    }
 
-	public void setPayStatus(String payStatus) {
-		this.payStatus = payStatus;
-	}
+    public void setPayStatus(String payStatus) {
+        this.payStatus = payStatus;
+    }
 
-	public String getPaymentPluginId() {
-		return paymentPluginId;
-	}
+    public String getPaymentPluginId() {
+        return paymentPluginId;
+    }
 
-	public void setPaymentPluginId(String paymentPluginId) {
-		this.paymentPluginId = paymentPluginId;
-	}
+    public void setPaymentPluginId(String paymentPluginId) {
+        this.paymentPluginId = paymentPluginId;
+    }
 
-	public String getReceivableNo() {
-		return receivableNo;
-	}
+    public String getReceivableNo() {
+        return receivableNo;
+    }
 
-	public void setReceivableNo(String receivableNo) {
-		this.receivableNo = receivableNo;
-	}
+    public void setReceivableNo(String receivableNo) {
+        this.receivableNo = receivableNo;
+    }
 
-	public LocalDateTime getPayTime() {
-		return payTime;
-	}
+    public LocalDateTime getPayTime() {
+        return payTime;
+    }
 
-	public void setPayTime(LocalDateTime payTime) {
-		this.payTime = payTime;
-	}
+    public void setPayTime(LocalDateTime payTime) {
+        this.payTime = payTime;
+    }
 }

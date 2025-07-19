@@ -28,16 +28,19 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER,
-	contextId = "MemberWalletApi",
-	fallbackFactory = MemberWalletApiFallback.class)
+@FeignClient(
+        value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER,
+        contextId = "MemberWalletApi",
+        fallbackFactory = MemberWalletApiFallback.class)
 public interface MemberWalletApi {
 
-	@PostMapping(value = "/member/feign/wallet/increase")
-	FeignResponse<BooleanApiResponse> increase(
-		@Validated @RequestBody FeignRequest<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest);
+    @PostMapping(value = "/member/feign/wallet/increase")
+    FeignResponse<BooleanApiResponse> increase(
+            @Validated @RequestBody
+                    FeignRequest<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest);
 
-	@PostMapping(value = "/member/feign/recharge/save")
-	FeignResponse<BooleanApiResponse> save(
-		@Validated @RequestBody FeignRequest<MemberWalletQueryApiRequest> memberWalletQueryApiRequest);
+    @PostMapping(value = "/member/feign/recharge/save")
+    FeignResponse<BooleanApiResponse> save(
+            @Validated @RequestBody
+                    FeignRequest<MemberWalletQueryApiRequest> memberWalletQueryApiRequest);
 }

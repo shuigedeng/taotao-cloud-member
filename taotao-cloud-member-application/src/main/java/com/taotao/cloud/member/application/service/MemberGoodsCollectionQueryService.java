@@ -17,7 +17,6 @@
 package com.taotao.cloud.member.application.service;
 
 import com.taotao.boot.ddd.model.application.service.CommandService;
-
 import java.util.List;
 
 /**
@@ -33,7 +32,7 @@ public interface MemberGoodsCollectionQueryService extends CommandService {
      * @param PageQuery 查询参数
      * @return 商品搜索分页
      */
-    //IPage<GoodsCollectionVO> goodsCollection(PageQuery pageQuery);
+    // IPage<GoodsCollectionVO> goodsCollection(PageQuery pageQuery);
 
     /**
      * 是否收藏商品

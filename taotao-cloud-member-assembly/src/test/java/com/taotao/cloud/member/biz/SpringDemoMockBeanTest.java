@@ -21,14 +21,12 @@ import com.taotao.cloud.member.application.service.DeptsService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 
 // @ActiveProfiles("test")
 // @TestPropertySource({"classpath:application-test.yml"})
 @SpringBootTest(classes = TaoTaoCloudMemberApplication.class)
 public class SpringDemoMockBeanTest {
-    @MockitoBean
-	DeptsService mockBeanService;
+    @MockitoBean DeptsService mockBeanService;
 
     @Test
     @DisplayName("MockBean的正确姿势")
@@ -56,8 +54,10 @@ public class SpringDemoMockBeanTest {
         //        // serviceB 根本没有打桩，但由于 mockBeanService 这个对象实例是 Mock 出来的，
         //        // 所以 serviceB 的方法体代码不会被执行，并且返回值固定为 null，不管入参是什么
         //        for (int i = 0; i < 3; i++) {
-        //            String returnValueFromRandom = mockBeanService.serviceB(RandomStringUtils.random(10));
-        //            System.out.println("returnValueFromRandom 第[" + i + "]次 = " + returnValueFromRandom);
+        //            String returnValueFromRandom =
+        // mockBeanService.serviceB(RandomStringUtils.random(10));
+        //            System.out.println("returnValueFromRandom 第[" + i + "]次 = " +
+        // returnValueFromRandom);
         //            Assertions.assertNull(returnValueFromRandom);
         //        }
     }

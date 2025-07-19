@@ -23,7 +23,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -54,7 +53,9 @@ public class MemberWalletPO extends BaseSuperEntity<MemberWalletPO, Long> {
     private Long memberId;
 
     /** 会员预存款 */
-    @Column(name = "member_wallet", columnDefinition = "decimal(10,2) not null default 0 comment '会员预存款'")
+    @Column(
+            name = "member_wallet",
+            columnDefinition = "decimal(10,2) not null default 0 comment '会员预存款'")
     private BigDecimal memberWallet;
 
     /** 会员预存款冻结金额,提现使用 */

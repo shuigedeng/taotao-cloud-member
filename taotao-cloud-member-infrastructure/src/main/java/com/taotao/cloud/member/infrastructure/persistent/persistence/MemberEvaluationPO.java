@@ -16,16 +16,12 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.persistence;
 
-import com.alibaba.cloud.commons.lang.StringUtils;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.taotao.boot.common.enums.SwitchEnum;
-import com.taotao.boot.common.utils.bean.BeanUtils;
 import com.taotao.boot.webagg.entity.BaseSuperEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -94,7 +90,9 @@ public class MemberEvaluationPO extends BaseSuperEntity<MemberEvaluationPO, Long
     /** 好中差评 , GOOD：好评，MODERATE：中评，WORSE：差评 */
     @Column(
             name = "grade",
-            columnDefinition = "varchar(32) not null default 'GOOD' comment '好中差评 ," + " GOOD：好评，MODERATE：中评，WORSE：差评'")
+            columnDefinition =
+                    "varchar(32) not null default 'GOOD' comment '好中差评 ,"
+                            + " GOOD：好评，MODERATE：中评，WORSE：差评'")
     private String grade;
 
     /** 评价内容 */
@@ -106,7 +104,9 @@ public class MemberEvaluationPO extends BaseSuperEntity<MemberEvaluationPO, Long
     private String images;
 
     /** 状态 OPEN 正常 ,CLOSE 关闭 */
-    @Column(name = "status", columnDefinition = "varchar(32) default 'OPEN' comment '状态  OPEN 正常 ,CLOSE 关闭'")
+    @Column(
+            name = "status",
+            columnDefinition = "varchar(32) default 'OPEN' comment '状态  OPEN 正常 ,CLOSE 关闭'")
     private String status;
 
     /** 评价回复 */
@@ -118,11 +118,15 @@ public class MemberEvaluationPO extends BaseSuperEntity<MemberEvaluationPO, Long
     private String replyImage;
 
     /** 评论是否有图片 true 有 ,false 没有 */
-    @Column(name = "have_image", columnDefinition = "boolean default false comment '评论是否有图片 true 有 ,false 没有'")
+    @Column(
+            name = "have_image",
+            columnDefinition = "boolean default false comment '评论是否有图片 true 有 ,false 没有'")
     private Boolean haveImage;
 
     /** 回复是否有图片 true 有 ,false 没有 */
-    @Column(name = "have_reply_image", columnDefinition = "boolean default false comment '回复是否有图片 true 有 ,false 没有'")
+    @Column(
+            name = "have_reply_image",
+            columnDefinition = "boolean default false comment '回复是否有图片 true 有 ,false 没有'")
     private Boolean haveReplyImage;
 
     /** 回复状态 */
@@ -140,6 +144,4 @@ public class MemberEvaluationPO extends BaseSuperEntity<MemberEvaluationPO, Long
     /** 描述评分 */
     @Column(name = "description_score", columnDefinition = "int default 0 comment '描述评分'")
     private Integer descriptionScore;
-
-
 }

@@ -33,68 +33,76 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/member/buyer/member/collection")
 public class BuyerMemberCollectionController extends BusinessController {
 
-	///**
-	// * 会员商品收藏
-	// */
-	//private final IMemberGoodsCollectionService memberGoodsCollectionService;
-	///**
-	// * 会员店铺
-	// */
-	//private final IFeignStoreCollectionApi feignStoreCollectionApi;
-	//
-	//@Operation(summary = "查询会员收藏列表", description = "查询会员收藏列表")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping("/{type}")
-	//public Result<PageResult<StoreCollectionVO>> goodsListPage(@Parameter(description = "类型", required = true)
-	//                                                           @PathVariable String type,
-	//                                                           @Validated PageQuery page) {
-	//    if (MemberCollectionQueryConstants.GOODS.equals(type)) {
-	//        IPage<GoodsCollectionVO> goodsCollectionPage = memberGoodsCollectionService.goodsCollection(page);
-	//        return Result.success(MpUtils.convertMybatisPage(goodsCollectionPage, StoreCollectionVO.class));
-	//    }
-	//
-	//    return Result.success(feignStoreCollectionApi.storeCollection(page));
-	//}
-	//
-	//@Operation(summary = "添加会员收藏", description = "添加会员收藏")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@PostMapping("/{type}/{id}")
-	//public Result<Boolean> addGoodsCollection(@Parameter(description = "类型", required = true, example = "GOODS:商品,STORE:店铺")
-	//                                          @PathVariable String type,
-	//                                          @Parameter(description = "id", required = true)
-	//                                          @NotNull(message = "值不能为空")
-	//                                          @PathVariable Long id) {
-	//    if (MemberCollectionQueryConstants.GOODS.equals(type)) {
-	//        return Result.success(memberGoodsCollectionService.addGoodsCollection(id));
-	//    }
-	//    return Result.success(feignStoreCollectionApi.addStoreCollection(id));
-	//}
-	//
-	//@Operation(summary = "删除会员收藏", description = "删除会员收藏")
-	//@RequestLogger
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@DeleteMapping(value = "/{type}/{id}")
-	//public Result<Object> deleteGoodsCollection(
-	//        @Parameter(description = "类型", required = true, example = "GOODS:商品,STORE:店铺") @PathVariable String type,
-	//        @Parameter(description = "id", required = true) @NotNull(message = "值不能为空") @PathVariable Long id) {
-	//    if (MemberCollectionQueryConstants.GOODS.equals(type)) {
-	//        return Result.success(memberGoodsCollectionService.deleteGoodsCollection(id));
-	//    }
-	//    return Result.success(feignStoreCollectionApi.deleteStoreCollection(id));
-	//}
-	//
-	//@Operation(summary = "查询会员是否收藏", description = "查询会员是否收藏")
-	//@RequestLogger("查询会员是否收藏")
-	//@PreAuthorize("@el.check('admin','timing:list')")
-	//@GetMapping(value = "/{type}/{id}/collection")
-	//public Result<Boolean> isCollection(
-	//        @Parameter(description = "类型", required = true, example = "GOODS:商品,STORE:店铺") @PathVariable String type,
-	//        @Parameter(description = "id", required = true) @NotNull(message = "值不能为空") @PathVariable Long id) {
-	//    if (MemberCollectionQueryConstants.GOODS.equals(type)) {
-	//        return Result.success(memberGoodsCollectionService.isCollection(id));
-	//    }
-	//    return Result.success(this.feignStoreCollectionApi.isCollection(id));
-	//}
+    /// **
+    // * 会员商品收藏
+    // */
+    // private final IMemberGoodsCollectionService memberGoodsCollectionService;
+    /// **
+    // * 会员店铺
+    // */
+    // private final IFeignStoreCollectionApi feignStoreCollectionApi;
+    //
+    // @Operation(summary = "查询会员收藏列表", description = "查询会员收藏列表")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping("/{type}")
+    // public Result<PageResult<StoreCollectionVO>> goodsListPage(@Parameter(description = "类型",
+    // required = true)
+    //                                                           @PathVariable String type,
+    //                                                           @Validated PageQuery page) {
+    //    if (MemberCollectionQueryConstants.GOODS.equals(type)) {
+    //        IPage<GoodsCollectionVO> goodsCollectionPage =
+    // memberGoodsCollectionService.goodsCollection(page);
+    //        return Result.success(MpUtils.convertMybatisPage(goodsCollectionPage,
+    // StoreCollectionVO.class));
+    //    }
+    //
+    //    return Result.success(feignStoreCollectionApi.storeCollection(page));
+    // }
+    //
+    // @Operation(summary = "添加会员收藏", description = "添加会员收藏")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PostMapping("/{type}/{id}")
+    // public Result<Boolean> addGoodsCollection(@Parameter(description = "类型", required = true,
+    // example = "GOODS:商品,STORE:店铺")
+    //                                          @PathVariable String type,
+    //                                          @Parameter(description = "id", required = true)
+    //                                          @NotNull(message = "值不能为空")
+    //                                          @PathVariable Long id) {
+    //    if (MemberCollectionQueryConstants.GOODS.equals(type)) {
+    //        return Result.success(memberGoodsCollectionService.addGoodsCollection(id));
+    //    }
+    //    return Result.success(feignStoreCollectionApi.addStoreCollection(id));
+    // }
+    //
+    // @Operation(summary = "删除会员收藏", description = "删除会员收藏")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @DeleteMapping(value = "/{type}/{id}")
+    // public Result<Object> deleteGoodsCollection(
+    //        @Parameter(description = "类型", required = true, example = "GOODS:商品,STORE:店铺")
+    // @PathVariable String type,
+    //        @Parameter(description = "id", required = true) @NotNull(message = "值不能为空")
+    // @PathVariable Long id) {
+    //    if (MemberCollectionQueryConstants.GOODS.equals(type)) {
+    //        return Result.success(memberGoodsCollectionService.deleteGoodsCollection(id));
+    //    }
+    //    return Result.success(feignStoreCollectionApi.deleteStoreCollection(id));
+    // }
+    //
+    // @Operation(summary = "查询会员是否收藏", description = "查询会员是否收藏")
+    // @RequestLogger("查询会员是否收藏")
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping(value = "/{type}/{id}/collection")
+    // public Result<Boolean> isCollection(
+    //        @Parameter(description = "类型", required = true, example = "GOODS:商品,STORE:店铺")
+    // @PathVariable String type,
+    //        @Parameter(description = "id", required = true) @NotNull(message = "值不能为空")
+    // @PathVariable Long id) {
+    //    if (MemberCollectionQueryConstants.GOODS.equals(type)) {
+    //        return Result.success(memberGoodsCollectionService.isCollection(id));
+    //    }
+    //    return Result.success(this.feignStoreCollectionApi.isCollection(id));
+    // }
 }

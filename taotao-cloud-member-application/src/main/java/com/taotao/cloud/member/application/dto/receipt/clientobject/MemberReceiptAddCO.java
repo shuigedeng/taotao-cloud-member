@@ -18,14 +18,12 @@ package com.taotao.cloud.member.application.dto.receipt.clientobject;
 
 import com.taotao.cloud.member.api.enums.MemberReceiptEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.*;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-
 import java.io.Serial;
 import java.io.Serializable;
+import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /** 会员发票添加VO */
 @Setter
@@ -37,8 +35,7 @@ import java.io.Serializable;
 @Schema(description = "会员发票")
 public class MemberReceiptAddCO implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -8267092982915677995L;
+    @Serial private static final long serialVersionUID = -8267092982915677995L;
 
     @Schema(description = "唯一标识", hidden = true)
     private String id;

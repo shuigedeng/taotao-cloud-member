@@ -24,7 +24,6 @@ import jakarta.persistence.Table;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -67,7 +66,9 @@ public class MemberWalletRechargePO extends BaseSuperEntity<MemberWalletRecharge
     private BigDecimal rechargeMoney;
 
     /** 充值方式，如：支付宝，微信 */
-    @Column(name = "recharge_way", columnDefinition = "varchar(32) not null comment '充值方式，如：支付宝，微信'")
+    @Column(
+            name = "recharge_way",
+            columnDefinition = "varchar(32) not null comment '充值方式，如：支付宝，微信'")
     private String rechargeWay;
 
     /** 支付状态 */
@@ -94,11 +95,12 @@ public class MemberWalletRechargePO extends BaseSuperEntity<MemberWalletRecharge
      * @param memberName 会员名称
      * @param money 充值金额
      */
-    public MemberWalletRechargePO(String rechargeSn, Long memberId, String memberName, BigDecimal money) {
+    public MemberWalletRechargePO(
+            String rechargeSn, Long memberId, String memberName, BigDecimal money) {
         this.rechargeSn = rechargeSn;
         this.memberId = memberId;
         this.memberName = memberName;
         this.rechargeMoney = money;
-        //this.payStatus = PayStatusEnum.UNPAID.name();
+        // this.payStatus = PayStatusEnum.UNPAID.name();
     }
 }

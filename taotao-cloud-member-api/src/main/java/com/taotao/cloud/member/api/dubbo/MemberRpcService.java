@@ -30,12 +30,13 @@ import com.taotao.cloud.member.api.dubbo.response.MemberQueryRpcResponse;
  */
 public interface MemberRpcService {
 
-	/**
-	 * 字典code查询
-	 *
-	 * @param memberQueryGrpcRequest 代码
-	 * @return {@link MemberQueryRpcResponse }
-	 * @since 2022-06-29 21:45:44
-	 */
-	RpcResponse<MemberQueryRpcResponse> findMemberByRequest(RpcRequest<MemberQueryRpcRequest> memberQueryGrpcRequest);
+    /**
+     * 字典code查询
+     *
+     * @param memberQueryGrpcRequest 代码
+     * @return {@link MemberQueryRpcResponse }
+     * @since 2022-06-29 21:45:44
+     */
+    RpcResponse<MemberQueryRpcResponse> findMemberByRequest(
+            RpcRequest<MemberQueryRpcRequest> memberQueryGrpcRequest);
 }

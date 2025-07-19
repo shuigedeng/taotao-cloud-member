@@ -16,8 +16,6 @@
 
 package com.taotao.cloud.member.infrastructure.repository;
 
-import com.taotao.cloud.member.domain.member.entity.Member;
-import com.taotao.cloud.member.domain.member.repository.MemberDomainRepository;
 import com.taotao.cloud.member.domain.wallet.entity.MemberWallet;
 import com.taotao.cloud.member.domain.wallet.repository.MemberWalletDomainRepository;
 import lombok.AllArgsConstructor;
@@ -27,18 +25,12 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class MemberWalletDomainRepositoryImpl implements MemberWalletDomainRepository {
 
-	@Override
-	public void create(MemberWallet dept) {
+    @Override
+    public void create(MemberWallet dept) {}
 
-	}
+    @Override
+    public void modify(MemberWallet dept) {}
 
-	@Override
-	public void modify(MemberWallet dept) {
-
-	}
-
-	@Override
-	public void remove(Long[] ids) {
-
-	}
+    @Override
+    public void remove(Long[] ids) {}
 }

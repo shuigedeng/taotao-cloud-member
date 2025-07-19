@@ -22,16 +22,14 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.*;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-import org.springframework.format.annotation.DateTimeFormat;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Date;
+import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * 会员信息修改DTO
@@ -49,8 +47,7 @@ import java.util.Date;
 @Schema(description = "会员信息修改DTO")
 public class MemberEditCmd implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "昵称", requiredMode = Schema.RequiredMode.REQUIRED)
     @Size(min = 2, max = 20, message = "会员昵称必须为2到20位之间")

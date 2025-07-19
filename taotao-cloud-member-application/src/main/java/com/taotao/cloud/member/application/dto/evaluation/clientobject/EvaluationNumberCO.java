@@ -17,14 +17,12 @@
 package com.taotao.cloud.member.application.dto.evaluation.clientobject;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.*;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-
 import java.io.Serial;
 import java.io.Serializable;
+import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /** 评价数量VO */
 @Setter
@@ -36,8 +34,7 @@ import java.io.Serializable;
 @Schema(description = "评价数量VO")
 public class EvaluationNumberCO implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "全部商品")
     private Integer all;

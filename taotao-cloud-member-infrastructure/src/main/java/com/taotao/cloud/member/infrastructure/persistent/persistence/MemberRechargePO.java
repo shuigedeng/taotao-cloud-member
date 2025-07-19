@@ -25,7 +25,6 @@ import java.io.Serial;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -50,32 +49,40 @@ public class MemberRechargePO extends BaseSuperEntity<MemberRechargePO, Long> {
 
     public static final String TABLE_NAME = "ttc_recharge";
 
-    @Serial
-    private static final long serialVersionUID = -1529240544327161096L;
+    @Serial private static final long serialVersionUID = -1529240544327161096L;
+
     /** 充值订单编号 */
     @Column(name = "recharge_sn", columnDefinition = "varchar(32) not null comment '发票抬头'")
     private String rechargeSn;
+
     /** 会员id */
     @Column(name = "member_id", columnDefinition = "varchar(32) not null comment '发票抬头'")
     private Long memberId;
+
     /** 会员名称 */
     @Column(name = "member_name", columnDefinition = "varchar(32) not null comment '发票抬头'")
     private String memberName;
+
     /** 充值金额 */
     @Column(name = "recharge_money", columnDefinition = "varchar(32) not null comment '发票抬头'")
     private BigDecimal rechargeMoney;
+
     /** 充值方式，如：支付宝，微信不能为空 */
     @Column(name = "recharge_way", columnDefinition = "varchar(32) not null comment '发票抬头'")
     private String rechargeWay;
+
     /** 支付状态 */
     @Column(name = "pay_status", columnDefinition = "varchar(32) not null comment '发票抬头'")
     private String payStatus;
+
     /** 支付插件id */
     @Column(name = "payment_plugin_id", columnDefinition = "varchar(32) not null comment '发票抬头'")
     private String paymentPluginId;
+
     /** 第三方流水 */
     @Column(name = "receivable_no", columnDefinition = "varchar(32) not null comment '发票抬头'")
     private String receivableNo;
+
     /** 支付时间 */
     @Column(name = "pay_time", columnDefinition = "varchar(32) not null comment '发票抬头'")
     private LocalDateTime payTime;
@@ -93,6 +100,6 @@ public class MemberRechargePO extends BaseSuperEntity<MemberRechargePO, Long> {
         this.memberId = memberId;
         this.memberName = memberName;
         this.rechargeMoney = money;
-        //this.payStatus = PayStatusEnum.UNPAID.name();
+        // this.payStatus = PayStatusEnum.UNPAID.name();
     }
 }

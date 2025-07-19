@@ -21,17 +21,15 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import java.io.Serial;
+import java.io.Serializable;
+import java.util.Date;
 import lombok.*;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.format.annotation.DateTimeFormat;
-
-import java.io.Serial;
-import java.io.Serializable;
-import java.util.Date;
 
 /**
  * 会员修改 用于后台的用户信息修改
@@ -49,8 +47,7 @@ import java.util.Date;
 @Schema(description = "会员修改")
 public class ManagerMemberEditCmd implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = -7605952923416404638L;
+    @Serial private static final long serialVersionUID = -7605952923416404638L;
 
     @Schema(description = "会员用户名,用户名不能进行修改", requiredMode = Schema.RequiredMode.REQUIRED)
     @NotNull(message = "会员用户名不能为空")

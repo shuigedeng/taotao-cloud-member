@@ -27,5 +27,5 @@ public interface MemberNoticeSenterCommandService extends CommandService {
      * @param memberNoticeSenterPO 会员消息
      * @return 操作状态
      */
-//    boolean customSave(MemberNoticeSenterPO memberNoticeSenterPO);
+    //    boolean customSave(MemberNoticeSenterPO memberNoticeSenterPO);
 }

@@ -34,7 +34,7 @@ public interface MemberSignQueryService extends CommandService {
      * @param time 时间 格式 YYYYmm
      * @return 会员签到列表
      */
-    //List<MemberSignCO> getMonthSignDay(String time);
+    // List<MemberSignCO> getMonthSignDay(String time);
 
     /**
      * 会员签到赠送积分

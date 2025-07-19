@@ -24,18 +24,12 @@ import org.springframework.stereotype.Service;
 @Service
 @AllArgsConstructor
 public class MemberNoticeDomainRepositoryImpl implements MemberNoticeDomainRepository {
-	@Override
-	public void create(MemberNotice dept) {
+    @Override
+    public void create(MemberNotice dept) {}
 
-	}
+    @Override
+    public void modify(MemberNotice dept) {}
 
-	@Override
-	public void modify(MemberNotice dept) {
-
-	}
-
-	@Override
-	public void remove(Long[] ids) {
-
-	}
+    @Override
+    public void remove(Long[] ids) {}
 }
