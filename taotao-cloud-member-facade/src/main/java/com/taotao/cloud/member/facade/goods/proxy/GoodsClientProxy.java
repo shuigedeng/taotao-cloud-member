@@ -16,6 +16,8 @@
 
 package com.taotao.cloud.member.facade.goods.proxy;
 
+import com.taotao.boot.common.model.RpcRequest;
+import com.taotao.boot.common.model.RpcResponse;
 import com.taotao.cloud.goods.api.dubbo.GoodsRpcService;
 import com.taotao.cloud.goods.api.dubbo.request.GoodsQueryRpcRequest;
 import com.taotao.cloud.goods.api.dubbo.response.GoodsQueryRpcResponse;
@@ -43,10 +45,10 @@ public class GoodsClientProxy {
     // 查询用户
     public GoodsVO getGoodsVO(Long storeId) {
         //		Long goodsNum = goodsApi.countStoreGoodsNum(storeId);
-        GoodsQueryRpcResponse goods =
-                goodsRpcService.queryGoodsByParams(new GoodsQueryRpcRequest());
+        RpcResponse<GoodsQueryRpcResponse> goods =
+                goodsRpcService.queryGoodsByParams(RpcRequest.success(new GoodsQueryRpcRequest()));
         CountStoreGoodsNumGrpcResponse helloReply = goodsGrpcClient.countStoreGoodsNum("sfdasdf");
 
-        return userIntegrationAdapter.convert(0L, goods, helloReply);
+        return userIntegrationAdapter.convert(0L, goods.getData(), helloReply);
     }
 }
