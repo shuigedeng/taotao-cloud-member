@@ -18,10 +18,6 @@ package com.taotao.cloud.member.facade.sku.proxy;
 
 import com.taotao.boot.common.model.RpcRequest;
 import com.taotao.boot.common.model.RpcResponse;
-import com.taotao.cloud.goods.api.dubbo.GoodsRpcService;
-import com.taotao.cloud.goods.api.dubbo.request.GoodsQueryRpcRequest;
-import com.taotao.cloud.goods.api.dubbo.response.GoodsQueryRpcResponse;
-import com.taotao.cloud.goods.api.grpc.GoodsSkuGrpcResponse;
 import com.taotao.cloud.member.facade.sku.adapter.SkuClientAdapter;
 import com.taotao.cloud.member.facade.sku.grpc.SkuGrpcClient;
 import com.taotao.cloud.member.facade.sku.vo.SkuVO;
@@ -38,16 +34,16 @@ public class SkuClientProxy {
 
     @Resource private SkuGrpcClient skuGrpcClient;
 
-    @DubboReference private GoodsRpcService goodsRpcService;
+//    @DubboReference private GoodsRpcService goodsRpcService;
 
     // 查询用户
-    public SkuVO getUserInfo(Long skuId) {
-        //		GoodsSkuSpecGalleryApiResponse user = goodsSkuApi.getGoodsSkuByIdFromCache(skuId);
-        RpcResponse<GoodsQueryRpcResponse> goodsQueryResponse =
-                goodsRpcService.queryGoodsByParams(RpcRequest.success(new GoodsQueryRpcRequest()));
-
-        GoodsSkuGrpcResponse helloReply = skuGrpcClient.getGoodsSkuByIdFromCache("");
-
-        return skuClientAdapter.convert(null, goodsQueryResponse.getData(), helloReply);
-    }
+//    public SkuVO getUserInfo(Long skuId) {
+//        //		GoodsSkuSpecGalleryApiResponse user = goodsSkuApi.getGoodsSkuByIdFromCache(skuId);
+//        RpcResponse<GoodsQueryRpcResponse> goodsQueryResponse =
+//                goodsRpcService.queryGoodsByParams(RpcRequest.success(new GoodsQueryRpcRequest()));
+//
+//        GoodsSkuGrpcResponse helloReply = skuGrpcClient.getGoodsSkuByIdFromCache("");
+//
+//        return skuClientAdapter.convert(null, goodsQueryResponse.getData(), helloReply);
+//    }
 }

@@ -18,11 +18,6 @@ package com.taotao.cloud.member.facade.goods.proxy;
 
 import com.taotao.boot.common.model.RpcRequest;
 import com.taotao.boot.common.model.RpcResponse;
-import com.taotao.cloud.goods.api.dubbo.GoodsRpcService;
-import com.taotao.cloud.goods.api.dubbo.request.GoodsQueryRpcRequest;
-import com.taotao.cloud.goods.api.dubbo.response.GoodsQueryRpcResponse;
-import com.taotao.cloud.goods.api.feign.GoodsApi;
-import com.taotao.cloud.goods.api.grpc.CountStoreGoodsNumGrpcResponse;
 import com.taotao.cloud.member.facade.goods.adapter.GoodsClientAdapter;
 import com.taotao.cloud.member.facade.goods.grpc.GoodsGrpcClient;
 import com.taotao.cloud.member.facade.goods.vo.GoodsVO;
@@ -34,21 +29,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class GoodsClientProxy {
 
-    @Autowired private GoodsApi goodsApi;
+//    @Autowired private GoodsApi goodsApi;
 
     @Resource private GoodsClientAdapter userIntegrationAdapter;
 
     @Resource private GoodsGrpcClient goodsGrpcClient;
 
-    @DubboReference private GoodsRpcService goodsRpcService;
-
-    // 查询用户
-    public GoodsVO getGoodsVO(Long storeId) {
-        //		Long goodsNum = goodsApi.countStoreGoodsNum(storeId);
-        RpcResponse<GoodsQueryRpcResponse> goods =
-                goodsRpcService.queryGoodsByParams(RpcRequest.success(new GoodsQueryRpcRequest()));
-        CountStoreGoodsNumGrpcResponse helloReply = goodsGrpcClient.countStoreGoodsNum("sfdasdf");
-
-        return userIntegrationAdapter.convert(0L, goods.getData(), helloReply);
-    }
+//    @DubboReference private GoodsRpcService goodsRpcService;
+//
+//    // 查询用户
+//    public GoodsVO getGoodsVO(Long storeId) {
+//        //		Long goodsNum = goodsApi.countStoreGoodsNum(storeId);
+//        RpcResponse<GoodsQueryRpcResponse> goods =
+//                goodsRpcService.queryGoodsByParams(RpcRequest.success(new GoodsQueryRpcRequest()));
+//        CountStoreGoodsNumGrpcResponse helloReply = goodsGrpcClient.countStoreGoodsNum("sfdasdf");
+//
+//        return userIntegrationAdapter.convert(0L, goods.getData(), helloReply);
+//    }
 }
