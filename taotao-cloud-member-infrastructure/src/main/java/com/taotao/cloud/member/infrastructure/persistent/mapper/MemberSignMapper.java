@@ -18,14 +18,14 @@ package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.toolkit.Constants;
-import com.taotao.boot.webagg.mapper.BaseSuperMapper;
+import com.taotao.boot.data.mybatis.mybatisplus.base.mapper.MpSuperMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberSignPO;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 /** 会员签到数据处理层 */
-public interface MemberSignMapper extends BaseSuperMapper<MemberSignPO, Long> {
+public interface MemberSignMapper extends MpSuperMapper<MemberSignPO, Long> {
 
     /**
      * 获取会员之前签到信息

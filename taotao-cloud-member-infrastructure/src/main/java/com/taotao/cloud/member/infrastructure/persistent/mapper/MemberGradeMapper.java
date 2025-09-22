@@ -16,8 +16,8 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.taotao.boot.webagg.mapper.BaseSuperMapper;
+import com.taotao.boot.data.mybatis.mybatisplus.base.mapper.MpSuperMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberGradePO;
 
 /** 会员等级数据层 */
-public interface MemberGradeMapper extends BaseSuperMapper<MemberGradePO, Long> {}
+public interface MemberGradeMapper extends MpSuperMapper<MemberGradePO, Long> {}

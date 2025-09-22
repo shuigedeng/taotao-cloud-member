@@ -14,16 +14,12 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.infrastructure.persistent.repository.cls;
+package com.taotao.cloud.member.infrastructure.persistent.repository;
 
-import com.taotao.boot.webagg.repository.BaseClassSuperRepository;
-import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberConnectPO;
-import jakarta.persistence.EntityManager;
+import com.taotao.boot.data.jpa.base.repository.JpaSuperRepository;
+import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberAddressPO;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class MemberPlatformSuperRepository extends BaseClassSuperRepository<MemberConnectPO, Long> {
-    public MemberPlatformSuperRepository(EntityManager em) {
-        super(MemberConnectPO.class, em);
-    }
-}
+public interface MemberAddressSuperRepository
+        extends JpaSuperRepository<MemberAddressPO, Long> {}

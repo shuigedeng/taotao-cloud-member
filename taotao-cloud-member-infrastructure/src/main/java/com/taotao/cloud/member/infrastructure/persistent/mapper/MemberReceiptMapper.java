@@ -16,8 +16,8 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.taotao.boot.webagg.mapper.BaseSuperMapper;
+import com.taotao.boot.data.mybatis.mybatisplus.base.mapper.MpSuperMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberReceiptPO;
 
 /** 会员发票数据层 */
-public interface MemberReceiptMapper extends BaseSuperMapper<MemberReceiptPO, Long> {}
+public interface MemberReceiptMapper extends MpSuperMapper<MemberReceiptPO, Long> {}

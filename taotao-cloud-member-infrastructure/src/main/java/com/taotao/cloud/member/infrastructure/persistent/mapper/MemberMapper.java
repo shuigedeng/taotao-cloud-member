@@ -16,13 +16,13 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.taotao.boot.webagg.mapper.BaseSuperMapper;
+import com.taotao.boot.data.mybatis.mybatisplus.base.mapper.MpSuperMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO;
 import java.util.List;
 import org.apache.ibatis.annotations.Select;
 
 /** 会员数据处理层 */
-public interface MemberMapper extends BaseSuperMapper<MemberPO, Long> {
+public interface MemberMapper extends MpSuperMapper<MemberPO, Long> {
 
     /**
      * 获取所有的会员手机号

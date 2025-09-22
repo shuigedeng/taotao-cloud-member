@@ -16,8 +16,8 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.taotao.boot.webagg.mapper.BaseSuperMapper;
+import com.taotao.boot.data.mybatis.mybatisplus.base.mapper.MpSuperMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberNoticePO;
 
 /** 会员站内信数据处理层 */
-public interface MemberNoticeMapper extends BaseSuperMapper<MemberNoticePO, Long> {}
+public interface MemberNoticeMapper extends MpSuperMapper<MemberNoticePO, Long> {}
