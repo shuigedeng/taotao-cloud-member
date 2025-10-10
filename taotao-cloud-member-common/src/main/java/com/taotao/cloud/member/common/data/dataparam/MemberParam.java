@@ -14,13 +14,16 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.common.data.dataparam;
 
-import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
-import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-public interface SysAclService {
-
-	DictRes findByCode(DictReq dictReq);
-
+@Setter
+@Getter
+@ToString
+public class MemberParam {
+    private String name;
+    private String id;
 }

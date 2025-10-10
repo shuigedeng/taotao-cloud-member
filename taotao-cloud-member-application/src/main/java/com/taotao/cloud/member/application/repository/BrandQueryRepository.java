@@ -14,13 +14,11 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.application.repository;
 
-import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
-import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
+import com.taotao.cloud.goods.application.dto.own.brand.result.BrandResult;
 
-public interface SysAclService {
+public interface BrandQueryRepository {
 
-	DictRes findByCode(DictReq dictReq);
-
+    BrandResult getById(Long id);
 }

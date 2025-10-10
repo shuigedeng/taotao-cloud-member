@@ -14,13 +14,27 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.facade.assembler;
 
-import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
 import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
+import com.taotao.cloud.sys.api.feign.response.DictApiResponse;
+import org.mapstruct.Mapper;
+import org.mapstruct.MappingConstants;
+import org.mapstruct.factory.Mappers;
 
-public interface SysAclService {
+/**
+ * IParametersMapStruct
+ *
+ * @author shuigedeng
+ * @version 2022.04
+ * @since 2022-04-27 16:58:27
+ */
+@Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
+public interface OrderFacadeAssembler {
 
-	DictRes findByCode(DictReq dictReq);
+    /** 实例 */
+    OrderFacadeAssembler INSTANCE = Mappers.getMapper(OrderFacadeAssembler.class);
+
+	DictRes toRes(DictApiResponse dictApiResponse);
 
 }

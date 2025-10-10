@@ -14,13 +14,23 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.application.handler.pie.category;
 
-import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
-import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
+import com.taotao.boot.common.support.pie.OutboundFactory;
+import com.taotao.cloud.goods.application.context.DraftGoodsContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public interface SysAclService {
+/**
+ * 出参工厂
+ */
+public class ResultFactory implements OutboundFactory {
 
-	DictRes findByCode(DictReq dictReq);
+    private Logger logger = LoggerFactory.getLogger(ResultFactory.class);
 
+    @Override
+    public Object newInstance() {
+        DraftGoodsContext result = new DraftGoodsContext();
+        return result;
+    }
 }

@@ -14,13 +14,19 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.facade.order;
 
-import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
-import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
+import com.taotao.boot.common.model.FeignRequest;
+import com.taotao.boot.common.model.FeignResponse;
+import com.taotao.cloud.sys.api.dubbo.DictRpcService;
+import com.taotao.cloud.sys.api.feign.DictApi;
+import com.taotao.cloud.sys.api.feign.request.DictQueryApiRequest;
+import com.taotao.cloud.sys.api.feign.response.DictApiResponse;
+import org.apache.dubbo.config.annotation.DubboReference;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-public interface SysAclService {
-
-	DictRes findByCode(DictReq dictReq);
+@Component
+public class OrderClientProxy {
 
 }

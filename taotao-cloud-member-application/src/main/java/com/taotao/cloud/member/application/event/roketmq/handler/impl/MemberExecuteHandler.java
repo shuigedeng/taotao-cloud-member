@@ -14,13 +14,20 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.application.event.roketmq.handler.impl;
 
-import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
-import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
+import com.taotao.cloud.goods.application.event.roketmq.handler.MemberLoginEventHandler;
+import org.springframework.stereotype.Service;
 
-public interface SysAclService {
+/** 会员自身业务 */
+@Service
+public class MemberExecuteHandler implements MemberLoginEventHandler {
 
-	DictRes findByCode(DictReq dictReq);
-
+    //    @Autowired
+    //    private IMemberService memberService;
+    //
+    //    @Override
+    //    public void memberLogin(Member member) {
+    //        memberService.updateMemberLoginTime(member.getId());
+    //    }
 }

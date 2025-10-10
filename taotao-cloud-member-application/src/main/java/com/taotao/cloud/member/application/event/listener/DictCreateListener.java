@@ -14,13 +14,6 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.application.event.listener;
 
-import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
-import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
-
-public interface SysAclService {
-
-	DictRes findByCode(DictReq dictReq);
-
-}
+public class DictCreateListener {}

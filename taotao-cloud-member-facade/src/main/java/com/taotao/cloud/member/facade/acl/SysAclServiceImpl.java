@@ -14,13 +14,27 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.facade.acl;
 
+import com.taotao.cloud.goods.application.acl.SysAclService;
 import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
 import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
+import com.taotao.cloud.goods.facade.assembler.SysFacadeAssembler;
+import com.taotao.cloud.goods.facade.sys.DictClientProxy;
+import com.taotao.cloud.sys.api.feign.response.DictApiResponse;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
-public interface SysAclService {
+@AllArgsConstructor
+@Service
+public class SysAclServiceImpl implements SysAclService {
 
-	DictRes findByCode(DictReq dictReq);
+	private final DictClientProxy dictClientProxy;
+	private final SysFacadeAssembler facadeAssembler;
 
+	@Override
+	public DictRes findByCode(DictReq dictReq) {
+		DictApiResponse dictApiResponse = dictClientProxy.findByCode();
+		return facadeAssembler.toRes(dictApiResponse);
+	}
 }

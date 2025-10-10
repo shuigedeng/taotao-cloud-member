@@ -14,13 +14,11 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.facade.credit;
 
-import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
-import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
+import org.springframework.stereotype.Component;
 
-public interface SysAclService {
-
-	DictRes findByCode(DictReq dictReq);
+@Component
+public class CreditClientProxy {
 
 }

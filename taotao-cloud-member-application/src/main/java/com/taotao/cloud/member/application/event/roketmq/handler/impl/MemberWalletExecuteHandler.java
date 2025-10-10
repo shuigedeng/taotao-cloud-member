@@ -14,13 +14,21 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.application.event.roketmq.handler.impl;
 
-import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
-import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
+import com.taotao.cloud.goods.application.event.roketmq.handler.MemberRegisterEventHandler;
+import org.springframework.stereotype.Service;
 
-public interface SysAclService {
+/** 会员钱包创建 */
+@Service
+public class MemberWalletExecuteHandler implements MemberRegisterEventHandler {
 
-	DictRes findByCode(DictReq dictReq);
-
+    //    @Autowired
+    //    private IFeignMemberWalletApi memberWalletApi;
+    //
+    //    @Override
+    //    public void memberRegister(Member member) {
+    //        // 有些情况下，会同时创建一个member_id的两条数据
+    //        memberWalletApi.save(member.getId(), member.getUsername());
+    //    }
 }

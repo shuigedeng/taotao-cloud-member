@@ -14,13 +14,17 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.application.event.roketmq.handler;
 
-import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
-import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
+// import com.taotao.cloud.member.api.model.dto.MemberPointMessageDTO;
 
-public interface SysAclService {
+/** 会员积分改变消息 */
+public interface MemberPointChangeEventHandler {
 
-	DictRes findByCode(DictReq dictReq);
-
+    /**
+     * 会员积分改变消息
+     *
+     * @param memberPointMessageDTO 会员积分消息
+     */
+    //    void memberPointChange(MemberPointMessageDTO memberPointMessageDTO);
 }

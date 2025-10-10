@@ -14,13 +14,8 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.application.acl;
+package com.taotao.cloud.member.application.handler.pie.goods;
 
-import com.taotao.cloud.goods.application.dto.sys.req.DictReq;
-import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
+import com.taotao.boot.common.support.pie.AbstractChannel;
 
-public interface SysAclService {
-
-	DictRes findByCode(DictReq dictReq);
-
-}
+public class DeptModifyChannel extends AbstractChannel {}
