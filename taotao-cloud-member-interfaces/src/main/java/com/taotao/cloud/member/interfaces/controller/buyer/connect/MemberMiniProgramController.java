@@ -18,7 +18,7 @@ package com.taotao.cloud.member.interfaces.controller.buyer.connect; // package
                                                                        // com.taotao.cloud.member.biz.controller.buyer.connect;
 //
 // import com.taotao.boot.common.constant.CommonConstant;
-// import com.taotao.boot.common.model.Result;
+// import com.taotao.boot.common.model.result.Result;
 // import com.taotao.boot.logger.annotation.RequestLogger;
 // import com.taotao.cloud.member.biz.connect.entity.dto.WechatMPLoginParams;
 // import com.taotao.cloud.member.biz.connect.service.ConnectService;

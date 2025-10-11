@@ -17,8 +17,8 @@
 package com.taotao.cloud.member.api.feign;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
-import com.taotao.boot.common.model.FeignRequest;
-import com.taotao.boot.common.model.FeignResponse;
+import com.taotao.boot.common.model.request.Request;
+import com.taotao.boot.common.model.response.Response;
 import com.taotao.cloud.member.api.feign.fallback.MemberRechargeApiFallback;
 import com.taotao.cloud.member.api.feign.request.MemberRechargeQueryApiRequest;
 import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
@@ -43,27 +43,27 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface MemberRechargeApi {
 
     @PostMapping(value = "/member/feign/recharge/paySuccess")
-    FeignResponse<BooleanApiResponse> paySuccess(
+    Response<BooleanApiResponse> paySuccess(
             @Validated @RequestBody
-                    FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
+                    Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
     @PostMapping(value = "/member/feign/recharge/getRecharge")
-    FeignResponse<MemberRechargeApiResponse> getRecharge(
+    Response<MemberRechargeApiResponse> getRecharge(
             @Validated @RequestBody
-                    FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
+                    Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
     @PostMapping(value = "/member/feign/recharge/recharge")
-    FeignResponse<MemberRechargeApiResponse> recharge(
+    Response<MemberRechargeApiResponse> recharge(
             @Validated @RequestBody
-                    FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
+                    Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
     @PostMapping(value = "/member/feign/recharge/list")
-    FeignResponse<List<MemberRechargeApiResponse>> list(
+    Response<List<MemberRechargeApiResponse>> list(
             @Validated @RequestBody
-                    FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
+                    Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
     @PostMapping(value = "/member/feign/recharge/rechargeOrderCancel")
-    FeignResponse<BooleanApiResponse> rechargeOrderCancel(
+    Response<BooleanApiResponse> rechargeOrderCancel(
             @Validated @RequestBody
-                    FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
+                    Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 }

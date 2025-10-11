@@ -16,8 +16,8 @@
 
 package com.taotao.cloud.member.interfaces.feign;
 
-import com.taotao.boot.common.model.FeignRequest;
-import com.taotao.boot.common.model.FeignResponse;
+import com.taotao.boot.common.model.request.Request;
+import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberRechargeApi;
 import com.taotao.cloud.member.api.feign.request.MemberRechargeQueryApiRequest;
@@ -41,32 +41,32 @@ import org.springframework.web.bind.annotation.RestController;
 public class FeignMemberRechargeController extends FeignController implements MemberRechargeApi {
 
     @Override
-    public FeignResponse<BooleanApiResponse> paySuccess(
-            FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
+    public Response<BooleanApiResponse> paySuccess(
+            Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
         return null;
     }
 
     @Override
-    public FeignResponse<MemberRechargeApiResponse> getRecharge(
-            FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
+    public Response<MemberRechargeApiResponse> getRecharge(
+            Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
         return null;
     }
 
     @Override
-    public FeignResponse<MemberRechargeApiResponse> recharge(
-            FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
+    public Response<MemberRechargeApiResponse> recharge(
+            Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
         return null;
     }
 
     @Override
-    public FeignResponse<List<MemberRechargeApiResponse>> list(
-            FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
+    public Response<List<MemberRechargeApiResponse>> list(
+            Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
         return null;
     }
 
     @Override
-    public FeignResponse<BooleanApiResponse> rechargeOrderCancel(
-            FeignRequest<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
+    public Response<BooleanApiResponse> rechargeOrderCancel(
+            Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
         return null;
     }
 }

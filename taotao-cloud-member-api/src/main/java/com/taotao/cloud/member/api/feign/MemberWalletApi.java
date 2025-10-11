@@ -17,8 +17,8 @@
 package com.taotao.cloud.member.api.feign;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
-import com.taotao.boot.common.model.FeignRequest;
-import com.taotao.boot.common.model.FeignResponse;
+import com.taotao.boot.common.model.request.Request;
+import com.taotao.boot.common.model.response.Response;
 import com.taotao.cloud.member.api.feign.fallback.MemberWalletApiFallback;
 import com.taotao.cloud.member.api.feign.request.MemberWalletQueryApiRequest;
 import com.taotao.cloud.member.api.feign.request.MemberWalletUpdateApiRequest;
@@ -35,12 +35,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface MemberWalletApi {
 
     @PostMapping(value = "/member/feign/wallet/increase")
-    FeignResponse<BooleanApiResponse> increase(
+    Response<BooleanApiResponse> increase(
             @Validated @RequestBody
-                    FeignRequest<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest);
+                    Request<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest);
 
     @PostMapping(value = "/member/feign/recharge/save")
-    FeignResponse<BooleanApiResponse> save(
+    Response<BooleanApiResponse> save(
             @Validated @RequestBody
-                    FeignRequest<MemberWalletQueryApiRequest> memberWalletQueryApiRequest);
+                    Request<MemberWalletQueryApiRequest> memberWalletQueryApiRequest);
 }

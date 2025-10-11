@@ -17,10 +17,10 @@
 package com.taotao.cloud.member.api.feign;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
-import com.taotao.boot.common.model.FeignRequest;
-import com.taotao.boot.common.model.FeignResponse;
-import com.taotao.boot.common.model.PageResult;
-import com.taotao.boot.common.model.Result;
+import com.taotao.boot.common.model.request.Request;
+import com.taotao.boot.common.model.response.Response;
+import com.taotao.boot.common.model.result.PageResult;
+import com.taotao.boot.common.model.result.Result;
 import com.taotao.cloud.member.api.feign.fallback.MemberEvaluationApiFallback;
 import com.taotao.cloud.member.api.feign.request.EvaluationPageQueryApiRequest;
 import com.taotao.cloud.member.api.feign.request.MemberEvaluationApiRequest;
@@ -59,9 +59,9 @@ public interface MemberEvaluationApi {
      * @since 2022-04-25 16:39:41
      */
     @PostMapping(value = "/member/feign/evaluation")
-    FeignResponse<MemberEvaluationApiResponse> count(
+    Response<MemberEvaluationApiResponse> count(
             @Validated @RequestBody
-                    FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest);
+                    Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
     /**
      * 得到评价数
@@ -71,35 +71,35 @@ public interface MemberEvaluationApi {
      * @since 2022-04-25 16:39:46
      */
     @PostMapping(value = "/member/feign/evaluationPageQuery")
-    FeignResponse<MemberEvaluationApiResponse> getEvaluationCount(
+    Response<MemberEvaluationApiResponse> getEvaluationCount(
             @Validated @RequestBody
-                    FeignRequest<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
+                    Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
 
     @PostMapping(value = "/member/feign/memberEvaluationNum")
-    FeignResponse<List<Map<String, Object>>> memberEvaluationNum();
+    Response<List<Map<String, Object>>> memberEvaluationNum();
 
     @PostMapping(value = "/member/feign/memberEvaluationDTO")
-    FeignResponse<BooleanApiResponse> addMemberEvaluation(
+    Response<BooleanApiResponse> addMemberEvaluation(
             @Validated @RequestBody
-                    FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest);
+                    Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
     @PostMapping(value = "/member/feign/evaluation/getStoreRatingVO")
-    FeignResponse<StoreRatingApiResponse> getStoreRatingVO(
+    Response<StoreRatingApiResponse> getStoreRatingVO(
             @Validated @RequestBody
-                    FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest);
+                    Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
     @PostMapping(value = "/member/feign/evaluation/queryById")
-    FeignResponse<MemberEvaluationApiResponse> queryById(
+    Response<MemberEvaluationApiResponse> queryById(
             @Validated @RequestBody
-                    FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest);
+                    Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
     @PostMapping(value = "/member/feign/evaluation/reply")
-    FeignResponse<BooleanApiResponse> reply(
+    Response<BooleanApiResponse> reply(
             @Validated @RequestBody
-                    FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest);
+                    Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
     @PostMapping(value = "/member/feign/evaluation/queryPage")
-    FeignResponse<PageResult<MemberEvaluationListApiResponse>> queryPage(
+    Response<PageResult<MemberEvaluationListApiResponse>> queryPage(
             @Validated @RequestBody
-                    FeignRequest<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
+                    Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
 }

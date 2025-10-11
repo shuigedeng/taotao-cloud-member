@@ -16,9 +16,9 @@
 
 package com.taotao.cloud.member.interfaces.feign;
 
-import com.taotao.boot.common.model.FeignRequest;
-import com.taotao.boot.common.model.FeignResponse;
-import com.taotao.boot.common.model.PageResult;
+import com.taotao.boot.common.model.request.Request;
+import com.taotao.boot.common.model.response.Response;
+import com.taotao.boot.common.model.result.PageResult;
 import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberEvaluationApi;
 import com.taotao.cloud.member.api.feign.request.EvaluationPageQueryApiRequest;
@@ -47,49 +47,49 @@ public class FeignMemberEvaluationController extends FeignController
         implements MemberEvaluationApi {
 
     @Override
-    public FeignResponse<MemberEvaluationApiResponse> count(
-            FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
+    public Response<MemberEvaluationApiResponse> count(
+            Request<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
         return null;
     }
 
     @Override
-    public FeignResponse<MemberEvaluationApiResponse> getEvaluationCount(
-            FeignRequest<EvaluationPageQueryApiRequest> memberEvaluationApiRequest) {
+    public Response<MemberEvaluationApiResponse> getEvaluationCount(
+            Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest) {
         return null;
     }
 
     @Override
-    public FeignResponse<List<Map<String, Object>>> memberEvaluationNum() {
+    public Response<List<Map<String, Object>>> memberEvaluationNum() {
         return null;
     }
 
     @Override
-    public FeignResponse<BooleanApiResponse> addMemberEvaluation(
-            FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
+    public Response<BooleanApiResponse> addMemberEvaluation(
+            Request<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
         return null;
     }
 
     @Override
-    public FeignResponse<StoreRatingApiResponse> getStoreRatingVO(
-            FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
+    public Response<StoreRatingApiResponse> getStoreRatingVO(
+            Request<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
         return null;
     }
 
     @Override
-    public FeignResponse<MemberEvaluationApiResponse> queryById(
-            FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
+    public Response<MemberEvaluationApiResponse> queryById(
+            Request<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
         return null;
     }
 
     @Override
-    public FeignResponse<BooleanApiResponse> reply(
-            FeignRequest<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
+    public Response<BooleanApiResponse> reply(
+            Request<MemberEvaluationApiRequest> memberEvaluationApiRequest) {
         return null;
     }
 
     @Override
-    public FeignResponse<PageResult<MemberEvaluationListApiResponse>> queryPage(
-            FeignRequest<EvaluationPageQueryApiRequest> memberEvaluationApiRequest) {
+    public Response<PageResult<MemberEvaluationListApiResponse>> queryPage(
+            Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest) {
         return null;
     }
 }

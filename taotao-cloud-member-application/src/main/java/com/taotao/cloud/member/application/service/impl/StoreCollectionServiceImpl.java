@@ -24,7 +24,7 @@ package com.taotao.cloud.member.application.service.impl; // package
 // import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 // import com.taotao.boot.common.enums.ResultEnum;
 // import com.taotao.boot.common.exception.BusinessException;
-// import com.taotao.boot.common.model.PageQuery;
+// import com.taotao.boot.common.model.request.PageQuery;
 // import com.taotao.boot.common.utils.common.SecurityUtil;
 // import com.taotao.cloud.store.api.vo.StoreCollectionVO;
 // import com.taotao.cloud.member.biz.entity.MemberStoreCollection;
