@@ -18,7 +18,7 @@ package com.taotao.cloud.member.interfaces.feign;
 
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.boot.webagg.controller.FeignController;
+import com.taotao.boot.webagg.controller.ApiController;
 import com.taotao.cloud.member.api.feign.MemberWalletApi;
 import com.taotao.cloud.member.api.feign.request.MemberWalletQueryApiRequest;
 import com.taotao.cloud.member.api.feign.request.MemberWalletUpdateApiRequest;
@@ -37,7 +37,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @Tag(name = "内部调用端-会员钱包API", description = "内部调用端-会员钱包API")
-public class FeignMemberWalletController extends FeignController implements MemberWalletApi {
+public class FeignMemberWalletController extends ApiController implements MemberWalletApi {
 
     @Override
     public Response<BooleanApiResponse> increase(

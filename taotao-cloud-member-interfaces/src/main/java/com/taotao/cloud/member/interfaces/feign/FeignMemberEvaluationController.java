@@ -19,7 +19,7 @@ package com.taotao.cloud.member.interfaces.feign;
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.common.model.result.PageResult;
-import com.taotao.boot.webagg.controller.FeignController;
+import com.taotao.boot.webagg.controller.ApiController;
 import com.taotao.cloud.member.api.feign.MemberEvaluationApi;
 import com.taotao.cloud.member.api.feign.request.EvaluationPageQueryApiRequest;
 import com.taotao.cloud.member.api.feign.request.MemberEvaluationApiRequest;
@@ -43,7 +43,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @Tag(name = "内部调用端-管理员API", description = "内部调用端-管理员API")
-public class FeignMemberEvaluationController extends FeignController
+public class FeignMemberEvaluationController extends ApiController
         implements MemberEvaluationApi {
 
     @Override
