@@ -18,7 +18,7 @@ package com.taotao.cloud.member.interfaces.feign;
 
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.boot.webagg.controller.ApiController;
+import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberRechargeApi;
 import com.taotao.cloud.member.api.feign.request.MemberRechargeQueryApiRequest;
 import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
@@ -38,7 +38,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @Tag(name = "内部调用端-会员充值API", description = "内部调用端-会员充值API")
-public class FeignMemberRechargeController extends ApiController implements MemberRechargeApi {
+public class FeignMemberRechargeController extends FeignController implements MemberRechargeApi {
 
     @Override
     public Response<BooleanApiResponse> paySuccess(

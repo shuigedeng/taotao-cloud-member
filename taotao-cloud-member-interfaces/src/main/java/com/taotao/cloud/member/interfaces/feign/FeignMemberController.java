@@ -19,7 +19,7 @@ package com.taotao.cloud.member.interfaces.feign;
 import com.taotao.boot.common.model.BaseSecurityUser;
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.boot.webagg.controller.ApiController;
+import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberApi;
 import com.taotao.cloud.member.api.feign.request.MemberApiRequest;
 import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
@@ -40,7 +40,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @Tag(name = "内部调用端-会员API", description = "内部调用端-会员API")
-public class FeignMemberController extends ApiController implements MemberApi {
+public class FeignMemberController extends FeignController implements MemberApi {
 
     @Override
     public Response<BaseSecurityUser> getMemberSecurityUser(
