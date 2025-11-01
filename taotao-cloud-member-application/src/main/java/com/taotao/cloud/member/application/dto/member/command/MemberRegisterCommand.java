@@ -25,7 +25,6 @@ import lombok.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
-import org.dromara.hutool.core.regex.RegexPool;
 import org.hibernate.validator.constraints.Length;
 
 /**
