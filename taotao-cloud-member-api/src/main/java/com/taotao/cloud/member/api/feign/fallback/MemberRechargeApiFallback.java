@@ -22,7 +22,6 @@ import com.taotao.cloud.member.api.feign.MemberRechargeApi;
 import com.taotao.cloud.member.api.feign.request.MemberRechargeQueryApiRequest;
 import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberRechargeApiResponse;
-import java.util.List;
 import org.springframework.cloud.openfeign.FallbackFactory;
 
 /**
@@ -56,7 +55,7 @@ public class MemberRechargeApiFallback implements FallbackFactory<MemberRecharge
             }
 
             @Override
-            public Response<List<MemberRechargeApiResponse>> list(
+            public Response<MemberRechargeApiResponse> list(
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
                 return null;
             }

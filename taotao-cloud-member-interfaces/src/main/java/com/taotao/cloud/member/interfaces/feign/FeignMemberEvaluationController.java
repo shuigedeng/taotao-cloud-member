@@ -17,6 +17,8 @@
 package com.taotao.cloud.member.interfaces.feign;
 
 import com.taotao.boot.common.model.request.Request;
+import com.taotao.boot.common.model.response.BatchResponse;
+import com.taotao.boot.common.model.response.PageResponse;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.common.model.result.PageResult;
 import com.taotao.boot.webagg.controller.FeignController;
@@ -59,7 +61,7 @@ public class FeignMemberEvaluationController extends FeignController
     }
 
     @Override
-    public Response<List<Map<String, Object>>> memberEvaluationNum() {
+    public Response<BatchResponse<Map<String, Object>>> memberEvaluationNum() {
         return null;
     }
 
@@ -88,7 +90,7 @@ public class FeignMemberEvaluationController extends FeignController
     }
 
     @Override
-    public Response<PageResult<MemberEvaluationListApiResponse>> queryPage(
+    public Response<PageResponse<MemberEvaluationListApiResponse>> queryPage(
             Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest) {
         return null;
     }

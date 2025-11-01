@@ -16,6 +16,7 @@
 
 package com.taotao.cloud.member.api.feign.request;
 
+import com.taotao.boot.common.model.request.RequestBase;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import java.io.Serializable;
@@ -33,7 +34,7 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员收货地址DTO")
-public class MemberRechargeQueryApiRequest implements Serializable {
+public class MemberRechargeQueryApiRequest extends RequestBase implements Serializable {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;
 

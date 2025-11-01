@@ -23,7 +23,6 @@ import com.taotao.cloud.member.api.feign.fallback.MemberRechargeApiFallback;
 import com.taotao.cloud.member.api.feign.request.MemberRechargeQueryApiRequest;
 import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberRechargeApiResponse;
-import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -58,7 +57,7 @@ public interface MemberRechargeApi {
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
     @PostMapping(value = "/member/feign/recharge/list")
-    Response<List<MemberRechargeApiResponse>> list(
+	Response<MemberRechargeApiResponse> list(
             @Validated @RequestBody
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 

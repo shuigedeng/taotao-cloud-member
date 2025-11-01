@@ -18,6 +18,7 @@ package com.taotao.cloud.member.api.feign.response;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.taotao.boot.common.enums.ClientTypeEnum;
+import com.taotao.boot.common.model.response.ResponseBase;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import java.io.Serializable;
@@ -36,7 +37,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "MemberVO")
-public class MemberApiResponse implements Serializable {
+public class MemberApiResponse  extends ResponseBase implements Serializable {
 
     @Serial private static final long serialVersionUID = 1810890757303309436L;
 

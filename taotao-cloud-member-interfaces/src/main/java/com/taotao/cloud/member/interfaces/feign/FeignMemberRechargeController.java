@@ -24,7 +24,6 @@ import com.taotao.cloud.member.api.feign.request.MemberRechargeQueryApiRequest;
 import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
 import com.taotao.cloud.member.api.feign.response.MemberRechargeApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import java.util.List;
 import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
@@ -59,7 +58,7 @@ public class FeignMemberRechargeController extends FeignController implements Me
     }
 
     @Override
-    public Response<List<MemberRechargeApiResponse>> list(
+    public Response<MemberRechargeApiResponse> list(
             Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest) {
         return null;
     }

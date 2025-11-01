@@ -20,6 +20,7 @@ import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberAddressApi;
+import com.taotao.cloud.member.api.feign.request.MemberAddressApiRequest;
 import com.taotao.cloud.member.api.feign.response.MemberAddressApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
@@ -37,10 +38,10 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "内部调用端-会员地址API", description = "内部调用端-会员地址API")
 public class FeignMemberAddressController extends FeignController implements MemberAddressApi {
 
-    // private final IMemberService memberService;
+	// private final IMemberService memberService;
 
-    @Override
-    public Response<MemberAddressApiResponse> getById(Request<String> shippingAddressId) {
-        return null;
-    }
+	@Override
+	public Response<MemberAddressApiResponse> getById(Request<MemberAddressApiRequest> shippingAddressId) {
+		return null;
+	}
 }

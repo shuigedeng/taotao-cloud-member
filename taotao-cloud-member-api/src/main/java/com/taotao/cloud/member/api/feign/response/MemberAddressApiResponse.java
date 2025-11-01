@@ -16,6 +16,7 @@
 
 package com.taotao.cloud.member.api.feign.response;
 
+import com.taotao.boot.common.model.response.ResponseBase;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import java.io.Serializable;
@@ -39,7 +40,7 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员收货地址DTO")
-public class MemberAddressApiResponse implements Serializable {
+public class MemberAddressApiResponse  extends ResponseBase implements Serializable {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;
 

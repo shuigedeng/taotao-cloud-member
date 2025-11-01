@@ -16,57 +16,79 @@
 
 package com.taotao.cloud.member.api.dubbo.response;
 
-import io.soabase.recordbuilder.core.RecordBuilder;
+import com.taotao.boot.common.model.request.RequestBase;
+import com.taotao.boot.common.model.response.ResponseBase;
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+import lombok.experimental.Accessors;
 
 /**
- * CompanyBO
+ * 菜单查询对象
  *
  * @author shuigedeng
  * @version 2021.10
- * @since 2021-10-19 20:47:05
+ * @since 2021-10-09 15:27:42
  */
-@RecordBuilder
-public record MemberQueryRpcResponse(
-        /** 租户id */
-        String tenantId,
+@Setter
+@Getter
+@ToString
+@Accessors(fluent = true)
+@AllArgsConstructor
+@NoArgsConstructor
+public class MemberQueryRpcResponse extends ResponseBase implements Serializable {
 
-        /** 租户密钥 */
-        String tenantSecret,
+    private static final long serialVersionUID = 5126530068827085130L;
 
-        /** 公司名称 */
-        String name,
+    /** id */
+    private Long id;
 
-        /** 企业全称 */
-        String fullName,
+    /** 菜单名称 */
+    private String name;
 
-        /** 信用代码 */
-        String creditCode,
+    /** 菜单类型 1：目录 2：菜单 3：按钮 */
+    private int type;
 
-        /** 邮箱 */
-        String email,
+    /** 权限标识 */
+    private String perms;
 
-        /** 联系人 */
-        String username,
+    /** 前端path / 即跳转路由 */
+    private String path;
 
-        /** 联系人手机号 */
-        String phone,
+    /** 菜单组件 */
+    private String component;
 
-        /** 联系人地址 */
-        String address,
+    /** 父菜单ID */
+    private long parentId;
 
-        /** 请求域名 */
-        String domain,
+    /** 图标 */
+    private String icon;
 
-        /** 公司网址 */
-        String webSite,
+    /** 是否缓存页面: 0:否 1:是 (默认值0) */
+    private boolean keepAlive;
 
-        /** 所在地区 */
-        String regionInfo,
+    /** 是否隐藏路由菜单: 0否,1是（默认值0） */
+    private boolean hidden;
 
-        /** 公司类型 */
-        Integer type)
-        implements Serializable {
+    /** 聚合路由 0否,1是（默认值0） */
+    private boolean alwaysShow;
 
-    static final long serialVersionUID = 5126530068827085130L;
+    /** 重定向 */
+    private String redirect;
+
+    /** 是否为外链 0否,1是（默认值0） */
+    private boolean isFrame;
+
+    /** 排序值 */
+    private int sortNum;
+
+    /** 创建时间 */
+    private LocalDateTime createTime;
+
+    /** 最后修改时间 */
+    private LocalDateTime lastModifiedTime;
 }

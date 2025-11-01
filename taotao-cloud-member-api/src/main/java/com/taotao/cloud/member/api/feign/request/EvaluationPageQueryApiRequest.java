@@ -17,6 +17,7 @@
 package com.taotao.cloud.member.api.feign.request;
 
 import com.taotao.boot.common.model.request.PageQuery;
+import com.taotao.boot.common.model.request.RequestBase;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import lombok.AllArgsConstructor;
@@ -38,7 +39,7 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "评价查询条件")
-public class EvaluationPageQueryApiRequest extends PageQuery {
+public class EvaluationPageQueryApiRequest extends RequestBase {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;
 

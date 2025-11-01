@@ -19,6 +19,7 @@ package com.taotao.cloud.member.api.feign;
 import com.taotao.boot.common.constant.ServiceNameConstants;
 import com.taotao.boot.common.model.BaseSecurityUser;
 import com.taotao.boot.common.model.request.Request;
+import com.taotao.boot.common.model.response.BatchResponse;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.common.model.result.Result;
 import com.taotao.cloud.member.api.feign.fallback.MemberApiFallback;
@@ -45,16 +46,16 @@ import org.springframework.web.bind.annotation.RequestBody;
         fallbackFactory = MemberApiFallback.class)
 public interface MemberApi {
 
-    /**
-     * 通过用户名查询用户包括角色权限等
-     *
-     * @param nicknameOrUserNameOrPhoneOrEmail 用户名
-     * @return 用户信息
-     * @since 2020/4/29 17:48
-     */
-    @PostMapping(value = "/member/feign/info/security")
-    Response<BaseSecurityUser> getMemberSecurityUser(
-            @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
+//    /**
+//     * 通过用户名查询用户包括角色权限等
+//     *
+//     * @param nicknameOrUserNameOrPhoneOrEmail 用户名
+//     * @return 用户信息
+//     * @since 2020/4/29 17:48
+//     */
+//    @PostMapping(value = "/member/feign/info/security")
+//    Response<BaseSecurityUser> getMemberSecurityUser(
+//            @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
     /**
      * 根据id查询会员信息
@@ -102,6 +103,6 @@ public interface MemberApi {
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
     @PostMapping(value = "/member/feign/listFieldsByMemberIds")
-    Response<List<Map<String, Object>>> listFieldsByMemberIds(
+    Response<BatchResponse<Map<String, Object>>> listFieldsByMemberIds(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 }

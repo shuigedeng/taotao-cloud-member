@@ -17,6 +17,7 @@
 package com.taotao.cloud.member.api.feign.response;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.taotao.boot.common.model.response.ResponseBase;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import java.io.Serializable;
@@ -35,7 +36,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员评价VO")
-public class MemberEvaluationListApiResponse implements Serializable {
+public class MemberEvaluationListApiResponse  extends ResponseBase implements Serializable {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;
 

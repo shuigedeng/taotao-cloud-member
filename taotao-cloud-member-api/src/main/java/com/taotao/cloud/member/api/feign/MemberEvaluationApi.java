@@ -18,6 +18,8 @@ package com.taotao.cloud.member.api.feign;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
 import com.taotao.boot.common.model.request.Request;
+import com.taotao.boot.common.model.response.BatchResponse;
+import com.taotao.boot.common.model.response.PageResponse;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.common.model.result.PageResult;
 import com.taotao.boot.common.model.result.Result;
@@ -76,7 +78,7 @@ public interface MemberEvaluationApi {
                     Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
 
     @PostMapping(value = "/member/feign/memberEvaluationNum")
-    Response<List<Map<String, Object>>> memberEvaluationNum();
+    Response<BatchResponse<Map<String, Object>>> memberEvaluationNum();
 
     @PostMapping(value = "/member/feign/memberEvaluationDTO")
     Response<BooleanApiResponse> addMemberEvaluation(
@@ -99,7 +101,7 @@ public interface MemberEvaluationApi {
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
     @PostMapping(value = "/member/feign/evaluation/queryPage")
-    Response<PageResult<MemberEvaluationListApiResponse>> queryPage(
+    Response<PageResponse<MemberEvaluationListApiResponse>> queryPage(
             @Validated @RequestBody
                     Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
 }

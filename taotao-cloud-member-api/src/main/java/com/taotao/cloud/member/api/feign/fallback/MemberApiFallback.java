@@ -18,6 +18,7 @@ package com.taotao.cloud.member.api.feign.fallback;
 
 import com.taotao.boot.common.model.BaseSecurityUser;
 import com.taotao.boot.common.model.request.Request;
+import com.taotao.boot.common.model.response.BatchResponse;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.cloud.member.api.feign.MemberApi;
 import com.taotao.cloud.member.api.feign.request.MemberApiRequest;
@@ -39,12 +40,6 @@ public class MemberApiFallback implements FallbackFactory<MemberApi> {
     @Override
     public MemberApi create(Throwable throwable) {
         return new MemberApi() {
-
-            @Override
-            public Response<BaseSecurityUser> getMemberSecurityUser(
-                    Request<MemberApiRequest> memberApiRequest) {
-                return null;
-            }
 
             @Override
             public Response<MemberApiResponse> findMemberById(
@@ -83,7 +78,7 @@ public class MemberApiFallback implements FallbackFactory<MemberApi> {
             }
 
             @Override
-            public Response<List<Map<String, Object>>> listFieldsByMemberIds(
+            public Response<BatchResponse<Map<String, Object>>> listFieldsByMemberIds(
                     Request<MemberApiRequest> memberApiRequest) {
                 return null;
             }

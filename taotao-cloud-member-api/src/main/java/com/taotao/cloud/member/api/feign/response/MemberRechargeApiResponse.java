@@ -16,6 +16,7 @@
 
 package com.taotao.cloud.member.api.feign.response;
 
+import com.taotao.boot.common.model.response.ResponseBase;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import java.io.Serializable;
@@ -34,7 +35,7 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员搜索VO")
-public class MemberRechargeApiResponse implements Serializable {
+public class MemberRechargeApiResponse  extends ResponseBase implements Serializable {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;
 

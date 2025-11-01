@@ -18,6 +18,7 @@ package com.taotao.cloud.member.interfaces.feign;
 
 import com.taotao.boot.common.model.BaseSecurityUser;
 import com.taotao.boot.common.model.request.Request;
+import com.taotao.boot.common.model.response.BatchResponse;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.webagg.controller.FeignController;
 import com.taotao.cloud.member.api.feign.MemberApi;
@@ -42,11 +43,11 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "内部调用端-会员API", description = "内部调用端-会员API")
 public class FeignMemberController extends FeignController implements MemberApi {
 
-    @Override
-    public Response<BaseSecurityUser> getMemberSecurityUser(
-            Request<MemberApiRequest> memberApiRequest) {
-        return null;
-    }
+//    @Override
+//    public Response<BaseSecurityUser> getMemberSecurityUser(
+//            Request<MemberApiRequest> memberApiRequest) {
+//        return null;
+//    }
 
     @Override
     public Response<MemberApiResponse> findMemberById(
@@ -85,7 +86,7 @@ public class FeignMemberController extends FeignController implements MemberApi 
     }
 
     @Override
-    public Response<List<Map<String, Object>>> listFieldsByMemberIds(
+    public Response<BatchResponse<Map<String, Object>>> listFieldsByMemberIds(
             Request<MemberApiRequest> memberApiRequest) {
         return null;
     }

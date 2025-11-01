@@ -17,6 +17,8 @@
 package com.taotao.cloud.member.api.feign.fallback;
 
 import com.taotao.boot.common.model.request.Request;
+import com.taotao.boot.common.model.response.BatchResponse;
+import com.taotao.boot.common.model.response.PageResponse;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.common.model.result.PageResult;
 import com.taotao.cloud.member.api.feign.MemberEvaluationApi;
@@ -56,7 +58,7 @@ public class MemberEvaluationApiFallback implements FallbackFactory<MemberEvalua
             }
 
             @Override
-            public Response<List<Map<String, Object>>> memberEvaluationNum() {
+            public Response<BatchResponse<Map<String, Object>>> memberEvaluationNum() {
                 return null;
             }
 
@@ -85,7 +87,7 @@ public class MemberEvaluationApiFallback implements FallbackFactory<MemberEvalua
             }
 
             @Override
-            public Response<PageResult<MemberEvaluationListApiResponse>> queryPage(
+            public Response<PageResponse<MemberEvaluationListApiResponse>> queryPage(
                     Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest) {
                 return null;
             }

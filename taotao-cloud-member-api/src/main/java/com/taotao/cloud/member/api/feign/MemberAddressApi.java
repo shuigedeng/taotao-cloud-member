@@ -20,6 +20,7 @@ import com.taotao.boot.common.constant.ServiceNameConstants;
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.cloud.member.api.feign.fallback.MemberAddressApiFallback;
+import com.taotao.cloud.member.api.feign.request.MemberAddressApiRequest;
 import com.taotao.cloud.member.api.feign.response.MemberAddressApiResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.validation.annotation.Validated;
@@ -34,5 +35,5 @@ public interface MemberAddressApi {
 
     @PostMapping(value = "/member/feign/address/shippingAddressId")
     Response<MemberAddressApiResponse> getById(
-            @Validated @RequestBody Request<String> shippingAddressId);
+            @Validated @RequestBody Request<MemberAddressApiRequest> shippingAddressId);
 }
