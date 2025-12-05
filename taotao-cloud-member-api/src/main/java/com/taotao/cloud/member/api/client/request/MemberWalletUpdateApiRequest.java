@@ -14,18 +14,15 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.feign.request;
+package com.taotao.cloud.member.api.client.request;
 
 import com.taotao.boot.common.model.request.RequestBase;
 import com.taotao.cloud.member.api.enums.DepositServiceTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
-import java.math.BigDecimal;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import lombok.experimental.Accessors;
+
+import java.math.BigDecimal;
 
 /** 会员余额变动模型 */
 @Setter
@@ -34,7 +31,7 @@ import lombok.experimental.Accessors;
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
-public class MemberWalletQueryApiRequest extends RequestBase {
+public class MemberWalletUpdateApiRequest extends RequestBase {
 
     @Schema(description = "变动金额")
     private BigDecimal money;

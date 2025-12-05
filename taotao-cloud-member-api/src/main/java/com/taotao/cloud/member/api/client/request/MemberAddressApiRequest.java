@@ -14,19 +14,16 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.feign.request;
+package com.taotao.cloud.member.api.client.request;
 
 import com.taotao.boot.common.model.request.RequestBase;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Pattern;
+import lombok.*;
+import lombok.experimental.Accessors;
+
 import java.io.Serial;
 import java.io.Serializable;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
-import lombok.experimental.Accessors;
 
 /**
  * 公司查询对象

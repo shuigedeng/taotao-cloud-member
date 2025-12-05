@@ -14,24 +14,23 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.feign;
+package com.taotao.cloud.member.api.client;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
-import com.taotao.boot.common.model.BaseSecurityUser;
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.BatchResponse;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.common.model.result.Result;
-import com.taotao.cloud.member.api.feign.fallback.MemberApiFallback;
-import com.taotao.cloud.member.api.feign.request.MemberApiRequest;
-import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
-import com.taotao.cloud.member.api.feign.response.MemberApiResponse;
-import java.util.List;
-import java.util.Map;
-import org.springframework.cloud.openfeign.FeignClient;
+import com.taotao.cloud.member.api.client.fallback.MemberApiFallback;
+import com.taotao.cloud.member.api.client.request.MemberApiRequest;
+import com.taotao.cloud.member.api.client.response.BooleanApiResponse;
+import com.taotao.cloud.member.api.client.response.MemberApiResponse;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.service.annotation.HttpExchange;
+import org.springframework.web.service.annotation.PostExchange;
+
+import java.util.Map;
 
 /**
  * 远程调用会员用户模块
@@ -40,10 +39,7 @@ import org.springframework.web.bind.annotation.RequestBody;
  * @version 2022.04
  * @since 2022-04-25 16:37:54
  */
-@FeignClient(
-        value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER,
-        contextId = "MemberApi",
-        fallbackFactory = MemberApiFallback.class)
+@HttpExchange(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER)
 public interface MemberApi {
 
 //    /**
@@ -53,7 +49,7 @@ public interface MemberApi {
 //     * @return 用户信息
 //     * @since 2020/4/29 17:48
 //     */
-//    @PostMapping(value = "/member/feign/info/security")
+//    @PostExchange(value = "/member/feign/info/security")
 //    Response<BaseSecurityUser> getMemberSecurityUser(
 //            @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
@@ -64,7 +60,7 @@ public interface MemberApi {
      * @return 会员信息
      * @since 2020/11/20 下午4:10
      */
-    @PostMapping("/member/feign/info/id/{id:[0-9]*}")
+    @PostExchange("/member/feign/info/id/{id:[0-9]*}")
     Response<MemberApiResponse> findMemberById(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
@@ -78,15 +74,15 @@ public interface MemberApi {
      * @return {@link Result }<{@link Boolean }>
      * @since 2022-04-25 16:41:42
      */
-    @PostMapping(value = "/member/feign/updateMemberPoint")
+    @PostExchange(value = "/member/feign/updateMemberPoint")
     Response<BooleanApiResponse> updateMemberPoint(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
-    @PostMapping(value = "/member/feign/username")
+    @PostExchange(value = "/member/feign/username")
     Response<MemberApiResponse> findByUsername(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
-    @PostMapping(value = "/member/feign/memberId")
+    @PostExchange(value = "/member/feign/memberId")
     Response<MemberApiResponse> getById(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
@@ -94,15 +90,15 @@ public interface MemberApi {
      * new LambdaUpdateWrapper<Member>() .eq(Member::getId, member.getId()) .set(Member::getHaveStore, true)
      * .set(Member::getStoreId, store.getId())
      */
-    @PostMapping(value = "/member/feign/memberId/storeId")
+    @PostExchange(value = "/member/feign/memberId/storeId")
     Response<BooleanApiResponse> update(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
-    @PostMapping(value = "/member/feign/updateById")
+    @PostExchange(value = "/member/feign/updateById")
     Response<BooleanApiResponse> updateById(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
-    @PostMapping(value = "/member/feign/listFieldsByMemberIds")
+    @PostExchange(value = "/member/feign/listFieldsByMemberIds")
     Response<BatchResponse<Map<String, Object>>> listFieldsByMemberIds(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 }

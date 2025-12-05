@@ -14,57 +14,53 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.feign.response;
+package com.taotao.cloud.member.api.client.request;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.taotao.boot.common.model.response.ResponseBase;
+import com.taotao.boot.common.model.request.RequestBase;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotEmpty;
+import lombok.*;
+import lombok.experimental.Accessors;
+import org.hibernate.validator.constraints.Length;
+
 import java.io.Serial;
 import java.io.Serializable;
-import java.time.LocalDateTime;
-import lombok.*;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-import org.springframework.format.annotation.DateTimeFormat;
 
-/** 会员评价VO */
+/** 会员评价DTO */
 @Setter
 @Getter
 @ToString
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "会员评价VO")
-public class MemberEvaluationListApiResponse  extends ResponseBase implements Serializable {
+@Schema(description = "租户id")
+public class MemberEvaluationApiRequest extends RequestBase implements Serializable {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;
 
-    @Schema(description = "评论ID")
-    private String id;
+    @Schema(description = "子订单编号")
+    @NotEmpty(message = "订单异常")
+    private String orderItemSn;
 
-    @Schema(description = "会员名称")
-    private String memberName;
+    @Schema(description = "商品ID")
+    @NotEmpty(message = "订单商品异常不能为空")
+    private Long goodsId;
 
-    @Schema(description = "商品名称")
-    private String goodsName;
+    @Schema(description = "规格ID")
+    @NotEmpty(message = "订单商品不能为空")
+    private Long skuId;
 
-    @Schema(description = "好中差评", allowableValues = "GOOD,NEUTRAL,BAD")
+    @Schema(description = "好中差评价")
+    @NotEmpty(message = "请评价")
     private String grade;
 
-    @Schema(description = "评价内容")
+    @Schema(description = "评论内容")
+    @NotEmpty(message = "评论内容不能为空")
+    @Length(max = 500, message = "评论内容不能超过500字符")
     private String content;
 
-    @Schema(description = "状态 ", allowableValues = " OPEN 正常 ,CLOSE 关闭")
-    private String status;
-
-    @Schema(description = "回复状态")
-    private Boolean replyStatus;
-
-    @Schema(description = "创建时间")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime createTime;
+    @Schema(description = "评论图片")
+    private String images;
 
     @Schema(description = "物流评分")
     private Integer deliveryScore;
@@ -75,28 +71,28 @@ public class MemberEvaluationListApiResponse  extends ResponseBase implements Se
     @Schema(description = "描述评分")
     private Integer descriptionScore;
 
-    public String getId() {
-        return id;
+    public String getOrderItemSn() {
+        return orderItemSn;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setOrderItemSn(String orderItemSn) {
+        this.orderItemSn = orderItemSn;
     }
 
-    public String getMemberName() {
-        return memberName;
+    public Long getGoodsId() {
+        return goodsId;
     }
 
-    public void setMemberName(String memberName) {
-        this.memberName = memberName;
+    public void setGoodsId(Long goodsId) {
+        this.goodsId = goodsId;
     }
 
-    public String getGoodsName() {
-        return goodsName;
+    public Long getSkuId() {
+        return skuId;
     }
 
-    public void setGoodsName(String goodsName) {
-        this.goodsName = goodsName;
+    public void setSkuId(Long skuId) {
+        this.skuId = skuId;
     }
 
     public String getGrade() {
@@ -115,28 +111,12 @@ public class MemberEvaluationListApiResponse  extends ResponseBase implements Se
         this.content = content;
     }
 
-    public String getStatus() {
-        return status;
+    public String getImages() {
+        return images;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public Boolean getReplyStatus() {
-        return replyStatus;
-    }
-
-    public void setReplyStatus(Boolean replyStatus) {
-        this.replyStatus = replyStatus;
-    }
-
-    public LocalDateTime getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(LocalDateTime createTime) {
-        this.createTime = createTime;
+    public void setImages(String images) {
+        this.images = images;
     }
 
     public Integer getDeliveryScore() {

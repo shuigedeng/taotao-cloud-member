@@ -14,17 +14,16 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.feign.request;
+package com.taotao.cloud.member.api.client.request;
 
 import com.taotao.boot.common.model.request.RequestBase;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Pattern;
+import lombok.*;
+import lombok.experimental.Accessors;
+
 import java.io.Serial;
 import java.io.Serializable;
-import lombok.*;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 
 /**
  * 公司查询对象
@@ -40,7 +39,7 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "公司查询对象")
-public class MemberQueryApiRequest extends RequestBase implements Serializable {
+public class MemberApiRequest extends RequestBase implements Serializable {
 
     @Serial private static final long serialVersionUID = -4132785717179910025L;
 

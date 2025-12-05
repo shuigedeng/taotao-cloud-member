@@ -14,20 +14,19 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.feign.response;
+package com.taotao.cloud.member.api.client.response;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.taotao.boot.common.enums.ClientTypeEnum;
 import com.taotao.boot.common.model.response.ResponseBase;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.*;
+import lombok.experimental.Accessors;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Date;
-import lombok.*;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
-import org.springframework.format.annotation.DateTimeFormat;
 
 /** 会员vo */
 @Setter

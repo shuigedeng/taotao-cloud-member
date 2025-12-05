@@ -14,28 +14,27 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.feign;
+package com.taotao.cloud.member.api.client;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.BatchResponse;
 import com.taotao.boot.common.model.response.PageResponse;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.boot.common.model.result.PageResult;
 import com.taotao.boot.common.model.result.Result;
-import com.taotao.cloud.member.api.feign.fallback.MemberEvaluationApiFallback;
-import com.taotao.cloud.member.api.feign.request.EvaluationPageQueryApiRequest;
-import com.taotao.cloud.member.api.feign.request.MemberEvaluationApiRequest;
-import com.taotao.cloud.member.api.feign.response.BooleanApiResponse;
-import com.taotao.cloud.member.api.feign.response.MemberEvaluationApiResponse;
-import com.taotao.cloud.member.api.feign.response.MemberEvaluationListApiResponse;
-import com.taotao.cloud.member.api.feign.response.StoreRatingApiResponse;
-import java.util.List;
-import java.util.Map;
-import org.springframework.cloud.openfeign.FeignClient;
+import com.taotao.cloud.member.api.client.fallback.MemberEvaluationApiFallback;
+import com.taotao.cloud.member.api.client.request.EvaluationPageQueryApiRequest;
+import com.taotao.cloud.member.api.client.request.MemberEvaluationApiRequest;
+import com.taotao.cloud.member.api.client.response.BooleanApiResponse;
+import com.taotao.cloud.member.api.client.response.MemberEvaluationApiResponse;
+import com.taotao.cloud.member.api.client.response.MemberEvaluationListApiResponse;
+import com.taotao.cloud.member.api.client.response.StoreRatingApiResponse;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.service.annotation.HttpExchange;
+import org.springframework.web.service.annotation.PostExchange;
+
+import java.util.Map;
 
 /**
  * 远程调用会员用户模块
@@ -44,10 +43,7 @@ import org.springframework.web.bind.annotation.RequestBody;
  * @version 2022.04
  * @since 2022-04-25 16:37:49
  */
-@FeignClient(
-        value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER,
-        contextId = "MemberEvaluationApi",
-        fallbackFactory = MemberEvaluationApiFallback.class)
+@HttpExchange(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER)
 public interface MemberEvaluationApi {
 
     /**
@@ -60,7 +56,7 @@ public interface MemberEvaluationApi {
      * @return {@link Result }<{@link Long }>
      * @since 2022-04-25 16:39:41
      */
-    @PostMapping(value = "/member/feign/evaluation")
+    @PostExchange(value = "/member/feign/evaluation")
     Response<MemberEvaluationApiResponse> count(
             @Validated @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
@@ -72,35 +68,35 @@ public interface MemberEvaluationApi {
      * @return {@link Result }<{@link Long }>
      * @since 2022-04-25 16:39:46
      */
-    @PostMapping(value = "/member/feign/evaluationPageQuery")
+    @PostExchange(value = "/member/feign/evaluationPageQuery")
     Response<MemberEvaluationApiResponse> getEvaluationCount(
             @Validated @RequestBody
                     Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
 
-    @PostMapping(value = "/member/feign/memberEvaluationNum")
+    @PostExchange(value = "/member/feign/memberEvaluationNum")
     Response<BatchResponse<Map<String, Object>>> memberEvaluationNum();
 
-    @PostMapping(value = "/member/feign/memberEvaluationDTO")
+    @PostExchange(value = "/member/feign/memberEvaluationDTO")
     Response<BooleanApiResponse> addMemberEvaluation(
             @Validated @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @PostMapping(value = "/member/feign/evaluation/getStoreRatingVO")
+    @PostExchange(value = "/member/feign/evaluation/getStoreRatingVO")
     Response<StoreRatingApiResponse> getStoreRatingVO(
             @Validated @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @PostMapping(value = "/member/feign/evaluation/queryById")
+    @PostExchange(value = "/member/feign/evaluation/queryById")
     Response<MemberEvaluationApiResponse> queryById(
             @Validated @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @PostMapping(value = "/member/feign/evaluation/reply")
+    @PostExchange(value = "/member/feign/evaluation/reply")
     Response<BooleanApiResponse> reply(
             @Validated @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @PostMapping(value = "/member/feign/evaluation/queryPage")
+    @PostExchange(value = "/member/feign/evaluation/queryPage")
     Response<PageResponse<MemberEvaluationListApiResponse>> queryPage(
             @Validated @RequestBody
                     Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);

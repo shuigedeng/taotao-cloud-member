@@ -14,26 +14,23 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.feign;
+package com.taotao.cloud.member.api.client;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.cloud.member.api.feign.fallback.MemberAddressApiFallback;
-import com.taotao.cloud.member.api.feign.request.MemberAddressApiRequest;
-import com.taotao.cloud.member.api.feign.response.MemberAddressApiResponse;
-import org.springframework.cloud.openfeign.FeignClient;
+import com.taotao.cloud.member.api.client.fallback.MemberAddressApiFallback;
+import com.taotao.cloud.member.api.client.request.MemberAddressApiRequest;
+import com.taotao.cloud.member.api.client.response.MemberAddressApiResponse;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.service.annotation.HttpExchange;
+import org.springframework.web.service.annotation.PostExchange;
 
-@FeignClient(
-        value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER,
-        contextId = "MemberAddressApi",
-        fallbackFactory = MemberAddressApiFallback.class)
+@HttpExchange(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER)
 public interface MemberAddressApi {
 
-    @PostMapping(value = "/member/feign/address/shippingAddressId")
+    @PostExchange(value = "/member/feign/address/shippingAddressId")
     Response<MemberAddressApiResponse> getById(
             @Validated @RequestBody Request<MemberAddressApiRequest> shippingAddressId);
 }

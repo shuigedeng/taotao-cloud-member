@@ -14,18 +14,15 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.feign.response;
+package com.taotao.cloud.member.api.client.response;
 
 import com.taotao.boot.common.model.response.ResponseBase;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.*;
+import lombok.experimental.Accessors;
+
 import java.io.Serial;
 import java.io.Serializable;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
-import lombok.experimental.Accessors;
 
 @Setter
 @Getter
