@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.client.response;
+package com.taotao.cloud.member.api.inner.response;
 
 import com.taotao.boot.common.model.response.ResponseBase;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -24,48 +24,16 @@ import lombok.experimental.Accessors;
 import java.io.Serial;
 import java.io.Serializable;
 
-/** 评分VO */
 @Setter
 @Getter
 @ToString
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "评分VO")
-public class StoreRatingApiResponse  extends ResponseBase implements Serializable {
+@Schema(description = "会员收货地址DTO")
+public class BooleanApiResponse  extends ResponseBase implements Serializable {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;
 
-    @Schema(description = "物流评分")
-    private String deliveryScore;
-
-    @Schema(description = "服务评分")
-    private String serviceScore;
-
-    @Schema(description = "描述评分")
-    private String descriptionScore;
-
-    public String getDeliveryScore() {
-        return deliveryScore;
-    }
-
-    public void setDeliveryScore(String deliveryScore) {
-        this.deliveryScore = deliveryScore;
-    }
-
-    public String getServiceScore() {
-        return serviceScore;
-    }
-
-    public void setServiceScore(String serviceScore) {
-        this.serviceScore = serviceScore;
-    }
-
-    public String getDescriptionScore() {
-        return descriptionScore;
-    }
-
-    public void setDescriptionScore(String descriptionScore) {
-        this.descriptionScore = descriptionScore;
-    }
+    private Boolean result;
 }

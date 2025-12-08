@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.client.response;
+package com.taotao.cloud.member.api.inner.response;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.taotao.boot.common.enums.ClientTypeEnum;

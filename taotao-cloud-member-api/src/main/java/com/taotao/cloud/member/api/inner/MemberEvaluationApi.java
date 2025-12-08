@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.client;
+package com.taotao.cloud.member.api.inner;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
 import com.taotao.boot.common.model.request.Request;
@@ -22,13 +22,12 @@ import com.taotao.boot.common.model.response.BatchResponse;
 import com.taotao.boot.common.model.response.PageResponse;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.common.model.result.Result;
-import com.taotao.cloud.member.api.client.fallback.MemberEvaluationApiFallback;
-import com.taotao.cloud.member.api.client.request.EvaluationPageQueryApiRequest;
-import com.taotao.cloud.member.api.client.request.MemberEvaluationApiRequest;
-import com.taotao.cloud.member.api.client.response.BooleanApiResponse;
-import com.taotao.cloud.member.api.client.response.MemberEvaluationApiResponse;
-import com.taotao.cloud.member.api.client.response.MemberEvaluationListApiResponse;
-import com.taotao.cloud.member.api.client.response.StoreRatingApiResponse;
+import com.taotao.cloud.member.api.inner.request.EvaluationPageQueryApiRequest;
+import com.taotao.cloud.member.api.inner.request.MemberEvaluationApiRequest;
+import com.taotao.cloud.member.api.inner.response.BooleanApiResponse;
+import com.taotao.cloud.member.api.inner.response.MemberEvaluationApiResponse;
+import com.taotao.cloud.member.api.inner.response.MemberEvaluationListApiResponse;
+import com.taotao.cloud.member.api.inner.response.StoreRatingApiResponse;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.service.annotation.HttpExchange;

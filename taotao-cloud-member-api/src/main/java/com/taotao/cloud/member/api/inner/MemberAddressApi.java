@@ -14,30 +14,22 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.client;
+package com.taotao.cloud.member.api.inner;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.cloud.member.api.client.fallback.MemberWalletApiFallback;
-import com.taotao.cloud.member.api.client.request.MemberWalletQueryApiRequest;
-import com.taotao.cloud.member.api.client.request.MemberWalletUpdateApiRequest;
-import com.taotao.cloud.member.api.client.response.BooleanApiResponse;
+import com.taotao.cloud.member.api.inner.request.MemberAddressApiRequest;
+import com.taotao.cloud.member.api.inner.response.MemberAddressApiResponse;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.service.annotation.HttpExchange;
 import org.springframework.web.service.annotation.PostExchange;
 
 @HttpExchange(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER)
-public interface MemberWalletApi {
+public interface MemberAddressApi {
 
-    @PostExchange(value = "/member/feign/wallet/increase")
-    Response<BooleanApiResponse> increase(
-            @Validated @RequestBody
-                    Request<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest);
-
-    @PostExchange(value = "/member/feign/recharge/save")
-    Response<BooleanApiResponse> save(
-            @Validated @RequestBody
-                    Request<MemberWalletQueryApiRequest> memberWalletQueryApiRequest);
+    @PostExchange(value = "/member/feign/address/shippingAddressId")
+    Response<MemberAddressApiResponse> getById(
+            @Validated @RequestBody Request<MemberAddressApiRequest> shippingAddressId);
 }

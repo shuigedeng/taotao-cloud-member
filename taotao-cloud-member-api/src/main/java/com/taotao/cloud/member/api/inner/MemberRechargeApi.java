@@ -14,15 +14,14 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.client;
+package com.taotao.cloud.member.api.inner;
 
 import com.taotao.boot.common.constant.ServiceNameConstants;
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.cloud.member.api.client.fallback.MemberRechargeApiFallback;
-import com.taotao.cloud.member.api.client.request.MemberRechargeQueryApiRequest;
-import com.taotao.cloud.member.api.client.response.BooleanApiResponse;
-import com.taotao.cloud.member.api.client.response.MemberRechargeApiResponse;
+import com.taotao.cloud.member.api.inner.request.MemberRechargeQueryApiRequest;
+import com.taotao.cloud.member.api.inner.response.BooleanApiResponse;
+import com.taotao.cloud.member.api.inner.response.MemberRechargeApiResponse;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.service.annotation.HttpExchange;
