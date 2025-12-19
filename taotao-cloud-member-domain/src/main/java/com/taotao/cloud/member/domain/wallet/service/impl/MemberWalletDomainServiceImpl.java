@@ -22,6 +22,13 @@ import com.taotao.cloud.member.domain.wallet.service.MemberWalletDomainService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+/**
+ * MemberWalletDomainServiceImpl
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
 @Service
 @AllArgsConstructor
 public class MemberWalletDomainServiceImpl implements MemberWalletDomainService {
@@ -29,11 +36,14 @@ public class MemberWalletDomainServiceImpl implements MemberWalletDomainService 
     private MemberWalletDomainRepository memberWalletDomainRepository;
 
     @Override
-    public void create(MemberWallet dept) {}
+    public void create( MemberWallet dept ) {
+    }
 
     @Override
-    public void modify(MemberWallet dept) {}
+    public void modify( MemberWallet dept ) {
+    }
 
     @Override
-    public void remove(Long[] ids) {}
+    public void remove( Long[] ids ) {
+    }
 }

@@ -19,5 +19,14 @@ package com.taotao.cloud.member.application.factory;
 import com.taotao.boot.ddd.model.types.Factory;
 import org.springframework.stereotype.Component;
 
+/**
+ * MemberFactory
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
 @Component
-public class MemberFactory implements Factory {}
+public class MemberFactory implements Factory {
+
+}

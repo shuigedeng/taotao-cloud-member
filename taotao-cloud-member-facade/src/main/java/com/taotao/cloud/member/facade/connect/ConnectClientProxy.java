@@ -18,6 +18,13 @@ package com.taotao.cloud.member.facade.connect;
 
 import org.springframework.stereotype.Component;
 
+/**
+ * ConnectClientProxy
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
 @Component
 public class ConnectClientProxy {
 

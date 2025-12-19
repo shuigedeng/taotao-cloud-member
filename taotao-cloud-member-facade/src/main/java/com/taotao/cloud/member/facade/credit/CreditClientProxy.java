@@ -18,6 +18,13 @@ package com.taotao.cloud.member.facade.credit;
 
 import org.springframework.stereotype.Component;
 
+/**
+ * CreditClientProxy
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
 @Component
 public class CreditClientProxy {
 

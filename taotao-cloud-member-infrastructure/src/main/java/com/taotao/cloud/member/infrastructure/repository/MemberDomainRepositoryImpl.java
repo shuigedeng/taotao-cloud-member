@@ -21,16 +21,26 @@ import com.taotao.cloud.member.domain.member.repository.MemberDomainRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+/**
+ * MemberDomainRepositoryImpl
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
 @Service
 @AllArgsConstructor
 public class MemberDomainRepositoryImpl implements MemberDomainRepository {
 
     @Override
-    public void create(Member dept) {}
+    public void create( Member dept ) {
+    }
 
     @Override
-    public void modify(Member dept) {}
+    public void modify( Member dept ) {
+    }
 
     @Override
-    public void remove(Long[] ids) {}
+    public void remove( Long[] ids ) {
+    }
 }

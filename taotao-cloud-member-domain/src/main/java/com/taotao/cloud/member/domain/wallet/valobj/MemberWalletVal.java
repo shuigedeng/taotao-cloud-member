@@ -16,4 +16,13 @@
 
 package com.taotao.cloud.member.domain.wallet.valobj;
 
-public class MemberWalletVal {}
+/**
+ * MemberWalletVal
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
+public class MemberWalletVal {
+
+}

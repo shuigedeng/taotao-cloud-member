@@ -24,6 +24,13 @@ import lombok.experimental.Accessors;
 import java.io.Serial;
 import java.io.Serializable;
 
+/**
+ * MemberRechargeQueryApiRequest
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
 @Setter
 @Getter
 @ToString
@@ -33,7 +40,8 @@ import java.io.Serializable;
 @Schema(description = "会员收货地址DTO")
 public class MemberRechargeQueryApiRequest extends RequestBase implements Serializable {
 
-    @Serial private static final long serialVersionUID = -7605952923416404638L;
+    @Serial
+    private static final long serialVersionUID = -7605952923416404638L;
 
     private String sn;
 }

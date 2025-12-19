@@ -22,6 +22,13 @@ import com.taotao.cloud.member.domain.notice.service.MemberNoticeDomainService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+/**
+ * MemberNoticeDomainServiceImpl
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
 @Service
 @AllArgsConstructor
 public class MemberNoticeDomainServiceImpl implements MemberNoticeDomainService {
@@ -29,11 +36,14 @@ public class MemberNoticeDomainServiceImpl implements MemberNoticeDomainService 
     private MemberNoticeDomainRepository memberNoticeDomainRepository;
 
     @Override
-    public void create(MemberNotice dept) {}
+    public void create( MemberNotice dept ) {
+    }
 
     @Override
-    public void modify(MemberNotice dept) {}
+    public void modify( MemberNotice dept ) {
+    }
 
     @Override
-    public void remove(Long[] ids) {}
+    public void remove( Long[] ids ) {
+    }
 }

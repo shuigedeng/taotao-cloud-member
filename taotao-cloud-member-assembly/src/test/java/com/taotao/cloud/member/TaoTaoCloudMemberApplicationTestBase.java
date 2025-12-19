@@ -19,6 +19,13 @@ package com.taotao.cloud.member;
 import com.taotao.boot.test.TtcBootTestBase;
 import org.springframework.boot.test.context.SpringBootTest;
 
+/**
+ * TaoTaoCloudMemberApplicationTestBase
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
 @SpringBootTest
 public abstract class TaoTaoCloudMemberApplicationTestBase extends TtcBootTestBase {
 

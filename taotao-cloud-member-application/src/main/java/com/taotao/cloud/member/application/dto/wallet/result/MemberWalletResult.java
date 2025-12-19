@@ -17,9 +17,18 @@
 package com.taotao.cloud.member.application.dto.wallet.result;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+
 import java.io.Serial;
+
 import lombok.*;
 
+/**
+ * MemberWalletResult
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
 @Setter
 @Getter
 @ToString
@@ -27,7 +36,8 @@ import lombok.*;
 // public class DeptCO extends TreeUtil.TreeNode<DeptCO> {
 public class MemberWalletResult {
 
-    @Serial private static final long serialVersionUID = 4116703987840123059L;
+    @Serial
+    private static final long serialVersionUID = 4116703987840123059L;
 
     @Schema(name = "sort", description = "部门排序")
     private Integer sort;

@@ -16,4 +16,13 @@
 
 package com.taotao.cloud.member.infrastructure.factory;
 
-public class MemberFactory {}
+/**
+ * MemberFactory
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
+public class MemberFactory {
+
+}

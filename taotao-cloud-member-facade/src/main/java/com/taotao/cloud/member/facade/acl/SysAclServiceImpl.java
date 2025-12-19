@@ -25,16 +25,23 @@ import com.taotao.cloud.sys.api.inner.response.DictApiResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+/**
+ * SysAclServiceImpl
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
 @AllArgsConstructor
 @Service
 public class SysAclServiceImpl implements SysAclService {
 
-	private final DictClientProxy dictClientProxy;
-	private final SysFacadeAssembler facadeAssembler;
+    private final DictClientProxy dictClientProxy;
+    private final SysFacadeAssembler facadeAssembler;
 
-	@Override
-	public DictRes findByCode(DictReq dictReq) {
-		DictApiResponse dictApiResponse = dictClientProxy.findByCode();
-		return facadeAssembler.toRes(dictApiResponse);
-	}
+    @Override
+    public DictRes findByCode( DictReq dictReq ) {
+        DictApiResponse dictApiResponse = dictClientProxy.findByCode();
+        return facadeAssembler.toRes(dictApiResponse);
+    }
 }

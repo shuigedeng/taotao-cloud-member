@@ -26,29 +26,36 @@ import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+/**
+ * DeptClientProxy
+ *
+ * @author shuigedeng
+ * @version 2026.01
+ * @since 2025-12-19 09:30:45
+ */
 @Component
 public class DeptClientProxy {
 
-	@Autowired
-	private DictApi dictApi;
+    @Autowired
+    private DictApi dictApi;
 
-	@DubboReference(version = "2026.01", protocol = "tri",parameters = {
-		"clientHost", "192.168.218.1"  // 设置客户端主机
-	})
-	private DictRpcService dictRpcService;
+    @DubboReference(version = "2026.01", protocol = "tri", parameters = {
+            "clientHost", "192.168.218.1"  // 设置客户端主机
+    })
+    private DictRpcService dictRpcService;
 
-	// 查询用户
-	public DictApiResponse findByCode() {
+    // 查询用户
+    public DictApiResponse findByCode() {
 
-		Request<DictQueryApiRequest> dictQueryApiRequest =
-			Request.<DictQueryApiRequest>builder().data(new DictQueryApiRequest()).build();
+        Request<DictQueryApiRequest> dictQueryApiRequest =
+                Request.<DictQueryApiRequest>builder().data(new DictQueryApiRequest()).build();
 
-		Response<DictApiResponse> dictApiResponse = dictApi.findByCode(dictQueryApiRequest);
+        Response<DictApiResponse> dictApiResponse = dictApi.findByCode(dictQueryApiRequest);
 
 //		DictQueryRpcRequest dictQueryRpcRequest = new DictQueryRpcRequest();
 //		dictQueryRpcRequest.setCode("123");
 //		Response<DictRpcResponse> dictRpcResponse = dictRpcService.findByCode(RpcRequest.success(dictQueryRpcRequest));
 
-		return dictApiResponse.getData();
-	}
+        return dictApiResponse.getData();
+    }
 }
