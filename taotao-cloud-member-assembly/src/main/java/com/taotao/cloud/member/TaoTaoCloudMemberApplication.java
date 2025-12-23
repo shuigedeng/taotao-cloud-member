@@ -71,7 +71,7 @@ public class TaoTaoCloudMemberApplication {
                 .setTtcBanner()
                 .setTtcProfileIfNotExists("dev")
                 .setTtcApplicationProperty("taotao-cloud-member")
-                .setTtcAllowBeanDefinitionOverriding(true)
+                .setTtcAllowBeanDefinitionOverriding(false)
                 .run(args);
     }
 }
