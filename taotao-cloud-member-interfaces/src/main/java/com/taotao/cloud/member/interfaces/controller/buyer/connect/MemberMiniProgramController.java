@@ -26,7 +26,7 @@ package com.taotao.cloud.member.interfaces.controller.buyer.connect; // package
 // import io.swagger.v3.oas.annotations.Operation;
 // import io.swagger.v3.oas.annotations.tags.Tag;
 // import java.util.List;
-// import lombok.AllArgsConstructor;
+// import lombok.RequiredArgsConstructor;
 // import org.springframework.beans.factory.annotation.Autowired;
 // import org.springframework.security.access.prepost.PreAuthorize;
 // import org.springframework.validation.annotation.Validated;
@@ -38,7 +38,7 @@ package com.taotao.cloud.member.interfaces.controller.buyer.connect; // package
 // /**
 //  * 买家端,小程序登录API
 //  */
-// @AllArgsConstructor
+// @RequiredArgsConstructor
 // @Validated
 // @RestController
 // @Tag(name = "买家端-会员小程序登录API", description = "买家端-会员小程序登录API")

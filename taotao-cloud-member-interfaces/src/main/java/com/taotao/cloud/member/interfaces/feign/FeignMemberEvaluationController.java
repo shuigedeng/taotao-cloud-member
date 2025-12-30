@@ -32,7 +32,7 @@ import com.taotao.cloud.member.api.inner.response.StoreRatingApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import java.util.List;
 import java.util.Map;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -41,7 +41,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @since 2020/11/16 10:57
  */
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Validated
 @RestController
 @Tag(name = "内部调用端-管理员API", description = "内部调用端-管理员API")

@@ -18,13 +18,13 @@ package com.taotao.cloud.member.interfaces.controller.buyer.connect;
 
 import com.taotao.boot.webagg.controller.BusinessController;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /** 买家端,app/小程序 联合登录 */
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Validated
 @RestController
 @Tag(name = "买家端-app/小程序联合登录API", description = "买家端-app/小程序联合登录API")

@@ -27,7 +27,7 @@ package com.taotao.cloud.member.interfaces.controller.seller;
 // import io.swagger.v3.oas.annotations.tags.Tag;
 // import java.util.Objects;
 // import jakarta.servlet.http.HttpServletResponse;
-// import lombok.AllArgsConstructor;
+// import lombok.RequiredArgsConstructor;
 // import org.apache.shardingsphere.distsql.parser.autogen.CommonDistSQLStatementParser.UserContext;
 // import org.springframework.security.access.prepost.PreAuthorize;
 // import org.springframework.validation.annotation.Validated;
@@ -42,7 +42,7 @@ package com.taotao.cloud.member.interfaces.controller.seller;
 //  *
 //  * @since 2020/11/17 4:29 下午
 //  */
-// @AllArgsConstructor
+// @RequiredArgsConstructor
 // @Validated
 // @RestController
 // @Tag(name = "店铺端-结算单API", description = "店铺端-结算单API")

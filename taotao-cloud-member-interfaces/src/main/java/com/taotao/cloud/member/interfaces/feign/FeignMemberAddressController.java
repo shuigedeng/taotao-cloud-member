@@ -23,7 +23,7 @@ import com.taotao.cloud.member.api.inner.MemberAddressApi;
 import com.taotao.cloud.member.api.inner.request.MemberAddressApiRequest;
 import com.taotao.cloud.member.api.inner.response.MemberAddressApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -32,7 +32,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @since 2020/11/16 10:57
  */
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Validated
 @RestController
 @Tag(name = "内部调用端-会员地址API", description = "内部调用端-会员地址API")

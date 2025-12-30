@@ -29,7 +29,7 @@ package com.taotao.cloud.member.interfaces.controller.buyer.connect; // package
 // import io.swagger.v3.oas.annotations.Operation;
 // import io.swagger.v3.oas.annotations.tags.Tag;
 // import jakarta.validation.constraints.NotNull;
-// import lombok.AllArgsConstructor;
+// import lombok.RequiredArgsConstructor;
 // import org.springframework.security.access.prepost.PreAuthorize;
 // import org.springframework.validation.annotation.Validated;
 // import org.springframework.web.bind.annotation.GetMapping;
@@ -44,7 +44,7 @@ package com.taotao.cloud.member.interfaces.controller.buyer.connect; // package
 // /**
 //  * 买家端,会员API
 //  */
-// @AllArgsConstructor
+// @RequiredArgsConstructor
 // @Validated
 // @RestController
 // @Tag(name = "买家端-会员登录API", description = "买家端-会员登录API")

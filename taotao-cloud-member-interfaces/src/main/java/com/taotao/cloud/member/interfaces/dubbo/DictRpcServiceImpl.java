@@ -34,7 +34,7 @@ package com.taotao.cloud.member.interfaces.dubbo; /// *
 //
 // import com.taotao.cloud.member.api.dubbo.DictRpcService;
 // import com.taotao.cloud.member.api.dubbo.response.DictRpcResponse;
-// import lombok.AllArgsConstructor;
+// import lombok.RequiredArgsConstructor;
 // import org.apache.dubbo.config.annotation.DubboService;
 // import org.springframework.stereotype.Service;
 //
@@ -46,7 +46,7 @@ package com.taotao.cloud.member.interfaces.dubbo; /// *
 // * @since 2021-10-09 20:26:36
 // */
 // @Service
-// @AllArgsConstructor
+// @RequiredArgsConstructor
 // @DubboService(interfaceClass = DictRpcService.class, validation = "true")
 // public class DictRpcServiceImpl implements DictRpcService {
 //
