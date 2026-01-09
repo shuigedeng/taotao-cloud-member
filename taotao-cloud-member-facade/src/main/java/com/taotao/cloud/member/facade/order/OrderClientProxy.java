@@ -17,9 +17,9 @@
 package com.taotao.cloud.member.facade.order;
 
 import com.taotao.cloud.sys.api.dubbo.DictRpcService;
-import com.taotao.cloud.sys.api.api.DictApi;
-import com.taotao.cloud.sys.api.api.request.DictQueryApiRequest;
-import com.taotao.cloud.sys.api.api.response.DictApiResponse;
+import com.taotao.cloud.sys.api.inner.DictApi;
+import com.taotao.cloud.sys.api.inner.request.DictQueryApiRequest;
+import com.taotao.cloud.sys.api.inner.response.DictApiResponse;
 import org.springframework.stereotype.Component;
 
 /**
