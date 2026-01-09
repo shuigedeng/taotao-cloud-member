@@ -14,19 +14,18 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.interfaces.feign;
+package com.taotao.cloud.member.interfaces.controller.inner;
 
-import com.taotao.boot.common.model.BaseSecurityUser;
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.BatchResponse;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.boot.webagg.controller.FeignController;
+import com.taotao.boot.webagg.controller.InnerController;
 import com.taotao.cloud.member.api.inner.MemberApi;
 import com.taotao.cloud.member.api.inner.request.MemberApiRequest;
 import com.taotao.cloud.member.api.inner.response.BooleanApiResponse;
 import com.taotao.cloud.member.api.inner.response.MemberApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import java.util.List;
+
 import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
@@ -41,7 +40,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @Tag(name = "内部调用端-会员API", description = "内部调用端-会员API")
-public class FeignMemberController extends FeignController implements MemberApi {
+public class FeignMemberController extends InnerController implements MemberApi {
 
 //    @Override
 //    public Response<BaseSecurityUser> getMemberSecurityUser(

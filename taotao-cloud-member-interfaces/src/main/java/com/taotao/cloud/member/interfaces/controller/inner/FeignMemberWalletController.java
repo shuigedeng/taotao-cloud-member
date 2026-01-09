@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.interfaces.feign;
+package com.taotao.cloud.member.interfaces.controller.inner;
 
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.boot.webagg.controller.FeignController;
+import com.taotao.boot.webagg.controller.InnerController;
 import com.taotao.cloud.member.api.inner.MemberWalletApi;
 import com.taotao.cloud.member.api.inner.request.MemberWalletQueryApiRequest;
 import com.taotao.cloud.member.api.inner.request.MemberWalletUpdateApiRequest;
@@ -37,7 +37,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @Tag(name = "内部调用端-会员钱包API", description = "内部调用端-会员钱包API")
-public class FeignMemberWalletController extends FeignController implements MemberWalletApi {
+public class FeignMemberWalletController extends InnerController implements MemberWalletApi {
 
     @Override
     public Response<BooleanApiResponse> increase(

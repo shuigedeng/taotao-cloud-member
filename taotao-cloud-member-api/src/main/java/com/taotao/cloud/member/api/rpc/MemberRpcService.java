@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.dubbo;
+package com.taotao.cloud.member.api.rpc;
 
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.cloud.member.api.dubbo.request.MemberQueryRpcRequest;
-import com.taotao.cloud.member.api.dubbo.response.MemberQueryRpcResponse;
+import com.taotao.cloud.member.api.rpc.request.MemberQueryRpcRequest;
+import com.taotao.cloud.member.api.rpc.response.MemberQueryRpcResponse;
 
 /**
  * 后台部门表服务接口

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.interfaces.feign;
+package com.taotao.cloud.member.interfaces.controller.inner;
 
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.boot.webagg.controller.FeignController;
+import com.taotao.boot.webagg.controller.InnerController;
 import com.taotao.cloud.member.api.inner.MemberRechargeApi;
 import com.taotao.cloud.member.api.inner.request.MemberRechargeQueryApiRequest;
 import com.taotao.cloud.member.api.inner.response.BooleanApiResponse;
@@ -37,7 +37,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 @RestController
 @Tag(name = "内部调用端-会员充值API", description = "内部调用端-会员充值API")
-public class FeignMemberRechargeController extends FeignController implements MemberRechargeApi {
+public class FeignMemberRechargeController extends InnerController implements MemberRechargeApi {
 
     @Override
     public Response<BooleanApiResponse> paySuccess(
