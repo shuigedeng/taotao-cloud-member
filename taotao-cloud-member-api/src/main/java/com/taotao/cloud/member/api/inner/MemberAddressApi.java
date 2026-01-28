@@ -29,7 +29,7 @@ import org.springframework.web.service.annotation.PostExchange;
 @HttpExchange(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER)
 public interface MemberAddressApi {
 
-    @PostExchange(value = "/member/feign/address/shippingAddressId")
+    @PostExchange(value = "/member/address/shippingAddressId")
     Response<MemberAddressApiResponse> getById(
             @Validated @RequestBody Request<MemberAddressApiRequest> shippingAddressId);
 }

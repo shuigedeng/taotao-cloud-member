@@ -55,7 +55,7 @@ public interface MemberEvaluationApi {
      * @return {@link Result }<{@link Long }>
      * @since 2022-04-25 16:39:41
      */
-    @PostExchange(value = "/member/feign/evaluation")
+    @PostExchange(value = "/member/evaluation")
     Response<MemberEvaluationApiResponse> count(
             @Validated @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
@@ -67,35 +67,35 @@ public interface MemberEvaluationApi {
      * @return {@link Result }<{@link Long }>
      * @since 2022-04-25 16:39:46
      */
-    @PostExchange(value = "/member/feign/evaluationPageQuery")
+    @PostExchange(value = "/member/evaluationPageQuery")
     Response<MemberEvaluationApiResponse> getEvaluationCount(
             @Validated @RequestBody
                     Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
 
-    @PostExchange(value = "/member/feign/memberEvaluationNum")
+    @PostExchange(value = "/member/memberEvaluationNum")
     Response<BatchResponse<Map<String, Object>>> memberEvaluationNum();
 
-    @PostExchange(value = "/member/feign/memberEvaluationDTO")
+    @PostExchange(value = "/member/memberEvaluationDTO")
     Response<BooleanApiResponse> addMemberEvaluation(
             @Validated @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @PostExchange(value = "/member/feign/evaluation/getStoreRatingVO")
+    @PostExchange(value = "/member/evaluation/getStoreRatingVO")
     Response<StoreRatingApiResponse> getStoreRatingVO(
             @Validated @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @PostExchange(value = "/member/feign/evaluation/queryById")
+    @PostExchange(value = "/member/evaluation/queryById")
     Response<MemberEvaluationApiResponse> queryById(
             @Validated @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @PostExchange(value = "/member/feign/evaluation/reply")
+    @PostExchange(value = "/member/evaluation/reply")
     Response<BooleanApiResponse> reply(
             @Validated @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @PostExchange(value = "/member/feign/evaluation/queryPage")
+    @PostExchange(value = "/member/evaluation/queryPage")
     Response<PageResponse<MemberEvaluationListApiResponse>> queryPage(
             @Validated @RequestBody
                     Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);

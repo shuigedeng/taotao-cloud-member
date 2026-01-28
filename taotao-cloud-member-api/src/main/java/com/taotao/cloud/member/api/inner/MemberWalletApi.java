@@ -30,12 +30,12 @@ import org.springframework.web.service.annotation.PostExchange;
 @HttpExchange(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER)
 public interface MemberWalletApi {
 
-    @PostExchange(value = "/member/feign/wallet/increase")
+    @PostExchange(value = "/member/wallet/increase")
     Response<BooleanApiResponse> increase(
             @Validated @RequestBody
                     Request<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest);
 
-    @PostExchange(value = "/member/feign/recharge/save")
+    @PostExchange(value = "/member/recharge/save")
     Response<BooleanApiResponse> save(
             @Validated @RequestBody
                     Request<MemberWalletQueryApiRequest> memberWalletQueryApiRequest);

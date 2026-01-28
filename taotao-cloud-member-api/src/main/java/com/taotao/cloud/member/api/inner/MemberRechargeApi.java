@@ -37,27 +37,27 @@ import org.springframework.web.service.annotation.PostExchange;
 @HttpExchange(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER)
 public interface MemberRechargeApi {
 
-    @PostExchange(value = "/member/feign/recharge/paySuccess")
+    @PostExchange(value = "/member/recharge/paySuccess")
     Response<BooleanApiResponse> paySuccess(
             @Validated @RequestBody
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
-    @PostExchange(value = "/member/feign/recharge/getRecharge")
+    @PostExchange(value = "/member/recharge/getRecharge")
     Response<MemberRechargeApiResponse> getRecharge(
             @Validated @RequestBody
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
-    @PostExchange(value = "/member/feign/recharge/recharge")
+    @PostExchange(value = "/member/recharge/recharge")
     Response<MemberRechargeApiResponse> recharge(
             @Validated @RequestBody
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
-    @PostExchange(value = "/member/feign/recharge/list")
+    @PostExchange(value = "/member/recharge/list")
 	Response<MemberRechargeApiResponse> list(
             @Validated @RequestBody
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
-    @PostExchange(value = "/member/feign/recharge/rechargeOrderCancel")
+    @PostExchange(value = "/member/recharge/rechargeOrderCancel")
     Response<BooleanApiResponse> rechargeOrderCancel(
             @Validated @RequestBody
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);

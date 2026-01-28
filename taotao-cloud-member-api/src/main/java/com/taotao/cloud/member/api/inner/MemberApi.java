@@ -48,7 +48,7 @@ public interface MemberApi {
 //     * @return 用户信息
 //     * @since 2020/4/29 17:48
 //     */
-//    @PostExchange(value = "/member/feign/info/security")
+//    @PostExchange(value = "/member/info/security")
 //    Response<BaseSecurityUser> getMemberSecurityUser(
 //            @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
@@ -59,7 +59,7 @@ public interface MemberApi {
      * @return 会员信息
      * @since 2020/11/20 下午4:10
      */
-    @PostExchange("/member/feign/info/id/{id:[0-9]*}")
+    @PostExchange("/member/info/id/{id:[0-9]*}")
     Response<MemberApiResponse> findMemberById(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
@@ -73,15 +73,15 @@ public interface MemberApi {
      * @return {@link Result }<{@link Boolean }>
      * @since 2022-04-25 16:41:42
      */
-    @PostExchange(value = "/member/feign/updateMemberPoint")
+    @PostExchange(value = "/member/updateMemberPoint")
     Response<BooleanApiResponse> updateMemberPoint(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
-    @PostExchange(value = "/member/feign/username")
+    @PostExchange(value = "/member/username")
     Response<MemberApiResponse> findByUsername(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
-    @PostExchange(value = "/member/feign/memberId")
+    @PostExchange(value = "/member/memberId")
     Response<MemberApiResponse> getById(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
@@ -89,15 +89,15 @@ public interface MemberApi {
      * new LambdaUpdateWrapper<Member>() .eq(Member::getId, member.getId()) .set(Member::getHaveStore, true)
      * .set(Member::getStoreId, store.getId())
      */
-    @PostExchange(value = "/member/feign/memberId/storeId")
+    @PostExchange(value = "/member/memberId/storeId")
     Response<BooleanApiResponse> update(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
-    @PostExchange(value = "/member/feign/updateById")
+    @PostExchange(value = "/member/updateById")
     Response<BooleanApiResponse> updateById(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 
-    @PostExchange(value = "/member/feign/listFieldsByMemberIds")
+    @PostExchange(value = "/member/listFieldsByMemberIds")
     Response<BatchResponse<Map<String, Object>>> listFieldsByMemberIds(
             @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
 }
