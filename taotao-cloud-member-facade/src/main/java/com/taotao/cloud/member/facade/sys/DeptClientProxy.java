@@ -30,7 +30,7 @@ import org.springframework.stereotype.Component;
  * DeptClientProxy
  *
  * @author shuigedeng
- * @version 2026.02
+ * @version 2026.03
  * @since 2025-12-19 09:30:45
  */
 @Component
@@ -39,7 +39,7 @@ public class DeptClientProxy {
     @Autowired
     private DictApi dictApi;
 
-    @DubboReference(version = "2026.02", protocol = "tri", parameters = {
+    @DubboReference(version = "2026.03", protocol = "tri", parameters = {
             "clientHost", "192.168.218.1"  // 设置客户端主机
     })
     private DictRpcService dictRpcService;
