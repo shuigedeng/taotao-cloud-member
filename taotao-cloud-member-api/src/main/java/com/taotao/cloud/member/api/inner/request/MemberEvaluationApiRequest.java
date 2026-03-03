@@ -16,7 +16,7 @@
 
 package com.taotao.cloud.member.api.inner.request;
 
-import com.taotao.boot.common.model.request.RequestBase;
+import com.taotao.boot.common.model.ddd.types.MarkerRequest;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
@@ -34,7 +34,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "租户id")
-public class MemberEvaluationApiRequest extends RequestBase implements Serializable {
+public class MemberEvaluationApiRequest implements MarkerRequest {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;
 

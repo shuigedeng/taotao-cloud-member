@@ -24,7 +24,7 @@ import java.util.List;
  *
  * @since 2020/11/18 2:25 下午
  */
-public interface MemberGoodsCollectionCommandService extends CommandService {
+public interface MemberGoodsCollectionCommandService implements CommandService {
 
     /**
      * 获取商品搜索分页

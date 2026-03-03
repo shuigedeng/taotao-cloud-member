@@ -24,4 +24,4 @@ import com.taotao.boot.ddd.model.application.service.CommandService;
  * @author shuigedeng
  * @since 2020-10-16 16:23:49
  */
-public interface MemberPlatformQueryService extends CommandService {}
+public interface MemberPlatformQueryService implements CommandService {}

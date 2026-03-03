@@ -19,7 +19,7 @@ package com.taotao.cloud.member.application.service;
 import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /** 会员等级业务层 */
-public interface MemberGradeCommandService extends CommandService {
+public interface MemberGradeCommandService implements CommandService {
 
     //    IPage<MemberGradePO> queryPage(PageQuery pageQuery);
 }

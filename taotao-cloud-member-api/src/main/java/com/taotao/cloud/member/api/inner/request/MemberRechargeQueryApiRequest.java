@@ -16,7 +16,7 @@
 
 package com.taotao.cloud.member.api.inner.request;
 
-import com.taotao.boot.common.model.request.RequestBase;
+import com.taotao.boot.common.model.ddd.types.MarkerRequest;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import lombok.experimental.Accessors;
@@ -38,7 +38,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员收货地址DTO")
-public class MemberRechargeQueryApiRequest extends RequestBase implements Serializable {
+public class MemberRechargeQueryApiRequest implements MarkerRequest {
 
     @Serial
     private static final long serialVersionUID = -7605952923416404638L;

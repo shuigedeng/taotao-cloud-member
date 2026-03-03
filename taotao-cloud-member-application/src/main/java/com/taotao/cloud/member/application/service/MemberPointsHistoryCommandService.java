@@ -25,7 +25,7 @@ import com.taotao.boot.ddd.model.application.service.CommandService;
  * @version 2022.06
  * @since 2022-05-31 14:16:21
  */
-public interface MemberPointsHistoryCommandService extends CommandService {
+public interface MemberPointsHistoryCommandService implements CommandService {
 
     /// **
     // * 获取会员积分VO

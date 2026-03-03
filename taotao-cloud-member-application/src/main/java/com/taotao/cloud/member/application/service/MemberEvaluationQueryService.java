@@ -23,7 +23,7 @@ import com.taotao.boot.ddd.model.application.service.CommandService;
  *
  * @since 2020-02-25 14:10:16
  */
-public interface MemberEvaluationQueryService extends CommandService {
+public interface MemberEvaluationQueryService implements CommandService {
     //
     /// **
     // * 查询会员的评价分页列表

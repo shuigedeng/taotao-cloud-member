@@ -25,7 +25,7 @@ import com.taotao.boot.ddd.model.application.service.CommandService;
  * @version 2022.06
  * @since 2022-05-31 13:21:47
  */
-public interface MemberRechargeCommandService extends CommandService {
+public interface MemberRechargeCommandService implements CommandService {
 
     /**
      * 创建充值订单

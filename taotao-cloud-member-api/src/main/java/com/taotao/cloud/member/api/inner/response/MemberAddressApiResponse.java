@@ -16,7 +16,7 @@
 
 package com.taotao.cloud.member.api.inner.response;
 
-import com.taotao.boot.common.model.response.ResponseBase;
+import com.taotao.boot.common.model.ddd.types.MarkerResponse;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import lombok.experimental.Accessors;
@@ -39,7 +39,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "会员收货地址DTO")
-public class MemberAddressApiResponse  extends ResponseBase implements Serializable {
+public class MemberAddressApiResponse  implements MarkerResponse  {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;
 
