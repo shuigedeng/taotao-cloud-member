@@ -25,7 +25,7 @@ import com.taotao.boot.ddd.model.application.service.CommandService;
  * @version 2021.10
  * @since 2022-03-11 15:53:20
  */
-public interface MemberBrowseCommandService implements CommandService {
+public interface MemberBrowseCommandService extends CommandService {
 
     /// **
     // * 保存浏览历史

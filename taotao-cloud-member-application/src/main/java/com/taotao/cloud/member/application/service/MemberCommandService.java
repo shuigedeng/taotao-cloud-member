@@ -23,7 +23,7 @@ import com.taotao.boot.ddd.model.application.service.CommandService;
  *
  * @since 2020-02-25 14:10:16
  */
-public interface MemberCommandService implements CommandService {
+public interface MemberCommandService extends CommandService {
 
     /// **
     // * 获取当前登录的用户信息

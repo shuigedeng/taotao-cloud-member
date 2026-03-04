@@ -19,7 +19,7 @@ package com.taotao.cloud.member.application.service;
 import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /** 会员消息业务层 */
-public interface MemberNoticeSenterQueryService implements CommandService {
+public interface MemberNoticeSenterQueryService extends CommandService {
 
     /**
      * 自定义保存方法

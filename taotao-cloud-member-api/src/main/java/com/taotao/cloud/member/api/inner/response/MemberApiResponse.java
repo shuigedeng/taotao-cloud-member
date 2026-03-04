@@ -63,7 +63,7 @@ public class MemberApiResponse  implements MarkerResponse  {
     @Schema(description = "会员地址")
     private String region;
 
-    @Schema(description = "手机号码", requiredMode = Schema.RequiredMode.REQUIRED)
+    @Schema(description = "手机号码")
     // @Sensitive(strategy = SensitiveStrategy.PHONE)
     private String mobile;
 

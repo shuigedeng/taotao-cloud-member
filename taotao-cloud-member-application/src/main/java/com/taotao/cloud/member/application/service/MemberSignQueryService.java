@@ -19,7 +19,7 @@ package com.taotao.cloud.member.application.service;
 import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /** 会员签到业务层 */
-public interface MemberSignQueryService implements CommandService {
+public interface MemberSignQueryService extends CommandService {
 
     /**
      * 会员签到

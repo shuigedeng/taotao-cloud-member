@@ -21,7 +21,7 @@ import com.taotao.boot.ddd.model.application.service.CommandService;
 /**
  * 收货地址业务层
  */
-public interface MemberAddressCommandService implements CommandService {
+public interface MemberAddressCommandService extends CommandService {
 
     /**
      * 根据会员获取会员地址分页列表

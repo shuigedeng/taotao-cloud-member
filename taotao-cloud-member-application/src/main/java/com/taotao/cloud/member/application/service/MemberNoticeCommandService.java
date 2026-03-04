@@ -19,4 +19,4 @@ package com.taotao.cloud.member.application.service;
 import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /** 会员站内信业务层 */
-public interface MemberNoticeCommandService implements CommandService {}
+public interface MemberNoticeCommandService extends CommandService {}

@@ -19,7 +19,7 @@ package com.taotao.cloud.member.application.service;
 import com.taotao.boot.ddd.model.application.service.CommandService;
 
 /** 会员发票业务层 */
-public interface MemberReceiptCommandService implements CommandService {
+public interface MemberReceiptCommandService extends CommandService {
     //
     /// **
     // * 查询会员发票列表
