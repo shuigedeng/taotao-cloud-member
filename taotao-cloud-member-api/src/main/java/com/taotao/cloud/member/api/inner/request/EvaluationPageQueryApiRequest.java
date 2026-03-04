@@ -16,7 +16,7 @@
 
 package com.taotao.cloud.member.api.inner.request;
 
-import com.taotao.boot.common.model.ddd.types.MarkerRequest;
+import com.taotao.boot.common.model.ddd.types.Command;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -39,7 +39,7 @@ import java.io.Serial;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "评价查询条件")
-public class EvaluationPageQueryApiRequest extends RequestBase {
+public class EvaluationPageQueryApiRequest implements Command {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;
 

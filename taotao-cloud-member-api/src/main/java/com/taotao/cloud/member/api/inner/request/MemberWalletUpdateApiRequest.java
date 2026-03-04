@@ -16,6 +16,7 @@
 
 package com.taotao.cloud.member.api.inner.request;
 
+import com.taotao.boot.common.model.ddd.types.Command;
 import com.taotao.boot.common.model.ddd.types.MarkerRequest;
 import com.taotao.cloud.member.api.enums.DepositServiceTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -31,7 +32,7 @@ import java.math.BigDecimal;
 @Accessors(fluent = true)
 @AllArgsConstructor
 @NoArgsConstructor
-public class MemberWalletUpdateApiRequest extends RequestBase {
+public class MemberWalletUpdateApiRequest implements Command {
 
     @Schema(description = "变动金额")
     private BigDecimal money;
