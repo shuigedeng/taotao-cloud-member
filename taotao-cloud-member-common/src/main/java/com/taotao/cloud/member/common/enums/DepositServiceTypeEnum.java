@@ -14,24 +14,27 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.enums;
+package com.taotao.cloud.member.common.enums;
 
 /**
- * 会员提现到哪里 枚举
+ * 预存款变动日志业务类型
  *
  * @author shuigedeng
  * @version 2022.04
- * @since 2022-04-25 16:37:17
+ * @since 2022-04-25 16:37:08
  */
-public enum MemberWithdrawalDestinationEnum {
-    /** 提现目的地 */
-    WECHAT("微信账户"),
-    WALLET("余额账户");
+public enum DepositServiceTypeEnum {
+    /** 预存款变动日志业务类型枚举 */
+    WALLET_WITHDRAWAL("余额提现"),
+    WALLET_PAY("余额支付"),
+    WALLET_REFUND("余额退款"),
+    WALLET_RECHARGE("余额充值"),
+    WALLET_COMMISSION("佣金提成");
 
     private final String description;
 
-    MemberWithdrawalDestinationEnum(String str) {
-        this.description = str;
+    DepositServiceTypeEnum(String description) {
+        this.description = description;
     }
 
     public String description() {

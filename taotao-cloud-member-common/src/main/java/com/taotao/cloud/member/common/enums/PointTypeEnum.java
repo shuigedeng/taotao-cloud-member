@@ -14,28 +14,28 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.enums;
+package com.taotao.cloud.member.common.enums;
 
 /**
- * 发票类型
+ * 积分类型枚举
  *
  * @author shuigedeng
  * @version 2022.04
- * @since 2022-04-25 16:37:15
+ * @since 2022-04-25 16:37:20
  */
-public enum MemberReceiptEnum {
-
-    /** 发票类型 */
-    ELECTRONIC_INVOICE("电子发票"),
-    ORDINARY_INVOICE("普通发票");
+public enum PointTypeEnum {
+    /** 增加 */
+    INCREASE("增加"),
+    /** 减少 */
+    REDUCE("减少");
 
     private final String description;
 
-    MemberReceiptEnum(String str) {
-        this.description = str;
-    }
-
     public String description() {
         return description;
+    }
+
+    PointTypeEnum(String description) {
+        this.description = description;
     }
 }

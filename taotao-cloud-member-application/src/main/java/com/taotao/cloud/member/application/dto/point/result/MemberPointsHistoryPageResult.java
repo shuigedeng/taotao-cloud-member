@@ -16,7 +16,7 @@
 
 package com.taotao.cloud.member.application.dto.point.result;
 
-import com.taotao.cloud.member.api.enums.PointTypeEnum;
+import com.taotao.cloud.member.common.enums.PointTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import java.io.Serializable;

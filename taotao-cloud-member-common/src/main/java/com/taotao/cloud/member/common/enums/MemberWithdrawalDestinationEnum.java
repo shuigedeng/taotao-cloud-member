@@ -14,30 +14,27 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.enums;
+package com.taotao.cloud.member.common.enums;
 
 /**
- * 提现申请状态枚举类
+ * 会员提现到哪里 枚举
  *
  * @author shuigedeng
  * @version 2022.04
- * @since 2022-04-25 16:37:42
+ * @since 2022-04-25 16:37:17
  */
-public enum WithdrawStatusEnum {
-    /** 申请中 */
-    APPLY("申请中"),
-    /** 审核成功即提现成功 */
-    VIA_AUDITING("审核通过"),
-    /** 审核未通过 */
-    FAIL_AUDITING("审核未通过");
+public enum MemberWithdrawalDestinationEnum {
+    /** 提现目的地 */
+    WECHAT("微信账户"),
+    WALLET("余额账户");
 
     private final String description;
 
-    public String description() {
-        return description;
+    MemberWithdrawalDestinationEnum(String str) {
+        this.description = str;
     }
 
-    WithdrawStatusEnum(String description) {
-        this.description = description;
+    public String description() {
+        return description;
     }
 }

@@ -16,7 +16,7 @@
 
 package com.taotao.cloud.member.application.dto.receipt.result;
 
-import com.taotao.cloud.member.api.enums.MemberReceiptEnum;
+import com.taotao.cloud.member.common.enums.MemberReceiptEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.Serial;
 import java.io.Serializable;

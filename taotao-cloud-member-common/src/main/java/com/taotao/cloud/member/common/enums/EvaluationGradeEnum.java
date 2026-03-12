@@ -14,28 +14,20 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.enums;
+package com.taotao.cloud.member.common.enums;
 
 /**
- * 积分类型枚举
+ * 评价枚举
  *
  * @author shuigedeng
  * @version 2022.04
- * @since 2022-04-25 16:37:20
+ * @since 2022-04-25 16:37:12
  */
-public enum PointTypeEnum {
-    /** 增加 */
-    INCREASE("增加"),
-    /** 减少 */
-    REDUCE("减少");
+public enum EvaluationGradeEnum {
+    /** 好，中，差 */
+    GOOD,
+    MODERATE,
+    WORSE;
 
-    private final String description;
-
-    public String description() {
-        return description;
-    }
-
-    PointTypeEnum(String description) {
-        this.description = description;
-    }
+    EvaluationGradeEnum() {}
 }

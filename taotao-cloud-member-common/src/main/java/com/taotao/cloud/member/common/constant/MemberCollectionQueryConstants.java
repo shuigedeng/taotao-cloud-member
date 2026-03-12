@@ -14,28 +14,20 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.enums;
+package com.taotao.cloud.member.common.constant;
 
 /**
- * 发送类型
+ * 拼音模块常量
  *
  * @author shuigedeng
- * @version 2022.04
- * @since 2022-04-25 16:37:39
+ * @version 2022.03
+ * @since 2022-03-25 14:22:32
  */
-public enum SendTypeEnum {
+public interface MemberCollectionQueryConstants {
 
-    /** 消息类型 */
-    ALL("全部"),
-    SELECT("指定会员");
+    /** 商品收藏关键字->商品 */
+    String GOODS = "GOODS";
 
-    private final String description;
-
-    SendTypeEnum(String str) {
-        this.description = str;
-    }
-
-    public String description() {
-        return description;
-    }
+    /** 商品收藏关键字->店铺 */
+    String STORE = "STORE";
 }
