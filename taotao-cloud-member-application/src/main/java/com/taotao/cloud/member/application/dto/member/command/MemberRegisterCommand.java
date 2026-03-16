@@ -37,7 +37,7 @@ import org.hibernate.validator.constraints.Length;
 @Setter
 @Getter
 @ToString
-@Accessors(fluent = true)
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(name = "MemberDTO", description = "会员注册DTO")

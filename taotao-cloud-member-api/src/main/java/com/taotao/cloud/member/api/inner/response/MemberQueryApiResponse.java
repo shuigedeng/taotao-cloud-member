@@ -34,7 +34,7 @@ import java.io.Serializable;
 @Setter
 @Getter
 @ToString
-@Accessors(fluent = true)
+
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor

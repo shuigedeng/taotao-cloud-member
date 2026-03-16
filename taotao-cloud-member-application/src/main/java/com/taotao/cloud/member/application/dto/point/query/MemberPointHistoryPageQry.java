@@ -37,7 +37,7 @@ import lombok.experimental.Accessors;
 @Getter
 @ToString
 @EqualsAndHashCode(callSuper = true)
-@Accessors(fluent = true)
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(name = "MemberPointHistoryPageQuery", description = "会员query")

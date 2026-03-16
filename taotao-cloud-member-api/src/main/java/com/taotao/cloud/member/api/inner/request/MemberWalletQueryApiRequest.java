@@ -28,7 +28,7 @@ import java.math.BigDecimal;
 @Setter
 @Getter
 @ToString
-@Accessors(fluent = true)
+
 @AllArgsConstructor
 @NoArgsConstructor
 public class MemberWalletQueryApiRequest implements Command {
