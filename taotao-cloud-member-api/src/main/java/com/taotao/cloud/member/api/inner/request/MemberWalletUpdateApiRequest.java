@@ -17,7 +17,6 @@
 package com.taotao.cloud.member.api.inner.request;
 
 import com.taotao.boot.common.model.ddd.types.Command;
-import com.taotao.cloud.member.api.enums.DepositServiceTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import lombok.experimental.Accessors;
