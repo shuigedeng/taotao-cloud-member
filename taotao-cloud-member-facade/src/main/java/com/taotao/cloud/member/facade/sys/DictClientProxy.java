@@ -39,7 +39,7 @@ public class DictClientProxy {
     @Autowired
     private DictApi dictApi;
 
-    @DubboReference(version = "2026.04", protocol = "tri", parameters = {
+    @DubboReference(version = "2026.05", protocol = "tri", parameters = {
             "clientHost", "192.168.218.1"  // 设置客户端主机
     })
     private DictRpcService dictRpcService;
