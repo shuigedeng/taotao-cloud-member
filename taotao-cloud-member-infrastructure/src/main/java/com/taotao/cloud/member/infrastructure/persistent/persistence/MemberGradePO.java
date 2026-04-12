@@ -17,7 +17,7 @@
 package com.taotao.cloud.member.infrastructure.persistent.persistence;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.taotao.boot.webagg.entity.BaseSuperEntity;
+import com.taotao.boot.webagg.entity.BasePO;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -43,7 +43,7 @@ import lombok.experimental.Accessors;
 @Table(name = MemberGradePO.TABLE_NAME)
 @TableName(MemberGradePO.TABLE_NAME)
 @org.springframework.data.relational.core.mapping.Table(name = MemberGradePO.TABLE_NAME)
-public class MemberGradePO extends BaseSuperEntity<MemberGradePO, Long> {
+public class MemberGradePO extends BasePO<MemberGradePO> {
 
     public static final String TABLE_NAME = "ttc_member_grade";
 

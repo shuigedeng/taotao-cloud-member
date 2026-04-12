@@ -17,7 +17,7 @@
 package com.taotao.cloud.member.infrastructure.persistent.persistence;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.taotao.boot.webagg.entity.BaseSuperEntity;
+import com.taotao.boot.webagg.entity.BasePO;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -44,7 +44,7 @@ import lombok.experimental.Accessors;
 @Table(name = MemberWalletPO.TABLE_NAME)
 @TableName(MemberWalletPO.TABLE_NAME)
 @org.springframework.data.relational.core.mapping.Table(name = MemberWalletPO.TABLE_NAME)
-public class MemberWalletPO extends BaseSuperEntity<MemberWalletPO, Long> {
+public class MemberWalletPO extends BasePO<MemberWalletPO> {
 
     public static final String TABLE_NAME = "ttc_member_wallet";
 

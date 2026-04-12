@@ -17,7 +17,7 @@
 package com.taotao.cloud.member.infrastructure.persistent.persistence;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.taotao.boot.webagg.entity.BaseSuperEntity;
+import com.taotao.boot.webagg.entity.BasePO;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -43,7 +43,7 @@ import lombok.experimental.Accessors;
 @Table(name = MemberSignPO.TABLE_NAME)
 @TableName(MemberSignPO.TABLE_NAME)
 @org.springframework.data.relational.core.mapping.Table(name = MemberSignPO.TABLE_NAME)
-public class MemberSignPO extends BaseSuperEntity<MemberSignPO, Long> {
+public class MemberSignPO extends BasePO<MemberSignPO> {
 
     public static final String TABLE_NAME = "ttc_member_sign";
 

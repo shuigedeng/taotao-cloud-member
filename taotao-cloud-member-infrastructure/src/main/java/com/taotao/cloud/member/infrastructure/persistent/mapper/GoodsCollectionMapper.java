@@ -16,11 +16,11 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.mapper;
 
-import com.taotao.boot.data.mybatis.mybatisplus.base.mapper.MpSuperMapper;
+import com.taotao.boot.data.mybatis.mybatisplus.base.mapper.BaseMapper;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberGoodsCollectionPO;
 
 /** 会员收藏数据处理层 */
-public interface GoodsCollectionMapper extends MpSuperMapper<MemberGoodsCollectionPO, Long> {
+public interface GoodsCollectionMapper extends BaseMapper<MemberGoodsCollectionPO> {
 
     /// **
     // * 商品收藏VO分页

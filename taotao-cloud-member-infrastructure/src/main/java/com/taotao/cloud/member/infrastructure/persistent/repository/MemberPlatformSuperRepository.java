@@ -16,8 +16,8 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.repository;
 
-import com.taotao.boot.data.jpa.base.repository.JpaSuperRepository;
+import com.taotao.boot.data.jpa.base.repository.BaseRepository;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberConnectPO;
 
 public interface MemberPlatformSuperRepository
-        extends JpaSuperRepository<MemberConnectPO, Long> {}
+        extends BaseRepository<MemberConnectPO> {}

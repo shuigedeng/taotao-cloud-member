@@ -16,10 +16,10 @@
 
 package com.taotao.cloud.member.infrastructure.persistent.repository;
 
-import com.taotao.boot.data.jpa.base.repository.JpaSuperRepository;
+import com.taotao.boot.data.jpa.base.repository.BaseRepository;
 import com.taotao.cloud.member.infrastructure.persistent.persistence.MemberAddressPO;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface MemberAddressSuperRepository
-        extends JpaSuperRepository<MemberAddressPO, Long> {}
+        extends BaseRepository<MemberAddressPO> {}
