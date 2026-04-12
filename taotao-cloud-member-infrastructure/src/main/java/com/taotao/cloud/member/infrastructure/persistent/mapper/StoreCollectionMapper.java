@@ -35,7 +35,7 @@ public interface StoreCollectionMapper extends BaseMapper<MemberStoreCollectionP
     //        s.store_name,
     //        s.store_logo,
     //        s.self_operated
-    //        from tt_store s INNER JOIN tt_store_collection sc
+    //        from ttc_store s INNER JOIN ttc_store_collection sc
     //        ON s.id=sc.store_id ${ew.customSqlSegment}
     //        """)
     // IPage<StoreCollectionVO> storeCollectionVOList(

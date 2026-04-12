@@ -32,13 +32,13 @@ public interface MemberMapper extends BaseMapper<MemberPO> {
     @Select(
             """
         select m.mobile
-        from tt_member m
+        from ttc_member m
         """)
     List<String> getAllMemberMobile();
 
     // @Select("""
     //	select *
-    //	from tt_member
+    //	from ttc_member
     //	${ew.customSqlSegment}
     //	""")
     // IPage<MemberVO> pageByMemberVO(IPage<MemberVO> page, @Param(Constants.WRAPPER)

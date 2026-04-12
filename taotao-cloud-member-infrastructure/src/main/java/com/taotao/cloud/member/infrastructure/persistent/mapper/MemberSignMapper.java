@@ -36,7 +36,7 @@ public interface MemberSignMapper extends BaseMapper<MemberSignPO> {
     @Select(
             """
         SELECT *
-        FROM tt_member_sign
+        FROM ttc_member_sign
         WHERE TO_DAYS( NOW( ) ) - TO_DAYS( create_time) = 1 and member_id = #{memberId}
         """)
     List<MemberSignPO> getBeforeMemberSign(Long memberId);
@@ -50,7 +50,7 @@ public interface MemberSignMapper extends BaseMapper<MemberSignPO> {
     @Select(
             """
         select *
-        from tt_member_sign
+        from ttc_member_sign
         ${ew.customSqlSegment}
         """)
     List<MemberSignPO> getTodayMemberSign(
@@ -66,7 +66,7 @@ public interface MemberSignMapper extends BaseMapper<MemberSignPO> {
     @Select(
             """
         SELECT *
-        FROM tt_member_sign
+        FROM ttc_member_sign
         WHERE DATE_FORMAT(create_time,'%Y%m') = #{time} and member_id = #{memberId}
         """)
     List<MemberSignPO> getMonthMemberSign(Long memberId, String time);

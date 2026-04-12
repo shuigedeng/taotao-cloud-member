@@ -32,7 +32,7 @@ public interface MemberPointsHistoryMapper extends BaseMapper<MemberPointsHistor
     @Select(
             """
         SELECT SUM( variable_point )
-        FROM tt_member_points_history
+        FROM ttc_member_points_history
         WHERE point_type = #{pointType}
         """)
     Long getALLMemberPointsHistoryVO(String pointType);
@@ -47,7 +47,7 @@ public interface MemberPointsHistoryMapper extends BaseMapper<MemberPointsHistor
     @Select(
             """
         SELECT SUM( variable_point )
-        FROM tt_member_points_history
+        FROM ttc_member_points_history
         WHERE point_type = #{pointType} AND member_id=#{memberId}
         """)
     Long getMemberPointsHistoryVO(String pointType, String memberId);

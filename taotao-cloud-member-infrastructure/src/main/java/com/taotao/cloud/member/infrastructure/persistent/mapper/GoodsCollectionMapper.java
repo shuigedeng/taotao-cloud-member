@@ -33,7 +33,7 @@ public interface GoodsCollectionMapper extends BaseMapper<MemberGoodsCollectionP
     //        """
     //	select gc.id AS id,gs.id as sku_id,gs.goods_id as goods_id,gs.goods_name as
     // goods_name,gs.thumbnail as image,gs.price,gs.market_enable AS market_enable
-    //	from tt_goods_collection gc INNER JOIN tt_goods_sku gs ON gc.sku_id=gs.id
+    //	from ttc_goods_collection gc INNER JOIN ttc_goods_sku gs ON gc.sku_id=gs.id
     //	${ew.customSqlSegment}
     //	""")
     // IPage<GoodsCollectionVO> goodsCollectionVOList(

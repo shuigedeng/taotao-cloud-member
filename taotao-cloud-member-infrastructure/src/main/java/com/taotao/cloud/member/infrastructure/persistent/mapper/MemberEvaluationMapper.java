@@ -39,7 +39,7 @@ public interface MemberEvaluationMapper extends BaseMapper<MemberEvaluationPO> {
     @Select(
             """
         select me.*
-        from tt_member_evaluation as me
+        from ttc_member_evaluation as me
         ${ew.customSqlSegment}
         """)
     IPage<MemberEvaluationPO> getMemberEvaluationList(
@@ -55,7 +55,7 @@ public interface MemberEvaluationMapper extends BaseMapper<MemberEvaluationPO> {
     @Select(
             """
         select grade,count(1) as num
-        from tt_member_evaluation
+        from ttc_member_evaluation
         Where goods_id=#{goodsId} and status='OPEN'
         GROUP BY grade
         """)
@@ -72,7 +72,7 @@ public interface MemberEvaluationMapper extends BaseMapper<MemberEvaluationPO> {
     //	SELECT round( AVG( delivery_score ), 2 ) AS delivery_score
     //			,round( AVG( description_score ), 2 ) AS description_score
     //			,round( AVG( service_score ), 2 ) AS service_score
-    //	FROM tt_member_evaluation
+    //	FROM ttc_member_evaluation
     //	${ew.customSqlSegment}
     //	""")
     // StoreRatingVO getStoreRatingVO(@Param(Constants.WRAPPER) Wrapper<MemberEvaluationPO>
@@ -87,7 +87,7 @@ public interface MemberEvaluationMapper extends BaseMapper<MemberEvaluationPO> {
     @Select(
             """
         SELECT goods_id,COUNT(goods_id) AS num
-        FROM tt_member_evaluation
+        FROM ttc_member_evaluation
         GROUP BY goods_id
         """)
     List<Map<String, Object>> memberEvaluationNum(

@@ -39,7 +39,7 @@ public interface FootprintMapper extends BaseMapper<MemberBrowsePO> {
     @Select(
             """
         select sku_id
-        from tt_foot_print
+        from ttc_foot_print
         ${ew.customSqlSegment}
         """)
     List<String> footprintSkuIdList(
@@ -53,14 +53,14 @@ public interface FootprintMapper extends BaseMapper<MemberBrowsePO> {
     @Delete(
             """
         DELETE
-        FROM tt_foot_print
+        FROM ttc_foot_print
         WHERE (SELECT COUNT(b.id)
                FROM (SELECT *
-                     FROM tt_foot_print
+                     FROM ttc_foot_print
                      WHERE member_id = #{memberId} ) b) >100
                        AND id = (SELECT a.id
                                  FROM (SELECT *
-                                       FROM tt_foot_print
+                                       FROM ttc_foot_print
                                        WHERE member_id = #{memberId} ORDER BY create_time ASC LIMIT 1 ) AS a
                                       )
             """)
