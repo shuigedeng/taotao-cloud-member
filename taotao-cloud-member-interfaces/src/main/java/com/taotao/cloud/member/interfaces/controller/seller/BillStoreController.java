@@ -56,7 +56,7 @@ package com.taotao.cloud.member.interfaces.controller.seller;
 // 	@RequestLogger
 // 	@PreAuthorize("@el.check('admin','timing:list')")
 // 	@GetMapping(value = "/page")
-// 	public Result<IPage<BillListVO>> getByPage(BillPageQuery billPageQuery) {
+// 	public Result<IPage<BillListVO>> queryByPage(BillPageQuery billPageQuery) {
 // 		String storeId = Objects.requireNonNull(UserContext.getCurrentUser()).getStoreId();
 // 		billPageQuery.setStoreId(storeId);
 // 		return Result.success(billService.billPage(billPageQuery));

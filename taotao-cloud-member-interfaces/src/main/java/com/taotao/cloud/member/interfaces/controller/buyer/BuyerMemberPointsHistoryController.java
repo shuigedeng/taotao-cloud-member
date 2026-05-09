@@ -39,7 +39,7 @@ public class BuyerMemberPointsHistoryController extends BusinessController {
     // @RequestLogger
     // @PreAuthorize("@el.check('admin','timing:list')")
     // @GetMapping(value = "/page")
-    // public Result<PageResult<MemberPointsHistoryPageVO>> getByPage(PageQuery page) {
+    // public Result<PageResult<MemberPointsHistoryPageVO>> queryByPage(PageQuery page) {
     //    IPage<MemberPointsHistory> memberPointsHistoryPage =
     // memberPointsHistoryService.pageQuery(page);
     //    return Result.success(MpUtils.convertMybatisPage(memberPointsHistoryPage,

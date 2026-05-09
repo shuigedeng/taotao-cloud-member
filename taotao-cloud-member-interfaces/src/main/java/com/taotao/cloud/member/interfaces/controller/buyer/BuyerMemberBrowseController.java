@@ -43,7 +43,7 @@ public class BuyerMemberBrowseController extends BusinessController {
     // @RequestLogger
     // @PreAuthorize("@el.check('admin','timing:list')")
     // @GetMapping
-    // public Result<List<EsGoodsIndexVO>> getByPage(PageQuery PageQuery) {
+    // public Result<List<EsGoodsIndexVO>> queryByPage(PageQuery PageQuery) {
     //    return Result.success(memberBrowseService.footPrintPage(PageQuery));
     // }
     //

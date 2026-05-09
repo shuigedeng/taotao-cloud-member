@@ -41,7 +41,7 @@ public class SellerMemberEvaluationController extends BusinessController {
     // @RequestLogger
     // @PreAuthorize("@el.check('admin','timing:list')")
     // @GetMapping
-    // public Result<PageResult<MemberEvaluationListVO>> getByPage(EvaluationPageQuery
+    // public Result<PageResult<MemberEvaluationListVO>> queryByPage(EvaluationPageQuery
     // evaluationPageQuery) {
     //    evaluationPageQuery.setStoreId(SecurityUtils.getCurrentUser().getStoreId());
     //    IPage<MemberEvaluation> memberEvaluationPage =
