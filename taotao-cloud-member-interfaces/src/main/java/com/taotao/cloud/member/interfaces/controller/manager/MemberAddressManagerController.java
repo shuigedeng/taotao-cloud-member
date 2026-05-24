@@ -46,7 +46,7 @@ public class MemberAddressManagerController extends BusinessController {
     //        @Parameter(description = "会员地址ID", required = true) @PathVariable("memberId") Long
     // memberId) {
     //    IPage<MemberAddress> addressByMember = memberAddressService.queryPage(page, memberId);
-    //    return Result.success(MpUtils.convertMybatisPage(addressByMember, MemberAddressVO.class));
+    //    return Result.success(MpUtils.convertMpPage(addressByMember, MemberAddressVO.class));
     // }
     //
     // @Operation(summary = "删除会员收件地址", description = "删除会员收件地址")

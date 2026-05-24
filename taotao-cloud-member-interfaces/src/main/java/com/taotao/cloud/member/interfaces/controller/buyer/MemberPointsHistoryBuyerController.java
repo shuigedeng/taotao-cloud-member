@@ -42,7 +42,7 @@ public class MemberPointsHistoryBuyerController extends BusinessController {
     // public Result<PageResult<MemberPointsHistoryPageVO>> queryByPage(PageQuery page) {
     //    IPage<MemberPointsHistory> memberPointsHistoryPage =
     // memberPointsHistoryService.pageQuery(page);
-    //    return Result.success(MpUtils.convertMybatisPage(memberPointsHistoryPage,
+    //    return Result.success(MpUtils.convertMpPage(memberPointsHistoryPage,
     // MemberPointsHistoryPageVO.class));
     // }
     //

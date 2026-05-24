@@ -70,7 +70,7 @@ public class MemberEvaluationBuyerController extends BusinessController {
     //    evaluationPageQuery.setMemberId(SecurityUtils.getUserId());
     //    IPage<MemberEvaluation> memberEvaluationPage =
     // memberEvaluationService.managerQuery(evaluationPageQuery);
-    //    return Result.success(MpUtils.convertMybatisPage(memberEvaluationPage,
+    //    return Result.success(MpUtils.convertMpPage(memberEvaluationPage,
     // MemberEvaluationVO.class));
     // }
     //
@@ -88,7 +88,7 @@ public class MemberEvaluationBuyerController extends BusinessController {
     //    evaluationPageQuery.setStatus(SwitchEnum.OPEN.name());
     //    IPage<MemberEvaluation> memberEvaluationPage =
     // memberEvaluationService.managerQuery(evaluationPageQuery);
-    //    return Result.success(MpUtils.convertMybatisPage(memberEvaluationPage,
+    //    return Result.success(MpUtils.convertMpPage(memberEvaluationPage,
     // MemberEvaluationVO.class));
     // }
     //

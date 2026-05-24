@@ -46,7 +46,7 @@ public class MemberAddressBuyerController extends BusinessController {
     // public Result<PageResult<MemberAddressVO>> page(@Validated PageQuery page) {
     //    IPage<MemberAddress> memberAddressPage = memberAddressService.queryPage(page,
     // SecurityUtils.getUserId());
-    //    return Result.success(MpUtils.convertMybatisPage(memberAddressPage,
+    //    return Result.success(MpUtils.convertMpPage(memberAddressPage,
     // MemberAddressConvert.INSTANCE::convert));
     // }
     //

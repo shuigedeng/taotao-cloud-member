@@ -53,7 +53,7 @@ public class MemberEvaluationManagerController extends BusinessController {
     // evaluationPageQuery) {
     //    IPage<MemberEvaluation> memberEvaluationPage =
     // memberEvaluationService.queryPage(evaluationPageQuery);
-    //    return Result.success(MpUtils.convertMybatisPage(memberEvaluationPage,
+    //    return Result.success(MpUtils.convertMpPage(memberEvaluationPage,
     // MemberEvaluationListVO.class));
     // }
     //

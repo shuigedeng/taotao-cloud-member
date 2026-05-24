@@ -45,7 +45,7 @@ public class MemberPointsHistoryManagerController extends BusinessController {
     // pageQuery) {
     //    IPage<MemberPointsHistory> page = memberPointsHistoryService.memberPointsHistoryPageQuery(
     //            pageQuery.getPageParm(), pageQuery.getMemberId(), pageQuery.getMemberName());
-    //    return Result.success(MpUtils.convertMybatisPage(page, MemberPointsHistoryPageVO.class));
+    //    return Result.success(MpUtils.convertMpPage(page, MemberPointsHistoryPageVO.class));
     // }
     //
     // @Operation(summary = "获取会员积分", description = "获取会员积分")

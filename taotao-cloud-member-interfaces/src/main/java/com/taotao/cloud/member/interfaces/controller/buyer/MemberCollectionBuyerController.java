@@ -53,7 +53,7 @@ public class MemberCollectionBuyerController extends BusinessController {
     //    if (MemberCollectionQueryConstants.GOODS.equals(type)) {
     //        IPage<GoodsCollectionVO> goodsCollectionPage =
     // memberGoodsCollectionService.goodsCollection(page);
-    //        return Result.success(MpUtils.convertMybatisPage(goodsCollectionPage,
+    //        return Result.success(MpUtils.convertMpPage(goodsCollectionPage,
     // StoreCollectionVO.class));
     //    }
     //

@@ -46,7 +46,7 @@ public class MemberEvaluationSellerController extends BusinessController {
     //    evaluationPageQuery.setStoreId(SecurityUtils.getCurrentUser().getStoreId());
     //    IPage<MemberEvaluation> memberEvaluationPage =
     // memberEvaluationService.queryPage(evaluationPageQuery);
-    //    return Result.success(MpUtils.convertMybatisPage(memberEvaluationPage,
+    //    return Result.success(MpUtils.convertMpPage(memberEvaluationPage,
     // MemberEvaluationListVO.class));
     // }
     //
