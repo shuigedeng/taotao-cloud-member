@@ -1,10 +1,13 @@
 {
-  "$schema": "https://opencode.ai/config.json",
-  "model": "anthropic/claude-sonnet-4-20250514",
+  "$schema": "https://raw.githubusercontent.com/opencodelabs/opencode/main/config.schema.json",
   "default_agent": "build",
   "lsp": {
     "java": {
-      "command": ["java", "-jar", "C:/Users/Lenovo/AppData/Local/opencode/lsp/java-language-server.jar"],
+      "command": [
+        "java",
+        "-jar",
+        "C:/Users/Lenovo/AppData/Local/opencode/lsp/java-language-server.jar"
+      ],
       "extensions": ["java"]
     }
   },
@@ -22,5 +25,79 @@
     "question": "allow",
     "lsp": "allow",
     "skill": "allow"
+  },
+  "agents": {
+    "aggregate-designer": {
+      "description": "DDD 聚合根设计专家 — 领域模型、聚合边界、实体/值对象划分",
+      "type": "build"
+    },
+    "backend-architect": {
+      "description": "后端架构师 — 六边形架构、依赖方向、事务边界、模块划分",
+      "type": "build"
+    },
+    "code-reviewer": {
+      "description": "DDD 代码审查专家 — 领域模型合规、架构合规、代码质量",
+      "type": "build",
+      "file": ".opencode/agents/code-reviewer.md"
+    },
+    "db-expert": {
+      "description": "数据库专家 — 表设计、索引优化、SQL 性能、MyBatis Plus",
+      "type": "build"
+    },
+    "domain-expert": {
+      "description": "领域专家 — 业务规则、通用语言、限界上下文、事件风暴",
+      "type": "build"
+    },
+    "security-auditor": {
+      "description": "安全审计专家 — OWASP Top 10、敏感信息泄露、权限检查",
+      "type": "build"
+    }
+  },
+  "commands": {
+    "apply": {
+      "description": "按确认后的 Spec 执行 DDD 编码",
+      "agent": "Sisyphus-Junior",
+      "file": ".opencode/commands/apply.md"
+    },
+    "archive": {
+      "description": "归档已完成变更并更新项目上下文",
+      "agent": "Sisyphus-Junior",
+      "file": ".opencode/commands/archive.md"
+    },
+    "deploy": {
+      "description": "部署应用到指定环境（dev/test/pre/pro）",
+      "agent": "Sisyphus-Junior",
+      "file": ".opencode/commands/deploy.md"
+    },
+    "fix": {
+      "description": "Review 后修正迭代 — 增量修正 + DDD 合规",
+      "agent": "Sisyphus-Junior",
+      "file": ".opencode/commands/fix.md"
+    },
+    "propose": {
+      "description": "创建 DDD 变更提案，生成渐进式 Spec",
+      "agent": "Sisyphus-Junior",
+      "file": ".opencode/commands/propose.md"
+    },
+    "review": {
+      "description": "DDD 代码审查 — 检查领域模型、架构合规、代码质量",
+      "agent": "Sisyphus-Junior",
+      "file": ".opencode/commands/review.md"
+    },
+    "spec-init": {
+      "description": "初始化项目上下文，分析 DDD 工程结构、依赖、分层模式",
+      "agent": "Sisyphus-Junior",
+      "file": ".opencode/commands/spec-init.md"
+    },
+    "swagger": {
+      "description": "生成 OpenAPI / Swagger 文档",
+      "agent": "Sisyphus-Junior",
+      "file": ".opencode/commands/swagger.md"
+    },
+    "test": {
+      "description": "运行测试并生成 JaCoCo 覆盖率报告",
+      "agent": "Sisyphus-Junior",
+      "file": ".opencode/commands/test.md"
+    }
   }
 }

@@ -1,53 +1,44 @@
-## 5. 模块化规则
-
-**`.claude/rules/code-style.md`**
-```markdown
 # 代码风格规范
 
+## 包命名规则
+所有代码位于 `com.taotao.cloud.member.{layer}.{subdomain}`：
+```
+com.taotao.cloud.member.domain.aggregate.MemberAgg
+com.taotao.cloud.member.infrastructure.persistent.persistence.MemberPO
+com.taotao.cloud.member.interfaces.controller.buyer.MemberBuyerController
+```
+
+## 命名约定
+
+| 元素 | 风格 | 示例 |
+|------|------|------|
+| 聚合根 | PascalCase + Agg 后缀 | `MemberAgg`, `MemberWalletAgg` |
+| 实体 | PascalCase | `Member`, `MemberWallet` |
+| 值对象 | PascalCase + Val 后缀 | `MemberVal`, `MemberWalletVal` |
+| 领域事件 | PascalCase + Event 后缀 | `MemberCreateEvent`, `MemberWalletCreateEvent` |
+| 仓储接口 | PascalCase + DomainRepository | `MemberDomainRepository` |
+| 仓储实现 | PascalCase + DomainRepositoryImpl | `MemberDomainRepositoryImpl` |
+| 命令 | PascalCase + Command 后缀 | `CreateMemberCommand` |
+| 查询服务 | PascalCase + QueryService | `MemberQueryService` |
+| PO | PascalCase + PO 后缀 | `MemberPO`, `MemberAddressPO` |
+
 ## 格式化规则
-- 缩进: 4 个空格（不使用 Tab）
-- 行宽: 120 字符
-- 大括号: K&R 风格（左括号不换行）
-- 缩进：4 空格
-- 包命名：`com.company.project.layer.subdomain`（如 `com.shop.order.domain.model`）
-- 类名：PascalCase，接口以 `I` 开头（可选）或直接名词（如 `OrderRepository`）
-- 方法：小驼峰，动词开头（`validateEmail`, `calculateTotal`）
+- 缩进：4 空格（不使用 Tab）
+- 行宽：120 字符
+- 大括号：K&R 风格（左括号不换行）
+- 方法：小驼峰，动词开头（`createMember`, `queryByPhone`）
+
 ## 导入顺序
-1. Java 标准库 (java.*, javax.*)
-2. 第三方库 (org.*, com.*)
-3. Spring 框架 (org.springframework.*)
-4. 项目内部包 (com.company.project.*)
+1. Java 标准库（`java.*`, `javax.*`, `jakarta.*`）
+2. 第三方库（`org.*`, `com.*` 非项目）
+3. Spring 框架（`org.springframework.*`）
+4. 项目内部包（`com.taotao.cloud.member.*`）
 5. 静态导入
 
-## Lombok 使用规范
+## Lombok 使用
 ```java
-@Data           // 用于简单 DTO/Entity
-@Builder        // 用于构建复杂对象
-@Slf4j          // 日志记录
-@RequiredArgsConstructor  // 依赖注入
-示例代码
-java
-@Slf4j
-@Service
-@RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
-    private final UserRepository userRepository;
-    private final PasswordEncoder passwordEncoder;
-    
-    @Override
-    @Transactional
-    public UserResponse create(UserRequest request) {
-        log.info("Creating user with username: {}", request.getUsername());
-        
-        // 业务逻辑
-        User user = User.builder()
-            .username(request.getUsername())
-            .password(passwordEncoder.encode(request.getPassword()))
-            .build();
-        
-        User saved = userRepository.save(user);
-        log.debug("User created with id: {}", saved.getId());
-        
-        return UserResponse.from(saved);
-    }
-}
+@Data           // 简单 DTO
+@Builder        // 复杂对象构建
+@Slf4j          // 日志
+@RequiredArgsConstructor  // 构造器注入
+```

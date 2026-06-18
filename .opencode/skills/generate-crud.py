@@ -29,7 +29,7 @@ def to_snake(pascal_str):
 
 TEMPLATES = {
     # === DOMAIN 层 ===
-    "domain/aggregate/{Entity}Agg.java": """package com.taotao.cloud.order.domain.{module}.aggregate;
+    "domain/aggregate/{Entity}Agg.java": """package com.taotao.cloud.member.domain.{module}.aggregate;
 
 import jakarta.persistence.*;
 import java.util.Objects;
@@ -53,7 +53,7 @@ public class {Entity}Agg {{
 }}
 """,
 
-    "domain/valobj/{Entity}Status.java": """package com.taotao.cloud.order.domain.{module}.valobj;
+    "domain/valobj/{Entity}Status.java": """package com.taotao.cloud.member.domain.{module}.valobj;
 
 public enum {Entity}Status {{
     PENDING("待处理"),
@@ -70,9 +70,9 @@ public enum {Entity}Status {{
 }}
 """,
 
-    "domain/event/{Entity}CreatedEvent.java": """package com.taotao.cloud.order.domain.{module}.event;
+    "domain/event/{Entity}CreatedEvent.java": """package com.taotao.cloud.member.domain.{module}.event;
 
-import com.taotao.cloud.order.domain.common.event.DomainEvent;
+import com.taotao.cloud.member.domain.common.event.DomainEvent;
 import java.time.LocalDateTime;
 
 public class {Entity}CreatedEvent extends DomainEvent {{
@@ -89,9 +89,9 @@ public class {Entity}CreatedEvent extends DomainEvent {{
 }}
 """,
 
-    "domain/repository/{Entity}DomainRepository.java": """package com.taotao.cloud.order.domain.{module}.repository;
+    "domain/repository/{Entity}DomainRepository.java": """package com.taotao.cloud.member.domain.{module}.repository;
 
-import com.taotao.cloud.order.domain.{module}.aggregate.{Entity}Agg;
+import com.taotao.cloud.member.domain.{module}.aggregate.{Entity}Agg;
 import java.util.Optional;
 
 public interface {Entity}DomainRepository {{
@@ -102,7 +102,7 @@ public interface {Entity}DomainRepository {{
 """,
 
     # === APPLICATION 层 ===
-    "application/dto/command/Create{Entity}Command.java": """package com.taotao.cloud.order.application.dto.{module}.command;
+    "application/dto/command/Create{Entity}Command.java": """package com.taotao.cloud.member.application.dto.{module}.command;
 
 import jakarta.validation.constraints.NotBlank;
 
@@ -110,7 +110,7 @@ public record Create{Entity}Command() {{
 }}
 """,
 
-    "application/dto/command/Update{Entity}Command.java": """package com.taotao.cloud.order.application.dto.{module}.command;
+    "application/dto/command/Update{Entity}Command.java": """package com.taotao.cloud.member.application.dto.{module}.command;
 
 import jakarta.validation.constraints.NotNull;
 
@@ -120,13 +120,13 @@ public record Update{Entity}Command(
 }}
 """,
 
-    "application/dto/result/{Entity}Result.java": """package com.taotao.cloud.order.application.dto.{module}.result;
+    "application/dto/result/{Entity}Result.java": """package com.taotao.cloud.member.application.dto.{module}.result;
 
 public record {Entity}Result(
     Long id,
     String status
 ) {{
-    public static {Entity}Result fromDomain(com.taotao.cloud.order.domain.{module}.aggregate.{Entity}Agg agg) {{
+    public static {Entity}Result fromDomain(com.taotao.cloud.member.domain.{module}.aggregate.{Entity}Agg agg) {{
         return new {Entity}Result(
             agg.getId(),
             null
@@ -135,11 +135,11 @@ public record {Entity}Result(
 }}
 """,
 
-    "application/service/command/{Entity}CommandService.java": """package com.taotao.cloud.order.application.service.{module}.command;
+    "application/service/command/{Entity}CommandService.java": """package com.taotao.cloud.member.application.service.{module}.command;
 
-import com.taotao.cloud.order.application.dto.{module}.command.Create{Entity}Command;
-import com.taotao.cloud.order.application.dto.{module}.command.Update{Entity}Command;
-import com.taotao.cloud.order.application.dto.{module}.result.{Entity}Result;
+import com.taotao.cloud.member.application.dto.{module}.command.Create{Entity}Command;
+import com.taotao.cloud.member.application.dto.{module}.command.Update{Entity}Command;
+import com.taotao.cloud.member.application.dto.{module}.result.{Entity}Result;
 
 public interface {Entity}CommandService {{
     {Entity}Result create(Create{Entity}Command command);
@@ -149,7 +149,7 @@ public interface {Entity}CommandService {{
 """,
 
     # === INFRASTRUCTURE 层 ===
-    "infrastructure/persistent/po/{Entity}Po.java": """package com.taotao.cloud.order.infrastructure.persistent.{module}.po;
+    "infrastructure/persistent/po/{Entity}Po.java": """package com.taotao.cloud.member.infrastructure.persistent.{module}.po;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
@@ -183,13 +183,13 @@ public class {Entity}Po {{
 """,
 
     # === INTERFACES 层 ===
-    "interfaces/controller/buyer/{Entity}BuyerController.java": """package com.taotao.cloud.order.interfaces.controller.buyer;
+    "interfaces/controller/buyer/{Entity}BuyerController.java": """package com.taotao.cloud.member.interfaces.controller.buyer;
 
 import com.taotao.boot.common.model.result.Result;
 import com.taotao.boot.webagg.controller.BusinessController;
-import com.taotao.cloud.order.application.dto.{module}.command.Create{Entity}Command;
-import com.taotao.cloud.order.application.dto.{module}.result.{Entity}Result;
-import com.taotao.cloud.order.application.service.{module}.command.{Entity}CommandService;
+import com.taotao.cloud.member.application.dto.{module}.command.Create{Entity}Command;
+import com.taotao.cloud.member.application.dto.{module}.result.{Entity}Result;
+import com.taotao.cloud.member.application.service.{module}.command.{Entity}CommandService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

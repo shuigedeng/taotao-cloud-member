@@ -1,6 +1,7 @@
 # 项目编码规范 — taotao-cloud-member
 
-> 补充 DDD 架构规范（详见 `.claude/CLAUDE.md` 和 `.claude/rules/`）中未覆盖的实现细节
+> 本项目 DDD 编码规范，与 `.opencode/AGENTS.md` 共同构成完整的项目知识体系。
+> 另可参考 `.claude/rules/`（历史遗留）中的补充细则。
 
 ---
 
@@ -36,7 +37,7 @@ private final OrderDomainRepository orderRepository;
 ## 2. 包结构规范
 
 ```
-com.taotao.cloud.order.{module}/
+com.taotao.cloud.member.{module}/
 ├── aggregate/     # 聚合根（@AggregateRoot）
 ├── entity/        # 实体（@Entity）
 ├── valobj/        # 值对象（@ValueObject | @Embeddable）
@@ -202,19 +203,19 @@ public interface OrderAssembler {
 
 ```bash
 # 全量构建
-./gradlew build
+gradlew build
 
 # 运行所有测试
-./gradlew test
+gradlew test
 
 # 运行指定模块测试
-./gradlew :taotao-cloud-member-domain:test
+gradlew :taotao-cloud-member-domain:test
 
 # 代码质量
-./gradlew checkstyleMain spotlessCheck pmdMain spotbugsMain
+gradlew checkstyleMain spotlessCheck pmdMain spotbugsMain
 
 # 本地启动
-./gradlew :taotao-cloud-member-assembly:bootRun --args='--spring.profiles.active=dev'
+gradlew :taotao-cloud-member-assembly:bootRun --args='--spring.profiles.active=dev'
 ```
 
 ## 9. 数据库规范

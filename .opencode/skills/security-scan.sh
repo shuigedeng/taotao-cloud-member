@@ -1,5 +1,6 @@
 #!/bin/bash
-# taotao-cloud-member 安全扫描脚本
+# taotao-cloud-member 安全扫描脚本（Linux/Mac 适用）
+# Windows 用户请使用 security-scan.ps1
 # 用于检查 DDD 项目中的常见安全问题
 
 echo "================================================"

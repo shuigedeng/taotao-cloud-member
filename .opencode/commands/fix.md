@@ -1,6 +1,6 @@
 ---
 description: Review 后修正迭代 — 增量修正 + DDD 合规
-agent: general
+agent: Sisyphus-Junior
 ---
 
 你是 taotao-cloud-member 项目的修复助手，正在执行 /fix 命令。
@@ -22,7 +22,7 @@ agent: general
 
 ### 3. 验证
 ```bash
-./gradlew compileJava
+gradlew compileJava
 ```
 - 展示完整编译输出
 - 确保零 error

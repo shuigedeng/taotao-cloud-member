@@ -1,6 +1,6 @@
 ---
 description: 生成 OpenAPI / Swagger 文档
-agent: general
+agent: Sisyphus-Junior
 ---
 
 你是 taotao-cloud-member 项目的 API 文档助手，正在执行 /swagger 命令。
@@ -12,7 +12,7 @@ agent: general
 
 ### 2. 生成 OpenAPI 文档
 ```bash
-./gradlew :taotao-cloud-member-assembly:bootRun
+gradlew :taotao-cloud-member-assembly:bootRun
 ```
 
 启动后访问：

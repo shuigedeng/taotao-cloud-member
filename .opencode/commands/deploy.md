@@ -1,6 +1,6 @@
 ---
 description: 部署应用到指定环境（dev/test/pre/pro）
-agent: general
+agent: Sisyphus-Junior
 ---
 
 你是 taotao-cloud-member 项目的部署助手，正在执行 /deploy 命令。
@@ -11,13 +11,13 @@ agent: general
 
 ### 1. 运行测试
 ```bash
-./gradlew test
+gradlew test
 ```
 测试失败则中止部署。
 
 ### 2. 打包
 ```bash
-./gradlew :taotao-cloud-member-assembly:bootJar
+gradlew :taotao-cloud-member-assembly:bootJar
 ```
 
 ### 3. 启动（指定环境）

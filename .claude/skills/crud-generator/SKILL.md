@@ -1,10 +1,6 @@
-## 6. 自动化工作流
-
-**`.claude/skills/crud-generator/SKILL.md`**
-```markdown
 ---
 name: crud-generator
-description: 自动生成标准 CRUD 代码（Controller, Service, Repository, DTO, Mapper）
+description: 自动生成 DDD 分层标准 CRUD 代码（针对 taotao-cloud-member）
 triggers:
   - "生成CRUD"
   - "创建增删改查"
@@ -16,65 +12,46 @@ triggers:
 ## 触发条件
 用户输入包含 "生成CRUD" 或 "创建增删改查" 等关键词时自动触发。
 
-## 工作流程
+## 生成文件结构
 
-### 1. 收集信息
-询问用户：
-- 实体名称（如 User, Product）
-- 字段列表（名称 + 类型）
-- 是否需要分页
-- 是否需要软删除
+### Domain 层
+```
+domain/aggregate/    — 聚合根（*Agg.java）
+domain/entity/       — 实体（*.java）
+domain/valobj/       — 值对象（*Val.java）
+domain/event/        — 领域事件（*Event.java）
+domain/repository/   — 仓储接口（*DomainRepository.java）
+```
 
-### 2. 生成文件
-按照标准包结构生成：
-src/main/java/com/company/project/
-├── entity/{Entity}.java
-├── dto/{Entity}Request.java
-├── dto/{Entity}Response.java
-├── controller/{Entity}Controller.java
-├── service/{Entity}Service.java
-├── service/impl/{Entity}ServiceImpl.java
-├── repository/{Entity}Repository.java
-└── mapper/{Entity}Mapper.java
+### Application 层
+```
+application/dto/command/      — 命令（Create*Command, Update*Command）
+application/dto/result/       — 结果（*Result）
+application/service/command/  — 命令服务接口 + 实现
+application/service/query/    — 查询服务接口 + 实现
+```
 
-text
+### Infrastructure 层
+```
+infrastructure/persistent/persistence/ — PO（*PO.java）
+infrastructure/persistent/mapper/      — MyBatis Mapper
+infrastructure/repository/domain/      — 仓储实现（*DomainRepositoryImpl.java）
+infrastructure/assembler/              — Assembler
+```
 
-### 3. 代码模板示例
+### Interfaces 层
+```
+interfaces/controller/buyer/    — 买家端 Controller
+interfaces/controller/seller/   — 卖家端 Controller
+interfaces/controller/manager/  — 管理端 Controller
+```
 
-#### Entity 模板
+## 包路径
 ```java
-@Entity
-@Table(name = "{{tableName}}")
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class {{Entity}} {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    
-    {% for field in fields %}
-    @Column(name = "{{field.name}}", nullable = false)
-    private {{field.type}} {{field.name}};
-    {% endfor %}
-    
-    @CreatedDate
-    private LocalDateTime createdAt;
-    
-    @LastModifiedDate
-    private LocalDateTime updatedAt;
-}
-4. 生成数据库迁移
-自动创建 Flyway 迁移脚本：
+package com.taotao.cloud.member.{layer}.{sub};
+```
 
-sql
--- V{{timestamp}}__create_{{tableName}}_table.sql
-CREATE TABLE {{tableName}} (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    {% for field in fields %}
-    {{field.name}} {{field.sqlType}} NOT NULL,
-    {% endfor %}
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-);
+## 构建验证
+```powershell
+gradlew compileJava
+```

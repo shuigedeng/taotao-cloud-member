@@ -39,3 +39,13 @@ settings.json 里放什么？
     项目级行为策略（如是否允许某些自动操作）
     一句话：CLAUDE.md 负责“怎么做事”，settings.json 负责“能做什么”。
 
+---
+
+## 本项目的补充说明
+
+- **主包路径**: `com.taotao.cloud.member`（非 `com.company.product`）
+- **构建工具**: Gradle 9.5，使用 `gradlew`（Windows PowerShell 5.1）
+- **主配置**: `.opencode/` 是当前主配置目录（OpenCode 生态），与 `.claude/` 共存
+- **跨平台**: 所有命令使用 `gradlew` 而非 `./gradlew`
+- **已安装的 Claude Skills**: security-review, crud-generator, event-storming, performance-check（详见 `.claude/skills/`）
+

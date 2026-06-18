@@ -4,7 +4,12 @@
 
 ## 触发条件
 
-通过 `/propose` → `/apply` → `/review` → `/fix` → `/test` → `/archive` 命令触发。
+通过 `/propose` → `/apply` → `/review` → `/fix` → `/test` → `/archive` 命令触发（注册在 `.opencode/opencode.json` 中）。
+
+## 参考规范
+
+- `.opencode/AGENTS.md` — 项目知识库
+- `.opencode/instructions/code-rules.md` — 编码细则
 
 ## 核心规则
 
@@ -22,7 +27,7 @@
 
 ### /apply — 按 Spec 编码
 1. 严格遵循 DDD 分层实现（domain: 业务逻辑 → application: 编排 → interfaces: API）
-2. 每个 Task 执行后 `./gradlew compileJava` 验证
+2. 每个 Task 执行后 `gradlew compileJava` 验证
 3. 完成后提交 git commit
 
 ### /review — DDD 代码审查
@@ -37,8 +42,8 @@
 
 ### /test — 运行测试
 ```bash
-./gradlew test
-./gradlew jacocoTestReport
+gradlew test
+gradlew jacocoTestReport
 ```
 
 ### /archive — 归档变更
