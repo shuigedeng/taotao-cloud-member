@@ -124,6 +124,6 @@ gradlew publishToMavenLocal
 - **JDK 25**: 预览特性，需要 `--enable-preview` + `--add-exports`
 - **环境**: 四种配置 dev / test / pre / pro
 - **质量门禁**: Checkstyle + SpotBugs + PMD + Spotless + OWASP
-- **BOM**: `taotao-cloud-dependencies:2026.07` 未开源，外部构建需私有仓库凭据
+- **BOM**: `taotao-cloud-dependencies:2026.08` 未开源，外部构建需私有仓库凭据
 - **事件机制**: 同时支持 Kafka、RocketMQ、Redis Pub/Sub、Guava EventBus、GreenRobot 五种事件总线
 - **三 Repository 分层**: domain 接口 → infrastructure DomainRepositoryImpl + ApplicationRepository + 持久化 SuperRepository
