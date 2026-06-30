@@ -1,11 +1,8 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
-    "read": [],
-    "write": [],
-    "network": []
-  },
-  "custom": {
-    "theme": "dark",
-    "notifications": true
+    "allow": [],
+    "ask": [],
+    "deny": []
   }
 }

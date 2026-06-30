@@ -1,49 +1,59 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
-    "read": [
-      "**/*.java",
-      "**/*.yml",
-      "**/*.yaml",
-      "**/*.gradle",
-      "**/*.properties",
-      "**/*.xml",
-      "**/*.md",
-      "build.gradle",
-      "settings.gradle",
-      "gradle.properties"
+    "allow": [
+      "Bash(gradlew *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git branch *)",
+      "Bash(Test-Path *)",
+      "Bash(Get-ChildItem *)",
+      "Read(**/*.java)",
+      "Read(**/*.yml)",
+      "Read(**/*.yaml)",
+      "Read(**/*.gradle)",
+      "Read(**/*.properties)",
+      "Read(**/*.xml)",
+      "Read(**/*.md)",
+      "Read(**/*.json)",
+      "Read(*.gradle)",
+      "Read(*.properties)",
+      "Read(gradle.properties)"
     ],
-    "write": [
-      "src/**/*.java",
-      "**/*.yml",
-      "**/*.yaml",
-      "**/*.properties",
-      "**/*.xml",
-      "**/*.md",
-      "build.gradle",
-      "settings.gradle",
-      "gradle.properties"
+    "ask": [
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git checkout *)",
+      "Bash(git merge *)",
+      "Bash(Remove-Item *)",
+      "Bash(Move-Item *)",
+      "Write(**/*.java)",
+      "Write(**/*.yml)",
+      "Write(**/*.yaml)",
+      "Write(**/*.properties)",
+      "Write(**/*.xml)",
+      "Write(*.gradle)",
+      "Write(*.properties)"
     ],
-    "execute": [
-      "gradlew",
-      "git",
-      "docker"
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(**/secrets/**)",
+      "Read(**/credentials*)",
+      "Bash(git push --force *)",
+      "Bash(rm -rf *)",
+      "Bash(curl *)",
+      "Bash(gradlew clean)",
+      "Bash(Docker-*)"
     ],
-    "network": [
-      "localhost:8080",
-      "localhost:3306",
-      "localhost:8848",
-      "api.github.com"
-    ]
+    "defaultMode": "default",
+    "disableBypassPermissionsMode": "disable"
   },
-  "git": {
-    "autoCommit": false,
-    "requireTests": false,
-    "commitMessageTemplate": "type(scope): description"
-  },
-  "java": {
-    "buildTool": "gradle",
-    "testCommand": "gradlew test",
-    "compileCommand": "gradlew compileJava",
-    "packageCommand": "gradlew build"
+  "includeCoAuthoredBy": false,
+  "cleanupPeriodDays": 14,
+  "worktree": {
+    "symlinkDirectories": ["build", ".gradle"]
   }
 }
