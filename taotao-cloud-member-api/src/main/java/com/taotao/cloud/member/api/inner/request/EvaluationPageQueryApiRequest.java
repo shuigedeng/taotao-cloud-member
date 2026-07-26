@@ -81,97 +81,277 @@ public class EvaluationPageQueryApiRequest implements Command {
     @Schema(description = "状态")
     private String status;
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Long getSkuId() {
         return skuId;
     }
+
+    /**
+     * 设置
+     *
+     * @param skuId skuId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setSkuId(Long skuId) {
         this.skuId = skuId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Long getMemberId() {
         return memberId;
     }
+
+    /**
+     * 设置
+     *
+     * @param memberId memberId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMemberId(Long memberId) {
         this.memberId = memberId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getMemberName() {
         return memberName;
     }
+
+    /**
+     * 设置
+     *
+     * @param memberName memberName
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMemberName(String memberName) {
         this.memberName = memberName;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getStoreName() {
         return storeName;
     }
+
+    /**
+     * 设置
+     *
+     * @param storeName storeName
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setStoreName(String storeName) {
         this.storeName = storeName;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Long getStoreId() {
         return storeId;
     }
+
+    /**
+     * 设置
+     *
+     * @param storeId storeId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setStoreId(Long storeId) {
         this.storeId = storeId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getGoodsName() {
         return goodsName;
     }
+
+    /**
+     * 设置
+     *
+     * @param goodsName goodsName
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setGoodsName(String goodsName) {
         this.goodsName = goodsName;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Long getGoodsId() {
         return goodsId;
     }
+
+    /**
+     * 设置
+     *
+     * @param goodsId goodsId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setGoodsId(Long goodsId) {
         this.goodsId = goodsId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getGrade() {
         return grade;
     }
+
+    /**
+     * 设置
+     *
+     * @param grade grade
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setGrade(String grade) {
         this.grade = grade;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getHaveImage() {
         return haveImage;
     }
+
+    /**
+     * 设置
+     *
+     * @param haveImage haveImage
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setHaveImage(String haveImage) {
         this.haveImage = haveImage;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getStartTime() {
         return startTime;
     }
+
+    /**
+     * 设置
+     *
+     * @param startTime startTime
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setStartTime(String startTime) {
         this.startTime = startTime;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getEndTime() {
         return endTime;
     }
+
+    /**
+     * 设置
+     *
+     * @param endTime endTime
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getStatus() {
         return status;
     }
+
+    /**
+     * 设置
+     *
+     * @param status status
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setStatus(String status) {
         this.status = status;

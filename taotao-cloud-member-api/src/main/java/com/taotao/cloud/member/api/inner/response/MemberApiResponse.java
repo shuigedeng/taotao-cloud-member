@@ -104,153 +104,438 @@ public class MemberApiResponse  implements MarkerResponse  {
     @Schema(description = "经验值数量")
     private Long experience;
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Long getId() {
         return id;
     }
+
+    /**
+     * 设置
+     *
+     * @param id id
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setId(Long id) {
         this.id = id;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getUsername() {
         return username;
     }
+
+    /**
+     * 设置
+     *
+     * @param username username
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setUsername(String username) {
         this.username = username;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getNickName() {
         return nickName;
     }
+
+    /**
+     * 设置
+     *
+     * @param nickName nickName
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setNickName(String nickName) {
         this.nickName = nickName;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Integer getSex() {
         return sex;
     }
+
+    /**
+     * 设置
+     *
+     * @param sex sex
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setSex(Integer sex) {
         this.sex = sex;
     }
 
+    /**
+     * 获取
+     *
+     * @return Date
+     * @since 2022.03
+     */
+
     public Date getBirthday() {
         return birthday;
     }
+
+    /**
+     * 设置
+     *
+     * @param birthday birthday
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getRegionId() {
         return regionId;
     }
+
+    /**
+     * 设置
+     *
+     * @param regionId regionId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setRegionId(String regionId) {
         this.regionId = regionId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getRegion() {
         return region;
     }
+
+    /**
+     * 设置
+     *
+     * @param region region
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setRegion(String region) {
         this.region = region;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getMobile() {
         return mobile;
     }
+
+    /**
+     * 设置
+     *
+     * @param mobile mobile
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Long getPoint() {
         return point;
     }
+
+    /**
+     * 设置
+     *
+     * @param point point
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setPoint(Long point) {
         this.point = point;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Long getTotalPoint() {
         return totalPoint;
     }
+
+    /**
+     * 设置
+     *
+     * @param totalPoint totalPoint
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setTotalPoint(Long totalPoint) {
         this.totalPoint = totalPoint;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getFace() {
         return face;
     }
+
+    /**
+     * 设置
+     *
+     * @param face face
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setFace(String face) {
         this.face = face;
     }
 
+    /**
+     * 获取
+     *
+     * @return 是否成功
+     * @since 2022.03
+     */
+
     public Boolean getDisabled() {
         return disabled;
     }
+
+    /**
+     * 设置
+     *
+     * @param disabled disabled
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setDisabled(Boolean disabled) {
         this.disabled = disabled;
     }
 
+    /**
+     * 获取
+     *
+     * @return 是否成功
+     * @since 2022.03
+     */
+
     public Boolean getHaveStore() {
         return haveStore;
     }
+
+    /**
+     * 设置
+     *
+     * @param haveStore haveStore
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setHaveStore(Boolean haveStore) {
         this.haveStore = haveStore;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getStoreId() {
         return storeId;
     }
+
+    /**
+     * 设置
+     *
+     * @param storeId storeId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setStoreId(String storeId) {
         this.storeId = storeId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getOpenId() {
         return openId;
     }
+
+    /**
+     * 设置
+     *
+     * @param openId openId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setOpenId(String openId) {
         this.openId = openId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getClientEnum() {
         return clientEnum;
     }
+
+    /**
+     * 设置
+     *
+     * @param clientEnum clientEnum
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setClientEnum(String clientEnum) {
         this.clientEnum = clientEnum;
     }
 
+    /**
+     * 获取
+     *
+     * @return Date
+     * @since 2022.03
+     */
+
     public Date getLastLoginDate() {
         return lastLoginDate;
     }
+
+    /**
+     * 设置
+     *
+     * @param lastLoginDate lastLoginDate
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setLastLoginDate(Date lastLoginDate) {
         this.lastLoginDate = lastLoginDate;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getGradeId() {
         return gradeId;
     }
+
+    /**
+     * 设置
+     *
+     * @param gradeId gradeId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setGradeId(String gradeId) {
         this.gradeId = gradeId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Long getExperience() {
         return experience;
     }
+
+    /**
+     * 设置
+     *
+     * @param experience experience
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setExperience(Long experience) {
         this.experience = experience;

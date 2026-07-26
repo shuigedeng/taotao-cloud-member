@@ -74,89 +74,254 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
     @Schema(description = "描述评分")
     private Integer descriptionScore;
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getId() {
         return id;
     }
+
+    /**
+     * 设置
+     *
+     * @param id id
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setId(String id) {
         this.id = id;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getMemberName() {
         return memberName;
     }
+
+    /**
+     * 设置
+     *
+     * @param memberName memberName
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMemberName(String memberName) {
         this.memberName = memberName;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getGoodsName() {
         return goodsName;
     }
+
+    /**
+     * 设置
+     *
+     * @param goodsName goodsName
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setGoodsName(String goodsName) {
         this.goodsName = goodsName;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getGrade() {
         return grade;
     }
+
+    /**
+     * 设置
+     *
+     * @param grade grade
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setGrade(String grade) {
         this.grade = grade;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getContent() {
         return content;
     }
+
+    /**
+     * 设置
+     *
+     * @param content content
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setContent(String content) {
         this.content = content;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getStatus() {
         return status;
     }
+
+    /**
+     * 设置
+     *
+     * @param status status
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setStatus(String status) {
         this.status = status;
     }
 
+    /**
+     * 获取
+     *
+     * @return 是否成功
+     * @since 2022.03
+     */
+
     public Boolean getReplyStatus() {
         return replyStatus;
     }
+
+    /**
+     * 设置
+     *
+     * @param replyStatus replyStatus
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setReplyStatus(Boolean replyStatus) {
         this.replyStatus = replyStatus;
     }
 
+    /**
+     * 获取
+     *
+     * @return LocalDateTime
+     * @since 2022.03
+     */
+
     public LocalDateTime getCreateTime() {
         return createTime;
     }
+
+    /**
+     * 设置
+     *
+     * @param createTime createTime
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Integer getDeliveryScore() {
         return deliveryScore;
     }
+
+    /**
+     * 设置
+     *
+     * @param deliveryScore deliveryScore
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setDeliveryScore(Integer deliveryScore) {
         this.deliveryScore = deliveryScore;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Integer getServiceScore() {
         return serviceScore;
     }
+
+    /**
+     * 设置
+     *
+     * @param serviceScore serviceScore
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setServiceScore(Integer serviceScore) {
         this.serviceScore = serviceScore;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Integer getDescriptionScore() {
         return descriptionScore;
     }
+
+    /**
+     * 设置
+     *
+     * @param descriptionScore descriptionScore
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setDescriptionScore(Integer descriptionScore) {
         this.descriptionScore = descriptionScore;

@@ -45,6 +45,14 @@ public class DeptClientProxy {
     private DictRpcService dictRpcService;
 
     // 查询用户
+
+    /**
+     * 根据条件查询
+     *
+     * @return 字典ApiResponse
+     * @since 2022.03
+     */
+
     public DictApiResponse findByCode() {
 
         Request<DictQueryApiRequest> dictQueryApiRequest =

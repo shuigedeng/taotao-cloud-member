@@ -45,25 +45,70 @@ public class StoreRatingApiResponse  implements MarkerResponse  {
     @Schema(description = "描述评分")
     private String descriptionScore;
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getDeliveryScore() {
         return deliveryScore;
     }
+
+    /**
+     * 设置
+     *
+     * @param deliveryScore deliveryScore
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setDeliveryScore(String deliveryScore) {
         this.deliveryScore = deliveryScore;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getServiceScore() {
         return serviceScore;
     }
+
+    /**
+     * 设置
+     *
+     * @param serviceScore serviceScore
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setServiceScore(String serviceScore) {
         this.serviceScore = serviceScore;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getDescriptionScore() {
         return descriptionScore;
     }
+
+    /**
+     * 设置
+     *
+     * @param descriptionScore descriptionScore
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setDescriptionScore(String descriptionScore) {
         this.descriptionScore = descriptionScore;

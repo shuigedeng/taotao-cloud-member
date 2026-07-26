@@ -22,7 +22,7 @@ import com.taotao.cloud.member.api.rpc.request.MemberQueryRpcRequest;
 import com.taotao.cloud.member.api.rpc.response.MemberQueryRpcResponse;
 
 /**
- * 后台部门表服务接口
+ * 会员 RPC 服务接口
  *
  * @author shuigedeng
  * @version 2022.03

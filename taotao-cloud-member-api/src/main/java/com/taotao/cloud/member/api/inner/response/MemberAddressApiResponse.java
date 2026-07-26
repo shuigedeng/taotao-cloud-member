@@ -103,161 +103,461 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
     @Schema(description = "最后修改时间")
     private LocalDateTime lastModifiedTime;
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getMemberId() {
         return memberId;
     }
+
+    /**
+     * 设置
+     *
+     * @param memberId memberId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMemberId(String memberId) {
         this.memberId = memberId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getName() {
         return name;
     }
+
+    /**
+     * 设置
+     *
+     * @param name name
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getMobile() {
         return mobile;
     }
+
+    /**
+     * 设置
+     *
+     * @param mobile mobile
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getConsigneeAddressPath() {
         return consigneeAddressPath;
     }
+
+    /**
+     * 设置
+     *
+     * @param consigneeAddressPath consigneeAddressPath
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setConsigneeAddressPath(String consigneeAddressPath) {
         this.consigneeAddressPath = consigneeAddressPath;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getConsigneeAddressIdPath() {
         return consigneeAddressIdPath;
     }
+
+    /**
+     * 设置
+     *
+     * @param consigneeAddressIdPath consigneeAddressIdPath
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setConsigneeAddressIdPath(String consigneeAddressIdPath) {
         this.consigneeAddressIdPath = consigneeAddressIdPath;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getProvince() {
         return province;
     }
+
+    /**
+     * 设置
+     *
+     * @param province province
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setProvince(String province) {
         this.province = province;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getCity() {
         return city;
     }
+
+    /**
+     * 设置
+     *
+     * @param city city
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setCity(String city) {
         this.city = city;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getArea() {
         return area;
     }
+
+    /**
+     * 设置
+     *
+     * @param area area
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setArea(String area) {
         this.area = area;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getProvinceCode() {
         return provinceCode;
     }
+
+    /**
+     * 设置
+     *
+     * @param provinceCode provinceCode
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setProvinceCode(String provinceCode) {
         this.provinceCode = provinceCode;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getCityCode() {
         return cityCode;
     }
+
+    /**
+     * 设置
+     *
+     * @param cityCode cityCode
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setCityCode(String cityCode) {
         this.cityCode = cityCode;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getAreaCode() {
         return areaCode;
     }
+
+    /**
+     * 设置
+     *
+     * @param areaCode areaCode
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setAreaCode(String areaCode) {
         this.areaCode = areaCode;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getAddress() {
         return address;
     }
+
+    /**
+     * 设置
+     *
+     * @param address address
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setAddress(String address) {
         this.address = address;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getDetail() {
         return detail;
     }
+
+    /**
+     * 设置
+     *
+     * @param detail detail
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setDetail(String detail) {
         this.detail = detail;
     }
 
+    /**
+     * 获取
+     *
+     * @return 是否成功
+     * @since 2022.03
+     */
+
     public Boolean getDefaulted() {
         return defaulted;
     }
+
+    /**
+     * 设置
+     *
+     * @param defaulted defaulted
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setDefaulted(Boolean defaulted) {
         this.defaulted = defaulted;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getAlias() {
         return alias;
     }
+
+    /**
+     * 设置
+     *
+     * @param alias alias
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setAlias(String alias) {
         this.alias = alias;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getLon() {
         return lon;
     }
+
+    /**
+     * 设置
+     *
+     * @param lon lon
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setLon(String lon) {
         this.lon = lon;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getLat() {
         return lat;
     }
+
+    /**
+     * 设置
+     *
+     * @param lat lat
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setLat(String lat) {
         this.lat = lat;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getPostalCode() {
         return postalCode;
     }
+
+    /**
+     * 设置
+     *
+     * @param postalCode postalCode
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
     }
 
+    /**
+     * 获取
+     *
+     * @return LocalDateTime
+     * @since 2022.03
+     */
+
     public LocalDateTime getCreateTime() {
         return createTime;
     }
+
+    /**
+     * 设置
+     *
+     * @param createTime createTime
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
 
+    /**
+     * 获取
+     *
+     * @return LocalDateTime
+     * @since 2022.03
+     */
+
     public LocalDateTime getLastModifiedTime() {
         return lastModifiedTime;
     }
+
+    /**
+     * 设置
+     *
+     * @param lastModifiedTime lastModifiedTime
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setLastModifiedTime(LocalDateTime lastModifiedTime) {
         this.lastModifiedTime = lastModifiedTime;

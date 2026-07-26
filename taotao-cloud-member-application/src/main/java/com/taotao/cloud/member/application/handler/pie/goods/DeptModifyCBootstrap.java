@@ -35,6 +35,14 @@ public class DeptModifyCBootstrap {
 
     private static final Logger logger = LoggerFactory.getLogger(DeptModifyCBootstrap.class);
 
+
+    /**
+     * test1
+     *
+     * @return 无返回值
+     * @since 2022.03
+     */
+
     public void test1() {
         // 入参
         GoodsContext dto = new GoodsContext();

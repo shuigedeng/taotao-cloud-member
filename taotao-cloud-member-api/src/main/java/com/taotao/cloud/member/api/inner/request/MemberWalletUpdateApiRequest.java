@@ -47,33 +47,93 @@ public class MemberWalletUpdateApiRequest implements Command {
     @Schema(description = "变动业务原因")
     private String serviceType;
 
+    /**
+     * 获取
+     *
+     * @return BigDecimal
+     * @since 2022.03
+     */
+
     public BigDecimal getMoney() {
         return money;
     }
+
+    /**
+     * 设置
+     *
+     * @param money money
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMoney(BigDecimal money) {
         this.money = money;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Long getMemberId() {
         return memberId;
     }
+
+    /**
+     * 设置
+     *
+     * @param memberId memberId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMemberId(Long memberId) {
         this.memberId = memberId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getDetail() {
         return detail;
     }
+
+    /**
+     * 设置
+     *
+     * @param detail detail
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setDetail(String detail) {
         this.detail = detail;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getServiceType() {
         return serviceType;
     }
+
+    /**
+     * 设置
+     *
+     * @param serviceType serviceType
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setServiceType(String serviceType) {
         this.serviceType = serviceType;

@@ -109,177 +109,507 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
     @Schema(description = "回复评论图片")
     private List<String> replyEvaluationImages;
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getMemberId() {
         return memberId;
     }
+
+    /**
+     * 设置
+     *
+     * @param memberId memberId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMemberId(String memberId) {
         this.memberId = memberId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getMemberName() {
         return memberName;
     }
+
+    /**
+     * 设置
+     *
+     * @param memberName memberName
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMemberName(String memberName) {
         this.memberName = memberName;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getMemberProfile() {
         return memberProfile;
     }
+
+    /**
+     * 设置
+     *
+     * @param memberProfile memberProfile
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMemberProfile(String memberProfile) {
         this.memberProfile = memberProfile;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getStoreId() {
         return storeId;
     }
+
+    /**
+     * 设置
+     *
+     * @param storeId storeId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setStoreId(String storeId) {
         this.storeId = storeId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getStoreName() {
         return storeName;
     }
+
+    /**
+     * 设置
+     *
+     * @param storeName storeName
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setStoreName(String storeName) {
         this.storeName = storeName;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getGoodsId() {
         return goodsId;
     }
+
+    /**
+     * 设置
+     *
+     * @param goodsId goodsId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setGoodsId(String goodsId) {
         this.goodsId = goodsId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getSkuId() {
         return skuId;
     }
+
+    /**
+     * 设置
+     *
+     * @param skuId skuId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setSkuId(String skuId) {
         this.skuId = skuId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getGoodsName() {
         return goodsName;
     }
+
+    /**
+     * 设置
+     *
+     * @param goodsName goodsName
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setGoodsName(String goodsName) {
         this.goodsName = goodsName;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getGoodsImage() {
         return goodsImage;
     }
+
+    /**
+     * 设置
+     *
+     * @param goodsImage goodsImage
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setGoodsImage(String goodsImage) {
         this.goodsImage = goodsImage;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getOrderNo() {
         return orderNo;
     }
+
+    /**
+     * 设置
+     *
+     * @param orderNo orderNo
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setOrderNo(String orderNo) {
         this.orderNo = orderNo;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getGrade() {
         return grade;
     }
+
+    /**
+     * 设置
+     *
+     * @param grade grade
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setGrade(String grade) {
         this.grade = grade;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getContent() {
         return content;
     }
+
+    /**
+     * 设置
+     *
+     * @param content content
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setContent(String content) {
         this.content = content;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getImages() {
         return images;
     }
+
+    /**
+     * 设置
+     *
+     * @param images images
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setImages(String images) {
         this.images = images;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getStatus() {
         return status;
     }
+
+    /**
+     * 设置
+     *
+     * @param status status
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setStatus(String status) {
         this.status = status;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getReply() {
         return reply;
     }
+
+    /**
+     * 设置
+     *
+     * @param reply reply
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setReply(String reply) {
         this.reply = reply;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getReplyImage() {
         return replyImage;
     }
+
+    /**
+     * 设置
+     *
+     * @param replyImage replyImage
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setReplyImage(String replyImage) {
         this.replyImage = replyImage;
     }
 
+    /**
+     * 获取
+     *
+     * @return 是否成功
+     * @since 2022.03
+     */
+
     public Boolean getHaveImage() {
         return haveImage;
     }
+
+    /**
+     * 设置
+     *
+     * @param haveImage haveImage
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setHaveImage(Boolean haveImage) {
         this.haveImage = haveImage;
     }
 
+    /**
+     * 获取
+     *
+     * @return 是否成功
+     * @since 2022.03
+     */
+
     public Boolean getHaveReplyImage() {
         return haveReplyImage;
     }
+
+    /**
+     * 设置
+     *
+     * @param haveReplyImage haveReplyImage
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setHaveReplyImage(Boolean haveReplyImage) {
         this.haveReplyImage = haveReplyImage;
     }
 
+    /**
+     * 获取
+     *
+     * @return 是否成功
+     * @since 2022.03
+     */
+
     public Boolean getReplyStatus() {
         return replyStatus;
     }
+
+    /**
+     * 设置
+     *
+     * @param replyStatus replyStatus
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setReplyStatus(Boolean replyStatus) {
         this.replyStatus = replyStatus;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Integer getDeliveryScore() {
         return deliveryScore;
     }
+
+    /**
+     * 设置
+     *
+     * @param deliveryScore deliveryScore
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setDeliveryScore(Integer deliveryScore) {
         this.deliveryScore = deliveryScore;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Integer getServiceScore() {
         return serviceScore;
     }
+
+    /**
+     * 设置
+     *
+     * @param serviceScore serviceScore
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setServiceScore(Integer serviceScore) {
         this.serviceScore = serviceScore;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Integer getDescriptionScore() {
         return descriptionScore;
     }
+
+    /**
+     * 设置
+     *
+     * @param descriptionScore descriptionScore
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setDescriptionScore(Integer descriptionScore) {
         this.descriptionScore = descriptionScore;
@@ -289,6 +619,14 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
         return evaluationImages;
     }
 
+    /**
+     * 设置
+     *
+     * @param evaluationImages evaluationImages
+     * @return 无返回值
+     * @since 2022.03
+     */
+
     public void setEvaluationImages(List<String> evaluationImages) {
         this.evaluationImages = evaluationImages;
     }
@@ -296,6 +634,14 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
     public List<String> getReplyEvaluationImages() {
         return replyEvaluationImages;
     }
+
+    /**
+     * 设置
+     *
+     * @param replyEvaluationImages replyEvaluationImages
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setReplyEvaluationImages(List<String> replyEvaluationImages) {
         this.replyEvaluationImages = replyEvaluationImages;

@@ -65,73 +65,208 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
     /** 支付时间 */
     private LocalDateTime payTime;
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getRechargeSn() {
         return rechargeSn;
     }
+
+    /**
+     * 设置
+     *
+     * @param rechargeSn rechargeSn
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setRechargeSn(String rechargeSn) {
         this.rechargeSn = rechargeSn;
     }
 
+    /**
+     * 获取
+     *
+     * @return 结果数量
+     * @since 2022.03
+     */
+
     public Long getMemberId() {
         return memberId;
     }
+
+    /**
+     * 设置
+     *
+     * @param memberId memberId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMemberId(Long memberId) {
         this.memberId = memberId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getMemberName() {
         return memberName;
     }
+
+    /**
+     * 设置
+     *
+     * @param memberName memberName
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setMemberName(String memberName) {
         this.memberName = memberName;
     }
 
+    /**
+     * 获取
+     *
+     * @return BigDecimal
+     * @since 2022.03
+     */
+
     public BigDecimal getRechargeMoney() {
         return rechargeMoney;
     }
+
+    /**
+     * 设置
+     *
+     * @param rechargeMoney rechargeMoney
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setRechargeMoney(BigDecimal rechargeMoney) {
         this.rechargeMoney = rechargeMoney;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getRechargeWay() {
         return rechargeWay;
     }
+
+    /**
+     * 设置
+     *
+     * @param rechargeWay rechargeWay
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setRechargeWay(String rechargeWay) {
         this.rechargeWay = rechargeWay;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getPayStatus() {
         return payStatus;
     }
+
+    /**
+     * 设置
+     *
+     * @param payStatus payStatus
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setPayStatus(String payStatus) {
         this.payStatus = payStatus;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getPaymentPluginId() {
         return paymentPluginId;
     }
+
+    /**
+     * 设置
+     *
+     * @param paymentPluginId paymentPluginId
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setPaymentPluginId(String paymentPluginId) {
         this.paymentPluginId = paymentPluginId;
     }
 
+    /**
+     * 获取
+     *
+     * @return 字符串
+     * @since 2022.03
+     */
+
     public String getReceivableNo() {
         return receivableNo;
     }
+
+    /**
+     * 设置
+     *
+     * @param receivableNo receivableNo
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setReceivableNo(String receivableNo) {
         this.receivableNo = receivableNo;
     }
 
+    /**
+     * 获取
+     *
+     * @return LocalDateTime
+     * @since 2022.03
+     */
+
     public LocalDateTime getPayTime() {
         return payTime;
     }
+
+    /**
+     * 设置
+     *
+     * @param payTime payTime
+     * @return 无返回值
+     * @since 2022.03
+     */
 
     public void setPayTime(LocalDateTime payTime) {
         this.payTime = payTime;
