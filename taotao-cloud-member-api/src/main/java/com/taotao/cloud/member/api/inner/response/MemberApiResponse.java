@@ -110,7 +110,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Long getId() {
         return id;
     }
@@ -122,7 +121,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setId(Long id) {
         this.id = id;
     }
@@ -133,7 +131,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getUsername() {
         return username;
     }
@@ -145,7 +142,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setUsername(String username) {
         this.username = username;
     }
@@ -156,7 +152,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getNickName() {
         return nickName;
     }
@@ -168,7 +163,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setNickName(String nickName) {
         this.nickName = nickName;
     }
@@ -179,7 +173,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Integer getSex() {
         return sex;
     }
@@ -191,7 +184,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setSex(Integer sex) {
         this.sex = sex;
     }
@@ -202,7 +194,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return Date
      * @since 2022.03
      */
-
     public Date getBirthday() {
         return birthday;
     }
@@ -214,7 +205,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
@@ -225,7 +215,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getRegionId() {
         return regionId;
     }
@@ -237,7 +226,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setRegionId(String regionId) {
         this.regionId = regionId;
     }
@@ -248,7 +236,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getRegion() {
         return region;
     }
@@ -260,7 +247,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setRegion(String region) {
         this.region = region;
     }
@@ -271,7 +257,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getMobile() {
         return mobile;
     }
@@ -283,7 +268,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
@@ -294,7 +278,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Long getPoint() {
         return point;
     }
@@ -306,7 +289,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setPoint(Long point) {
         this.point = point;
     }
@@ -317,7 +299,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Long getTotalPoint() {
         return totalPoint;
     }
@@ -329,7 +310,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setTotalPoint(Long totalPoint) {
         this.totalPoint = totalPoint;
     }
@@ -340,7 +320,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getFace() {
         return face;
     }
@@ -352,7 +331,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setFace(String face) {
         this.face = face;
     }
@@ -363,7 +341,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 是否成功
      * @since 2022.03
      */
-
     public Boolean getDisabled() {
         return disabled;
     }
@@ -375,7 +352,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setDisabled(Boolean disabled) {
         this.disabled = disabled;
     }
@@ -386,7 +362,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 是否成功
      * @since 2022.03
      */
-
     public Boolean getHaveStore() {
         return haveStore;
     }
@@ -398,7 +373,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setHaveStore(Boolean haveStore) {
         this.haveStore = haveStore;
     }
@@ -409,7 +383,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getStoreId() {
         return storeId;
     }
@@ -421,7 +394,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setStoreId(String storeId) {
         this.storeId = storeId;
     }
@@ -432,7 +404,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getOpenId() {
         return openId;
     }
@@ -444,7 +415,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setOpenId(String openId) {
         this.openId = openId;
     }
@@ -455,7 +425,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getClientEnum() {
         return clientEnum;
     }
@@ -467,7 +436,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setClientEnum(String clientEnum) {
         this.clientEnum = clientEnum;
     }
@@ -478,7 +446,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return Date
      * @since 2022.03
      */
-
     public Date getLastLoginDate() {
         return lastLoginDate;
     }
@@ -490,7 +457,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setLastLoginDate(Date lastLoginDate) {
         this.lastLoginDate = lastLoginDate;
     }
@@ -501,7 +467,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getGradeId() {
         return gradeId;
     }
@@ -513,7 +478,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setGradeId(String gradeId) {
         this.gradeId = gradeId;
     }
@@ -524,7 +488,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Long getExperience() {
         return experience;
     }
@@ -536,7 +499,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setExperience(Long experience) {
         this.experience = experience;
     }

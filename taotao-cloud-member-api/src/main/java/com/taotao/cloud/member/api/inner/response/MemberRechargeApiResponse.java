@@ -71,7 +71,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getRechargeSn() {
         return rechargeSn;
     }
@@ -83,7 +82,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setRechargeSn(String rechargeSn) {
         this.rechargeSn = rechargeSn;
     }
@@ -94,7 +92,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Long getMemberId() {
         return memberId;
     }
@@ -106,7 +103,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setMemberId(Long memberId) {
         this.memberId = memberId;
     }
@@ -117,7 +113,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getMemberName() {
         return memberName;
     }
@@ -129,7 +124,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setMemberName(String memberName) {
         this.memberName = memberName;
     }
@@ -140,7 +134,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return BigDecimal
      * @since 2022.03
      */
-
     public BigDecimal getRechargeMoney() {
         return rechargeMoney;
     }
@@ -152,7 +145,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setRechargeMoney(BigDecimal rechargeMoney) {
         this.rechargeMoney = rechargeMoney;
     }
@@ -163,7 +155,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getRechargeWay() {
         return rechargeWay;
     }
@@ -175,7 +166,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setRechargeWay(String rechargeWay) {
         this.rechargeWay = rechargeWay;
     }
@@ -186,7 +176,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getPayStatus() {
         return payStatus;
     }
@@ -198,7 +187,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setPayStatus(String payStatus) {
         this.payStatus = payStatus;
     }
@@ -209,7 +197,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getPaymentPluginId() {
         return paymentPluginId;
     }
@@ -221,7 +208,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setPaymentPluginId(String paymentPluginId) {
         this.paymentPluginId = paymentPluginId;
     }
@@ -232,7 +218,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getReceivableNo() {
         return receivableNo;
     }
@@ -244,7 +229,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setReceivableNo(String receivableNo) {
         this.receivableNo = receivableNo;
     }
@@ -255,7 +239,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return LocalDateTime
      * @since 2022.03
      */
-
     public LocalDateTime getPayTime() {
         return payTime;
     }
@@ -267,7 +250,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setPayTime(LocalDateTime payTime) {
         this.payTime = payTime;
     }

@@ -52,7 +52,6 @@ public class DeptClientProxy {
      * @return 字典ApiResponse
      * @since 2022.03
      */
-
     public DictApiResponse findByCode() {
 
         Request<DictQueryApiRequest> dictQueryApiRequest =

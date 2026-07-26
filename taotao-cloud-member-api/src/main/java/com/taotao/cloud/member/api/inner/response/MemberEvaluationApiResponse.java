@@ -115,7 +115,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getMemberId() {
         return memberId;
     }
@@ -127,7 +126,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setMemberId(String memberId) {
         this.memberId = memberId;
     }
@@ -138,7 +136,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getMemberName() {
         return memberName;
     }
@@ -150,7 +147,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setMemberName(String memberName) {
         this.memberName = memberName;
     }
@@ -161,7 +157,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getMemberProfile() {
         return memberProfile;
     }
@@ -173,7 +168,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setMemberProfile(String memberProfile) {
         this.memberProfile = memberProfile;
     }
@@ -184,7 +178,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getStoreId() {
         return storeId;
     }
@@ -196,7 +189,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setStoreId(String storeId) {
         this.storeId = storeId;
     }
@@ -207,7 +199,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getStoreName() {
         return storeName;
     }
@@ -219,7 +210,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setStoreName(String storeName) {
         this.storeName = storeName;
     }
@@ -230,7 +220,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getGoodsId() {
         return goodsId;
     }
@@ -242,7 +231,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setGoodsId(String goodsId) {
         this.goodsId = goodsId;
     }
@@ -253,7 +241,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getSkuId() {
         return skuId;
     }
@@ -265,7 +252,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setSkuId(String skuId) {
         this.skuId = skuId;
     }
@@ -276,7 +262,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getGoodsName() {
         return goodsName;
     }
@@ -288,7 +273,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setGoodsName(String goodsName) {
         this.goodsName = goodsName;
     }
@@ -299,7 +283,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getGoodsImage() {
         return goodsImage;
     }
@@ -311,7 +294,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setGoodsImage(String goodsImage) {
         this.goodsImage = goodsImage;
     }
@@ -322,7 +304,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getOrderNo() {
         return orderNo;
     }
@@ -334,7 +315,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setOrderNo(String orderNo) {
         this.orderNo = orderNo;
     }
@@ -345,7 +325,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getGrade() {
         return grade;
     }
@@ -357,7 +336,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setGrade(String grade) {
         this.grade = grade;
     }
@@ -368,7 +346,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getContent() {
         return content;
     }
@@ -380,7 +357,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setContent(String content) {
         this.content = content;
     }
@@ -391,7 +367,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getImages() {
         return images;
     }
@@ -403,7 +378,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setImages(String images) {
         this.images = images;
     }
@@ -414,7 +388,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getStatus() {
         return status;
     }
@@ -426,7 +399,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setStatus(String status) {
         this.status = status;
     }
@@ -437,7 +409,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getReply() {
         return reply;
     }
@@ -449,7 +420,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setReply(String reply) {
         this.reply = reply;
     }
@@ -460,7 +430,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getReplyImage() {
         return replyImage;
     }
@@ -472,7 +441,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setReplyImage(String replyImage) {
         this.replyImage = replyImage;
     }
@@ -483,7 +451,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 是否成功
      * @since 2022.03
      */
-
     public Boolean getHaveImage() {
         return haveImage;
     }
@@ -495,7 +462,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setHaveImage(Boolean haveImage) {
         this.haveImage = haveImage;
     }
@@ -506,7 +472,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 是否成功
      * @since 2022.03
      */
-
     public Boolean getHaveReplyImage() {
         return haveReplyImage;
     }
@@ -518,7 +483,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setHaveReplyImage(Boolean haveReplyImage) {
         this.haveReplyImage = haveReplyImage;
     }
@@ -529,7 +493,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 是否成功
      * @since 2022.03
      */
-
     public Boolean getReplyStatus() {
         return replyStatus;
     }
@@ -541,7 +504,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setReplyStatus(Boolean replyStatus) {
         this.replyStatus = replyStatus;
     }
@@ -552,7 +514,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Integer getDeliveryScore() {
         return deliveryScore;
     }
@@ -564,7 +525,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setDeliveryScore(Integer deliveryScore) {
         this.deliveryScore = deliveryScore;
     }
@@ -575,7 +535,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Integer getServiceScore() {
         return serviceScore;
     }
@@ -587,7 +546,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setServiceScore(Integer serviceScore) {
         this.serviceScore = serviceScore;
     }
@@ -598,7 +556,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Integer getDescriptionScore() {
         return descriptionScore;
     }
@@ -610,7 +567,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setDescriptionScore(Integer descriptionScore) {
         this.descriptionScore = descriptionScore;
     }
@@ -626,7 +582,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setEvaluationImages(List<String> evaluationImages) {
         this.evaluationImages = evaluationImages;
     }
@@ -642,7 +597,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setReplyEvaluationImages(List<String> replyEvaluationImages) {
         this.replyEvaluationImages = replyEvaluationImages;
     }

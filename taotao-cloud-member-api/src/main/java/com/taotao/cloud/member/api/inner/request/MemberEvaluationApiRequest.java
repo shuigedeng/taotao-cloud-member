@@ -77,7 +77,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getOrderItemSn() {
         return orderItemSn;
     }
@@ -89,7 +88,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setOrderItemSn(String orderItemSn) {
         this.orderItemSn = orderItemSn;
     }
@@ -100,7 +98,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Long getGoodsId() {
         return goodsId;
     }
@@ -112,7 +109,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setGoodsId(Long goodsId) {
         this.goodsId = goodsId;
     }
@@ -123,7 +119,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Long getSkuId() {
         return skuId;
     }
@@ -135,7 +130,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setSkuId(Long skuId) {
         this.skuId = skuId;
     }
@@ -146,7 +140,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getGrade() {
         return grade;
     }
@@ -158,7 +151,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setGrade(String grade) {
         this.grade = grade;
     }
@@ -169,7 +161,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getContent() {
         return content;
     }
@@ -181,7 +172,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setContent(String content) {
         this.content = content;
     }
@@ -192,7 +182,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getImages() {
         return images;
     }
@@ -204,7 +193,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setImages(String images) {
         this.images = images;
     }
@@ -215,7 +203,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Integer getDeliveryScore() {
         return deliveryScore;
     }
@@ -227,7 +214,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setDeliveryScore(Integer deliveryScore) {
         this.deliveryScore = deliveryScore;
     }
@@ -238,7 +224,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Integer getServiceScore() {
         return serviceScore;
     }
@@ -250,7 +235,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setServiceScore(Integer serviceScore) {
         this.serviceScore = serviceScore;
     }
@@ -261,7 +245,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Integer getDescriptionScore() {
         return descriptionScore;
     }
@@ -273,7 +256,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setDescriptionScore(Integer descriptionScore) {
         this.descriptionScore = descriptionScore;
     }

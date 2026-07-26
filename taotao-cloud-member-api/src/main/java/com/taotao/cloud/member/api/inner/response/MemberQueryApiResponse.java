@@ -88,7 +88,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getTenantId() {
         return tenantId;
     }
@@ -100,7 +99,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setTenantId(String tenantId) {
         this.tenantId = tenantId;
     }
@@ -111,7 +109,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getTenantSecret() {
         return tenantSecret;
     }
@@ -123,7 +120,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setTenantSecret(String tenantSecret) {
         this.tenantSecret = tenantSecret;
     }
@@ -134,7 +130,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getName() {
         return name;
     }
@@ -146,7 +141,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setName(String name) {
         this.name = name;
     }
@@ -157,7 +151,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getFullName() {
         return fullName;
     }
@@ -169,7 +162,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
@@ -180,7 +172,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getCreditCode() {
         return creditCode;
     }
@@ -192,7 +183,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setCreditCode(String creditCode) {
         this.creditCode = creditCode;
     }
@@ -203,7 +193,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getEmail() {
         return email;
     }
@@ -215,7 +204,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setEmail(String email) {
         this.email = email;
     }
@@ -226,7 +214,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getUsername() {
         return username;
     }
@@ -238,7 +225,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setUsername(String username) {
         this.username = username;
     }
@@ -249,7 +235,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getPhone() {
         return phone;
     }
@@ -261,7 +246,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setPhone(String phone) {
         this.phone = phone;
     }
@@ -272,7 +256,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getAddress() {
         return address;
     }
@@ -284,7 +267,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setAddress(String address) {
         this.address = address;
     }
@@ -295,7 +277,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getDomain() {
         return domain;
     }
@@ -307,7 +288,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setDomain(String domain) {
         this.domain = domain;
     }
@@ -318,7 +298,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getWebSite() {
         return webSite;
     }
@@ -330,7 +309,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setWebSite(String webSite) {
         this.webSite = webSite;
     }
@@ -341,7 +319,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getRegionInfo() {
         return regionInfo;
     }
@@ -353,7 +330,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setRegionInfo(String regionInfo) {
         this.regionInfo = regionInfo;
     }
@@ -364,7 +340,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Integer getType() {
         return type;
     }
@@ -376,7 +351,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setType(Integer type) {
         this.type = type;
     }

@@ -109,7 +109,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getMemberId() {
         return memberId;
     }
@@ -121,7 +120,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setMemberId(String memberId) {
         this.memberId = memberId;
     }
@@ -132,7 +130,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getName() {
         return name;
     }
@@ -144,7 +141,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setName(String name) {
         this.name = name;
     }
@@ -155,7 +151,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getMobile() {
         return mobile;
     }
@@ -167,7 +162,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
@@ -178,7 +172,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getConsigneeAddressPath() {
         return consigneeAddressPath;
     }
@@ -190,7 +183,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setConsigneeAddressPath(String consigneeAddressPath) {
         this.consigneeAddressPath = consigneeAddressPath;
     }
@@ -201,7 +193,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getConsigneeAddressIdPath() {
         return consigneeAddressIdPath;
     }
@@ -213,7 +204,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setConsigneeAddressIdPath(String consigneeAddressIdPath) {
         this.consigneeAddressIdPath = consigneeAddressIdPath;
     }
@@ -224,7 +214,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getProvince() {
         return province;
     }
@@ -236,7 +225,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setProvince(String province) {
         this.province = province;
     }
@@ -247,7 +235,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getCity() {
         return city;
     }
@@ -259,7 +246,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setCity(String city) {
         this.city = city;
     }
@@ -270,7 +256,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getArea() {
         return area;
     }
@@ -282,7 +267,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setArea(String area) {
         this.area = area;
     }
@@ -293,7 +277,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getProvinceCode() {
         return provinceCode;
     }
@@ -305,7 +288,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setProvinceCode(String provinceCode) {
         this.provinceCode = provinceCode;
     }
@@ -316,7 +298,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getCityCode() {
         return cityCode;
     }
@@ -328,7 +309,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setCityCode(String cityCode) {
         this.cityCode = cityCode;
     }
@@ -339,7 +319,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getAreaCode() {
         return areaCode;
     }
@@ -351,7 +330,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setAreaCode(String areaCode) {
         this.areaCode = areaCode;
     }
@@ -362,7 +340,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getAddress() {
         return address;
     }
@@ -374,7 +351,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setAddress(String address) {
         this.address = address;
     }
@@ -385,7 +361,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getDetail() {
         return detail;
     }
@@ -397,7 +372,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setDetail(String detail) {
         this.detail = detail;
     }
@@ -408,7 +382,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 是否成功
      * @since 2022.03
      */
-
     public Boolean getDefaulted() {
         return defaulted;
     }
@@ -420,7 +393,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setDefaulted(Boolean defaulted) {
         this.defaulted = defaulted;
     }
@@ -431,7 +403,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getAlias() {
         return alias;
     }
@@ -443,7 +414,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setAlias(String alias) {
         this.alias = alias;
     }
@@ -454,7 +424,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getLon() {
         return lon;
     }
@@ -466,7 +435,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setLon(String lon) {
         this.lon = lon;
     }
@@ -477,7 +445,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getLat() {
         return lat;
     }
@@ -489,7 +456,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setLat(String lat) {
         this.lat = lat;
     }
@@ -500,7 +466,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getPostalCode() {
         return postalCode;
     }
@@ -512,7 +477,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
     }
@@ -523,7 +487,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return LocalDateTime
      * @since 2022.03
      */
-
     public LocalDateTime getCreateTime() {
         return createTime;
     }
@@ -535,7 +498,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
@@ -546,7 +508,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return LocalDateTime
      * @since 2022.03
      */
-
     public LocalDateTime getLastModifiedTime() {
         return lastModifiedTime;
     }
@@ -558,7 +519,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setLastModifiedTime(LocalDateTime lastModifiedTime) {
         this.lastModifiedTime = lastModifiedTime;
     }

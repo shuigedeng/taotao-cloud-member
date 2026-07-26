@@ -51,7 +51,6 @@ public class StoreRatingApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getDeliveryScore() {
         return deliveryScore;
     }
@@ -63,7 +62,6 @@ public class StoreRatingApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setDeliveryScore(String deliveryScore) {
         this.deliveryScore = deliveryScore;
     }
@@ -74,7 +72,6 @@ public class StoreRatingApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getServiceScore() {
         return serviceScore;
     }
@@ -86,7 +83,6 @@ public class StoreRatingApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setServiceScore(String serviceScore) {
         this.serviceScore = serviceScore;
     }
@@ -97,7 +93,6 @@ public class StoreRatingApiResponse  implements MarkerResponse  {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getDescriptionScore() {
         return descriptionScore;
     }
@@ -109,7 +104,6 @@ public class StoreRatingApiResponse  implements MarkerResponse  {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setDescriptionScore(String descriptionScore) {
         this.descriptionScore = descriptionScore;
     }

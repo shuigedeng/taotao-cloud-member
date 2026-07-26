@@ -87,7 +87,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Long getSkuId() {
         return skuId;
     }
@@ -99,7 +98,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setSkuId(Long skuId) {
         this.skuId = skuId;
     }
@@ -110,7 +108,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Long getMemberId() {
         return memberId;
     }
@@ -122,7 +119,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setMemberId(Long memberId) {
         this.memberId = memberId;
     }
@@ -133,7 +129,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getMemberName() {
         return memberName;
     }
@@ -145,7 +140,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setMemberName(String memberName) {
         this.memberName = memberName;
     }
@@ -156,7 +150,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getStoreName() {
         return storeName;
     }
@@ -168,7 +161,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setStoreName(String storeName) {
         this.storeName = storeName;
     }
@@ -179,7 +171,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Long getStoreId() {
         return storeId;
     }
@@ -191,7 +182,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setStoreId(Long storeId) {
         this.storeId = storeId;
     }
@@ -202,7 +192,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getGoodsName() {
         return goodsName;
     }
@@ -214,7 +203,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setGoodsName(String goodsName) {
         this.goodsName = goodsName;
     }
@@ -225,7 +213,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 结果数量
      * @since 2022.03
      */
-
     public Long getGoodsId() {
         return goodsId;
     }
@@ -237,7 +224,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setGoodsId(Long goodsId) {
         this.goodsId = goodsId;
     }
@@ -248,7 +234,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getGrade() {
         return grade;
     }
@@ -260,7 +245,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setGrade(String grade) {
         this.grade = grade;
     }
@@ -271,7 +255,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getHaveImage() {
         return haveImage;
     }
@@ -283,7 +266,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setHaveImage(String haveImage) {
         this.haveImage = haveImage;
     }
@@ -294,7 +276,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getStartTime() {
         return startTime;
     }
@@ -306,7 +287,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setStartTime(String startTime) {
         this.startTime = startTime;
     }
@@ -317,7 +297,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getEndTime() {
         return endTime;
     }
@@ -329,7 +308,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
@@ -340,7 +318,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 字符串
      * @since 2022.03
      */
-
     public String getStatus() {
         return status;
     }
@@ -352,7 +329,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * @return 无返回值
      * @since 2022.03
      */
-
     public void setStatus(String status) {
         this.status = status;
     }
