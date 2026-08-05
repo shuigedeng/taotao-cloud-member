@@ -116,6 +116,6 @@ gradlew publishToMavenLocal
 |------|------|
 | JDK 25 | 预览特性，`--enable-preview` + `--add-exports` |
 | 环境 | dev / test / pre / pro 四种配置 |
-| BOM | `taotao-cloud-dependencies:2026.08` 未开源，外部构建需私有仓库凭据 |
+| BOM | `taotao-cloud-dependencies:2026.09` 未开源，外部构建需私有仓库凭据 |
 | 平台 | Windows PowerShell 5.1，所有命令用 `gradlew` |
 | 详细规范 | 架构 → `rules/architecture.md`，聚合 → `rules/aggregate-design.md`，值对象 → `rules/value-object.md`，API → `rules/api-conventions.md`，代码风格 → `rules/code-style.md` |
