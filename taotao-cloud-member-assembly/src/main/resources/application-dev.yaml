@@ -405,7 +405,7 @@ rocketmq:
 spring:
   grpc:
     server:
-      port: 9098
+      port: 9093
       enabled: true
       servlet:
         enabled: false
@@ -413,7 +413,7 @@ spring:
       enabled: true
       channel:
         local:
-          target: static://localhost:9098
+          target: static://localhost:9093
           keepalive:
             timeout: 60s
           idle:
@@ -854,7 +854,7 @@ spring:
       #            rule-type: param-flow
       transport:
         dashboard: ${remote-ip}:8858
-        port: 8712
+        port: 8713
       metric:
         file-single-size: 1024 * 1024 * 50
         file-total-count: 10
@@ -1471,7 +1471,7 @@ herodotus:
 scalar:
   enabled: true
   actuatorEnabled: true
-  url: http://127.0.0.1:33332/v3/api-docs/taotao-cloud-member
+  url: http://127.0.0.1:33333/v3/api-docs/taotao-cloud-member
   path: /docs
   pageTitle: My API Documentation
   tagSorter: ALPHA
