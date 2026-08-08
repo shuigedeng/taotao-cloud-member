@@ -16,8 +16,8 @@
 
 package com.taotao.cloud.member.infrastructure.repository.domain;
 
-import com.taotao.cloud.member.domain.wallet.entity.MemberWallet;
-import com.taotao.cloud.member.domain.wallet.repository.MemberWalletDomainRepository;
+import com.taotao.cloud.member.domain.entity.MemberWallet;
+import com.taotao.cloud.member.domain.repository.MemberWalletDomainRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

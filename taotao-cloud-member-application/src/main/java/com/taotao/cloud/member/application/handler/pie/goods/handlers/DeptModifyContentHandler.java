@@ -18,7 +18,6 @@ package com.taotao.cloud.member.application.handler.pie.goods.handlers;
 
 import com.taotao.boot.common.support.pie.ChannelHandler;
 import com.taotao.boot.common.support.pie.ChannelHandlerContext;
-import com.taotao.cloud.goods.application.context.GoodsContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,7 +37,7 @@ public class DeptModifyContentHandler implements ChannelHandler {
 
         logger.info("修改正文:进入修改正文的Handler");
 
-        GoodsContext cmd = (GoodsContext) in;
+//        GoodsContext cmd = (GoodsContext) in;
         // logger.info("修改正文,content={}", cmd.getDeptModifyCmd().getDeptCO().getName());
 
         logger.info("修改正文:执行完成,即将进入下一个Handler");

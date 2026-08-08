@@ -16,8 +16,7 @@
 
 package com.taotao.cloud.member.facade.assembler;
 
-import com.taotao.cloud.goods.application.dto.sys.res.DictRes;
-import com.taotao.cloud.sys.api.inner.response.DictApiResponse;
+import com.taotao.cloud.member.application.acl.dto.sys.res.DictRes;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 import org.mapstruct.factory.Mappers;
@@ -35,6 +34,5 @@ public interface CreditFacadeAssembler {
     /** 实例 */
     CreditFacadeAssembler INSTANCE = Mappers.getMapper(CreditFacadeAssembler.class);
 
-	DictRes toRes(DictApiResponse dictApiResponse);
 
 }

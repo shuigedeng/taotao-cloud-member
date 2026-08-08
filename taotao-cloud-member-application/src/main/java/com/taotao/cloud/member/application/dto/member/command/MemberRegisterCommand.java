@@ -16,6 +16,7 @@
 
 package com.taotao.cloud.member.application.dto.member.command;
 
+import cn.hutool.core.lang.RegexPool;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

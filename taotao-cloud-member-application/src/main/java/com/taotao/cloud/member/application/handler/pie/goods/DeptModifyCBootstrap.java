@@ -17,10 +17,9 @@
 package com.taotao.cloud.member.application.handler.pie.goods;
 
 import com.taotao.boot.common.support.pie.BootStrap;
-import com.taotao.cloud.goods.application.context.GoodsContext;
-import com.taotao.cloud.goods.application.handler.pie.category.handlers.ArticleModifyContentHandler;
-import com.taotao.cloud.goods.application.handler.pie.category.handlers.ArticleModifyTitleHandler;
-import com.taotao.cloud.goods.application.handler.pie.category.handlers.CheckParameterHandler;
+import com.taotao.cloud.member.application.handler.pie.category.handlers.ArticleModifyContentHandler;
+import com.taotao.cloud.member.application.handler.pie.category.handlers.ArticleModifyTitleHandler;
+import com.taotao.cloud.member.application.handler.pie.category.handlers.CheckParameterHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -41,28 +40,28 @@ public class DeptModifyCBootstrap {
      * @return 无返回值
      * @since 2022.03
      */
-    public void test1() {
-        // 入参
-        GoodsContext dto = new GoodsContext();
-        // 创建引导类
-        BootStrap bootStrap = new BootStrap();
-
-        GoodsContext result =
-                (GoodsContext)
-                        bootStrap
-                                .inboundParameter(dto) // 入参
-                                .outboundFactory(new ResultFactory()) // 出参工厂
-                                .channel(new DeptModifyChannel()) // 自定义channel
-                                .addChannelHandlerAtLast(
-                                        "checkParameter", new CheckParameterHandler()) // 第一个handler
-                                .addChannelHandlerAtLast(
-                                        "modifyTitle",
-                                        new ArticleModifyTitleHandler()) // 第二个handler
-                                .addChannelHandlerAtLast(
-                                        "modifyContent",
-                                        new ArticleModifyContentHandler()) // 第三个handler
-                                .process(); // 执行
-        // result为执行结果
-        // logger.info("result:code={},msg={}", result.getDeptModifyCmd(), result.getDeptAgg());
-    }
+//    public void test1() {
+//        // 入参
+//        GoodsContext dto = new GoodsContext();
+//        // 创建引导类
+//        BootStrap bootStrap = new BootStrap();
+//
+//        GoodsContext result =
+//                (GoodsContext)
+//                        bootStrap
+//                                .inboundParameter(dto) // 入参
+//                                .outboundFactory(new ResultFactory()) // 出参工厂
+//                                .channel(new DeptModifyChannel()) // 自定义channel
+//                                .addChannelHandlerAtLast(
+//                                        "checkParameter", new CheckParameterHandler()) // 第一个handler
+//                                .addChannelHandlerAtLast(
+//                                        "modifyTitle",
+//                                        new ArticleModifyTitleHandler()) // 第二个handler
+//                                .addChannelHandlerAtLast(
+//                                        "modifyContent",
+//                                        new ArticleModifyContentHandler()) // 第三个handler
+//                                .process(); // 执行
+//        // result为执行结果
+//        // logger.info("result:code={},msg={}", result.getDeptModifyCmd(), result.getDeptAgg());
+//    }
 }
