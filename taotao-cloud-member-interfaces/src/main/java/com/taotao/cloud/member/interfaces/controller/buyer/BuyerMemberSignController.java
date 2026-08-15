@@ -24,17 +24,34 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 第三方用户信息管理API
+ * 买家端-会员签到API
  *
  * @author shuigedeng
- * @since 2020-10-16 16:23:49
+ * @version 2021.10
+ * @since 2022-03-11 15:58:40
  */
 @RequiredArgsConstructor
 @Validated
 @RestController
-@RequestMapping("/member/platform")
-@Tag(name = "第三方用户信息管理API", description = "第三方用户信息管理API")
-public class MemberPlatformBuyerController extends BusinessController {
+@Tag(name = "买家端-会员签到API", description = "买家端-会员签到API")
+@RequestMapping("/member/buyer/member/sign")
+public class BuyerMemberSignController extends BusinessController {
 
-    // private final IMemberPlatformService memberPlatformService;
+    // private final IMemberSignService memberSignService;
+    //
+    // @Operation(summary = "会员签到", description = "会员签到")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @PostMapping
+    // public Result<Boolean> memberSign() {
+    //    return Result.success(memberSignService.memberSign());
+    // }
+    //
+    // @Operation(summary = "根据时间查询会员签到表，类型是YYYYmm", description = "根据时间查询会员签到表，类型是YYYYmm")
+    // @RequestLogger
+    // @PreAuthorize("@el.check('admin','timing:list')")
+    // @GetMapping
+    // public Result<List<MemberSignVO>> memberSign(@RequestParam String time) {
+    //    return Result.success(memberSignService.getMonthSignDay(time));
+    // }
 }

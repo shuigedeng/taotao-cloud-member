@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.interfaces.controller.manager;
+package com.taotao.cloud.member.interfaces.controller.admin;
 
 import com.taotao.boot.webagg.controller.BusinessController;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -31,9 +31,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @Validated
 @RestController
-@RequestMapping("/member/manager/member")
+@RequestMapping("/member/admin/member")
 @Tag(name = "管理端-会员管理API", description = "管理端-会员管理API")
-public class MemberManagerController extends BusinessController {
+public class AdminMemberController extends BusinessController {
 
     // private final IMemberService memberService;
     //

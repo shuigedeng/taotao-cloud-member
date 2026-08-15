@@ -35,7 +35,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Tag(name = "买家端-会员地址API", description = "买家端-会员地址API")
 @RequestMapping("/member/buyer/member/address")
-public class MemberAddressBuyerController extends BusinessController {
+public class BuyerMemberAddressController extends BusinessController {
     //
     // private final IMemberAddressService memberAddressService;
     //

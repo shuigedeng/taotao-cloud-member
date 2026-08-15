@@ -35,7 +35,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Tag(name = "买家端-会员商品评价API", description = "买家端-会员商品评价API")
 @RequestMapping("/member/buyer/member/evaluation")
-public class MemberEvaluationBuyerController extends BusinessController {
+public class BuyerMemberEvaluationController extends BusinessController {
 
     /// ** 会员商品评价 */
     // private final IMemberEvaluationService memberEvaluationService;

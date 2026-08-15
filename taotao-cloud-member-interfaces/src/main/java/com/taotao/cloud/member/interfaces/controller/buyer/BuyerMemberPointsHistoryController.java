@@ -24,34 +24,34 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 买家端-会员签到API
- *
- * @author shuigedeng
- * @version 2021.10
- * @since 2022-03-11 15:58:40
+ * 买家端,会员积分历史API
  */
 @RequiredArgsConstructor
 @Validated
 @RestController
-@Tag(name = "买家端-会员签到API", description = "买家端-会员签到API")
-@RequestMapping("/member/buyer/member/sign")
-public class MemberSignBuyerController extends BusinessController {
+@Tag(name = "买家端-会员积分历史API", description = "买家端-会员积分历史API")
+@RequestMapping("/member/buyer/member/points/history")
+public class BuyerMemberPointsHistoryController extends BusinessController {
 
-    // private final IMemberSignService memberSignService;
+    // private final IMemberPointsHistoryService memberPointsHistoryService;
     //
-    // @Operation(summary = "会员签到", description = "会员签到")
+    // @Operation(summary = "分页获取当前会员积分历史", description = "分页获取当前会员积分历史")
     // @RequestLogger
     // @PreAuthorize("@el.check('admin','timing:list')")
-    // @PostMapping
-    // public Result<Boolean> memberSign() {
-    //    return Result.success(memberSignService.memberSign());
+    // @GetMapping(value = "/page")
+    // public Result<PageResult<MemberPointsHistoryPageVO>> queryByPage(PageQuery page) {
+    //    IPage<MemberPointsHistory> memberPointsHistoryPage =
+    // memberPointsHistoryService.pageQuery(page);
+    //    return Result.success(MpUtils.convertMpPage(memberPointsHistoryPage,
+    // MemberPointsHistoryPageVO.class));
     // }
     //
-    // @Operation(summary = "根据时间查询会员签到表，类型是YYYYmm", description = "根据时间查询会员签到表，类型是YYYYmm")
+    // @Operation(summary = "获取当前会员积分", description = "获取当前会员积分")
     // @RequestLogger
     // @PreAuthorize("@el.check('admin','timing:list')")
-    // @GetMapping
-    // public Result<List<MemberSignVO>> memberSign(@RequestParam String time) {
-    //    return Result.success(memberSignService.getMonthSignDay(time));
+    // @GetMapping(value = "/current/points")
+    // public Result<MemberPointsHistoryVO> getMemberPointsHistoryVO() {
+    //    return
+    // Result.success(memberPointsHistoryService.getMemberPointsHistoryVO(SecurityUtils.getUserId()));
     // }
 }

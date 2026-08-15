@@ -31,7 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Tag(name = "买家端-会员收藏API", description = "买家端-会员收藏API")
 @RequestMapping("/member/buyer/member/collection")
-public class MemberCollectionBuyerController extends BusinessController {
+public class BuyerMemberCollectionController extends BusinessController {
 
     /// **
     // * 会员商品收藏

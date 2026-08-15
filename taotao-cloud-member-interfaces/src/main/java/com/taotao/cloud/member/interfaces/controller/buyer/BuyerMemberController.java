@@ -34,7 +34,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/member")
 @Tag(name = "会员管理API", description = "会员管理API")
-public class MemberBuyerController extends BusinessController {
+public class BuyerMemberController extends BusinessController {
 
     // @Resource(name = "monitorThreadPoolExecutor")
     // private ThreadPoolExecutor asyncThreadPoolExecutor;
