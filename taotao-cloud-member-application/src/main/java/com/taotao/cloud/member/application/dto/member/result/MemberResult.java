@@ -63,8 +63,8 @@ public class MemberResult implements Serializable {
     @Schema(description = "会员地址")
     private String region;
 
-    @Schema(description = "手机号码")
     // @Sensitive(strategy = SensitiveStrategy.PHONE)
+    @Schema(description = "手机号码")
     private String mobile;
 
     @Schema(description = "积分数量")

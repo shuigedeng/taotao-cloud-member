@@ -29,11 +29,11 @@ import lombok.*;
  * @version 2026.04
  * @since 2025-12-19 09:30:45
  */
+// public class DeptCO extends TreeUtil.TreeNode<DeptCO> {
 @Setter
 @Getter
 @ToString
 @Schema(name = "DeptCO", description = "部门")
-// public class DeptCO extends TreeUtil.TreeNode<DeptCO> {
 public class MemberWalletResult {
 
     @Serial
