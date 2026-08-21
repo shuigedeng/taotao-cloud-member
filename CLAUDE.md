@@ -1,6 +1,6 @@
 # taotao-cloud-member — 会员领域 DDD 单体服务
 
-会员中心，基于 Spring Boot 4.1.0 / JDK 25 / Gradle 9.5 的六边形架构 + DDD 服务。
+会员中心，基于 Spring Boot 4.1.1 / JDK 25 / Gradle 9.5 的六边形架构 + DDD 服务。
 
 ## WHAT — 项目地图
 
@@ -9,7 +9,7 @@
 | 组件 | 版本 |
 |------|------|
 | Java / Gradle | 25 (--enable-preview) / 9.5 |
-| Spring Boot / Cloud / Alibaba | 4.1.0 / 2025.1.1 / 2025.1.0.0 |
+| Spring Boot / Cloud / Alibaba | 4.1.1 / 2025.1.1 / 2025.1.0.0 |
 | MyBatis-Plus / Knife4j / Redisson | 3.5.16 / 4.5.0 / 4.3.1 |
 | MapStruct / Lombok / Querydsl | 1.6.3 / 1.18.46 / 5.1.0 |
 | RocketMQ / Netty | 5.2.4 / 4.2.12.Final |

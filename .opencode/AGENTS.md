@@ -2,11 +2,11 @@
 
 **Generated:** 2026-06-18
 **Commit:** `56589ba`
-**Platform:** Windows (PowerShell 5.1) / Gradle 9.5 / JDK 25 / Spring Boot 4.1.0
+**Platform:** Windows (PowerShell 5.1) / Gradle 9.5 / JDK 25 / Spring Boot 4.1.1
 
 ## OVERVIEW
 
-会员领域 DDD 单体服务（taotao-cloud-member），基于 Spring Boot 4.1.0 / JDK 25 / Gradle 9.5 / Spring Cloud Alibaba。严格遵循六边形架构 + 领域驱动设计，作为 taotao-cloud 微服务体系的会员中心。
+会员领域 DDD 单体服务（taotao-cloud-member），基于 Spring Boot 4.1.1 / JDK 25 / Gradle 9.5 / Spring Cloud Alibaba。严格遵循六边形架构 + 领域驱动设计，作为 taotao-cloud 微服务体系的会员中心。
 
 ## STRUCTURE
 
