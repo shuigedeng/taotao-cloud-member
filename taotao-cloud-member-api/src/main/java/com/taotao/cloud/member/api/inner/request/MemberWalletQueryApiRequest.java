@@ -61,7 +61,6 @@ public class MemberWalletQueryApiRequest implements Command {
      * 设置
      *
      * @param money money
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMoney(BigDecimal money) {
@@ -82,7 +81,6 @@ public class MemberWalletQueryApiRequest implements Command {
      * 设置
      *
      * @param memberId memberId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMemberId(Long memberId) {
@@ -103,7 +101,6 @@ public class MemberWalletQueryApiRequest implements Command {
      * 设置
      *
      * @param detail detail
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDetail(String detail) {
@@ -124,7 +121,6 @@ public class MemberWalletQueryApiRequest implements Command {
      * 设置
      *
      * @param serviceType serviceType
-     * @return 无返回值
      * @since 2022.03
      */
     public void setServiceType(String serviceType) {

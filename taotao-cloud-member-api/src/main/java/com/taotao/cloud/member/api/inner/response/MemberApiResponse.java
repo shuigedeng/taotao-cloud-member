@@ -118,7 +118,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param id id
-     * @return 无返回值
      * @since 2022.03
      */
     public void setId(Long id) {
@@ -139,7 +138,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param username username
-     * @return 无返回值
      * @since 2022.03
      */
     public void setUsername(String username) {
@@ -160,7 +158,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param nickName nickName
-     * @return 无返回值
      * @since 2022.03
      */
     public void setNickName(String nickName) {
@@ -181,7 +178,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param sex sex
-     * @return 无返回值
      * @since 2022.03
      */
     public void setSex(Integer sex) {
@@ -202,7 +198,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param birthday birthday
-     * @return 无返回值
      * @since 2022.03
      */
     public void setBirthday(Date birthday) {
@@ -223,7 +218,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param regionId regionId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setRegionId(String regionId) {
@@ -244,7 +238,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param region region
-     * @return 无返回值
      * @since 2022.03
      */
     public void setRegion(String region) {
@@ -265,7 +258,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param mobile mobile
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMobile(String mobile) {
@@ -286,7 +278,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param point point
-     * @return 无返回值
      * @since 2022.03
      */
     public void setPoint(Long point) {
@@ -307,7 +298,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param totalPoint totalPoint
-     * @return 无返回值
      * @since 2022.03
      */
     public void setTotalPoint(Long totalPoint) {
@@ -328,7 +318,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param face face
-     * @return 无返回值
      * @since 2022.03
      */
     public void setFace(String face) {
@@ -349,7 +338,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param disabled disabled
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDisabled(Boolean disabled) {
@@ -370,7 +358,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param haveStore haveStore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setHaveStore(Boolean haveStore) {
@@ -391,7 +378,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param storeId storeId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setStoreId(String storeId) {
@@ -412,7 +398,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param openId openId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setOpenId(String openId) {
@@ -433,7 +418,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param clientEnum clientEnum
-     * @return 无返回值
      * @since 2022.03
      */
     public void setClientEnum(String clientEnum) {
@@ -454,7 +438,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param lastLoginDate lastLoginDate
-     * @return 无返回值
      * @since 2022.03
      */
     public void setLastLoginDate(Date lastLoginDate) {
@@ -475,7 +458,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param gradeId gradeId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGradeId(String gradeId) {
@@ -496,7 +478,6 @@ public class MemberApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param experience experience
-     * @return 无返回值
      * @since 2022.03
      */
     public void setExperience(Long experience) {

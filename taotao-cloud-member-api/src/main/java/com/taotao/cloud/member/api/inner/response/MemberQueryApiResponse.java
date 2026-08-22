@@ -96,7 +96,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param tenantId tenantId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setTenantId(String tenantId) {
@@ -117,7 +116,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param tenantSecret tenantSecret
-     * @return 无返回值
      * @since 2022.03
      */
     public void setTenantSecret(String tenantSecret) {
@@ -138,7 +136,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param name name
-     * @return 无返回值
      * @since 2022.03
      */
     public void setName(String name) {
@@ -159,7 +156,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param fullName fullName
-     * @return 无返回值
      * @since 2022.03
      */
     public void setFullName(String fullName) {
@@ -180,7 +176,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param creditCode creditCode
-     * @return 无返回值
      * @since 2022.03
      */
     public void setCreditCode(String creditCode) {
@@ -201,7 +196,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param email email
-     * @return 无返回值
      * @since 2022.03
      */
     public void setEmail(String email) {
@@ -222,7 +216,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param username username
-     * @return 无返回值
      * @since 2022.03
      */
     public void setUsername(String username) {
@@ -243,7 +236,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param phone phone
-     * @return 无返回值
      * @since 2022.03
      */
     public void setPhone(String phone) {
@@ -264,7 +256,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param address address
-     * @return 无返回值
      * @since 2022.03
      */
     public void setAddress(String address) {
@@ -285,7 +276,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param domain domain
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDomain(String domain) {
@@ -306,7 +296,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param webSite webSite
-     * @return 无返回值
      * @since 2022.03
      */
     public void setWebSite(String webSite) {
@@ -327,7 +316,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param regionInfo regionInfo
-     * @return 无返回值
      * @since 2022.03
      */
     public void setRegionInfo(String regionInfo) {
@@ -348,7 +336,6 @@ public class MemberQueryApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param type type
-     * @return 无返回值
      * @since 2022.03
      */
     public void setType(Integer type) {

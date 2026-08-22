@@ -79,7 +79,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param rechargeSn rechargeSn
-     * @return 无返回值
      * @since 2022.03
      */
     public void setRechargeSn(String rechargeSn) {
@@ -100,7 +99,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param memberId memberId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMemberId(Long memberId) {
@@ -121,7 +119,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param memberName memberName
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMemberName(String memberName) {
@@ -142,7 +139,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param rechargeMoney rechargeMoney
-     * @return 无返回值
      * @since 2022.03
      */
     public void setRechargeMoney(BigDecimal rechargeMoney) {
@@ -163,7 +159,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param rechargeWay rechargeWay
-     * @return 无返回值
      * @since 2022.03
      */
     public void setRechargeWay(String rechargeWay) {
@@ -184,7 +179,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param payStatus payStatus
-     * @return 无返回值
      * @since 2022.03
      */
     public void setPayStatus(String payStatus) {
@@ -205,7 +199,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param paymentPluginId paymentPluginId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setPaymentPluginId(String paymentPluginId) {
@@ -226,7 +219,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param receivableNo receivableNo
-     * @return 无返回值
      * @since 2022.03
      */
     public void setReceivableNo(String receivableNo) {
@@ -247,7 +239,6 @@ public class MemberRechargeApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param payTime payTime
-     * @return 无返回值
      * @since 2022.03
      */
     public void setPayTime(LocalDateTime payTime) {

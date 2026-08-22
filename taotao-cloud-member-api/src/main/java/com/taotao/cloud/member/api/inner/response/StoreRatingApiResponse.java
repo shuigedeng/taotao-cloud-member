@@ -59,7 +59,6 @@ public class StoreRatingApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param deliveryScore deliveryScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDeliveryScore(String deliveryScore) {
@@ -80,7 +79,6 @@ public class StoreRatingApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param serviceScore serviceScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setServiceScore(String serviceScore) {
@@ -101,7 +99,6 @@ public class StoreRatingApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param descriptionScore descriptionScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDescriptionScore(String descriptionScore) {

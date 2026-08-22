@@ -123,7 +123,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param memberId memberId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMemberId(String memberId) {
@@ -144,7 +143,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param memberName memberName
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMemberName(String memberName) {
@@ -165,7 +163,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param memberProfile memberProfile
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMemberProfile(String memberProfile) {
@@ -186,7 +183,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param storeId storeId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setStoreId(String storeId) {
@@ -207,7 +203,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param storeName storeName
-     * @return 无返回值
      * @since 2022.03
      */
     public void setStoreName(String storeName) {
@@ -228,7 +223,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param goodsId goodsId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGoodsId(String goodsId) {
@@ -249,7 +243,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param skuId skuId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setSkuId(String skuId) {
@@ -270,7 +263,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param goodsName goodsName
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGoodsName(String goodsName) {
@@ -291,7 +283,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param goodsImage goodsImage
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGoodsImage(String goodsImage) {
@@ -312,7 +303,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param orderNo orderNo
-     * @return 无返回值
      * @since 2022.03
      */
     public void setOrderNo(String orderNo) {
@@ -333,7 +323,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param grade grade
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGrade(String grade) {
@@ -354,7 +343,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param content content
-     * @return 无返回值
      * @since 2022.03
      */
     public void setContent(String content) {
@@ -375,7 +363,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param images images
-     * @return 无返回值
      * @since 2022.03
      */
     public void setImages(String images) {
@@ -396,7 +383,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param status status
-     * @return 无返回值
      * @since 2022.03
      */
     public void setStatus(String status) {
@@ -417,7 +403,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param reply reply
-     * @return 无返回值
      * @since 2022.03
      */
     public void setReply(String reply) {
@@ -438,7 +423,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param replyImage replyImage
-     * @return 无返回值
      * @since 2022.03
      */
     public void setReplyImage(String replyImage) {
@@ -459,7 +443,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param haveImage haveImage
-     * @return 无返回值
      * @since 2022.03
      */
     public void setHaveImage(Boolean haveImage) {
@@ -480,7 +463,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param haveReplyImage haveReplyImage
-     * @return 无返回值
      * @since 2022.03
      */
     public void setHaveReplyImage(Boolean haveReplyImage) {
@@ -501,7 +483,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param replyStatus replyStatus
-     * @return 无返回值
      * @since 2022.03
      */
     public void setReplyStatus(Boolean replyStatus) {
@@ -522,7 +503,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param deliveryScore deliveryScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDeliveryScore(Integer deliveryScore) {
@@ -543,7 +523,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param serviceScore serviceScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setServiceScore(Integer serviceScore) {
@@ -564,7 +543,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param descriptionScore descriptionScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDescriptionScore(Integer descriptionScore) {
@@ -579,7 +557,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param evaluationImages evaluationImages
-     * @return 无返回值
      * @since 2022.03
      */
     public void setEvaluationImages(List<String> evaluationImages) {
@@ -594,7 +571,6 @@ public class MemberEvaluationApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param replyEvaluationImages replyEvaluationImages
-     * @return 无返回值
      * @since 2022.03
      */
     public void setReplyEvaluationImages(List<String> replyEvaluationImages) {
