@@ -16,8 +16,11 @@
 pluginManagement {
     repositories {
         mavenLocal()
-        mavenCentral()
+        //mavenCentral()
         gradlePluginPortal()
+        maven {
+            url = "https://repo1.maven.org/maven2"
+        }
         maven { url = 'https://repo.spring.io/release' }
         maven { url = "https://plugins.gradle.org/m2/" }
         maven { url = 'https://jetbrains.bintray.com/intellij-plugin-service' }
@@ -28,6 +31,7 @@ pluginManagement {
         maven { url = "https://repo.spring.io/milestone" }
     }
 }
+
 plugins {
     //https://plugins.gradle.org/plugin/com.gradle.develocity
     id "com.gradle.develocity" version "4.5.0"
