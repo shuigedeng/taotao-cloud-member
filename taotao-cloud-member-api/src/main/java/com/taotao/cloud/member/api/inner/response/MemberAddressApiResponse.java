@@ -117,7 +117,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param memberId memberId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMemberId(String memberId) {
@@ -138,7 +137,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param name name
-     * @return 无返回值
      * @since 2022.03
      */
     public void setName(String name) {
@@ -159,7 +157,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param mobile mobile
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMobile(String mobile) {
@@ -180,7 +177,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param consigneeAddressPath consigneeAddressPath
-     * @return 无返回值
      * @since 2022.03
      */
     public void setConsigneeAddressPath(String consigneeAddressPath) {
@@ -201,7 +197,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param consigneeAddressIdPath consigneeAddressIdPath
-     * @return 无返回值
      * @since 2022.03
      */
     public void setConsigneeAddressIdPath(String consigneeAddressIdPath) {
@@ -222,7 +217,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param province province
-     * @return 无返回值
      * @since 2022.03
      */
     public void setProvince(String province) {
@@ -243,7 +237,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param city city
-     * @return 无返回值
      * @since 2022.03
      */
     public void setCity(String city) {
@@ -264,7 +257,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param area area
-     * @return 无返回值
      * @since 2022.03
      */
     public void setArea(String area) {
@@ -285,7 +277,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param provinceCode provinceCode
-     * @return 无返回值
      * @since 2022.03
      */
     public void setProvinceCode(String provinceCode) {
@@ -306,7 +297,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param cityCode cityCode
-     * @return 无返回值
      * @since 2022.03
      */
     public void setCityCode(String cityCode) {
@@ -327,7 +317,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param areaCode areaCode
-     * @return 无返回值
      * @since 2022.03
      */
     public void setAreaCode(String areaCode) {
@@ -348,7 +337,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param address address
-     * @return 无返回值
      * @since 2022.03
      */
     public void setAddress(String address) {
@@ -369,7 +357,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param detail detail
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDetail(String detail) {
@@ -390,7 +377,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param defaulted defaulted
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDefaulted(Boolean defaulted) {
@@ -411,7 +397,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param alias alias
-     * @return 无返回值
      * @since 2022.03
      */
     public void setAlias(String alias) {
@@ -432,7 +417,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param lon lon
-     * @return 无返回值
      * @since 2022.03
      */
     public void setLon(String lon) {
@@ -453,7 +437,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param lat lat
-     * @return 无返回值
      * @since 2022.03
      */
     public void setLat(String lat) {
@@ -474,7 +457,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param postalCode postalCode
-     * @return 无返回值
      * @since 2022.03
      */
     public void setPostalCode(String postalCode) {
@@ -495,7 +477,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param createTime createTime
-     * @return 无返回值
      * @since 2022.03
      */
     public void setCreateTime(LocalDateTime createTime) {
@@ -516,7 +497,6 @@ public class MemberAddressApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param lastModifiedTime lastModifiedTime
-     * @return 无返回值
      * @since 2022.03
      */
     public void setLastModifiedTime(LocalDateTime lastModifiedTime) {

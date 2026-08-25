@@ -88,7 +88,6 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param id id
-     * @return 无返回值
      * @since 2022.03
      */
     public void setId(String id) {
@@ -109,7 +108,6 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param memberName memberName
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMemberName(String memberName) {
@@ -130,7 +128,6 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param goodsName goodsName
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGoodsName(String goodsName) {
@@ -151,7 +148,6 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param grade grade
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGrade(String grade) {
@@ -172,7 +168,6 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param content content
-     * @return 无返回值
      * @since 2022.03
      */
     public void setContent(String content) {
@@ -193,7 +188,6 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param status status
-     * @return 无返回值
      * @since 2022.03
      */
     public void setStatus(String status) {
@@ -214,7 +208,6 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param replyStatus replyStatus
-     * @return 无返回值
      * @since 2022.03
      */
     public void setReplyStatus(Boolean replyStatus) {
@@ -235,7 +228,6 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param createTime createTime
-     * @return 无返回值
      * @since 2022.03
      */
     public void setCreateTime(LocalDateTime createTime) {
@@ -256,7 +248,6 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param deliveryScore deliveryScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDeliveryScore(Integer deliveryScore) {
@@ -277,7 +268,6 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param serviceScore serviceScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setServiceScore(Integer serviceScore) {
@@ -298,7 +288,6 @@ public class MemberEvaluationListApiResponse  implements MarkerResponse  {
      * 设置
      *
      * @param descriptionScore descriptionScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDescriptionScore(Integer descriptionScore) {

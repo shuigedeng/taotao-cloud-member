@@ -85,7 +85,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * 设置
      *
      * @param orderItemSn orderItemSn
-     * @return 无返回值
      * @since 2022.03
      */
     public void setOrderItemSn(String orderItemSn) {
@@ -106,7 +105,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * 设置
      *
      * @param goodsId goodsId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGoodsId(Long goodsId) {
@@ -127,7 +125,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * 设置
      *
      * @param skuId skuId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setSkuId(Long skuId) {
@@ -148,7 +145,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * 设置
      *
      * @param grade grade
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGrade(String grade) {
@@ -169,7 +165,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * 设置
      *
      * @param content content
-     * @return 无返回值
      * @since 2022.03
      */
     public void setContent(String content) {
@@ -190,7 +185,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * 设置
      *
      * @param images images
-     * @return 无返回值
      * @since 2022.03
      */
     public void setImages(String images) {
@@ -211,7 +205,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * 设置
      *
      * @param deliveryScore deliveryScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDeliveryScore(Integer deliveryScore) {
@@ -232,7 +225,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * 设置
      *
      * @param serviceScore serviceScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setServiceScore(Integer serviceScore) {
@@ -253,7 +245,6 @@ public class MemberEvaluationApiRequest implements MarkerRequest {
      * 设置
      *
      * @param descriptionScore descriptionScore
-     * @return 无返回值
      * @since 2022.03
      */
     public void setDescriptionScore(Integer descriptionScore) {

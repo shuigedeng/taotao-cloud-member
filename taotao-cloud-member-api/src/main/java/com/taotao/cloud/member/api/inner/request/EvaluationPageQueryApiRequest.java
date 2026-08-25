@@ -95,7 +95,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param skuId skuId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setSkuId(Long skuId) {
@@ -116,7 +115,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param memberId memberId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMemberId(Long memberId) {
@@ -137,7 +135,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param memberName memberName
-     * @return 无返回值
      * @since 2022.03
      */
     public void setMemberName(String memberName) {
@@ -158,7 +155,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param storeName storeName
-     * @return 无返回值
      * @since 2022.03
      */
     public void setStoreName(String storeName) {
@@ -179,7 +175,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param storeId storeId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setStoreId(Long storeId) {
@@ -200,7 +195,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param goodsName goodsName
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGoodsName(String goodsName) {
@@ -221,7 +215,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param goodsId goodsId
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGoodsId(Long goodsId) {
@@ -242,7 +235,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param grade grade
-     * @return 无返回值
      * @since 2022.03
      */
     public void setGrade(String grade) {
@@ -263,7 +255,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param haveImage haveImage
-     * @return 无返回值
      * @since 2022.03
      */
     public void setHaveImage(String haveImage) {
@@ -284,7 +275,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param startTime startTime
-     * @return 无返回值
      * @since 2022.03
      */
     public void setStartTime(String startTime) {
@@ -305,7 +295,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param endTime endTime
-     * @return 无返回值
      * @since 2022.03
      */
     public void setEndTime(String endTime) {
@@ -326,7 +315,6 @@ public class EvaluationPageQueryApiRequest implements Command {
      * 设置
      *
      * @param status status
-     * @return 无返回值
      * @since 2022.03
      */
     public void setStatus(String status) {
