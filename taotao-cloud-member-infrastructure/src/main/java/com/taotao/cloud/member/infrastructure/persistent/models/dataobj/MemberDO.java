@@ -14,24 +14,15 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.infrastructure.data.dataobj;
-
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+package com.taotao.cloud.member.infrastructure.persistent.models.dataobj;
 
 /**
- * CategoryDO
+ * MemberDO
  *
  * @author shuigedeng
  * @version 2026.04
  * @since 2025-12-19 09:30:45
  */
-@Setter
-@Getter
-@ToString
-public class CategoryDO {
+public class MemberDO {
 
-    private String name;
-    private String id;
 }

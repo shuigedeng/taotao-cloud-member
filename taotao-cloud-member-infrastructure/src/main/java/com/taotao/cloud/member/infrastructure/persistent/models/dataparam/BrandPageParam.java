@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.infrastructure.data.dataparam;
+package com.taotao.cloud.member.infrastructure.persistent.models.dataparam;
 
 import com.taotao.boot.common.model.ddd.query.PageQuery;
 import lombok.EqualsAndHashCode;
