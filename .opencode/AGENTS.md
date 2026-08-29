@@ -136,7 +136,7 @@ gradlew publishToMavenLocal
 
 - **平台**：Windows（PowerShell 5.1），所有脚本中使用 `gradlew`（非 `./gradlew`）
 - **JDK 25** 预览特性，`--enable-preview` + 大量 `--add-exports`
-- `taotao-cloud-dependencies:2026.09` BOM 未开源，外部构建需要私有仓库凭据
+- `taotao-cloud-dependencies:2026.10` BOM 未开源，外部构建需要私有仓库凭据
 - 四个环境配置：dev / test / pre / pro
 - 代码质量门禁：Checkstyle + SpotBugs + PMD + Spotless + OWASP
 - 主包路径：`com.taotao.cloud.member`（非 `order`）
