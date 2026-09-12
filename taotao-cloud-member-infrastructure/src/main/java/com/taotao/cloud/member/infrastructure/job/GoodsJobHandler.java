@@ -44,7 +44,7 @@
 //public class GoodsJobHandler {
 //
 //    @XxlJob("ThrowJobHandler")
-//    public Response<String> throwJobHandler() throws Exception {
+//    public void throwJobHandler() throws Exception {
 //        XxlJobHelper.log("XXL-JOB, throwwwwwwwwwwwwww");
 //
 //        LogUtils.info("=============xxljob throwwwwwwwwwwwwwwwwwwwwwwwwww");
@@ -53,7 +53,7 @@
 //    }
 //
 //    @XxlJob("TestJobHandler")
-//    public Response<String> testJobHandler() throws Exception {
+//    public void testJobHandler() throws Exception {
 //
 //        long jobId = XxlJobHelper.getJobId();
 //        String jobParam = XxlJobHelper.getJobParam();
@@ -82,7 +82,7 @@
 //
 //    @XxlJob("UserJobHandler")
 //    @XxlRegister(cron = "59 59 23 * * ?", author = "shuigedeng")
-//    public Response<String> userJobHandler(String param) throws Exception {
+//    public void userJobHandler(String param) throws Exception {
 //        XxlJobHelper.log("XXL-JOB, Hello World.");
 //        XxlJobHelper.log("XXL-JOB, Hello World.1");
 //        XxlJobHelper.log("XXL-JOB, Hello World.2");
