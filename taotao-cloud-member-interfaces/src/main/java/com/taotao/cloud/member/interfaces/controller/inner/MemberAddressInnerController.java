@@ -33,7 +33,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020/11/16 10:57
  */
 @RequiredArgsConstructor
-@Validated
 @RestController
 @Tag(name = "内部调用端-会员地址API", description = "内部调用端-会员地址API")
 public class MemberAddressInnerController extends InnerController implements MemberAddressApi {

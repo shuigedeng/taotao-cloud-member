@@ -27,7 +27,6 @@ import org.springframework.web.bind.annotation.RestController;
  * 买家端,会员积分历史API
  */
 @RequiredArgsConstructor
-@Validated
 @RestController
 @Tag(name = "买家端-会员积分历史API", description = "买家端-会员积分历史API")
 @RequestMapping("/member/buyer/member/points/history")

@@ -42,7 +42,7 @@ import java.util.Map;
  * @version 2022.04
  * @since 2022-04-25 16:37:49
  */
-@HttpExchange(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER)
+@HttpExchange
 public interface MemberEvaluationApi {
 
     /**
@@ -57,7 +57,7 @@ public interface MemberEvaluationApi {
      */
     @PostExchange(value = "/member/evaluation")
     Response<MemberEvaluationApiResponse> count(
-            @Validated @RequestBody
+             @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
     /**
@@ -69,7 +69,7 @@ public interface MemberEvaluationApi {
      */
     @PostExchange(value = "/member/evaluationPageQuery")
     Response<MemberEvaluationApiResponse> getEvaluationCount(
-            @Validated @RequestBody
+             @RequestBody
                     Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
 
     @PostExchange(value = "/member/memberEvaluationNum")
@@ -77,26 +77,26 @@ public interface MemberEvaluationApi {
 
     @PostExchange(value = "/member/memberEvaluationDTO")
     Response<BooleanApiResponse> addMemberEvaluation(
-            @Validated @RequestBody
+             @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
     @PostExchange(value = "/member/evaluation/getStoreRatingVO")
     Response<StoreRatingApiResponse> getStoreRatingVO(
-            @Validated @RequestBody
+             @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
     @PostExchange(value = "/member/evaluation/queryById")
     Response<MemberEvaluationApiResponse> queryById(
-            @Validated @RequestBody
+             @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
     @PostExchange(value = "/member/evaluation/reply")
     Response<BooleanApiResponse> reply(
-            @Validated @RequestBody
+             @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
     @PostExchange(value = "/member/evaluation/queryPage")
     Response<PageResponse<MemberEvaluationListApiResponse>> queryPage(
-            @Validated @RequestBody
+             @RequestBody
                     Request<EvaluationPageQueryApiRequest> memberEvaluationApiRequest);
 }

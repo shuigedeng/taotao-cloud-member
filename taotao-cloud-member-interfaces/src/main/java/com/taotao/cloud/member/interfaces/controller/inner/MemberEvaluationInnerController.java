@@ -41,7 +41,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020/11/16 10:57
  */
 @RequiredArgsConstructor
-@Validated
 @RestController
 @Tag(name = "内部调用端-管理员API", description = "内部调用端-管理员API")
 public class MemberEvaluationInnerController extends InnerController

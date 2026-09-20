@@ -34,31 +34,31 @@ import org.springframework.web.service.annotation.PostExchange;
  * @version 2022.04
  * @since 2022-04-25 16:37:54
  */
-@HttpExchange(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER)
+@HttpExchange
 public interface MemberRechargeApi {
 
     @PostExchange(value = "/member/recharge/paySuccess")
     Response<BooleanApiResponse> paySuccess(
-            @Validated @RequestBody
+             @RequestBody
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
     @PostExchange(value = "/member/recharge/getRecharge")
     Response<MemberRechargeApiResponse> getRecharge(
-            @Validated @RequestBody
+             @RequestBody
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
     @PostExchange(value = "/member/recharge/recharge")
     Response<MemberRechargeApiResponse> recharge(
-            @Validated @RequestBody
+             @RequestBody
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
     @PostExchange(value = "/member/recharge/list")
 	Response<MemberRechargeApiResponse> list(
-            @Validated @RequestBody
+             @RequestBody
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 
     @PostExchange(value = "/member/recharge/rechargeOrderCancel")
     Response<BooleanApiResponse> rechargeOrderCancel(
-            @Validated @RequestBody
+             @RequestBody
                     Request<MemberRechargeQueryApiRequest> memberRechargeQueryApiRequest);
 }

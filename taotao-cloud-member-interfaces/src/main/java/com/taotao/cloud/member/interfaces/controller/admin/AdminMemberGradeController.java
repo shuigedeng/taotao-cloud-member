@@ -29,7 +29,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2021/5/16 11:29 下午
  */
 @RequiredArgsConstructor
-@Validated
 @RestController
 @RequestMapping("/member/admin/member/grade")
 @Tag(name = "管理端-会员等级管理API", description = "管理端-会员等级管理API")

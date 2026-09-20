@@ -38,7 +38,7 @@ import java.util.Map;
  * @version 2022.04
  * @since 2022-04-25 16:37:54
  */
-@HttpExchange(value = ServiceNameConstants.TAOTAO_CLOUD_MEMBER)
+@HttpExchange
 public interface MemberApi {
 
 //    /**
@@ -61,7 +61,7 @@ public interface MemberApi {
      */
     @PostExchange("/member/info/id/{id:[0-9]*}")
     Response<MemberApiResponse> findMemberById(
-            @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
+             @RequestBody Request<MemberApiRequest> memberApiRequest);
 
     /**
      * 更新成员点
@@ -75,15 +75,15 @@ public interface MemberApi {
      */
     @PostExchange(value = "/member/updateMemberPoint")
     Response<BooleanApiResponse> updateMemberPoint(
-            @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
+             @RequestBody Request<MemberApiRequest> memberApiRequest);
 
     @PostExchange(value = "/member/username")
     Response<MemberApiResponse> findByUsername(
-            @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
+             @RequestBody Request<MemberApiRequest> memberApiRequest);
 
     @PostExchange(value = "/member/memberId")
     Response<MemberApiResponse> getById(
-            @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
+             @RequestBody Request<MemberApiRequest> memberApiRequest);
 
     /**
      * new LambdaUpdateWrapper<Member>() .eq(Member::getId, member.getId()) .set(Member::getHaveStore, true)
@@ -91,13 +91,13 @@ public interface MemberApi {
      */
     @PostExchange(value = "/member/memberId/storeId")
     Response<BooleanApiResponse> update(
-            @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
+             @RequestBody Request<MemberApiRequest> memberApiRequest);
 
     @PostExchange(value = "/member/updateById")
     Response<BooleanApiResponse> updateById(
-            @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
+             @RequestBody Request<MemberApiRequest> memberApiRequest);
 
     @PostExchange(value = "/member/listFieldsByMemberIds")
     Response<BatchResponse<Map<String, Object>>> listFieldsByMemberIds(
-            @Validated @RequestBody Request<MemberApiRequest> memberApiRequest);
+             @RequestBody Request<MemberApiRequest> memberApiRequest);
 }

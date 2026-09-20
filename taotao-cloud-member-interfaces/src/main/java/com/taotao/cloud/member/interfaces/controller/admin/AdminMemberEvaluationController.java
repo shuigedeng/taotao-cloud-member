@@ -29,7 +29,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020-02-25 14:10:16
  */
 @RequiredArgsConstructor
-@Validated
 @RestController
 @RequestMapping("/member/admin/membe/evaluation")
 @Tag(name = "管理端-会员商品评价管理API", description = "管理端-会员商品评价管理API")

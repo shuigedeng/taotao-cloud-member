@@ -25,7 +25,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 /** 买家端,app/小程序 联合登录 */
 @RequiredArgsConstructor
-@Validated
 @RestController
 @Tag(name = "买家端-app/小程序联合登录API", description = "买家端-app/小程序联合登录API")
 @RequestMapping("/member/buyer/passport/connect/bind")

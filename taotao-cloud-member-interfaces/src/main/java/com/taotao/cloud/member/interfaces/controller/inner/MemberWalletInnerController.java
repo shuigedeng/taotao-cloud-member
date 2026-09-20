@@ -34,7 +34,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020/11/16 10:57
  */
 @RequiredArgsConstructor
-@Validated
 @RestController
 @Tag(name = "内部调用端-会员钱包API", description = "内部调用端-会员钱包API")
 public class MemberWalletInnerController extends InnerController implements MemberWalletApi {

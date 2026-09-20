@@ -27,7 +27,6 @@ import org.springframework.web.bind.annotation.RestController;
  * 买家端,会员收藏API
  */
 @RequiredArgsConstructor
-@Validated
 @RestController
 @Tag(name = "买家端-会员收藏API", description = "买家端-会员收藏API")
 @RequestMapping("/member/buyer/member/collection")

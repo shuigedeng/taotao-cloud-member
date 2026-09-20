@@ -29,7 +29,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020-02-25 14:10:16
  */
 @RequiredArgsConstructor
-@Validated
 @RestController
 @RequestMapping("/member/admin/member/address")
 @Tag(name = "管理端-会员地址管理API", description = "管理端-会员地址管理API")
