@@ -29,10 +29,9 @@ import lombok.experimental.Accessors;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "会员发票查询VO")
+@Schema(description = "会员发票查询响应对象")
 public class MemberReceiptResult implements Serializable {
 
     @Serial private static final long serialVersionUID = -8210927982915677995L;

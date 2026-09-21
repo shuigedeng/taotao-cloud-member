@@ -29,10 +29,9 @@ import lombok.experimental.Accessors;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "会员分布VO")
+@Schema(description = "会员分布响应对象")
 public class MemberDistributionResult implements Serializable {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;

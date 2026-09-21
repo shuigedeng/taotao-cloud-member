@@ -31,10 +31,9 @@ import java.time.LocalDateTime;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "会员评价VO")
+@Schema(description = "会员评价响应对象")
 public class MemberEvaluationListApiResponse  implements MarkerResponse  {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;

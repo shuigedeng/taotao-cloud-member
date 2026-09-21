@@ -30,10 +30,9 @@ import lombok.experimental.Accessors;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "会员搜索VO")
+@Schema(description = "会员搜索响应对象")
 public class MemberRechargeResult implements Serializable {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;

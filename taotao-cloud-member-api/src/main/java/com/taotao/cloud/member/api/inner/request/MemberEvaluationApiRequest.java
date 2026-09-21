@@ -30,7 +30,6 @@ import java.io.Serializable;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "租户id")

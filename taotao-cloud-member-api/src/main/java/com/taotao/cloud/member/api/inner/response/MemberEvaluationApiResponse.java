@@ -29,10 +29,9 @@ import java.util.List;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "会员评价VO")
+@Schema(description = "会员评价响应对象")
 public class MemberEvaluationApiResponse  implements MarkerResponse  {
 
     @Serial private static final long serialVersionUID = 6696978796248845481L;

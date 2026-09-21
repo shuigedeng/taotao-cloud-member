@@ -35,7 +35,6 @@ import java.io.Serializable;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "公司查询对象")

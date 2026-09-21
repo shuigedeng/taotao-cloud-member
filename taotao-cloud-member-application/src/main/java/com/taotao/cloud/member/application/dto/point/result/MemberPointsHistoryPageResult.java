@@ -35,10 +35,9 @@ import lombok.experimental.Accessors;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "会员积分历史VO")
+@Schema(description = "会员积分历史响应对象")
 public class MemberPointsHistoryPageResult implements Serializable {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;

@@ -36,7 +36,6 @@ import lombok.experimental.Accessors;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(name = "MemberQuery", description = "会员query")

@@ -29,10 +29,9 @@ import lombok.experimental.Accessors;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "会员评价VO")
+@Schema(description = "会员评价响应对象")
 public class MemberEvaluationResult implements Serializable {
 
     @Serial private static final long serialVersionUID = 6696978796248845481L;

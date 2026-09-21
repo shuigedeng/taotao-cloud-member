@@ -32,10 +32,9 @@ import java.util.Date;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "MemberVO")
+@Schema(description = "Member响应对象")
 public class MemberApiResponse  implements MarkerResponse  {
 
     @Serial private static final long serialVersionUID = 1810890757303309436L;

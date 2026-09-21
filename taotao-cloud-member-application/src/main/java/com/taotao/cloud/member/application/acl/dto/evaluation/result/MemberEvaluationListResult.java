@@ -31,10 +31,9 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "会员评价VO")
+@Schema(description = "会员评价响应对象")
 public class MemberEvaluationListResult implements Serializable {
 
     @Serial private static final long serialVersionUID = -7605952923416404638L;

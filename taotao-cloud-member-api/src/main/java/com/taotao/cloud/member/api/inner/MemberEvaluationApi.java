@@ -80,7 +80,7 @@ public interface MemberEvaluationApi {
              @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);
 
-    @PostExchange(value = "/member/evaluation/getStoreRatingVO")
+    @PostExchange(value = "/member/evaluation/getStoreRating响应对象")
     Response<StoreRatingApiResponse> getStoreRatingVO(
              @RequestBody
                     Request<MemberEvaluationApiRequest> memberEvaluationApiRequest);

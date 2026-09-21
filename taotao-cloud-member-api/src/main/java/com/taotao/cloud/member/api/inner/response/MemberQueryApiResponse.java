@@ -38,7 +38,7 @@ import java.io.Serializable;
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "公司查询VO")
+@Schema(description = "公司查询响应对象")
 public class MemberQueryApiResponse  implements MarkerResponse  {
 
     @Serial private static final long serialVersionUID = -4132785717179910025L;

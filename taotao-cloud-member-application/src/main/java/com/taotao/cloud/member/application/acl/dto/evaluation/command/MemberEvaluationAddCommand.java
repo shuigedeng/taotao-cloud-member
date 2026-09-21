@@ -30,7 +30,6 @@ import org.hibernate.validator.constraints.Length;
 @Setter
 @Getter
 @ToString
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "租户id")
