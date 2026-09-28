@@ -20,7 +20,7 @@ import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.BatchResponse;
 import com.taotao.boot.common.model.response.PageResponse;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.boot.webagg.controller.InnerController;
+import com.taotao.boot.webagg.controller.InternalController;
 import com.taotao.cloud.member.api.internal.MemberEvaluationApi;
 import com.taotao.cloud.member.api.internal.request.EvaluationPageQueryApiRequest;
 import com.taotao.cloud.member.api.internal.request.MemberEvaluationApiRequest;
@@ -42,7 +42,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RestController
 @Tag(name = "内部调用端-管理员API", description = "内部调用端-管理员API")
-public class MemberEvaluationInnerController extends InnerController
+public class MemberEvaluationInternalController extends InternalController
         implements MemberEvaluationApi {
 
     @Override

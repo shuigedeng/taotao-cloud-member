@@ -18,7 +18,7 @@ package com.taotao.cloud.member.interfaces.controller.internal;
 
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.boot.webagg.controller.InnerController;
+import com.taotao.boot.webagg.controller.InternalController;
 import com.taotao.cloud.member.api.internal.MemberRechargeApi;
 import com.taotao.cloud.member.api.internal.request.MemberRechargeQueryApiRequest;
 import com.taotao.cloud.member.api.internal.response.BooleanApiResponse;
@@ -35,7 +35,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RestController
 @Tag(name = "内部调用端-会员充值API", description = "内部调用端-会员充值API")
-public class MemberRechargeInnerController extends InnerController implements MemberRechargeApi {
+public class MemberRechargeInternalController extends InternalController implements MemberRechargeApi {
 
     @Override
     public Response<BooleanApiResponse> paySuccess(

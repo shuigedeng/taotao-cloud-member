@@ -19,7 +19,7 @@ package com.taotao.cloud.member.interfaces.controller.internal;
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.BatchResponse;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.boot.webagg.controller.InnerController;
+import com.taotao.boot.webagg.controller.InternalController;
 import com.taotao.cloud.member.api.internal.MemberApi;
 import com.taotao.cloud.member.api.internal.request.MemberApiRequest;
 import com.taotao.cloud.member.api.internal.response.BooleanApiResponse;
@@ -38,7 +38,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RestController
 @Tag(name = "内部调用端-会员API", description = "内部调用端-会员API")
-public class MemberInnerController extends InnerController implements MemberApi {
+public class MemberInternalController extends InternalController implements MemberApi {
 
 //    @Override
 //    public Response<BaseSecurityUser> getMemberSecurityUser(

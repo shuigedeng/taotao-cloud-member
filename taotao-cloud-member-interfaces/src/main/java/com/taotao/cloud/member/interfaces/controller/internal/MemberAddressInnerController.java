@@ -18,7 +18,7 @@ package com.taotao.cloud.member.interfaces.controller.internal;
 
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.boot.webagg.controller.InnerController;
+import com.taotao.boot.webagg.controller.InternalController;
 import com.taotao.cloud.member.api.internal.MemberAddressApi;
 import com.taotao.cloud.member.api.internal.request.MemberAddressApiRequest;
 import com.taotao.cloud.member.api.internal.response.MemberAddressApiResponse;
@@ -34,7 +34,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RestController
 @Tag(name = "内部调用端-会员地址API", description = "内部调用端-会员地址API")
-public class MemberAddressInnerController extends InnerController implements MemberAddressApi {
+public class MemberAddressInternalController extends InternalController implements MemberAddressApi {
 
 	// private final IMemberService memberService;
 
