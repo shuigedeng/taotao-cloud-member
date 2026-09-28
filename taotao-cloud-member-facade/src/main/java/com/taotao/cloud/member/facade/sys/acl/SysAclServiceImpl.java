@@ -24,7 +24,7 @@ import com.taotao.cloud.member.application.acl.dto.sys.res.DictRes;
 import com.taotao.cloud.member.application.acl.service.SysAclService;
 import com.taotao.cloud.member.facade.assembler.SysFacadeAssembler;
 import com.taotao.cloud.member.facade.sys.invoker.SysInvoker;
-import com.taotao.cloud.sys.api.inner.dto.response.DictApiResponse;
+import com.taotao.cloud.sys.api.internal.dto.response.DictApiResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

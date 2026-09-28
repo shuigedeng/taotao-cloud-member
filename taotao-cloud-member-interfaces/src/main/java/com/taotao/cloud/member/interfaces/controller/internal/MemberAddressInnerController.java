@@ -14,18 +14,16 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.interfaces.controller.inner;
+package com.taotao.cloud.member.interfaces.controller.internal;
 
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.webagg.controller.InnerController;
-import com.taotao.cloud.member.api.inner.MemberWalletApi;
-import com.taotao.cloud.member.api.inner.request.MemberWalletQueryApiRequest;
-import com.taotao.cloud.member.api.inner.request.MemberWalletUpdateApiRequest;
-import com.taotao.cloud.member.api.inner.response.BooleanApiResponse;
+import com.taotao.cloud.member.api.internal.MemberAddressApi;
+import com.taotao.cloud.member.api.internal.request.MemberAddressApiRequest;
+import com.taotao.cloud.member.api.internal.response.MemberAddressApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -35,18 +33,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RequiredArgsConstructor
 @RestController
-@Tag(name = "内部调用端-会员钱包API", description = "内部调用端-会员钱包API")
-public class MemberWalletInnerController extends InnerController implements MemberWalletApi {
+@Tag(name = "内部调用端-会员地址API", description = "内部调用端-会员地址API")
+public class MemberAddressInnerController extends InnerController implements MemberAddressApi {
 
-    @Override
-    public Response<BooleanApiResponse> increase(
-            Request<MemberWalletUpdateApiRequest> memberWalletUpdateApiRequest) {
-        return null;
-    }
+	// private final IMemberService memberService;
 
-    @Override
-    public Response<BooleanApiResponse> save(
-            Request<MemberWalletQueryApiRequest> memberWalletQueryApiRequest) {
-        return null;
-    }
+	@Override
+	public Response<MemberAddressApiResponse> getById(Request<MemberAddressApiRequest> shippingAddressId) {
+		return null;
+	}
 }

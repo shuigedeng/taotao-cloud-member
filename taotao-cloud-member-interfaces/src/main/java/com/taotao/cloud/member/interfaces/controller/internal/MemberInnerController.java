@@ -14,21 +14,20 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.interfaces.controller.inner;
+package com.taotao.cloud.member.interfaces.controller.internal;
 
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.BatchResponse;
 import com.taotao.boot.common.model.response.Response;
 import com.taotao.boot.webagg.controller.InnerController;
-import com.taotao.cloud.member.api.inner.MemberApi;
-import com.taotao.cloud.member.api.inner.request.MemberApiRequest;
-import com.taotao.cloud.member.api.inner.response.BooleanApiResponse;
-import com.taotao.cloud.member.api.inner.response.MemberApiResponse;
+import com.taotao.cloud.member.api.internal.MemberApi;
+import com.taotao.cloud.member.api.internal.request.MemberApiRequest;
+import com.taotao.cloud.member.api.internal.response.BooleanApiResponse;
+import com.taotao.cloud.member.api.internal.response.MemberApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 import java.util.Map;
 import lombok.RequiredArgsConstructor;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
 
 /**

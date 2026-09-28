@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.inner.request;
+package com.taotao.cloud.member.api.internal.request;
 
 import com.taotao.boot.common.model.ddd.types.MarkerRequest;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -38,7 +38,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Schema(description = "公司查询对象")
-public class MemberApiRequest implements MarkerRequest {
+public class MemberQueryApiRequest implements MarkerRequest {
 
     @Serial private static final long serialVersionUID = -4132785717179910025L;
 

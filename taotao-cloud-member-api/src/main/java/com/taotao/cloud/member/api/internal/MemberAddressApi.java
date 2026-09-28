@@ -14,14 +14,12 @@
  * limitations under the License.
  */
 
-package com.taotao.cloud.member.api.inner;
+package com.taotao.cloud.member.api.internal;
 
-import com.taotao.boot.common.constant.ServiceNameConstants;
 import com.taotao.boot.common.model.request.Request;
 import com.taotao.boot.common.model.response.Response;
-import com.taotao.cloud.member.api.inner.request.MemberAddressApiRequest;
-import com.taotao.cloud.member.api.inner.response.MemberAddressApiResponse;
-import org.springframework.validation.annotation.Validated;
+import com.taotao.cloud.member.api.internal.request.MemberAddressApiRequest;
+import com.taotao.cloud.member.api.internal.response.MemberAddressApiResponse;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.service.annotation.HttpExchange;
 import org.springframework.web.service.annotation.PostExchange;
