@@ -26,7 +26,6 @@ import org.springframework.transaction.annotation.Transactional;
  * @since 2020-02-25 14:10:16
  */
 @Service
-@Transactional(rollbackFor = Exception.class)
 public class MemberEvaluationCommandServiceImpl implements MemberEvaluationCommandService {
     //
     /// **
@@ -38,17 +37,17 @@ public class MemberEvaluationCommandServiceImpl implements MemberEvaluationComma
     // * 订单
     // */
     // @Autowired
-    // private IFeignOrderApi orderApi;
+    // private AclServiceOrderApi orderApi;
     /// **
     // * 子订单
     // */
     // @Autowired
-    // private IFeignOrderItemApi orderItemApi;
+    // private AclServiceOrderItemApi orderItemApi;
     /// **
     // * 商品
     // */
     // @Autowired
-    // private IFeignGoodsSkuApi goodsSkuApi;
+    // private AclServiceGoodsSkuApi goodsSkuApi;
     /// **
     // * rocketMq
     // */

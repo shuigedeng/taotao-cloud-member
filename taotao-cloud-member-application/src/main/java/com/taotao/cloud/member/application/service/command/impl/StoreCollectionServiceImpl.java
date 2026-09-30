@@ -30,7 +30,6 @@ package com.taotao.cloud.member.application.service.command.impl; // package
 // import com.taotao.cloud.member.biz.entity.MemberStoreCollection;
 // import com.taotao.cloud.member.biz.mapper.StoreCollectionMapper;
 // import com.taotao.cloud.store.api.dto.CollectionDTO;
-// import com.taotao.cloud.store.api.feign.IFeignStoreService;
 // import java.util.Optional;
 // import org.springframework.beans.factory.annotation.Autowired;
 // import org.springframework.stereotype.Service;
@@ -44,7 +43,7 @@ package com.taotao.cloud.member.application.service.command.impl; // package
 // 	StoreCollectionService {
 //
 // 	@Autowired
-// 	private IFeignStoreService feignStoreService;
+// 	private AclServiceStoreService feignStoreService;
 //
 // 	@Override
 // 	public IPage<StoreCollectionVO> storeCollection(PageQuery PageQuery) {

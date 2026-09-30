@@ -32,7 +32,7 @@ public class MemberBrowseQueryServiceImpl implements MemberBrowseCommandService 
     // * es商品业务层
     // */
     // @Autowired
-    // private IFeignEsGoodsIndexApi esGoodsIndexApi;
+    // private AclServiceEsGoodsIndexApi esGoodsIndexApi;
     //
     // @Override
     // public MemberBrowsePO saveFootprint(MemberBrowsePO memberBrowsePO) {

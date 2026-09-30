@@ -26,14 +26,13 @@ import org.springframework.transaction.annotation.Transactional;
  * @since 2020/11/18 10:46 上午
  */
 @Service
-@Transactional(rollbackFor = Exception.class)
 public class MemberBrowseCommandServiceImpl implements MemberBrowseCommandService {
     //
     /// **
     // * es商品业务层
     // */
     // @Autowired
-    // private IFeignEsGoodsIndexApi esGoodsIndexApi;
+    // private AclServiceEsGoodsIndexApi esGoodsIndexApi;
     //
     // @Override
     // public MemberBrowsePO saveFootprint(MemberBrowsePO memberBrowsePO) {

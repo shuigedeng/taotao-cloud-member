@@ -39,7 +39,7 @@ public class BuyerMemberCollectionController extends BusinessController {
     /// **
     // * 会员店铺
     // */
-    // private final IFeignStoreCollectionApi feignStoreCollectionApi;
+    // private final AclServiceStoreCollectionApi feignStoreCollectionApi;
     //
     // @Operation(summary = "查询会员收藏列表", description = "查询会员收藏列表")
     // @RequestLogger
@@ -102,6 +102,6 @@ public class BuyerMemberCollectionController extends BusinessController {
     //    if (MemberCollectionQueryConstants.GOODS.equals(type)) {
     //        return Result.success(memberGoodsCollectionService.isCollection(id));
     //    }
-    //    return Result.success(this.feignStoreCollectionApi.isCollection(id));
+    //    return Result.success(this.StoreCollectionApi.isCollection(id));
     // }
 }

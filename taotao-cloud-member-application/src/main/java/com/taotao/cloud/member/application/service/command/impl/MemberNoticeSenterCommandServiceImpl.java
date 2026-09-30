@@ -25,7 +25,6 @@ import org.springframework.transaction.annotation.Transactional;
  * 会员消息业务层实现
  */
 @Service
-@Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
 public class MemberNoticeSenterCommandServiceImpl implements MemberNoticeSenterCommandService {
     //	@Override
     //	public boolean customSave(MemberNoticeSenterPO memberNoticeSenterPO) {

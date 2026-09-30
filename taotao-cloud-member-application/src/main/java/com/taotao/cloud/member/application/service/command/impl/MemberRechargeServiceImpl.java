@@ -48,7 +48,7 @@ public class MemberRechargeServiceImpl implements MemberRechargeCommandService {
     // * 会员预存款
     // */
     // @Autowired
-    // private IFeignMemberWalletApi feignMemberWalletApi;
+    // private AclServiceMemberWalletApi feignMemberWalletApi;
     //
     // @Override
     // public MemberRechargePO recharge(BigDecimal price) {

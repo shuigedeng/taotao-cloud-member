@@ -24,7 +24,6 @@ import org.springframework.transaction.annotation.Transactional;
  * 会员接口业务层实现
  */
 @Service
-@Transactional(rollbackFor = Exception.class)
 public class MemberCommandServiceImpl implements MemberCommandService {
 
     /// **
@@ -46,7 +45,7 @@ public class MemberCommandServiceImpl implements MemberCommandService {
     // * 店铺
     // */
     // @Autowired
-    // private IFeignStoreApi feignStoreApi;
+    // private AclServiceStoreApi feignStoreApi;
     /// **
     // * RocketMQ 配置
     // */

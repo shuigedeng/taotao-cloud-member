@@ -46,7 +46,7 @@ public class MemberSignCommandServiceImpl implements MemberSignCommandService {
     // * 配置
     // */
     // @Autowired
-    // private IFeignSettingApi settingApi;
+    // private AclServiceSettingApi settingApi;
     /// **
     // * 会员
     // */

@@ -35,7 +35,7 @@ public class GoodsExecute implements EveryDayExecute {
     // * 成员评价映射器 会员评价
     // */
     // @Resource
-    // private IFeignMemberEvaluationApi memberEvaluationApi;
+    // private AclServiceMemberEvaluationApi memberEvaluationApi;
     /// **
     // * 货物映射器 商品
     // */

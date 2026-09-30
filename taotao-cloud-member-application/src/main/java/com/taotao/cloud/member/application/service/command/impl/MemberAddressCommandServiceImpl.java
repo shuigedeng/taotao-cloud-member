@@ -85,7 +85,7 @@ public class MemberAddressCommandServiceImpl implements MemberAddressCommandServ
     // }
     //
     // @Override
-    // @Transactional(rollbackFor = Exception.class)
+
     // public Boolean saveMemberAddress(MemberAddressPO memberAddressPO) {
     //	// 判断当前地址是否为默认地址，如果为默认需要将其他的地址修改为非默认
     //	removeDefaultAddress(memberAddressPO);
@@ -95,7 +95,7 @@ public class MemberAddressCommandServiceImpl implements MemberAddressCommandServ
     // }
     //
     // @Override
-    // @Transactional(rollbackFor = Exception.class)
+
     // public Boolean updateMemberAddress(MemberAddressPO memberAddressPO) {
     //	MemberAddressPO originalMemberAddressPO = this.getMemberAddress(memberAddressPO.getId());
     //
@@ -114,7 +114,7 @@ public class MemberAddressCommandServiceImpl implements MemberAddressCommandServ
     // }
     //
     // @Override
-    // @Transactional(rollbackFor = Exception.class)
+
     // public Boolean removeMemberAddress(Long id) {
     //	LambdaQueryWrapper<MemberAddressPO> lambdaQueryWrapper = new LambdaQueryWrapper<>();
     //	lambdaQueryWrapper.eq(MemberAddressPO::getId, id);
