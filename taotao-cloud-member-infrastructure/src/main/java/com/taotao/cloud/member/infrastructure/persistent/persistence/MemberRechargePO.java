@@ -33,7 +33,7 @@ import lombok.experimental.Accessors;
 /**
  * 会员预存款充值记录
  *
- * @author pikachu
+ * @author shuigedeng
  * @since 2020-02-25 14:10:16
  */
 @Setter
